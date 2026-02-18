@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-background: #9cee69;
+    --primary-foreground: #000000;
+    --primary-light: #dbffc4;
+    --primary-dark: #5c9b35;
+
+    /* Secondary Colors */
+    --secondary-background: #ffffff;
+    --secondary-foreground: #0f0f0f;
+    --secondary-light: #fafafa;
+    --secondary-dark: #191919;
+
+    /* Accent Colors */
+    --accent-background: #e4ffd3;
+    --accent-foreground: #1d1d21;
+    --accent-light: #f4ffef;
+    --accent-dark: #e4ffd4;
+
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #373737;
+    --text-muted: #5f5f5f;
+    --text-light: #ffffff;
+    --text-brand: #9cee69;
+
+    /* Background Colors */
+    --bg-main: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --bg-accent: #f9fff5;
+    --bg-dark: #0f0f0f;
+    --bg-overlay: #f4f4f47f;
+
+    /* Border Colors */
+    --border-primary: #d6d6d6;
+    --border-secondary: #000000;
+    --border-accent: #1d1d21;
+
+    /* Typography Variables */
+    --font-size-xs: 15px;
+    --font-size-sm: 16px;
+    --font-size-base: 18px;
+    --font-size-lg: 24px;
+    --font-size-xl: 34px;
+    --font-size-2xl: 61px;
+    --font-size-3xl: 75px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Height Variables */
+    --line-height-tight: 19px;
+    --line-height-normal: 21px;
+    --line-height-relaxed: 30px;
+    --line-height-loose: 75px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+    --spacing-4xl: 96px;
+
+    /* Border Radius Variables */
+    --radius-sm: 8px;
+    --radius-md: 18px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-2xl: 38px;
+    --radius-full: 50px;
+
+    /* Component Specific Variables */
+    --button-bg-primary: #9cee69;
+    --button-text-primary: #000000;
+    --button-bg-secondary: #e4ffd3;
+    --button-text-secondary: #1d1d21;
+    
+    --card-bg: #ffffff;
+    --card-border: #d6d6d6;
+    
+    --input-bg: #ffffff;
+    --input-border: #000000;
+    --input-text: #000000;
+  }
+}
