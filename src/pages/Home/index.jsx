@@ -268,137 +268,9 @@ const Home = () => {
       </Helmet>
       <main className="w-full bg-secondary-background">
         {/* Header */}
-        <header className="w-full bg-secondary-background">
+        <div className="w-full bg-secondary-background">
           <div className=" max-w-[1440px] md:max-w-[1100px] lg:max-w-[1200px] xl:max-w-[1300px]  px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col justify-center items-center w-full gap-[23px] sm:gap-[28px] md:gap-[35px] lg:gap-[40px] xl:gap-[46px]">
-              {/* Navigation */}
-
-                 <div className="flex flex-col justify-start items-center w-full">
-                <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
-                  <div className="rounded-full bg-secondary-background p-[13px] sm:p-[17px] md:p-[21px] lg:p-[25px] xl:px-[28px] xl:py-[28px] w-full">
-                    <nav className="flex flex-row justify-between items-center w-full">
-                      {/* Logo */}
-                      <img 
-                        src="/images2/features/img_xmoveon.svg" 
-                        alt="XMoveOn Logo" 
-                        className="w-[81px] sm:w-[100px] md:w-[130px] lg:w-[145px] xl:w-[162px] h-[10px] sm:h-[12px] md:h-[16px] lg:h-[18px] xl:h-[20px]"
-                      />
-
-                      {/* Desktop Navigation */}
-                      <div className="hidden lg:flex flex-row gap-[20px] sm:gap-[25px] md:gap-[30px] lg:gap-[35px] xl:gap-[40px] justify-center items-center p-[6px] sm:p-[8px] md:p-[10px] lg:p-[12px]">
-                        <div className="flex flex-row justify-end items-center w-auto">
-                          <span className="text-sm sm:text-base font-medium leading-sm text-text-muted font-[Inter] w-auto lg:ms-16">
-                            Home
-                          </span>
-                        </div>
-                        <div className="flex flex-row justify-center items-center w-auto">
-                          <span className="text-sm sm:text-base font-medium leading-sm text-text-muted font-[Inter] w-auto">
-                            Features
-                          </span>
-                        </div>
-                        <div className="flex flex-row justify-center items-center w-auto">
-                          <span className="text-sm sm:text-base font-medium leading-sm text-text-muted font-[Inter] w-auto">
-                            Blog
-                          </span>
-                        </div>
-                        <span className="text-sm sm:text-base font-medium leading-sm text-text-muted font-[Inter] w-auto">
-                          Contact Us
-                        </span>
-                      </div>
-
-                      {/* Mobile Menu Button */}
-                      <button 
-                        className="lg:hidden mx-4 md:mx-8" 
-                        aria-label="Open menu"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                      >
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </button>
-
-                      {/* Get Started Button - Desktop */}
-                      <div className="hidden lg:flex lg:ms-16">
-                        <Button
-                           text="Get Started"
-                              text_font_size="16px"
-                              text_font_weight="600"
-                              text_color="#0f0f0f"
-                              fill_background_color="#9cee69"
-                              border_border_radius="32px"
-                              padding="16px 24px"
-                              text_align="center"
-                        >
-                          <span>Get Started</span>
-                          <img src="/images2/features/img_iconoirarrowtr.svg" alt="Arrow" className="w-6 h-6" />
-                        </Button>
-                      </div>
-                    </nav>
-
-                    {/* Mobile Navigation Menu */}
-                    <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden mt-4 p-4 bg-secondary-background rounded-lg shadow-lg`}>
-                      <div className="flex flex-col gap-4">
-                        <span className="text-sm font-medium text-text-muted">Home</span>
-                        <span className="text-sm font-medium text-text-muted">Features</span>
-                        <span className="text-sm font-medium text-text-muted">Blog</span>
-                        <span className="text-sm font-medium text-text-muted">Contact Us</span>
-                        <Button
-                          text="Get Started"
-                          fill_background_color="bg-primary-background"
-                          className="w-full mt-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Hero Section */}
-                  <section className="rounded-full bg-secondary-background sm:p-[18px] md:p-[22px] lg:p-[26px] xl:p-[28px]  w-full  overflow-hidden">
-                    <div className="flex flex-col lg:flex-row justify-start items-start w-full gap-8 lg:gap-12">
-                      {/* Left Content */}
-                      <div className="flex flex-col justify-start items-start w-full lg:w-[48%] relative ">
-                        {/* Decorative highlight */}
-                       {/*  <img 
-                          src="/images/img_highlight_text.svg" 
-                          alt="Highlight" 
-                          className="absolute w-[253px] sm:w-[310px] md:w-[380px] lg:w-[440px] xl:w-[506px] h-[87px] sm:h-[107px] md:h-[131px] lg:h-[151px] xl:h-[174px] rounded-lg sm:rounded-xl top-[44px] sm:top-[54px] md:top-[66px] lg:top-[76px] xl:top-[88px] left-0 z-0"
-                        /> */}
-                        
-                        <h1 className="relative text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] ms-4 md:ms-10 lg:ms-12 font-medium text-text-primary font-[Inter] w-[90%] z-10">
-                          Connect <br />restaurants and <br /> customers <br />instantly
-                        </h1>
-                        <p className="text-sm sm:text-base font-normal leading-md text-text-secondary font-[Sans_Serif_Collection] w-[82%] ms-4 md:ms-10 lg:ms-12">
-                          Build your multi-vendor food delivery platform with our proven solution. Restaurants gain exposure, drivers earn commissions, and you control the entire ecosystem from one powerful admin panel.
-                        </p>
-                       <div className='mt-4 md:mt-6 lg:mt-6 ms-4 lg:ms-12 md:ms-8'>
-                          <Button
-                              text="Try Our Demo"
-                              text_font_size="16px"
-                              text_font_weight="600"
-                              text_color="#0f0f0f"
-                              fill_background_color="#9cee69"
-                              border_border_radius="32px"
-                              padding="16px 24px"
-                              text_align="center"
-                              
-                            /> 
-                            </div>
-                      </div>
-
-
-                      
-
-                      {/* Right Illustration */}
-                      <div className="w-full lg:w-[50%]  flex ">
-                        <img 
-                          src="/public/assets/android.jpg" 
-                          alt="Platform Illustration" 
-                          className="w-full rounded-lg max-w-[200px] sm:max-w-[300px] md:max-w-[300px] lg:max-w-[520px] max-h-[205px] sm:max-h-[250px] md:max-h-[300px] lg:max-h-[380px] mx-4 md:mx-10 lg:mx-6 xl:mx-8  mt-4"
-                        />
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
               {/* Technology Stack Section */}
             <section className="flex justify-center items-center w-full">
                   <div className="bg-secondary-background rounded-full
@@ -489,7 +361,7 @@ const Home = () => {
 
               {/* Built for Scale Section */}
               <section className="w-full">
-                <div className="bg-secondary-background rounded-full p-[25px] sm:p-[31px] md:p-[38px] lg:p-[52px] xl:p-[60px] mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[36px] xl:mx-[40px] w-full max-w-[1334px] mx-auto">
+                <div className="bg-secondary-background rounded-full p-[25px] sm:p-[31px] md:p-[38px] lg:p-[52px] xl:p-[60px]  sm:mx-[18px] md:mx-[22px] lg:mx-[36px] xl:mx-[40px] w-full max-w-[1334px] mx-auto">
                   <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full">
                     {/* Left Content */}
                     <div className="flex flex-col justify-start items-start w-full lg:w-[40%] xl:w-[45%] relative">
@@ -503,7 +375,7 @@ const Home = () => {
 
                       {/* Content section */}
                       <div className="flex flex-col justify-start items-center w-full mt-2 lg:mt-4 mx-0 md:mx-4 lg:mx-0 xl:mx-0">
-                        <p className="text-sm sm:text-base font-normal  text-text-secondary font-[Sans_Serif_Collection] w-full ">
+                        <p className="text-sm sm:text-base   text-text-secondary font-[Sans_Serif_Collection] w-full ">
                           Everything you need to launch, manage, and grow your on- <br />demand service business.
                         </p>
                         </div>
@@ -536,7 +408,7 @@ const Home = () => {
                                 {feature?.title}
                               </span>
                             </div>
-                            <p className="text-[8px] sm:text-[8px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-normal leading-md text-text-secondary font-[Sans_Serif_Collection] w-[98%]">
+                            <p className="text-[8px] sm:text-[8px] md:text-[10px] lg:text-[12px] xl:text-[14px]  leading-md text-text-secondary font-[Sans_Serif_Collection] w-[98%]">
                               {feature?.description}
                             </p>
                           </div>
@@ -553,7 +425,7 @@ const Home = () => {
                   className="bg-secondary-background rounded-full
                     p-[18px] sm:p-[22px] md:p-[28px] lg:p-[31px] xl:p-[36px]
                     mx-[14px] sm:mx-[4px] md:mx-[16px] lg:mx-[12px] xl:mx-[16px]
-                    w-full max-w-[1200px] mx-auto
+                    w-full max-w-[1200px] 
                     mt-[26px] sm:mt-[32px] md:mt-[39px] lg:mt-[45px] xl:mt-[52px]"
                   style={{ backgroundImage: `url(/images2/features/img_background.svg)` }}
                 >
@@ -659,7 +531,7 @@ const Home = () => {
 
               {/* Driver Tools Section */}
               <section className="w-full">
-                <div className="bg-secondary-background rounded-full p-[13px] sm:p-[16px] md:p-[20px] lg:p-[23px] xl:p-[26px] mx-[14px] sm:mx-[18px] md:mx-[28px] lg:mx-[36px] xl:mx-[48px] w-full max-w-[1334px] mx-auto mt-[23px] sm:mt-[28px] md:mt-[35px] lg:mt-[40px] xl:mt-[46px]">
+                <div className="bg-secondary-background rounded-full p-[13px] sm:p-[16px] md:p-[20px] lg:p-[23px] xl:p-[26px]  sm:mx-[18px] md:mx-[28px] lg:mx-[36px] xl:mx-[48px] w-full max-w-[1334px] mx-auto mt-[23px] sm:mt-[28px] md:mt-[35px] lg:mt-[40px] xl:mt-[46px]">
                   <div className="flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-12 w-full">
                     {/* Left Content */}
                     <div className="flex flex-col gap-[25px] sm:gap-[31px] md:gap-[38px] lg:gap-[44px] xl:gap-[50px] justify-start items-start w-full lg:w-[58%]">
@@ -671,7 +543,7 @@ const Home = () => {
                           </h2>
                         </div>
 
-                        <p className="text-sm sm:text-base font-normal leading-md text-text-secondary font-[Sans_Serif_Collection] w-full lg:w-[65%] mx-2 sm:mx-0 md:mx-2 lg:mx-4 xl:mx-5">
+                        <p className="text-sm sm:text-base  leading-md text-text-secondary font-[Sans_Serif_Collection] w-full lg:w-[65%] mx-2 sm:mx-0 md:mx-2 lg:mx-4 xl:mx-5">
                           Drivers get smart routing that saves time and fuel. They see earnings clearly and manage their schedule on their own terms.
                         </p>
 
@@ -709,7 +581,7 @@ const Home = () => {
 
                       <div className="flex flex-col gap-[6px] sm:gap-[7px] md:gap-[9px] lg:gap-[10px] xl:gap-[12px]">
                         {driverFeatures?.map((feature, index) => (
-                          <div key={index} className={`flex flex-col gap-[7px] sm:gap-[9px] md:gap-[12px] lg:gap-[16px] xl:gap-[20px] justify-start items-center w-[80%] md:w-full lg:w-full xl:w-full h-auto mx-6 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-0 sm:rounded-xl p-[11px] sm:p-[14px] md:p-[17px] lg:p-[16px] xl:p-[18px] bg-[#F4F4F480]  rounded-[13px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[20px] `}>
+                          <div key={index} className={`flex flex-col gap-[7px] sm:gap-[9px] md:gap-[12px] lg:gap-[16px] xl:gap-[20px] justify-start items-center w-[80%] md:w-full lg:w-full xl:w-full h-auto mx-6 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-0  p-[11px] sm:p-[14px] md:p-[17px] lg:p-[16px] xl:p-[18px] bg-[#F4F4F480]  rounded-[13px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[20px] `}>
                             <div className="flex flex-row justify-start items-center w-full">
                               <img 
                                 src={feature?.icon} 
@@ -734,7 +606,7 @@ const Home = () => {
               {/* Vendor Section */}
                            <section className="w-full">
                 <div 
-                  className="relative bg-secondary-background rounded-full p-[22px] sm:p-[27px] md:p-[33px] lg:p-[38px] xl:p-[44px] mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[26px] xl:mx-[28px] w-full max-w-[1334px] mx-auto mt-[23px] sm:mt-[28px] md:mt-[35px] lg:mt-[40px] xl:mt-[46px]"
+                  className="relative bg-secondary-background rounded-full p-[22px] sm:p-[27px] md:p-[33px] lg:p-[38px] xl:p-[44px] mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[26px] xl:mx-[28px] w-full max-w-[1334px] mt-[23px] sm:mt-[28px] md:mt-[35px] lg:mt-[40px] xl:mt-[46px]"
                   style={{ backgroundImage: `url(/images/img_background_white_a700.svg)` }}
                 >
 
@@ -757,7 +629,7 @@ const Home = () => {
                       <div className="flex flex-row justify-start items-center w-full">
                         {/* Left Content */}
                         <div className="flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[28px] xl:gap-[32px] justify-start items-start w-full lg:w-[42%]">
-                          <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] font-normal leading-md text-text-light-muted font-[Sans_Serif_Collection] w-[86%] ml-[11px] sm:ml-[14px] md:ml-[17px] lg:ml-[19px] xl:ml-[22px]">
+                          <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]  leading-md text-text-light-muted font-[Sans_Serif_Collection] w-[86%] ml-[11px] sm:ml-[14px] md:ml-[17px] lg:ml-[19px] xl:ml-[22px]">
                             Restaurants can manage menus, handle orders, and reach more customers without building their own app. Built-in insights help improve sales and daily operations.
                           </p>
 
@@ -774,7 +646,7 @@ const Home = () => {
                                     {feature?.title}
                                   </span>
                                 </div>
-                                <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] font-normal leading-md text-text-primary font-[Sans_Serif_Collection] w-full">
+                                <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]  leading-md text-text-primary font-[Sans_Serif_Collection] w-full">
                                   {feature?.description}
                                 </p>
                               </div>
@@ -802,7 +674,7 @@ const Home = () => {
                             <ControlSection/>
               {/* Platform Benefits Section */}
               <section className="w-full">
-                <div className="relative bg-secondary-background rounded-full w-full max-w-[1334px] mx-auto mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[26px] xl:mx-[28px] mt-[57px] sm:mt-[70px] md:mt-[85px] lg:mt-[99px] xl:mt-[114px]">
+                <div className="relative bg-secondary-background rounded-full w-full max-w-[1334px]  mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[26px] xl:mx-[28px] mt-[57px] sm:mt-[70px] md:mt-[85px] lg:mt-[99px] xl:mt-[114px]">
                   {/* Background Image */}
                   <img 
                     src="/images2/features/img_rectangle_4.svg" 
@@ -831,7 +703,7 @@ const Home = () => {
                                 />
                               </div>
                               
-                              <span className="text-[12px] sm:text-[13px] md:text-[16px] lg:text-[20px] xl:text-[16px] font-semibold leading-md text-text-primary font-bold">
+                              <span className="text-[12px] sm:text-[13px] md:text-[16px] lg:text-[20px] xl:text-[16px]  leading-md text-text-primary font-bold">
                                 {benefit?.title}
                               </span>
                             </div>
@@ -940,11 +812,10 @@ const Home = () => {
 
                     </div>
                   </div>
-</section>
-
+              </section>
             </div>
           </div>
-        </header>
+        </div>
 
         {/* Testimonial Section */}
 
@@ -958,26 +829,6 @@ const Home = () => {
  
             <FAQ/>
 
-        
-        {/* Footer Section */}
-              
-            <FooterSection /> 
-     
-     {/* 
-      <Hero/>
-      <WhyChoose/>
-      <WhatCan/>
-      <Panels/>
-      <Options/>
-      <WhyBusinesses/>
-      <FAQ/>
-      <Footer/>
-
-      <VendorsSection/>
- */}
-
-
-        
       </main>
     </>
   );

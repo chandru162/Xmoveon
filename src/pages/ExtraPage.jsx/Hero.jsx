@@ -11,8 +11,8 @@ const Hero = () => {
         </div>
 
         <ul className="hidden md:flex items-center gap-8 text-sm text-gray-600">
-          <li className="hover:text-black cursor-pointer">Home</li>
-          <li className="hover:text-black cursor-pointer">Features</li>
+          <li className="hover:text-black cursor-pointer"><a href="/">Home</a></li>
+          <li className="hover:text-black cursor-pointer"><a href="/features">Features</a></li>
           <li className="hover:text-black cursor-pointer">Solutions</li>
           <li className="hover:text-black cursor-pointer">Apps</li>
           <li className="hover:text-black cursor-pointer">Contact</li>
