@@ -54,17 +54,17 @@ const ScaleSuccessSection = () => {
                       
 
                       {/* Main heading */}
-                      <h2 className="relative text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[56px] font-medium leading-[44px] sm:leading-[54px] md:leading-[66px] lg:leading-[78px] xl:leading-[90px] text-text-primary font-[Inter] w-full z-10 mx-4 md:mx-2 lg:mx-8 xl:mx-8 ">
+                      <h2 className="relative text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[56px] font-medium leading-[44px] sm:leading-[54px] md:leading-[66px] lg:leading-[78px] xl:leading-[90px] text-text-primary font-[Inter] w-full z-10 mx-4 md:mx-2 lg:mx-8 xl:mx-16 ">
                       <span className="bg-[#E4FFD4]">Built for Scale, Designed for </span> <br /> Success
                       </h2>
 
                       {/* Content section */}
-                      <div className="flex flex-col justify-start items-center w-full mt-2 lg:mt-4 mx-4 md:mx-2 lg:mx-8 xl:mx-8 xl:mt-6">
+                      <div className="flex flex-col justify-start items-center w-full mt-2 lg:mt-4 mx-4 md:mx-2 lg:mx-8 xl:mx-16 xl:mt-6">
                         <p className="text-sm sm:text-base font-normal leading-md text-text-secondary font-[Sans_Serif_Collection] w-full ">
                           Everything you need to launch, manage, and grow your on- <br />demand service business.
                         </p>
                         </div>
-                        <div className='mx-4 mt-3 md:mx-2 lg:mx-8 xl:mx-8'>
+                        <div className='mx-4 mt-3 md:mx-2 lg:mx-8 xl:mx-16'>
                         <img 
                           src="/public/assets/car.jpg" 
                           alt="Platform Dashboard" 
@@ -80,19 +80,19 @@ const ScaleSuccessSection = () => {
                         {platformFeatures?.map((feature, index) => (
                           <div 
                             key={index}
-                            className={`flex flex-col gap-[6px] sm:gap-[7px] md:gap-[6px] lg:gap-[10px] xl:gap-[12px] justify-start items-center bg-[#F6F6F6] w-full h-auto ${feature?.bgColor} rounded-lg sm:rounded-lg p-[10px] sm:p-[12px] md:p-[14px] lg:p-[17px] xl:p-[20px] mt-2`}
+                            className={`flex flex-col gap-[6px] sm:gap-[7px] md:gap-[6px] lg:gap-[10px] xl:gap-[12px] justify-start items-center  w-full h-auto rounded-lg sm:rounded-lg p-[10px] sm:p-[12px] md:p-[14px] lg:p-[17px] xl:p-[20px] mt-2]`}
                           >
                             <div className="flex flex-row justify-start items-center w-full ">
                               <img 
                                 src={feature?.icon} 
                                 alt={feature?.title} 
-                                className="w-[13px] sm:w-[16px] md:w-[20px] lg:w-[23px] xl:w-[26px] h-[13px] sm:h-[16px] md:h-[20px] lg:h-[23px] xl:h-[26px] "
+                                className="w-[13px] sm:w-[16px] md:w-[20px] lg:w-[23px] xl:w-[26px] h-[13px] sm:h-[16px] md:h-[20px] lg:h-[23px] xl:h-[26px] bg-[#E4FFD4] "
                               />
-                              <span className="text-[11px] sm:text-[14px] md:text-[17px] lg:text-[19px] xl:text-[20px] font-semibold leading-lg text-text-secondary font-[Inter] ml-[4px] sm:ml-[5px] md:ml-[6px] lg:ml-[7px] xl:ml-[8px]">
+                              <span className="text-[11px] sm:text-[14px] md:text-[17px] lg:text-[19px] xl:text-[20px] font-semibold leading-lg  ml-[4px] sm:ml-[5px] md:ml-[6px] lg:ml-[7px] xl:ml-[8px]">
                                 {feature?.title}
                               </span>
                             </div>
-                            <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px]  font-normal leading-md text-text-secondary font-[Sans_Serif_Collection] w-[98%]">
+                            <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px]  font-normal leading-md  w-[98%]">
                               {feature?.description}
                             </p>
                           </div>

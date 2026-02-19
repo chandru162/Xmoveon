@@ -66,7 +66,7 @@ const WhyChooseSection = () => {
                     className="w-full max-w-[320px] lg:max-w-[380px] rounded-[22px]"
                   />
                 </div>
-                <div className="relative mx-8 md:mx-16 lg:mx-4 xl:mx-4">
+                <div className="relative mx-4 md:mx-12 lg:mx-0 xl:mx-4">
                   <h2 className="text-[28px] md:text-[36px] lg:text-[48px] font-semibold text-black leading-[1.2] mb-4">
                    <span className='bg-[#E4FFD4] '>Why Choose </span>Xmoveon
                   </h2>

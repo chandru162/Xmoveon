@@ -90,7 +90,7 @@ const FooterSection = () => {
             </div>
 
             {/* Right Section - Contact */}
-            <div className="lg:w-1/2 mx-0 mt-0 lg:mt-8 lg:mx-20">
+            <div className="lg:w-1/2  mx-0 mt-0 lg:mt-8 lg:mx-20 xl:mt-8 xl:mx-20 ">
               <h3 className="text-[36px] sm:text-[44px] lg:text-[52px] font-semibold text-white mb-4 leading-tight ">
                 Connect
               </h3>

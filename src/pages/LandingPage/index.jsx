@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import HeroSection from './HeroSection';
 import ServicePlatformSection from './ServicePlatformSection';
 import ScaleSuccessSection from './ScaleSuccessSection';
 import LaunchStepsSection from './LaunchStepsSection';
@@ -9,8 +8,8 @@ import AdvancedFeaturesSection from './AdvancedFeaturesSection';
 import WhyChooseSection from './WhyChooseSection';
 import TestimonialsSection from './TestimonialsSection';
 import FooterSection from './FooterSection';
-import Home from '../Home';
-import DemoPopup from './DemoPopup';
+import HeroSection from './HeroSection';
+
 
 
 const LandingPage = () => {
@@ -24,7 +23,7 @@ const LandingPage = () => {
       </Helmet>
       
       <main className="w-full bg-white">
-        <HeroSection />
+        <HeroSection/>
         <ServicePlatformSection />
         <ScaleSuccessSection />
         <LaunchStepsSection />

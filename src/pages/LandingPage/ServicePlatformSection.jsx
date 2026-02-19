@@ -41,7 +41,7 @@ const ServicePlatformSection = () => {
         <div className="bg-white rounded-[42px] p-4 md:p-8 lg:p-12 ">
 
           {/* Header */}
-          <div className="flex flex-col lg:flex-row justify-between gap-10 mb-10 mx-0 lg:mx-8 xl:mx-14  ">
+          <div className="flex flex-col lg:flex-row justify-between gap-10 mb-10 mx-0 lg:mx-8 xl:mx-12  ">
               <div className='relative '> 
                     {/* Title Text */}
                     <h2 className="relative  text-[28px] md:text-[36px] lg:text-[48px] leading-[1.2] font-medium text-black ">
@@ -58,7 +58,7 @@ const ServicePlatformSection = () => {
           </div>
 
           {/* Service Grid */}
-          <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-12 xl:gap-16 mx-4 xl:mx-16 md:mx-12 md:gap-8 lg:mx-12 pt-4 lg:pt-2 xl:pt-1 md:pt-4">
+          <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-12 xl:gap-16 mx-4 xl:mx-16 md:mx-8 md:gap-8 lg:mx-12 pt-4 lg:pt-2 xl:pt-1 md:pt-4">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -82,11 +82,11 @@ const ServicePlatformSection = () => {
                 "
               >
                 <div className="flex items-center gap-5">
-                  <div className="bg-[#e4ffd4] rounded-[12px] ">
+                  <div className="bg-[#e4ffd4] rounded-[12px] text-[#5C9B35] ">
                     <img
                       src={service.icon}
                       alt=""
-                      className="w-7 h-7"
+                      className="w-7 h-7  "
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-black  ">

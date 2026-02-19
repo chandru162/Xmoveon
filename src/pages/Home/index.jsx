@@ -1,24 +1,13 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Button from '../../components/ui/Button';
-import EditText from '../../components/ui/EditText';
 import FooterSection from '../LandingPage/FooterSection';
-import Link from '../../components/ui/Link';
-import Ul from '../../components/ui/UI';
 import ControlSection from './ControlSection';
 import TestimonialsSection from '../LandingPage/TestimonialsSection';
 import WhyChooseSection from '../LandingPage/WhyChooseSection';
-import Hero from '../LandingPage/Hero';
-import WhyChoose from '../LandingPage/WhyChoose';
-import WhatCan from '../LandingPage/WhatCan';
-import Panels from '../LandingPage/panels';
-import Options from '../LandingPage/Options';
-import WhyBusinesses from '../LandingPage/WhyBusiness';
 import FAQ from '../LandingPage/FAQ';
 import EveryoneWins from '../LandingPage/EveryOne';
-import Footer from '../LandingPage/Last';
-import VendorsSection from '../LandingPage/Vendor';
-import HeroSection from '../LandingPage/HeroSection';
+
 
 
 const Home = () => {

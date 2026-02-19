@@ -29,7 +29,7 @@ const LaunchStepsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-[42px] p-6 sm:p-8 lg:p-12 mx-0">
           {/* Header */}
-          <div className="mb-12 lg:mb-16 mx-0 lg:mx-5 md:mx-2 xl:mx-12">
+          <div className="mb-12 lg:mb-16 mx-0 lg:mx-8 md:mx-2 xl:mx-14">
             <div className="relative">
               <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-text-primary ">
                 Launch in   <span className="bg-[#E4FFD4]">4 Simple Steps </span>
@@ -54,7 +54,7 @@ const LaunchStepsSection = () => {
                 key={index}
                 className="bg-[#f4ffef] rounded-[42px] p-4 lg:p-10 ps-10 lg:ps-12  hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="text-[40px] sm:text-[48px] lg:text-[56px] font-bold text-[#9cee69] mb-6 lg:mb-4">
+                <div className="text-[40px] sm:text-[48px] lg:text-[56px] font-bold text-[#5C9B35] mb-6 lg:mb-4">
                   {step?.number}
                 </div>
                 <h3 className="text-lg sm:text-lg font-bold text-text-secondary mb-4">

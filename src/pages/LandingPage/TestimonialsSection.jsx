@@ -43,10 +43,10 @@ const TestimonialsSection = () => {
         <div className="border rounded-[38px] p-8 relative">
 
           {/* Header */}
-          <h3 className="text-[36px] lg:text-[48px] font-medium mx-0  lg:mx-12 md:mx-4 xl:mx-16">
+          <h3 className="text-[36px] lg:text-[48px] font-medium mx-0  lg:mx-12 md:mx-2 xl:mx-4">
             <span className="bg-[#E4FFD4] px-0">Real Voices</span>
           </h3>
-          <p className="text-gray-500 mt-4 mx-0  lg:mx-12 md:mx-8 xl:mx-16 ">
+          <p className="text-gray-500 mt-4 mx-0  lg:mx-12 md:mx-2 xl:mx-4 ">
             People who built their business on this platform.
           </p>
 
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Pagination */}
-          <div className="flex justify-end items-center gap-10 mt-8">
+          <div className="flex justify-end items-center gap-4 mt-8  sm:me-4 md:me-6 lg:me-8 xl:me-12 ">
             <Button
               text="<"
               padding="10px 18px"
