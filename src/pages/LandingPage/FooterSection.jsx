@@ -56,7 +56,7 @@ const FooterSection = () => {
                   <h3 className="text-lg sm:text-xl font-semibold text-white mb-6  mx-4 lg:mx-4">
                     About
                   </h3>
-                  <nav className="space-y-4 mx-4 lg:mx-4 lg:mx-4">
+                  <nav className="space-y-4 mx-4 lg:mx-4 ">
                     {aboutLinks?.map((link, index) => (
                       <a 
                         key={index}

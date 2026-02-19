@@ -73,7 +73,7 @@ const AdminControl = () => {
               immediately across the platform.
             </p>
             <div className="flex flex-row m-2">
-            <button className=" flex items-center gap-3 bg-black text-white px-6 py-2 md:px-6 md:py-2 lg:px-8 xl:py-2 xl:px-8 xl:py-2 rounded-full text-sm hover:opacity-90 mx-4 md:mx-8 xl:mx-12 lg:mx-12">
+            <button className=" flex items-center gap-3 bg-black text-white px-6 py-2 md:px-6 md:py-2 lg:px-8  xl:px-8 xl:py-2 rounded-full text-sm hover:opacity-90 mx-4 md:mx-8 xl:mx-12 lg:mx-12">
               Access
             </button>
             
