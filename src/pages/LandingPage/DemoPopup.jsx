@@ -12,7 +12,7 @@ const DemoPopup = () => {
   if (!open) return null;
 
   return (
-  
+
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-2 sm:px-4">
       <div className="relative w-full max-w-md rounded-2xl bg-gradient-to-b from-[#0b0b0b] to-[#141414] p-4 sm:p-6 lg:p-8 shadow-2xl">
 

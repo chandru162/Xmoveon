@@ -7,6 +7,7 @@ import TestimonialsSection from '../LandingPage/TestimonialsSection';
 import WhyChooseSection from '../LandingPage/WhyChooseSection';
 import FAQ from '../LandingPage/FAQ';
 import EveryoneWins from '../LandingPage/EveryOne';
+import ScaleSuccessSection from '../LandingPage/ScaleSuccessSection';
 
 
 
@@ -268,286 +269,351 @@ const Home = () => {
       </Helmet>
       <main className="w-full bg-secondary-background">
         {/* Header */}
-        <div className="w-full bg-secondary-background">
-          <div className=" max-w-[1440px] md:max-w-[1100px] lg:max-w-[1200px] xl:max-w-[1300px]  px-4 sm:px-6 lg:px-8">
+        <header className="w-full bg-secondary-background">
+          <div className=" max-w-[1440px] md:max-w-[1200px] lg:max-w-[1450px] xl:max-w-[1600px]  px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col justify-center items-center w-full gap-[23px] sm:gap-[28px] md:gap-[35px] lg:gap-[40px] xl:gap-[46px]">
-              {/* Technology Stack Section */}
-            <section className="flex justify-center items-center w-full">
-                  <div className="bg-secondary-background rounded-full
-                    p-[20px] sm:p-[24px] md:p-[42px] lg:p-[60px] xl:p-[76px]
-                    w-full max-w-[1200px] xl:max-w-[1350px] 
-                    mx-[10px] sm:mx-[20px] md:mx-[48px] lg:mx-[36px] xl:mx-[36px]
-                    -mt-[6px] sm:-mt-[7px] md:-mt-[6px] lg:-mt-[10px] xl:-mt-[48px]">
+              {/* Navigation */}
 
-                  {/*  MAIN FIX: flex-wrap */}
-                  <div className="flex flex-wrap lg:flex-nowrap justify-start items-start gap-4 sm:gap-4 md:gap-12 lg:gap-12 xl:gap-16">
+              <div className="flex flex-col justify-start items-center w-full">
+                <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
+                  {/* Hero Section */}
+                <section className="w-full bg-secondary-background">
+  <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12 xl:px-20">
 
-                    {/* Flutter */}
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images2/features/img_vector.svg"
-                        alt="Flutter"
-                        className="w-[20px] sm:w-[24px] lg:w-[28px] xl:w-[32px]"
-                      />
-                      <span className="text-[14px] lg:text-[18px] xl:text-[22px] font-semibold">
-                        Flutter
-                      </span>
-                    </div>
+    <div className="
+      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
+      bg-secondary-background
+      px-4 py-6
+      sm:px-6 sm:py-8
+      lg:px-12 lg:py-12
+    ">
+      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
 
-                    {/* Next.js */}
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images2/features/img_vector.svg"
-                        alt="Next.js"
-                        className="w-[20px] sm:w-[24px] lg:w-[28px] xl:w-[30px]"
-                      />
-                      <span className="text-[14px] lg:text-[18px] xl:text-[22px] font-semibold">
-                        Next.js
-                      </span>
-                    </div>
+        {/* LEFT CONTENT */}
+        <div className="w-full lg:w-[48%]">
+          <h1 className="
+            text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px]
+            font-medium text-text-primary leading-[1.15]
+          ">
+            Connect <br />
+            <span className="bg-[#E4FFD4] px-1">restaurants and</span> <br />
+            customers <br />
+            instantly
+          </h1>
 
-                    {/* React.js */}
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images2/features/img_logos_react_original.svg"
-                        alt="React.js"
-                        className="w-[20px] sm:w-[24px] lg:w-[28px] xl:w-[36px]"
-                      />
-                      <span className="text-[14px] lg:text-[18px] xl:text-[22px] font-semibold">
-                        React.js
-                      </span>
-                    </div>
+          <p className="
+            mt-4
+            text-sm sm:text-base
+            text-text-secondary
+            max-w-[520px]
+          ">
+            Build your multi-vendor food delivery platform with our proven solution.
+            Restaurants gain exposure, drivers earn commissions, and you control the
+            entire ecosystem from one powerful admin panel.
+          </p>
 
-                    {/* Node.js */}
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images2/features/img_logos_nodejs_original.svg"
-                        alt="Node.js"
-                        className="w-[20px] sm:w-[24px] lg:w-[28px] xl:w-[36px]"
-                      />
-                      <span className="text-[14px] lg:text-[18px] xl:text-[22px] font-semibold">
-                        Node.js
-                      </span>
-                    </div>
+          <div className="mt-6">
+            <Button
+              text="Try Our Demo"
+              text_font_size="16px"
+              text_font_weight="600"
+              text_color="#0f0f0f"
+              fill_background_color="#9cee69"
+              border_border_radius="999px"
+              padding="14px 28px"
+              text_align="center"
+            />
+          </div>
+        </div>
 
-                    {/* SQL */}
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images2/features/img_vector.svg"
-                        alt="SQL"
-                        className="w-[20px] sm:w-[24px] lg:w-[28px] xl:w-[36px]"
-                      />
-                      <span className="text-[14px] lg:text-[18px] xl:text-[22px] font-semibold">
-                        SQL
-                      </span>
-                    </div>
+        {/* RIGHT IMAGE */}
+        <div className="w-full lg:w-[52%] flex justify-center lg:justify-end">
+          <div className="
+            relative
+            w-full
+            max-w-[360px]
+            sm:max-w-[420px]
+            md:max-w-[460px]
+            lg:max-w-[520px]
+          ">
+            <img
+              src="/public/assets/android.jpg"
+              alt="Platform Illustration"
+              className="
+                w-full
+                rounded-[24px] lg:rounded-[28px]
+                object-cover
+              "
+            />
 
-                    {/* Kotlin */}
-                    <div className="flex items-center gap-3">
-                      <img
-                        src="/images2/features/img_vector_deep_purple_400.svg"
-                        alt="Kotlin"
-                        className="w-[20px] sm:w-[24px] lg:w-[28px] xl:w-[36px]"
-                      />
-                      <span className="text-[14px] lg:text-[18px] xl:text-[22px] font-semibold">
-                        Kotlin
-                      </span>
-                    </div>
+            {/* OPTIONAL PILL BUTTON LIKE IMAGE */}
+            <button
+              className="
+                absolute bottom-4 right-4
+                bg-[#9cee69]
+                text-black
+                text-sm font-medium
+                px-4 py-2
+                rounded-full
+              "
+            >
+              Request demo
+            </button>
+          </div>
+        </div>
 
-                  </div>
+      </div>
+    </div>
+  </div>
+</section>
                 </div>
-              </section>
+              </div>
+              {/* Technology Stack Section */}
+           <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
+
+                  <div
+                    className="
+                      bg-secondary-background
+                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
+                      px-4 py-5
+                      sm:px-6 sm:py-6
+                      lg:px-12 lg:py-8
+                    "
+                  >
+                    <div
+                      className="
+                        flex flex-wrap
+                        justify-center
+                        lg:justify-between
+                        items-center
+                        gap-x-6 gap-y-4
+                        sm:gap-x-8
+                        lg:gap-x-12
+                        xl:gap-x-16
+                      "
+                    >
+
+                      {/* Flutter */}
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images2/features/img_vector.svg"
+                          alt="Flutter"
+                          className="w-5 sm:w-6 lg:w-7 xl:w-8"
+                        />
+                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
+                          Flutter
+                        </span>
+                      </div>
+
+                      {/* Next.js */}
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images2/features/img_vector.svg"
+                          alt="Next.js"
+                          className="w-5 sm:w-6 lg:w-7 xl:w-8"
+                        />
+                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
+                          Next.js
+                        </span>
+                      </div>
+
+                      {/* React.js */}
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images2/features/img_logos_react_original.svg"
+                          alt="React.js"
+                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
+                        />
+                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
+                          React.js
+                        </span>
+                      </div>
+
+                      {/* Node.js */}
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images2/features/img_logos_nodejs_original.svg"
+                          alt="Node.js"
+                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
+                        />
+                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
+                          Node.js
+                        </span>
+                      </div>
+
+                      {/* SQL */}
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images2/features/img_vector.svg"
+                          alt="SQL"
+                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
+                        />
+                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
+                          SQL
+                        </span>
+                      </div>
+
+                      {/* Kotlin */}
+                      <div className="flex items-center gap-3">
+                        <img
+                          src="/images2/features/img_vector_deep_purple_400.svg"
+                          alt="Kotlin"
+                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
+                        />
+                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
+                          Kotlin
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+           </section>
 
 
               {/* Built for Scale Section */}
-              <section className="w-full">
-                <div className="bg-secondary-background rounded-full p-[25px] sm:p-[31px] md:p-[38px] lg:p-[52px] xl:p-[60px]  sm:mx-[18px] md:mx-[22px] lg:mx-[36px] xl:mx-[40px] w-full max-w-[1334px] mx-auto">
-                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full">
-                    {/* Left Content */}
-                    <div className="flex flex-col justify-start items-start w-full lg:w-[40%] xl:w-[45%] relative">
-                      {/* Background highlight */}
-                      
+                  <ScaleSuccessSection/>
 
-                      {/* Main heading */}
-                      <h2 className="relative text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-medium leading-[30px] sm:leading-[34px] md:leading-[46px] lg:leading-[58px] xl:leading-[70px] text-text-primary font-[Inter] w-full z-10 mx-0 md:mx-3 lg:mx-0 xl:mx-0 ">
-                        Built for Scale, Designed for <br /> Success
-                      </h2>
+              {/* Customer Experience Section */}
+             <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
 
-                      {/* Content section */}
-                      <div className="flex flex-col justify-start items-center w-full mt-2 lg:mt-4 mx-0 md:mx-4 lg:mx-0 xl:mx-0">
-                        <p className="text-sm sm:text-base   text-text-secondary font-[Sans_Serif_Collection] w-full ">
-                          Everything you need to launch, manage, and grow your on- <br />demand service business.
-                        </p>
-                        </div>
-                        <div className='mx-0 mt-3 md:mx-4 lg:mx-0 xl:mx-0'>
-                        <img 
-                          src="/public/assets/car.jpg" 
-                          alt="Platform Dashboard" 
-                          className="w-full max-w-[200px] sm:max-w-[288px] md:max-w-[300px] lg:max-w-[320px] xl:max-w-[370px] h-auto rounded-[10px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[26px] mt-2"
-                        />
-                      </div>
-                      </div>
-                    
+                  <div
+                    className="
+                      bg-secondary-background
+                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
+                      px-4 py-5
+                      sm:px-6 sm:py-6
+                      lg:px-10 lg:py-10
+                      mt-8
+                    "
+                    style={{ backgroundImage: `url(/images2/features/img_background.svg)` }}
+                  >
+                    <div className="flex flex-col gap-8 lg:gap-12">
 
-                    {/* Right Features Grid */}
-                  
-                    <div className="w-[80%] lg:w-[50%] md:w-[80%] xl:w-[47%]">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-[6px] sm:gap-[7px] md:gap-[15px] lg:gap-[24px] w-full mt-2 md:mt-4 lg:mt-10 xl:mt-16 mx-0 md:mx-4 lg:mx-0 xl:mx-0">
-                        {platformFeatures?.map((feature, index) => (
-                          <div 
-                            key={index}
-                            className={`flex flex-col gap-[6px] sm:gap-[7px] md:gap-[9px] lg:gap-[10px] xl:gap-[12px] justify-start items-center w-full h-auto rounded-lg sm:rounded-xl p-[10px] sm:p-[12px] md:p-[15px] lg:p-[20px] xl:p-[24px]  bg-[#F4F4F480] `}
-                          >
-                            <div className="flex flex-row justify-start items-center w-full ">
-                              <img 
-                                src={feature?.icon} 
-                                alt={feature?.title} 
-                                className="w-[13px] sm:w-[16px] md:w-[20px] lg:w-[23px] xl:w-[26px] h-[13px] sm:h-[16px] md:h-[20px] lg:h-[23px] xl:h-[26px]"
+                      {/* MAIN ROW */}
+                      <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
+
+                        {/* LEFT CONTENT */}
+                        <div className="w-full lg:w-[45%] flex flex-col gap-5">
+
+                          {/* FIRST FEATURE – highlighted */}
+                          <div className="bg-[#F4F4F480] rounded-[18px] p-4">
+                            <div className="flex items-center gap-3">
+                              <img
+                                src="/images2/features/img_album.svg"
+                                alt="Browse and order"
+                                className="w-5 h-5"
                               />
-                              <span className="text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-semibold leading-lg text-text-secondary font-[Inter] ml-[4px] sm:ml-[5px] md:ml-[6px] lg:ml-[7px] xl:ml-[8px]">
-                                {feature?.title}
-                              </span>
+                              <h4 className="text-base sm:text-lg font-semibold">
+                                Browse and order
+                              </h4>
                             </div>
-                            <p className="text-[8px] sm:text-[8px] md:text-[10px] lg:text-[12px] xl:text-[14px]  leading-md text-text-secondary font-[Sans_Serif_Collection] w-[98%]">
-                              {feature?.description}
+                            <p className="text-sm sm:text-base mt-2 text-text-secondary">
+                              Explore menus from dozens of restaurants in seconds.
                             </p>
                           </div>
-                        ))}
+
+                          {/* OTHER FEATURES */}
+                          <div className="flex flex-col gap-4">
+                            {customerFeatures.slice(1).map((feature, index) => (
+                              <div
+                                key={index}
+                                className="bg-[#F4F4F480] rounded-[18px] p-4"
+                              >
+                                <div className="flex items-center gap-3">
+                                  <img
+                                    src={feature.icon}
+                                    alt={feature.title}
+                                    className="w-5 h-5"
+                                  />
+                                  <h4 className="text-base sm:text-lg font-semibold">
+                                    {feature.title}
+                                  </h4>
+                                </div>
+                                <p className="text-sm sm:text-base mt-2 text-text-secondary">
+                                  {feature.description}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* RIGHT IMAGE */}
+                        <div className="w-full lg:w-[55%] flex justify-center lg:justify-end">
+                          <img
+                            src="/public/assets/people.jpg"
+                            alt="Customer Experience"
+                            className="
+                              w-full
+                              max-w-[320px]
+                              sm:max-w-[420px]
+                              lg:max-w-[480px]
+                              xl:max-w-[540px]
+                              rounded-[22px]
+                              object-cover
+                            "
+                          />
+                        </div>
                       </div>
+
+                      {/* BOTTOM BAR */}
+                      <div className="flex justify-between items-center border-t border-border-secondary pt-4 w-full lg:w-[45%]">
+                        <button className="px-4 py-2 text-xs border rounded-lg">
+                          1 / 4
+                        </button>
+
+                        <button className="flex items-center gap-2 px-6 py-2 bg-black text-white rounded-lg text-xs">
+                          Discover
+                          <img
+                            src="/images2/features/img_iconoirarrowtr_white_a700.svg"
+                            alt="Arrow"
+                            className="w-4 h-4"
+                          />
+                        </button>
+                      </div>
+
                     </div>
                   </div>
+
                 </div>
               </section>
 
-              {/* Customer Experience Section */}
-             <section className="w-[95%] md:w-full lg:w-full xl:w-full">
-                <div
-                  className="bg-secondary-background rounded-full
-                    p-[18px] sm:p-[22px] md:p-[28px] lg:p-[31px] xl:p-[36px]
-                    mx-[14px] sm:mx-[4px] md:mx-[16px] lg:mx-[12px] xl:mx-[16px]
-                    w-full max-w-[1200px] 
-                    mt-[26px] sm:mt-[32px] md:mt-[39px] lg:mt-[45px] xl:mt-[52px]"
-                  style={{ backgroundImage: `url(/images2/features/img_background.svg)` }}
-                >
-                  <div className="flex flex-col gap-[27px] sm:gap-[33px] md:gap-[40px] lg:gap-[46px] xl:gap-[54px] w-full">
-
-                    {/*  MAIN CONTENT ROW */}
-                    <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-6 lg:gap-10">
-
-                      {/* LEFT CONTENT */}
-                      <div className="flex flex-col gap-[22px] sm:gap-[27px] md:gap-[33px] lg:gap-[38px] xl:gap-[44px]
-                        w-full lg:w-[42%]">
-
-                        {/* First Feature */}
-                        <div className="flex flex-col gap-[7px] sm:gap-[9px] md:gap-[11px] lg:gap-[12px] xl:gap-[12px]
-                         bg-[#F4F4F480]  rounded-[13px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[20px]
-                          p-[2px] sm:p-[2px] md:p-[4px] lg:p-[6px] xl:p-[12px] mx-0 lg:mx-6 xl:mx-10 md:mx-4 ">
-
-                          <div className="flex items-center mx-2">
-                            <img
-                              src="/images2/features/img_album.svg"
-                              alt="Browse and order"
-                              className="w-[16px] sm:w-[18px] md:w-[20px] lg:w-[23px] xl:w-[26px]"
-                            />
-                            <span className="ml-2 text-[14px] md:text-[17px] lg:text-[19px] xl:text-[22px] font-semibold ">
-                              Browse and order
-                            </span>
-                          </div>
-
-                          <p className="text-[10px] sm:text-[12px] md:text-[14px] xl:text-[16px] mx-4 ">
-                            Explore menus from dozens of <br />restaurants in seconds.
-                          </p>
-                        </div>
-
-                        {/* Feature List */}
-                        <div className="flex flex-col gap-[18px] sm:gap-[22px] md:gap-[26px] lg:gap-[30px] mx-0 lg:mx-6 xl:mx-10 md:mx-4 ">
-                          {customerFeatures?.slice(1)?.map((feature, index) => (
-                            <div key={index} className="flex flex-col gap-4 bg-[#F4F4F480]  rounded-[13px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[20px] p-4" >
-                              <div className="flex items-center ">
-                                <img
-                                  src={feature?.icon}
-                                  alt={feature?.title}
-                                  className="w-[16px] sm:w-[18px] md:w-[20px] lg:w-[23px] xl:w-[26px]"
-                                />
-                                <span className="ml-2 text-[14px] md:text-[17px] lg:text-[19px] xl:text-[22px] font-semibold">
-                                  {feature?.title}
-                                </span>
-                              </div>
-                              <p className="text-[10px] sm:text-[12px] md:text-[14px] xl:text-[16px] text-text-light-muted">
-                                {feature?.description}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/*  RIGHT IMAGE – responsive */}
-                      <div className=' max-w-[260px] sm:max-w-[300px] md:max-w-[400px]
-                          lg:max-w-[450px] xl:max-w-[550px] sm:h-[200px] md:h-[280px] lg:h-[360px] xl:h-[500px] mx-2 md:mx-0 lg:mx-4 xl:mx-16 '>
-                      <img
-                        src="/public/assets/people.jpg"
-                        alt="Customer Experience"
-                        className=" rounded-md  md:rounded-lg lg:rounded-xl xl:rounded-xl 
-                        "
-                      />
-                      </div>
-                    </div>
-
-                    {/*  BOTTOM ACTIONS */}
-                    <div className="flex justify-between items-center w-full lg:w-[42%] border-t border-border-secondary pt-4">
-                      <Button
-                        text="1 / 4"
-                        text_font_size="text-xs"
-                        text_font_weight="font-medium"
-                        text_color="text-text-secondary"
-                        border_border_radius="rounded-lg"
-                        padding="px-4 py-2"
-                        className="bg-transparent border border-text-secondary"
-                      />
-
-                      <Button
-                        text="Discover"
-                        text_font_size="text-xs"
-                        text_font_weight="font-medium"
-                        text_color="#fff"
-                        fill_background_color="#0f0f0f"
-                        border_border_radius="rounded-lg"
-                        padding="px-6 py-2"
-                        className="flex items-center gap-2"
-                      >
-                        <span>Discover</span>
-                        <img
-                          src="/images2/features/img_iconoirarrowtr_white_a700.svg"
-                          alt="Arrow"
-                          className="w-4 h-4"
-                        />
-                      </Button>
-                    </div>
-
-                  </div>
-                </div>
-             </section>
-
 
               {/* Driver Tools Section */}
-              <section className="w-full">
-                <div className="bg-secondary-background rounded-full p-[13px] sm:p-[16px] md:p-[20px] lg:p-[23px] xl:p-[26px]  sm:mx-[18px] md:mx-[28px] lg:mx-[36px] xl:mx-[48px] w-full max-w-[1334px] mx-auto mt-[23px] sm:mt-[28px] md:mt-[35px] lg:mt-[40px] xl:mt-[46px]">
-                  <div className="flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-12 w-full">
-                    {/* Left Content */}
-                    <div className="flex flex-col gap-[25px] sm:gap-[31px] md:gap-[38px] lg:gap-[44px] xl:gap-[50px] justify-start items-start w-full lg:w-[58%]">
-                      <div className="flex flex-col gap-[12px] sm:gap-[15px] md:gap-[18px] lg:gap-[21px] xl:gap-[24px] justify-start items-start w-full">
-                        {/* Heading with highlight */}
-                        <div className="relative w-full mx-2 sm:mx-0 md:mx-2 lg:mx-4 xl:mx-4">
-                          <h2 className="relative text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-medium leading-[36px] sm:leading-[40px] md:leading-[52px] lg:leading-[64px] xl:leading-[76px] text-text-primary font-[Inter] w-full z-10">
-                            Tools that help <br /> <span className='mx-1'>them earn more</span>
-                          </h2>
-                        </div>
+             <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
 
-                        <p className="text-sm sm:text-base  leading-md text-text-secondary font-[Sans_Serif_Collection] w-full lg:w-[65%] mx-2 sm:mx-0 md:mx-2 lg:mx-4 xl:mx-5">
+                  <div
+                    className="
+                      bg-secondary-background
+                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
+                      px-4 py-5
+                      sm:px-6 sm:py-6
+                      lg:px-10 lg:py-10
+                      mt-10
+                    "
+                  >
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
+
+                      {/* LEFT SIDE */}
+                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
+
+                        {/* HEADING */}
+                        <h2 className="text-[28px] sm:text-[34px] lg:text-[48px] font-medium leading-tight">
+                          Tools that help <br />
+                          <span className="bg-[#E4FFD4] px-1">them earn more</span>
+                        </h2>
+
+                        {/* DESCRIPTION */}
+                        <p className="text-sm sm:text-base text-text-secondary max-w-lg">
                           Drivers get smart routing that saves time and fuel. They see earnings clearly and manage their schedule on their own terms.
                         </p>
 
-                        <div className="flex flex-row justify-start items-center w-full gap-4 md:gap-6 lg:gap-10 xl:gap-12 mx-2 sm:mx-0 md:mx-4 lg:mx-4 xl:mx-6 mt-2">
+                        {/* CTA */}
+                        <div className="flex items-center gap-4">
                           <Button
                             text="Learn"
                             text_font_size="text-xs"
@@ -555,166 +621,245 @@ const Home = () => {
                             text_color="#fff"
                             fill_background_color="#0f0f0f"
                             border_border_radius="rounded-lg"
-                            padding="pt-[5px] sm:pt-[6px] md:pt-[8px] lg:pt-[9px] xl:pt-[10px] pr-[11px] sm:pr-[14px] md:pr-[17px] lg:pr-[19px] xl:pr-[22px] pb-[5px] sm:pb-[6px] md:pb-[8px] lg:pb-[9px] xl:pb-[10px] pl-[11px] sm:pl-[14px] md:pl-[17px] lg:pl-[19px] xl:pl-[22px]"
-                            className="border-0 border-solid border-text-secondary"
+                            padding="px-4 py-2"
                           />
-                          <img 
-                            src="/images2/features/img_group_1000001743.svg" 
-                            alt="Driver Earnings" 
-                            className="w-[61px] sm:w-[75px] md:w-[92px] lg:w-[106px] xl:w-[122px] h-[24px] sm:h-[29px] md:h-[36px] lg:h-[42px] xl:h-[48px] "
+                          <img
+                            src="/images2/features/img_group_1000001743.svg"
+                            alt="Driver Earnings"
+                            className="h-8"
                           />
                         </div>
+
+                        {/* IMAGE */}
+                        <img
+                          src="/public/assets/car.jpg"
+                          alt="Driver Dashboard"
+                          className="
+                            w-full
+                            max-w-[340px]
+                            sm:max-w-[420px]
+                            lg:max-w-[460px]
+                            rounded-[22px]
+                            object-cover
+                            mt-4
+                          "
+                        />
                       </div>
 
-                      {/* Dashboard image */}
-                      <img 
-                        src="/public/assets/car.jpg" 
-                        alt="Driver Dashboard" 
-                        className="w-full max-w-[305px] sm:max-w-[374px] md:max-w-[458px] lg:max-w-[530px] xl:max-w-[550px] h-full xl:max-h-[270px] rounded-[13px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[26px] mx-2 sm:mx-0 md:mx-2 lg:mx-4 xl:mx-4"
-                      />
-                    </div>
-                    {/* Right Content - Driver Features */}
-                    <div className="flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[28px] xl:gap-[32px] justify-start items-start w-full lg:w-[40%] sm:me-8 md:me-20 lg:me-32 xl:me-36 overflow-hidden">
-                      <span className="text-[23px] sm:text-[28px] md:text-[35px] lg:text-[48px] xl:text-[48px] font-semibold leading-3xl text-primary-background font-[Inter] mx-6 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-0 ">
-                        Drivers
-                      </span>
+                      {/* RIGHT SIDE */}
+                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
 
-                      <div className="flex flex-col gap-[6px] sm:gap-[7px] md:gap-[9px] lg:gap-[10px] xl:gap-[12px]">
-                        {driverFeatures?.map((feature, index) => (
-                          <div key={index} className={`flex flex-col gap-[7px] sm:gap-[9px] md:gap-[12px] lg:gap-[16px] xl:gap-[20px] justify-start items-center w-[80%] md:w-full lg:w-full xl:w-full h-auto mx-6 sm:mx-0 md:mx-0 lg:mx-0 xl:mx-0  p-[11px] sm:p-[14px] md:p-[17px] lg:p-[16px] xl:p-[18px] bg-[#F4F4F480]  rounded-[13px] sm:rounded-[16px] md:rounded-[20px] lg:rounded-[23px] xl:rounded-[20px] `}>
-                            <div className="flex flex-row justify-start items-center w-full">
-                              <img 
-                                src={feature?.icon} 
-                                alt={feature?.title} 
-                                className="w-[13px] sm:w-[16px] md:w-[20px] lg:w-[23px] xl:w-[20px] h-[13px] sm:h-[16px] md:h-[20px] lg:h-[23px] xl:h-[26px]"
-                              />
-                              <span className="text-[11px] sm:text-[14px] md:text-[17px] lg:text-[19px] xl:text-[18px] font-semibold leading-lg text-text-secondary font-[Inter] ml-[4px] sm:ml-[5px] md:ml-[6px] lg:ml-[7px] xl:ml-[8px]">
-                                {feature?.title}
-                              </span>
+                        <span className="text-[24px] sm:text-[32px] lg:text-[48px] font-semibold text-primary-background">
+                          Drivers
+                        </span>
+
+                        <div className="flex flex-col gap-4">
+                          {driverFeatures.map((feature, index) => (
+                            <div
+                              key={index}
+                              className="
+                                bg-[#F4F4F480]
+                                rounded-[20px]
+                                p-4 sm:p-5
+                              "
+                            >
+                              <div className="flex items-center gap-3">
+                                <img
+                                  src={feature.icon}
+                                  alt={feature.title}
+                                  className="w-5 h-5"
+                                />
+                                <h4 className="text-base sm:text-lg font-semibold">
+                                  {feature.title}
+                                </h4>
+                              </div>
+                              <p className="text-sm sm:text-base text-text-secondary mt-2">
+                                {feature.description}
+                              </p>
                             </div>
-                            <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[14px]  text-text-secondary font-[Sans_Serif_Collection] w-full">
-                              {feature?.description}
-                            </p>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
+
                       </div>
                     </div>
                   </div>
+
                 </div>
-              </section>
+            </section>
 
               {/* Vendor Section */}
-                           <section className="w-full">
-                <div 
-                  className="relative bg-secondary-background rounded-full p-[22px] sm:p-[27px] md:p-[33px] lg:p-[38px] xl:p-[44px] mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[26px] xl:mx-[28px] w-full max-w-[1334px] mt-[23px] sm:mt-[28px] md:mt-[35px] lg:mt-[40px] xl:mt-[46px]"
-                  style={{ backgroundImage: `url(/images/img_background_white_a700.svg)` }}
-                >
+             <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
 
-                  <div className="flex flex-row justify-start items-center w-full h-auto">
-                    <div className="flex flex-col gap-[76px] sm:gap-[93px] md:gap-[114px] lg:gap-[132px] xl:gap-[152px] justify-start items-center w-full">
-                      {/* Header section */}
-                      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center w-full gap-4">
-                        <span className="text-[23px] sm:text-[28px] md:text-[35px] lg:text-[40px] xl:text-[46px] font-semibold leading-3xl text-primary-background font-[Inter] mx-2 md:mx-8 lg:mx-10 xl:mx-12 mt-4">
-                          Vendors
-                        </span>
-                        <div className="relative w-full lg:w-[68%]">
-                          
-                          <h2 className="relative text-[30px] sm:text-[28px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-medium leading-[44px] sm:leading-[54px] md:leading-[66px] lg:leading-[76px] xl:leading-[88px] text-text-primary font-[Inter] w-full z-10 mx-2 md:mx-0 lg:mx-0 xl:mx-0">
-                            Your restaurant grows on <br />this platform
-                          </h2>
-                        </div>
+                  <div
+                    className="
+                      bg-secondary-background
+                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
+                      px-4 py-5
+                      sm:px-6 sm:py-6
+                      lg:px-10 lg:py-10
+                      mt-12
+                    "
+                  >
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
+
+                      {/* LEFT SIDE */}
+                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
+
+                        {/* HEADING */}
+                        <h2 className="text-[28px] sm:text-[34px] lg:text-[48px] font-medium leading-tight">
+                          Your restaurant grows <br />
+                          <span className="bg-[#E4FFD4] px-1">on this platform</span>
+                        </h2>
+
+                        {/* DESCRIPTION */}
+                        <p className="text-sm sm:text-base text-text-secondary max-w-lg">
+                          Restaurants can manage menus, handle orders, and reach more customers without building their own app. Built-in insights help them grow faster.
+                        </p>
+
+                        {/* IMAGE */}
+                        <img
+                          src="/public/assets/restarunt.jpg"
+                          alt="Restaurant Dashboard"
+                          className="
+                            w-full
+                            max-w-[360px]
+                            sm:max-w-[440px]
+                            lg:max-w-[520px]
+                            rounded-[22px]
+                            object-cover
+                            mt-4
+                          "
+                        />
                       </div>
 
-                      {/* Content section */}
-                      <div className="flex flex-row justify-start items-center w-full">
-                        {/* Left Content */}
-                        <div className="flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[28px] xl:gap-[32px] justify-start items-start w-full lg:w-[42%]">
-                          <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]  leading-md text-text-light-muted font-[Sans_Serif_Collection] w-[86%] ml-[11px] sm:ml-[14px] md:ml-[17px] lg:ml-[19px] xl:ml-[22px]">
-                            Restaurants can manage menus, handle orders, and reach more customers without building their own app. Built-in insights help improve sales and daily operations.
-                          </p>
+                      {/* RIGHT SIDE */}
+                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
 
-                          <div className="flex flex-col gap-[6px] sm:gap-[5px] md:gap-[7px] lg:gap-[8px] xl:gap-[10px] w-full">
-                            {vendorFeatures?.map((feature, index) => (
-                              <div key={index} className={`flex flex-col gap-[5px] sm:gap-[6px] md:gap-[6px] lg:gap-[8px] xl:gap-[10px] justify-start items-center w-full h-auto sm:rounded-xl p-[11px] sm:p-[14px] md:p-[17px] lg:p-[19px] xl:p-[22px] bg-[#F4F4F480]`}>
-                                <div className="flex flex-row justify-start items-center w-full">
-                                  <img 
-                                    src={feature?.icon} 
-                                    alt={feature?.title} 
-                                    className="w-[13px] sm:w-[16px] md:w-[20px] lg:w-[23px] xl:w-[26px] h-[13px] sm:h-[16px] md:h-[20px] lg:h-[23px] xl:h-[26px]"
-                                  />
-                                  <span className="text-[11px] sm:text-[14px] md:text-[17px] lg:text-[19px] xl:text-[22px] font-semibold leading-lg text-text-secondary font-[Inter] ml-[4px] sm:ml-[5px] md:ml-[6px] lg:ml-[7px] xl:ml-[8px]">
-                                    {feature?.title}
-                                  </span>
-                                </div>
-                                <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px]  leading-md text-text-primary font-[Sans_Serif_Collection] w-full">
-                                  {feature?.description}
-                                </p>
+                        <span className="text-[24px] sm:text-[32px] lg:text-[48px] font-semibold text-primary-background">
+                          Vendors
+                        </span>
+
+                        <div className="flex flex-col gap-4">
+                          {vendorFeatures.map((feature, index) => (
+                            <div
+                              key={index}
+                              className="
+                                bg-[#F4F4F480]
+                                rounded-[20px]
+                                p-4 sm:p-5
+                              "
+                            >
+                              <div className="flex items-center gap-3">
+                                <img
+                                  src={feature.icon}
+                                  alt={feature.title}
+                                  className="w-5 h-5"
+                                />
+                                <h4 className="text-base sm:text-lg font-semibold">
+                                  {feature.title}
+                                </h4>
                               </div>
-                            ))}
-                          </div>
+                              <p className="text-sm sm:text-base text-text-secondary mt-2">
+                                {feature.description}
+                              </p>
+                            </div>
+                          ))}
                         </div>
 
-                        {/* Right illustration */}
-                        <div className="flex justify-center lg:justify-end">
-                          <div className="rounded-3xl overflow-hidden shadow-lg max-w-md w-[80%]  lg:w-[60%] xl:w-[90%] mx-4 lg:mx-12 xl:mx-12">
-                            <img
-                              src="/public/assets/restarunt.jpg"
-                              alt="Restaurant interior"
-                              className="w-full h-52 sm:h-80 lg:h-[350px] xl:h-[450px] object-cover "
-                            />
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
               </section>
 
               {/* Admin Control Section */}
                             <ControlSection/>
               {/* Platform Benefits Section */}
-              <section className="w-full">
-                <div className="relative bg-secondary-background rounded-full w-full max-w-[1334px]  mx-[14px] sm:mx-[18px] md:mx-[22px] lg:mx-[26px] xl:mx-[28px] mt-[57px] sm:mt-[70px] md:mt-[85px] lg:mt-[99px] xl:mt-[114px]">
-                  {/* Background Image */}
-                  <img 
-                    src="/images2/features/img_rectangle_4.svg" 
-                    alt="Background" 
-                    className="w-full h-auto rounded-full"
-                  />
+           <section className="w-full">
+                <div
+                  className="
+                    bg-secondary-background
+                    rounded-[36px]
+                    w-full max-w-[1400px]
+                    mx-auto
+                    px-4 sm:px-6 lg:px-12
+                    py-10 sm:py-14 lg:py-20
+                    mt-14 sm:mt-20
+                  "
+                >
+                  {/* Heading */}
+                  <h2
+                    className="
+                      text-[26px] sm:text-[32px] lg:text-[48px]
+                      font-medium leading-tight
+                      text-text-primary
+                      max-w-3xl
+                      mb-10 sm:mb-14
+                    "
+                  >
+                    The Platform That Powers <br />
+                    Your Marketplace
+                  </h2>
 
-                  <div className="absolute inset-0 flex flex-col gap-[31px] sm:gap-[38px] md:gap-[46px] lg:gap-[54px] xl:gap-[62px] justify-start items-start w-full h-auto p-[2px] sm:p-[4px] md:p-[8px] lg:p-[12px] xl:p-[16px] mx-0 sm:mx-0 md:mx-4 lg:mx-8 xl:mx-12">
-                    <h2 className="text-[30px] sm:text-[30px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-medium leading-[30px] sm:leading-[34px] md:leading-[46px] lg:leading-[58px] xl:leading-[70px] text-text-primary font-[Inter] w-[74%] mx-7 md:mx-0 sm:mx-0 lg:mx-0 xl:mx-0 ">
-                      The Platform That Powers <br />Your Marketplace
-                    </h2>
+                  {/* Cards Grid */}
+                  <div
+                    className="
+                      grid grid-cols-1 sm:grid-cols-2
+                      gap-5 sm:gap-6 lg:gap-8
+                    "
+                  >
+                    {platformBenefits?.map((benefit, index) => (
+                      <div
+                        key={index}
+                        className="
+                          bg-[#E9FFD9]
+                          rounded-[22px]
+                          p-5 sm:p-6 lg:p-8
+                          flex flex-col
+                          gap-4
+                        "
+                      >
+                        {/* Icon */}
+                        <div
+                          className="
+                            w-10 h-10
+                            bg-white
+                            rounded-md
+                            flex items-center justify-center
+                          "
+                        >
+                          <img
+                            src={benefit.icon}
+                            alt={benefit.title}
+                            className="w-5 h-5"
+                          />
+                        </div>
 
-                    <div className="flex flex-row justify-start items-center">
-                      <div className="grid grid-cols-2 lg:grid-cols-2 gap-[18px] sm:gap-[22px] md:gap-[27px] lg:gap-[31px] xl:gap-[36px] w-[80%]   mx-6 lg:mx-12 xl:mx-12 md:mx-8">
-                        {platformBenefits?.map((benefit, index) => (
-                          <div 
-                            key={index}
-                            className={`flex flex-col gap-[4px] sm:gap-[5px] md:gap-[6px] lg:gap-[7px] xl:gap-[8px] justify-start items-center w-full h-auto rounded-md p-[13px] sm:p-[16px] md:p-[20px] lg:p-[23px] xl:p-[26px]  bg-[#c7dfb9]`}
-                          >
-                            <div className="flex flex-col gap-[12px] sm:gap-[12px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] justify-center items-start w-full">
-                              <div className="w-[27px] sm:w-[28px] md:w-[32px] lg:w-[36px] xl:w-[40px] h-[27px] sm:h-[30px] md:h-[36px] lg:h-[40px] xl:h-[44px] bg-secondary-background rounded-sm p-[6px] sm:p-[7px] md:p-[9px] lg:p-[10px] xl:p-[12px]">
-                                <img 
-                                  src={benefit?.icon} 
-                                  alt={benefit?.title} 
-                                  className="w-full h-full"
-                                />
-                              </div>
-                              
-                              <span className="text-[12px] sm:text-[13px] md:text-[16px] lg:text-[20px] xl:text-[16px]  leading-md text-text-primary font-bold">
-                                {benefit?.title}
-                              </span>
-                            </div>
-                            
-                            <p className="text-[9px] sm:text-[10px] md:text-[14px] lg:text-[16px] xl:text-[18px] ">
-                              {benefit?.description}
-                            </p>
-                          </div>
-                        ))}
+                        {/* Title */}
+                        <h3
+                          className="
+                            text-[15px] sm:text-[17px] lg:text-[20px]
+                            font-semibold
+                            text-text-primary
+                          "
+                        >
+                          {benefit.title}
+                        </h3>
+
+                        {/* Description */}
+                        <p
+                          className="
+                            text-[13px] sm:text-[14px] lg:text-[16px]
+                            text-text-secondary
+                            leading-relaxed
+                          "
+                        >
+                          {benefit.description}
+                        </p>
                       </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </section>
@@ -723,103 +868,89 @@ const Home = () => {
               <EveryoneWins/>
 
               {/* Proven Results Section */}
-             <section className="w-full">
-                  <div className="bg-secondary-background rounded-[32px] sm:rounded-full
-                    p-[16px] sm:p-[22px] md:p-[28px] lg:p-[32px] xl:p-[38px]
-                    mx-4 sm:mx-6 md:mx-8 lg:mx-auto
-                    max-w-[1334px] mt-6 sm:mt-8 lg:mt-10">
+            <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+                <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
 
-                    {/* TOP SECTION */}
-                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 w-full">
+                  <div className="bg-secondary-background rounded-[28px] sm:rounded-[40px]
+                    p-5 sm:p-8 lg:p-12">
+
+                    {/* TOP */}
+                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
 
                       {/* LEFT TEXT */}
-                      <div className="w-full lg:w-[65%] sm:mx-4 md:mx-6 lg:mx-10 xl:mx-14">
-                        <span className="text-[22px] sm:text-[28px] md:text-[34px] lg:text-[40px]
-                          font-semibold text-primary-background">
+                      <div className="flex-1">
+                        <span className="text-[22px] sm:text-[26px] lg:text-[36px] font-semibold text-primary-background">
                           Proven
                         </span>
 
-                        <div className="relative mt-3">
-                          <span className="absolute inset-x-0 bottom-1 h-10 sm:h-12
-                            bg-accent-lightest-green rounded-xl -z-10"></span>
+                        <h2 className="mt-2 text-[26px] sm:text-[32px] lg:text-[48px] font-medium leading-tight">
+                          The{" "}
+                          <span className="bg-[#E4FFD4] px-2 py-1 rounded-md">
+                            numbers speak
+                          </span>
+                        </h2>
 
-                          <h2 className="text-[24px] sm:text-[24px] md:text-[36px] lg:text-[48px]
-                            font-medium text-text-primary">
-                            The numbers speak
-                          </h2>
-                        </div>
-
-                        <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl mx-4">
+                        <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md">
                           Real results from platforms built on this foundation.
                         </p>
                       </div>
 
-                      {/* RIGHT CARD – RESTAURANTS */}
-                      <div className="w-full lg:w-[35%]">
-                        <div className="relative bg-accent-lightest-green rounded-3xl
-                          h-[180px] sm:h-[210px] lg:h-[230px] p-5">
+                      {/* RIGHT – 5000+ CARD */}
+                      <div className="flex-1 flex lg:justify-end">
+                        <div className="bg-[#E4FFD4] rounded-[28px]
+                          w-full sm:w-[320px] h-[200px]
+                          flex flex-col justify-center items-center text-center px-6">
 
-                         {/*  <img
-                            src="/images2/features/img_seamless_tile_b.png"
-                            className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-                            alt=""
-                          />
- */}
-                          <div className="relative z-10 text-center bg-[#E4FFD4] rounded-md p-4">
-                            <p className="text-[32px] sm:text-[24px] md:text-[28px] xl:text-[30px] font-bold">
-                              5000+
-                            </p>
-                            <p className="text-sm sm:text-base">
-                              Restaurants onboarded
-                            </p>
-
-                            <p className="text-xs sm:text-sm mt-3">
-                              Vendors trust the platform to reach new customers daily.
-                            </p>
-                          </div>
+                          <p className="text-[36px] font-bold">5000+</p>
+                          <p className="text-sm sm:text-base font-medium mt-1">
+                            Restaurants onboarded
+                          </p>
+                          <p className="text-xs sm:text-sm mt-3 text-text-secondary">
+                            Vendors trust the platform to reach new customers daily.
+                          </p>
                         </div>
                       </div>
+
                     </div>
 
                     {/* BOTTOM CARDS */}
-                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
                       {/* ORDERS */}
                       <div
-                        className="rounded-3xl bg-black text-white p-6 mx-0  lg:mx-12 md:mx-8 xl:mx-16"
+                        className="rounded-[28px] bg-black text-white p-6 sm:p-8"
                         style={{ backgroundImage: `url(/images/img_group_599.png)` }}
                       >
                         <p className="text-[22px] sm:text-[26px] font-semibold">
                           2M+ Orders processed
                         </p>
-                        <p className="mt-2 text-sm sm:text-base">
+                        <p className="mt-2 text-sm sm:text-base text-white/80">
                           Millions of meals delivered through systems like this one.
                         </p>
                       </div>
 
                       {/* DELIVERY */}
                       <div
-                        className="rounded-3xl bg-primary-background p-6 mx-0  lg:mx-12 md:mx-8 xl:mx-12"
+                        className="rounded-[28px] bg-primary-background p-6 sm:p-8"
                         style={{ backgroundImage: `url(/images2/features/img_group_599_231x297.png)` }}
                       >
-                        <p className="text-[22px] sm:text-[26px] font-semibold ">
+                        <p className="text-[22px] sm:text-[26px] font-semibold">
                           28min Average delivery time
                         </p>
-                        <p className="mt-2 text-sm sm:text-base">
+                        <p className="mt-2 text-sm sm:text-base text-text-primary/80">
                           Fast enough to keep food hot and customers happy.
                         </p>
                       </div>
 
                     </div>
+
                   </div>
+                </div>
               </section>
+
             </div>
           </div>
-        </div>
-
-        {/* Testimonial Section */}
-
-            <TestimonialsSection/>
+        </header>
 
         {/* Contact Form Section */}
       
@@ -829,6 +960,26 @@ const Home = () => {
  
             <FAQ/>
 
+            
+        {/* Testimonial Section */}
+
+            <TestimonialsSection/>
+       
+     {/* 
+      <Hero/>
+      <WhyChoose/>
+      <WhatCan/>
+      <Panels/>
+      <Options/>
+      <WhyBusinesses/>
+      <FAQ/>
+      <Footer/>
+
+      <VendorsSection/>
+ */}
+
+
+        
       </main>
     </>
   );

@@ -4,7 +4,7 @@ import Button from "../../components/ui/Button";
 const testimonials = [
   {
     image: "/assets/Towny.png",
-    quote: `TaxiAppz helped us build a platform that is lightning fast,
+    quote: `TaxiAppz helped us build a platform that’s lightning fast,
 highly localized, and perfect for the Indian food delivery market.
 The experience exceeded expectations.`,
     author: "Towny Product Team",
@@ -26,6 +26,7 @@ Support and scalability were the biggest wins for us.`,
 const TestimonialsSection = () => {
   const [index, setIndex] = useState(0);
   const total = testimonials.length;
+  const current = testimonials[index];
 
   const next = () => {
     if (index < total - 1) setIndex(index + 1);
@@ -35,58 +36,77 @@ const TestimonialsSection = () => {
     if (index > 0) setIndex(index - 1);
   };
 
-  const current = testimonials[index];
-
   return (
-    <section className="w-full bg-white py-16">
-      <div className="lg:max-w-[1340px] md:max-w-[1020px] max-w-[840px] mx-auto px-6">
-        <div className="border rounded-[38px] p-8 relative">
+    <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
-          {/* Header */}
-          <h3 className="text-[36px] lg:text-[48px] font-medium mx-0  lg:mx-12 md:mx-2 xl:mx-4">
-            <span className="bg-[#E4FFD4] px-0">Real Voices</span>
-          </h3>
-          <p className="text-gray-500 mt-4 mx-0  lg:mx-12 md:mx-2 xl:mx-4 ">
-            People who built their business on this platform.
-          </p>
+        {/* OUTER CARD */}
+        <div className="border border-[#e5e5e5] rounded-[40px] p-6 sm:p-8 lg:p-12">
 
-          {/* Content */}
-          <div className="flex flex-col lg:flex-row gap-12 mt-12 items-centermx-0  lg:mx-12 md:mx-8 xl:mx-16" >
-            {/* Image */}
-            <img
-              src={current.image}
-              alt=""
-              className="w-[260px] h-[260px] lg:w-[380px] lg:h-[380px] rounded-xl"
-            />
+          {/* HEADER */}
+          <div className="mb-10 lg:mb-14">
+            <h3 className="text-[26px] sm:text-[32px] lg:text-[48px] font-medium">
+              <span className="bg-[#E4FFD4] px-2 rounded-md">Real Voices</span>
+            </h3>
+            <p className="text-sm sm:text-base text-gray-500 mt-3">
+              People who built their business on this platform.
+            </p>
+          </div>
 
-            {/* Testimonial */}
-            <div className="flex-1 bg-[#8CF25D] rounded-[28px] p-10 relative">
-              <p className="text-sm leading-relaxed mb-6">
+          {/* CONTENT */}
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+
+            {/* LEFT IMAGE CARD */}
+            <div className="bg-[#F5D90A] rounded-[32px] w-full lg:w-[380px] h-[260px] lg:h-[380px] flex items-end p-6">
+              <div>
+                <img
+                  src={current.image}
+                  alt=""
+                  className="max-w-[200px]"
+                />
+                <p className="mt-4 text-sm font-medium">
+                  {current.author}
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT TESTIMONIAL BUBBLE */}
+            <div className="flex-1 bg-[#9CEE69] rounded-[32px] p-6 sm:p-8 lg:p-10 relative">
+              <span className="inline-flex items-center gap-2 text-xs bg-white px-3 py-1 rounded-full mb-4">
+                🟢 Client Testimonial
+              </span>
+
+              <p className="text-sm sm:text-base leading-relaxed mb-6">
                 “{current.quote}”
               </p>
-              <p className="font-medium">— {current.author}</p>
+
+              <p className="font-medium text-sm">
+                — {current.author}
+              </p>
             </div>
           </div>
 
-          {/* Pagination */}
-          <div className="flex justify-end items-center gap-4 mt-8  sm:me-4 md:me-6 lg:me-8 xl:me-12 ">
-            <Button
-              text="<"
-              padding="10px 18px"
-              className="border"
+          {/* PAGINATION */}
+          <div className="flex justify-end items-center gap-4 mt-8">
+            <button
               onClick={prev}
               disabled={index === 0}
-            />
+              className="w-10 h-10 flex items-center justify-center border rounded-full disabled:opacity-40"
+            >
+              ←
+            </button>
+
             <span className="text-sm font-medium">
-              {index + 1}/{total}
+              {index + 1} / {total}
             </span>
-            <Button
-              text=">"
-              padding="10px 18px"
-              className="border"
+
+            <button
               onClick={next}
               disabled={index === total - 1}
-            />
+              className="w-10 h-10 flex items-center justify-center border rounded-full disabled:opacity-40"
+            >
+              →
+            </button>
           </div>
 
         </div>

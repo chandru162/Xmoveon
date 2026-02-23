@@ -21,9 +21,9 @@ const LandingPage = () => {
         <meta property="og:title" content="Launch On-Demand Super Apps in 7 Days | Xmoveon No-Code Platform" />
         <meta property="og:description" content="Build taxi, food delivery, grocery & service marketplace apps without coding. Xmoveon platform has processed 10+ billion dollars. Launch your super app in 7 days with full support." />
       </Helmet>
-      
+
       <main className="w-full bg-white">
-        <HeroSection/>
+        <HeroSection />
         <ServicePlatformSection />
         <ScaleSuccessSection />
         <LaunchStepsSection />
@@ -31,11 +31,11 @@ const LandingPage = () => {
         <AdvancedFeaturesSection />
         <WhyChooseSection />
         <TestimonialsSection />
-        <FooterSection />
-       
-         {/*  <Home/>   */}
-        
-       
+         
+       {/*   <Home/>  */}
+
+
+
       </main>
     </>
   );
