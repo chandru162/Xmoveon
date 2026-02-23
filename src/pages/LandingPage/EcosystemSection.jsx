@@ -38,56 +38,54 @@ const EcosystemSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 ">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className=" mb-12 lg:mb-16 xl:mb-16 mx-1 md:mx-8 lg:mx-12 xl:mx-20">
-          <div className="relative inline-block mb-6">
-            <h2 className=" text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-text-primary px-4 ">
-              <span className="bg-[#E4FFD4]" >Three Apps,</span> One Ecosystem
+    <section className="w-full bg-white py-10 md:py-16">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+        {/* Header - Fixed padding for mobile */}
+        <div className="mb-10 lg:mb-14 xl:mx-10">
+          <div className="relative inline-block mb-4">
+            <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-gray-900 leading-tight">
+              <span className="bg-[#E4FFD4] px-1">Three Apps,</span> <div className='mt-8'>One Ecosystem</div> 
             </h2>
           </div>
-          <p className="text-sm sm:text-base text-text-secondary ps-4 md:ps-6 lg:ps-6 xl:ps-6 ">
+          <p className="text-sm sm:text-base text-gray-600 max-w-2xl">
             Complete solution with dedicated apps for every stakeholder in your business.
           </p>
         </div>
 
-        {/* Apps Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mx-8 lg:mx-24 md:mx-20">
+        {/* Apps Grid - Responsive Margins */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 xl:mx-10">
           {apps?.map((app, index) => (
             <div 
               key={index}
-              className="bg-[#f9fff5] rounded-[40px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300"
+              className="bg-[#f9fff5] rounded-[32px] md:rounded-[40px] p-7 lg:p-9 hover:shadow-xl transition-all duration-300 border border-[#e4ffd4]/20"
             >
-              {/* Icon */}
-              <div className="bg-[#e4ffd4] rounded-[10px] p-4 w-16 h-16 flex items-center justify-center mb-6">
+              {/* Icon Container */}
+              <div className="bg-[#e4ffd4] rounded-[12px] w-14 h-14 flex items-center justify-center mb-6">
                 <img 
                   src={app?.icon} 
-                  alt=""
-                  className="w-8 h-8"
+                  alt={app?.title} 
+                  className="w-7 h-7"
                 />
               </div>
 
-              {/* Title */}
-              <h3 className="text-lg sm:text-lg font-semibold text-text-secondary mb-2">
+              {/* Text */}
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 {app?.title}
               </h3>
-
-              {/* Description */}
-              <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed mb-8 lg:text-sm">
+              <p className="text-sm text-gray-600 leading-relaxed mb-6 min-h-[40px]">
                 {app?.description}
               </p>
 
               {/* Features List */}
-              <div className="space-y-3">
+              <div className="space-y-3 pt-4 border-t border-[#e4ffd4]">
                 {app?.features?.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center gap-3">
                     <img 
                       src="/images/img_square_check.svg" 
-                      alt=""
-                      className="w-6 h-6"
+                      alt="Check" 
+                      className="w-5 h-5 flex-shrink-0"
                     />
-                    <span className="text-sm text-text-secondary">
+                    <span className="text-sm font-medium text-gray-700">
                       {feature}
                     </span>
                   </div>

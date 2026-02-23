@@ -10,32 +10,38 @@ import TestimonialsSection from './TestimonialsSection';
 import FooterSection from './FooterSection';
 import HeroSection from './HeroSection';
 
-
-
 const LandingPage = () => {
   return (
     <>
       <Helmet>
-        <title>Launch On-Demand Super Apps in 7 Days | Xmoveon No-Code Platform</title>
-        <meta name="description" content="Build taxi, food delivery, grocery & service marketplace apps without coding. Xmoveon platform has processed 10+ billion dollars. Launch your super app in 7 days with full support." />
-        <meta property="og:title" content="Launch On-Demand Super Apps in 7 Days | Xmoveon No-Code Platform" />
-        <meta property="og:description" content="Build taxi, food delivery, grocery & service marketplace apps without coding. Xmoveon platform has processed 10+ billion dollars. Launch your super app in 7 days with full support." />
+        <title>Launch On-Demand Super Apps | Xmoveon</title>
       </Helmet>
       
-      <main className="w-full bg-white">
-        <HeroSection/>
-        <ServicePlatformSection />
-        <ScaleSuccessSection />
-        <LaunchStepsSection />
-        <EcosystemSection />
-        <AdvancedFeaturesSection />
-        <WhyChooseSection />
-        <TestimonialsSection />
-        <FooterSection />
-       
-         {/*  <Home/>   */}
+      <main className="w-full bg-white overflow-x-hidden selection:bg-green-100">
         
-       
+        {/* Main wrapper with zero extra top/bottom padding to keep sections tight */}
+        <div className="flex flex-col w-full">
+          
+          <HeroSection />
+          
+          {/* Reduced vertical spacing (gap-y) and tighter horizontal padding */}
+          <div className="px-3 sm:px-6 lg:px-12 w-full space-y-0"> 
+             <ServicePlatformSection />
+             <ScaleSuccessSection />
+          </div>
+
+          <LaunchStepsSection />
+          
+          <div className="px-3 sm:px-6 lg:px-12 w-full space-y-0">
+            <EcosystemSection />
+            <AdvancedFeaturesSection />
+            <WhyChooseSection />
+            <TestimonialsSection />
+          </div>
+
+          <FooterSection />
+        </div>
+        
       </main>
     </>
   );

@@ -7,6 +7,8 @@ import HomePage from './pages/Home';
 import Navbar from './Navbar/Navbar';
 import GetStart from '../src/pages/GetStart/index'
 
+import TaxiPage from '../src/pages/Features/Taxi'
+
 const AppRoutes = () => {
   return (
     <>
@@ -16,9 +18,8 @@ const AppRoutes = () => {
           <Route path="/" element={<LandingPage />} />    
           <Route path="/getstart" element={<GetStart />} />    
           {/* <Route path="/" element={<HomePage />} />    */}
+          <Route path="/taxi" element={<TaxiPage />} />
 
-
-         
       </Routes>
     </Router>
     

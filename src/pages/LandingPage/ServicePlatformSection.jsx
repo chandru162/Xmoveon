@@ -30,71 +30,64 @@ const ServicePlatformSection = () => {
     {
       icon: "/images/img_report_medical.svg",
       title: "Pharmacy",
-      description: "Prescription uploads,  medicine delivery,  order history, and health tracking."
+      description: "Prescription uploads, medicine delivery, order history, and health tracking."
     }
   ];
 
   return (
-    <section className="w-full bg-white  py-56  lg:py-24 px-4 lg:px-0">
+    <section className="w-full bg-white py-12 md:py-24 px-1 lg:px-0">
       <div className="w-full max-w-[1440px] mx-auto px-3 md:px-6 lg:px-8">
+        <div className="bg-white rounded-[42px] p-4 md:p-8 lg:p-12">
 
-        <div className="bg-white rounded-[42px] p-4 md:p-8 lg:p-12 ">
+          {/* Header - Stays exact for PC/Laptops */}
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-12 lg:mx-12">
+            <div className='relative'>
+              <h2 className="text-[28px] md:text-[36px] lg:text-[48px] leading-[1.2] font-medium text-black">
+                All-in- <span className='bg-[#E4FFD4]'>One Service <br className="hidden lg:block" /> Platform</span>
+              </h2>
+            </div>
 
-          {/* Header */}
-          <div className="flex flex-col lg:flex-row justify-between gap-10 mb-10 mx-0 lg:mx-8 xl:mx-12  ">
-              <div className='relative '> 
-                    {/* Title Text */}
-                    <h2 className="relative  text-[28px] md:text-[36px] lg:text-[48px] leading-[1.2] font-medium text-black ">
-                      All-in- <span className=' bg-[#E4FFD4]'>One Service <br />
-                      Platform </span>
-                    </h2>
-              </div>
-
-                  {/* Right description */}
-                  <p className="text-sm sm:text-base text-text-secondary max-w-sm p-5  px-4 md:px-8 lg:px-16 xl:px-24">
-                    Choose from multiple service categories and launch your <br/> super app.
-                  </p>
-           
+            <div className="max-w-sm lg:text-left">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                Choose from multiple service categories and launch your <br className="hidden lg:block" /> super app.
+              </p>
+            </div>
           </div>
 
-          {/* Service Grid */}
-          <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-12 xl:gap-16 mx-4 xl:mx-16 md:mx-8 md:gap-8 lg:mx-12 pt-4 lg:pt-2 xl:pt-1 md:pt-4">
+          {/* Service Grid - Responsive Grid System */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 xl:gap-10 lg:mx-12">
             {services.map((service, index) => (
               <div
                 key={index}
                 className="
                   bg-[#F4F4F480]
-                  rounded-[20px]
+                  rounded-[24px]
                   p-6
-                  lg:p-8
-                  xl:p-10
-                  h-[250px]
-                  w-[200px]
-                  md:w-[270px]
-                  lg:w-[340px]
-                  lg:h-[190px]
-                  xl:h-[160px]
-                  xl:w-[340px]
+                  md:p-8
+                  lg:p-10
+                  min-h-[220px]
                   flex
                   flex-col
-                  justify-between
-                  overflow-hidden
+                  transition-all
+                  hover:bg-[#f0f0f0]
+                  hover:shadow-sm
+                  group
                 "
               >
-                <div className="flex items-center gap-5">
-                  <div className="bg-[#e4ffd4] rounded-[12px] text-[#5C9B35] ">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-[#e4ffd4] p-3 rounded-[12px] flex items-center justify-center">
                     <img
                       src={service.icon}
-                      alt=""
-                      className="w-7 h-7  "
+                      alt={service.title}
+                      className="w-7 h-7"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold text-black  ">
+                  <h3 className="text-xl font-semibold text-black">
                     {service.title}
                   </h3>
                 </div>
 
-                <p className="text-sm text-black leading-relaxed pt-2 md:pt-4 lg:pt-4 xl:pt-6">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   {service.description}
                 </p>
               </div>

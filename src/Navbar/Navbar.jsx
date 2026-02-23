@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <section className="w-full bg-white">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20  xl:px-24">
+      <div className="w-full max-w-[1470px] mx-auto px-4 sm:px-6 lg:px-20  xl:px-24">
 
         {/* Header */}
         <header className="flex flex-col lg:flex-row justify-between items-center py-7 xl:flex-row">
@@ -71,7 +71,7 @@ const Navbar = () => {
             <a className="text-base font-medium text-text-secondary" >Contact Us</a>
           </nav>
 
-          <div className={`${mobileMenuOpen ? 'flex' : 'hidden'} lg:flex mt-4 md:mt-8 mx-2 md:mx-4 lg:mt-0 md:mt-0`}>
+          <div className={`${mobileMenuOpen ? 'flex' : 'hidden'} lg:flex mt-4 md:mt-8 mx-2 md:mx-4 lg:mt-0`}>
            <a href="/getstart">
             <Button
               text="Get Started"
