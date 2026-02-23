@@ -21,10 +21,10 @@ const WhyBusinesses = () => {
           </div>
 
           <div className="flex gap-12">
-            <button className="bg-black text-white px-6 py-3 rounded-lg text-sm hover:opacity-90 ">
+            <button className="bg-black text-white px-2 py-3 md:px-4 md:py-4 lg:px-6 lg:py-6 rounded-lg text-sm hover:opacity-90 ">
               Start Free Trial →
             </button>
-            <button className="bg-white text-black px-6  rounded-lg text-sm hover:bg-gray-100">
+            <button className="bg-white text-black  px-2 md:px-4 lg:px-6  rounded-lg text-sm hover:bg-gray-100">
               Schedule a Demo →
             </button>
           </div>

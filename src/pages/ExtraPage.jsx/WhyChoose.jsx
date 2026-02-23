@@ -55,10 +55,10 @@ const WhyChoose = () => {
               </div>
 
               {/* Content */}
-              <h3 className="font-semibold text-gray-900 mb-2">
+              <h3 className="font-semibold text-lg mb-2">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm  leading-relaxed">
                 {item.desc}
               </p>
             </div>
