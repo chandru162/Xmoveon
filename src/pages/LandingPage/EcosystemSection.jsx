@@ -1,89 +1,100 @@
-import React from 'react';
+import React from "react";
 
 const EcosystemSection = () => {
   const apps = [
     {
       icon: "/images/img_device_mobile_heart.svg",
       title: "Customer App",
-      description: "Smooth interface for customers to make orders and book services.",
+      description:
+        "Smooth interface for customers to make orders and book services.",
       features: [
         "Browse Services",
-        "Real-time Tracking", 
+        "Real-time Tracking",
         "Payment Integration",
-        "Order History"
-      ]
+        "Order History",
+      ],
     },
     {
-      icon: "/images/img_building_store.svg", 
+      icon: "/images/img_building_store.svg",
       title: "Vendor App",
-      description: "Complete management system to receive and manage requests.",
+      description:
+        "Complete management system to receive and manage requests.",
       features: [
         "Order Management",
         "Inventory Control",
         "Analytics Dashboard",
-        "Customer Insights"
-      ]
+        "Customer Insights",
+      ],
     },
     {
       icon: "/images/img_device_mobile_heart.svg",
-      title: "Driver App", 
-      description: "Optimized app for drivers and delivery partners with navigation.",
+      title: "Driver App",
+      description:
+        "Optimized app for drivers and delivery partners with navigation.",
       features: [
         "Route Optimization",
         "Earnings Tracks",
-        "Job Acceptance", 
-        "Navigation"
-      ]
-    }
+        "Job Acceptance",
+        "Navigation",
+      ],
+    },
   ];
 
   return (
-    <section className="w-full bg-white py-10 md:py-16">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        {/* Header - Fixed padding for mobile */}
-        <div className="mb-10 lg:mb-14 xl:mx-10">
-          <div className="relative inline-block mb-4">
-            <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-gray-900 leading-tight">
-              <span className="bg-[#E4FFD4] px-1">Three Apps,</span> <div className='mt-8'>One Ecosystem</div> 
-            </h2>
-          </div>
-          <p className="text-sm sm:text-base text-gray-600 max-w-2xl">
-            Complete solution with dedicated apps for every stakeholder in your business.
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+
+        {/* HEADER */}
+        <div className="mb-10 lg:mb-16">
+          <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-text-primary">
+            <span className="bg-[#E4FFD4] px-2 rounded-md">
+              Three Apps,
+            </span>{" "}
+            One Ecosystem
+          </h2>
+
+          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl">
+            Complete solution with dedicated apps for every stakeholder in your
+            business.
           </p>
         </div>
 
-        {/* Apps Grid - Responsive Margins */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 xl:mx-10">
-          {apps?.map((app, index) => (
-            <div 
+        {/* APPS GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+          {apps.map((app, index) => (
+            <div
               key={index}
-              className="bg-[#f9fff5] rounded-[32px] md:rounded-[40px] p-7 lg:p-9 hover:shadow-xl transition-all duration-300 border border-[#e4ffd4]/20"
+              className="
+                bg-[#f9fff5]
+                rounded-[28px]
+                p-6 sm:p-8 lg:p-10
+                hover:shadow-lg
+                transition-shadow
+              "
             >
-              {/* Icon Container */}
+              {/* ICON */}
               <div className="bg-[#e4ffd4] rounded-[12px] w-14 h-14 flex items-center justify-center mb-6">
-                <img 
-                  src={app?.icon} 
-                  alt={app?.title} 
-                  className="w-7 h-7"
-                />
+                <img src={app.icon} alt="" className="w-7 h-7" />
               </div>
 
-              {/* Text */}
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
-                {app?.title}
+              {/* TITLE */}
+              <h3 className="text-base sm:text-lg font-semibold text-text-secondary mb-2">
+                {app.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-6 min-h-[40px]">
-                {app?.description}
+
+              {/* DESC */}
+              <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed mb-6">
+                {app.description}
               </p>
 
-              {/* Features List */}
-              <div className="space-y-3 pt-4 border-t border-[#e4ffd4]">
-                {app?.features?.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-center gap-3">
-                    <img 
-                      src="/images/img_square_check.svg" 
-                      alt="Check" 
-                      className="w-5 h-5 flex-shrink-0"
+              {/* FEATURES */}
+              <div className="space-y-3">
+                {app.features.map((feature, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <img
+                      src="/images/img_square_check.svg"
+                      alt=""
+                      className="w-5 h-5"
                     />
                     <span className="text-sm font-medium text-gray-700">
                       {feature}
@@ -94,6 +105,7 @@ const EcosystemSection = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

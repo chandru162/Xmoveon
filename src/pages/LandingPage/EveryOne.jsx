@@ -29,49 +29,76 @@ const cards = [
 
 const EveryoneWins = () => {
   return (
-    <section className="w-full bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+    <section className="w-full bg-white py-14 sm:py-18 lg:py-24">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
 
         {/* Header */}
-        <div className="flex items-center justify-between mb-10 mt-72 md:mt-0 xl:mt-0 lg:mt-0">
+        <div className="flex justify-between items-start mb-10 lg:mb-16">
           <div>
-            <h3 className="inline-block bg-[#E4FFD4] text-[24px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold px-4 py-1 rounded-full mx-0 md:mx-2 lg:mx-8 xl:mx-12">
-              Everyone win 
-            </h3><span className="text-[24px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold">here</span>
-            <p className="mt-3  max-w-md mx-4 md:mx-6 lg:mx-12 xl:mx-16">
+            <h2 className="text-[26px] sm:text-[32px] lg:text-[48px] font-medium leading-tight">
+              <span className="bg-[#E4FFD4] px-2 py-1 rounded-md">
+                Everyone wins
+              </span>{" "}
+              here
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-text-secondary max-w-md">
               Each player in the ecosystem gets what they need to succeed.
             </p>
           </div>
-          <span className="hidden sm:block text-[#9CEE69] font-semibold text-[16px] sm:text-[18px] md:text-[24px] lg:text-[32px] xl:text-[40px] me-12 mb-16 ">
+
+          <span className="hidden sm:block text-[#9CEE69] font-semibold text-[20px] lg:text-[36px]">
             Why
           </span>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-16">
+        <div
+          className="
+            grid grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-4
+            gap-5 sm:gap-6 lg:gap-8
+          "
+        >
           {cards.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
+              className="
+                bg-white
+                rounded-[22px]
+                overflow-hidden
+                shadow-sm
+                hover:shadow-md
+                transition-all
+              "
             >
               {/* Image */}
               <div className="relative">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-44 object-cover"
+                  className="w-full h-[170px] object-cover"
                 />
-                <span className="absolute top-3 left-3 bg-white text-xs font-medium px-3 py-1 rounded-full shadow">
+                <span
+                  className="
+                    absolute top-3 left-3
+                    bg-white
+                    text-xs font-medium
+                    px-3 py-1
+                    rounded-full
+                    shadow
+                  "
+                >
                   {item.tag}
                 </span>
               </div>
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="font-semibold text-gray-900 mb-2">
+                <h3 className="text-[15px] lg:text-[16px] font-semibold text-text-primary mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-text-secondary leading-relaxed">
                   {item.desc}
                 </p>
               </div>

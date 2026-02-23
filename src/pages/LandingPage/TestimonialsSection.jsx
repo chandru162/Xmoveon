@@ -31,8 +31,6 @@ export default function TestimonialsSection() {
     return () => clearInterval(t);
   }, []);
 
-  const current = testimonials[index];
-
   return (
     <section className="w-full bg-white py-12 md:py-24">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">

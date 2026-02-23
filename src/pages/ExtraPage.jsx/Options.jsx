@@ -1,22 +1,27 @@
 import React from "react";
 
-const options = [
-  {
-    title: "Commission-based revenue",
-    desc: "Earn from every completed transaction.",
-    icon: "💸",
-  },
-  {
-    title: "Platform or booking fees",
-    desc: "Apply flat or percentage-based charges.",
-    icon: "🏷️",
-  },
-  {
-    title: "Custom pricing rules",
-    desc: "Total admin control over monetization logic.",
-    icon: "⚙️",
-  },
-];
+
+  const benefits = [
+    {
+      icon: "/images/img_hearts.svg",
+      title: "Commission-based revenue",
+      desc: "Earn from every completed transaction.",
+
+    },
+    {
+      icon: "/images/img_brand_airtable.svg",
+      title: "Platform or booking fees",
+      desc: "Apply flat or percentage-based charges.",
+
+    },
+    {
+      icon: "/images/img_camera_selfie.",
+      title: "Custom pricing rules",
+      desc: "Total admin control over monetization logic.",
+
+    },
+   
+  ];
 
 const Options = () => {
   return (
@@ -25,29 +30,27 @@ const Options = () => {
 
         {/* Title */}
         <div className="mb-10">
-          <span className="inline-block bg-green-100 text-green-700 text-sm font-medium px-4 py-1 rounded-full">
-            Monetization Options
-          </span>
+          <h3 className="inline-block b text-[24px]  md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold rounded-full">
+            <span className="bg-[#E4FFD4]"> Monetization </span>  Options
+          </h3>
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {options.map((item, index) => (
+          {benefits.map((benefits, index) => (
             <div
               key={index}
               className="bg-[#fafafa] rounded-2xl p-6 hover:shadow-md transition"
             >
               {/* Icon */}
-              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-green-100 text-green-600 mb-4 text-lg">
-                {item.icon}
-              </div>
+              
 
               {/* Content */}
               <h3 className="font-semibold text-gray-900 mb-2">
-                {item.title}
+                {benefits.title}
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                {item.desc}
+                {benefits.desc}
               </p>
             </div>
           ))}

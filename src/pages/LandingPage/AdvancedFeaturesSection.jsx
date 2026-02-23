@@ -1,75 +1,83 @@
-import React from 'react';
+import React from "react";
 
 const AdvancedFeaturesSection = () => {
   const features = [
     {
-      icon: "/images/img_device_mobile_heart.svg",
-      title: 'In-App Communication',
-      description: 'Seamless chat and call features between customers, drivers, and vendors.',
+      icon: "/images/img_device_mobile_message.svg",
+      title: "In-App Communication",
+      description:
+        "Seamless chat and call features between customers, drivers, and vendors.",
     },
     {
-      icon: "/images/img_building_store.svg",
-      title: 'Dynamic Pricing Engine',
-      description: 'Real-time pricing adjustment based on demand, distance, and time.',
+      icon: "/images/img_layout_dashboard_gray_900_01.svg",
+      title: "Dynamic Pricing Engine",
+      description:
+        "Real-time pricing adjustment based on demand, distance, and time.",
     },
     {
-      icon: "/images/img_device_mobile_heart.svg",
-      title: 'Advanced Safety Features',
-      description: 'SOS button, emergency contacts, and ride/order tracking for user safety.',
+      icon: "/images/img_heart_pin.svg",
+      title: "Advanced Safety Features",
+      description:
+        "SOS button, emergency contacts, and ride/order tracking for user safety.",
     },
     {
-      icon: "/images/img_device_mobile_heart.svg",
-      title: 'Granular Business Controls',
-      description: 'Manage permissions, commissions, and service parameters easily.',
+      icon: "/images/img_topology_full_hierarchy.svg",
+      title: "Granular Business Controls",
+      description:
+        "Manage permissions, commissions, and service parameters easily.",
     },
     {
-      icon: "/images/img_device_mobile_heart.svg",
-      title: 'Marketing Tools',
-      description: 'Push notifications, promo codes, and referral programs built-in.',
+      icon: "/images/img_clover.svg",
+      title: "Marketing Tools",
+      description:
+        "Push notifications, promo codes, and referral programs built-in.",
     },
     {
-      icon: "/images/img_device_mobile_heart.svg",
-      title: 'Smart Route Optimization',
-      description: 'AI-powered routing for faster delivery and improved efficiency.',
+      icon: "/images/img_brand_walmart.svg",
+      title: "Smart Route Optimization",
+      description:
+        "AI-powered routing for faster delivery and improved efficiency.",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-10 md:py-14">
-      <div className="w-full max-w-[1440px] mx-auto px-6 lg:px-16">
-        
-        {/* Header - Keeping the Background Color intact */}
-        <div className="flex flex-col lg:flex-row justify-between items-start mb-12 gap-6">
-          <div className="w-full lg:w-3/5">
-            <h2 className="text-[32px] md:text-[42px] lg:text-[48px] font-medium text-black leading-[1.4]">
-              Advanced <span className="bg-[#E4FFD4] px-2 py-1 inline-block mb-1">Features for</span>
-              <br />
-              <span className="bg-[#E4FFD4] px-2 py-1 inline-block">Growth</span>
-            </h2>
-          </div>
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
 
-          <div className="w-full lg:w-2/5 lg:pt-6">
-            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-              Powerful tools to optimize operations, increase revenue, and delight your customers.
-            </p>
-          </div>
+        {/* HEADER */}
+        <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-12">
+          <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-text-primary leading-tight">
+            Advanced{" "}
+            <span className="bg-[#E4FFD4] px-2 rounded-md">
+              Features for
+            </span>{" "}
+            Growth
+          </h2>
+
+          <p className="text-sm sm:text-base text-text-secondary max-w-lg">
+            Powerful tools to optimize operations, increase revenue, and delight
+            your customers.
+          </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-          {features?.map((feature, index) => (
-            <div key={index} className="flex flex-col items-start group">
-              <div className="flex items-center gap-4 mb-3">
-                <div className="bg-[#E4FFD4] p-2 rounded-lg w-10 h-10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                   <img src={feature.icon} className="w-6 h-6" alt="" />
-                </div>
-                <h3 className="text-lg md:text-xl font-bold text-gray-800">
+        {/* FEATURES GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          {features.map((feature, index) => (
+            <div key={index} className="flex gap-4">
+              {/* ICON */}
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#E4FFD4] flex items-center justify-center">
+                <img src={feature.icon} alt="" className="w-5 h-5" />
+              </div>
+
+              {/* CONTENT */}
+              <div>
+                <h3 className="text-base sm:text-lg font-semibold text-text-secondary mb-1">
                   {feature.title}
                 </h3>
+                <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed pl-14">
-                {feature.description}
-              </p>
             </div>
           ))}
         </div>

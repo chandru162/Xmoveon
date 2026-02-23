@@ -17,25 +17,29 @@ const panels = [
 
 const Panels = () => {
   return (
-    <section className="w-full bg-[#fafafa] py-14 sm:py-16 lg:py-20">
+    <section className="w-full py-14 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Left */}
           <div>
-            <span className="inline-flex items-center gap-3 bg-green-100 text-green-700 text-sm font-medium px-4 py-1 rounded-full">
-              Panels & Dashboards
-              <span className="w-7 h-7 flex items-center justify-center bg-white text-black rounded-full shadow">
-                ↗
-              </span>
-            </span>
+            <div className="flex flex-row justify-start">
+            <h3 className=" text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold  rounded-full">
+             <span className="bg-[#E4FFD4]"> Panels & </span> <br /> Dashboards
+            </h3>
+            <img 
+                   src="/images2/features/img_group_1000001743.svg" 
+                   alt="Driver Earnings" 
+                   className="w-[61px] sm:w-[75px] md:w-[92px] lg:w-[106px] xl:w-[122px] h-[24px] sm:h-[29px] md:h-[36px] lg:h-[42px] xl:h-[48px] mt-20 mx-4"
+              />
+            </div>
 
             {/* Image */}
             <div className="mt-8 rounded-3xl overflow-hidden shadow-lg max-w-md">
               <img
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                src="/public/assets/desk.jpg"
                 alt="Dashboard"
-                className="w-full h-64 object-cover"
+                className="w-full h-84 object-cover"
               />
             </div>
           </div>
@@ -45,16 +49,13 @@ const Panels = () => {
             {panels.map((item, index) => (
               <div
                 key={index}
-                className={`p-6 rounded-2xl ${
-                  index === 0
-                    ? "bg-white shadow-sm"
-                    : "bg-transparent"
+                className={`p-6 rounded-md bg-[#F4F4F480] w-[80%] 
                 }`}
               >
-                <h3 className="font-semibold text-gray-900 mb-1">
+                <h3 className="font-semibold  mb-1">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm  leading-relaxed">
                   {item.desc}
                 </p>
               </div>

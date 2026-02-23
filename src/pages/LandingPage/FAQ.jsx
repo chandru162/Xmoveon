@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Can you customize the commission rates ?",
-    a: "In most cases, commission rates are set by the platform or service and **cannot be customized** by individual drivers or restaurants.",
+    a: "In most cases, commission rates are set by the platform or service and cannot be customized by individual drivers or restaurants.",
   },
   {
     q: "Still have questions?",
@@ -32,19 +32,19 @@ const FAQ = () => {
 
   return (
     <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[900px] mx-auto px-4 sm:px-6">
 
-        {/* Title */}
+        {/* HEADER */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900">
+          <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-semibold text-black">
             FAQ
           </h2>
-          <p className="mt-2 text-sm text-gray-500">
+          <p className="mt-2 text-sm sm:text-base text-gray-500">
             Everything you need to know about getting started.
           </p>
         </div>
 
-        {/* FAQ List */}
+        {/* FAQ LIST */}
         <div className="space-y-4">
           {faqs.map((item, index) => {
             const isOpen = openIndex === index;
@@ -52,30 +52,32 @@ const FAQ = () => {
             return (
               <div
                 key={index}
-                className={`rounded-2xl border transition ${
+                className={`rounded-[22px] transition-all duration-300 ${
                   isOpen
-                    ? "bg-green-100 border-green-200"
-                    : "bg-white border-gray-200"
+                    ? "bg-[#E4FFD4]"
+                    : "bg-[#F5F5F5]"
                 }`}
               >
-                {/* Question */}
+                {/* QUESTION */}
                 <button
                   onClick={() =>
                     setOpenIndex(isOpen ? null : index)
                   }
-                  className="w-full flex items-center justify-between px-6 py-4 text-left"
+                  className="w-full flex items-center justify-between px-6 py-5 text-left"
                 >
-                  <span className="font-medium text-gray-900">
+                  <span className="text-[15px] sm:text-[16px] font-medium text-black">
                     {item.q}
                   </span>
-                  <span className="text-green-600 text-lg">
+
+                  {/* ICON */}
+                  <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#9CEE69] text-black text-sm font-bold">
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>
 
-                {/* Answer */}
+                {/* ANSWER */}
                 {isOpen && (
-                  <div className="px-6 pb-4 text-sm text-gray-700">
+                  <div className="px-6 pb-5 text-sm sm:text-base text-gray-700 leading-relaxed">
                     {item.a}
                   </div>
                 )}
