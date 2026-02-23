@@ -3,26 +3,26 @@ import { useEffect, useState } from 'react';
 const testimonials = [
   {
     image: '/assets/Maskgroup.png',
-    quote:
-      'The team delivered our on-demand app faster than we imagined. Customization and performance were absolutely top-class.',
+    quote: 'The team delivered our on-demand app faster than we imagined. Customization and performance were absolutely top-class.',
     author: 'Startup Founder – Bengaluru',
   },
   {
     image: '/assets/Maskgroup.png',
-    quote:
-      'TaxiAppz helped us build a platform that’s lightning fast, highly localized, and perfect for the Indian market.',
+    quote: 'TaxiAppz helped us build a platform that’s lightning fast, highly localized, and perfect for the Indian market.',
     author: 'Towny Product Team',
   },
   {
     image: '/assets/Maskgroup.png',
-    quote:
-      'From idea to launch, everything was smooth and transparent. Support and scalability were the biggest wins.',
+    quote: 'From idea to launch, everything was smooth and transparent. Support and scalability were the biggest wins.',
     author: 'Enterprise Client – India',
   },
 ];
 
 export default function TestimonialsSection() {
   const [index, setIndex] = useState(0);
+
+  // Error fix: Defining the missing "current" variable
+  const current = testimonials[index];
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -34,7 +34,6 @@ export default function TestimonialsSection() {
   return (
     <section className="w-full bg-white py-12 md:py-24">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        {/* Header - Fixed Overlap for Mobile */}
         <div className="mb-12 md:mb-16">
           <h2 className="text-[32px] md:text-[48px] font-bold text-black leading-tight">
             <span
@@ -49,9 +48,7 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Content Layout - Responsive Flex */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-between">
-          {/* Image Container */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <img
               src={current.image}
@@ -60,7 +57,6 @@ export default function TestimonialsSection() {
             />
           </div>
 
-          {/* Testimonial Card Container */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <GreenCard
               quote={current.quote}
@@ -77,7 +73,6 @@ export default function TestimonialsSection() {
 function GreenCard({ quote, author, className = '', ...props }) {
   return (
     <div className={`relative w-full max-w-[561px] mx-auto ${className}`} {...props}>
-      {/* SVG Container - Responsive sizing */}
       <svg
         viewBox="0 0 561 316"
         preserveAspectRatio="xMidYMid meet"
@@ -90,19 +85,13 @@ function GreenCard({ quote, author, className = '', ...props }) {
         />
       </svg>
 
-      {/* Content Overlay - Optimized for mobile text containment */}
       <div className="absolute inset-0 p-3 sm:p-5 md:p-6 lg:p-8 flex flex-col justify-start overflow-hidden">
-        {/* Testimonial Badge */}
         <div className="self-start border border-black/20 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[8px] leading-tight sm:text-[10px] md:text-xs font-semibold uppercase tracking-wider mb-2 sm:mb-3 md:mb-4 mt-4">
           CLIENT TESTIMONIAL
         </div>
-
-        {/* Quote Text - Better mobile containment */}
         <p className="text-black text-xs sm:text-sm md:text-base lg:text-md font-medium leading-snug sm:leading-relaxed line-clamp-4 sm:line-clamp-3 md:line-clamp-none">
           “{quote}”
         </p>
-
-        {/* Author - Contained */}
         <p className="mt-2 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base font-medium truncate">
           — {author}
         </p>
