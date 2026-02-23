@@ -96,7 +96,7 @@ const EcosystemSection = () => {
                       alt=""
                       className="w-5 h-5"
                     />
-                    <span className="text-sm text-text-secondary">
+                    <span className="text-sm font-medium text-gray-700">
                       {feature}
                     </span>
                   </div>

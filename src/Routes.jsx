@@ -9,6 +9,8 @@ import GetStart from '../src/pages/GetStart/index'
 import FooterSection from './pages/LandingPage/FooterSection';
 import Service from './pages/Service';
 
+import TaxiPage from '../src/pages/Features/Taxi'
+
 const AppRoutes = () => {
   return (
     <>
@@ -19,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/getstart" element={<GetStart />} />
           <Route path="/restaurant" element={<HomePage />} />
           <Route path="/Service" element={<Service />} />
+          <Route path="/taxi" element={<TaxiPage />} />
 
 
         </Routes>

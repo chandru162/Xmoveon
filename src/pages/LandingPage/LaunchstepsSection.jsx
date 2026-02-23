@@ -85,7 +85,6 @@ const LaunchStepsSection = () => {
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>
