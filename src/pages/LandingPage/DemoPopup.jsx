@@ -75,7 +75,7 @@ const DemoPopup = ({ showDemo, setShowDemo }) => {
               <div className="text-center py-6">
                 <h3 className="text-lime-400 font-semibold">Submitted Successfully</h3>
                 <button
-                  onClick={() => setOpen(false)}
+                  onClick={() => setShowDemo(false)}
                   className="mt-4 rounded-full bg-lime-400 px-6 py-2 text-sm font-semibold text-black"
                 >
                   Close
