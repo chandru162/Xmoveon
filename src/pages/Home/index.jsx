@@ -291,10 +291,10 @@ const Home = () => {
 
                     {/* Hero Section */}
                     <section className="w-full bg-white overflow-hidden">
-                        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+                        <div className="max-w-[1440px] mx-auto mx-4 sm:mx-6 lg:mx-8 xl:mx-16">
 
                           <div className="py-10 sm:py-14 lg:py-20">
-                            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                            <div className="flex flex-col lg:flex-row  gap-10 lg:gap-16">
 
                               {/* LEFT CONTENT */}
                               <div className="w-full lg:w-[48%] text-center lg:text-left">
@@ -321,7 +321,7 @@ const Home = () => {
                                   instantly
                                 </h1>
 
-                                <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-md mx-auto lg:mx-0">
+                                <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
                                  Build your multi-vendor food delivery platform with our proven solution. Restaurants gain exposure, drivers earn commissions, and you control the entire ecosystem from one powerful admin panel.
                                 </p>
 
@@ -344,22 +344,29 @@ const Home = () => {
                                 <div
                                   className="
                                     w-full
-                                    max-w-[260px]
-                                    sm:max-w-[320px]
-                                    md:max-w-[380px]
-                                    lg:max-w-[420px]
-                                    aspect-[3/5]
+                                    max-w-[560px]
+                                    sm:max-w-[520px]
+                                    md:max-w-[680px]
+                                    lg:max-w-[920px]
+                                    xl:max-w-[1000px]
+                                    aspect-[5/5]
                                   "
                                 >
                                   <img
                                     src="/assets/Frame.png"
                                     alt="App Preview"
                                     className="
-                                      w-full
-                                      h-full
-                                      object-cover
-                                      rounded-[24px]
-                                      shadow-lg
+                                    w-[380px]
+                                    h-[200px]
+                                    md:w-[560px]                                    
+                                    md:h-[300px]
+                                    lg:w-[480px]                                    
+                                    lg:h-[360px]
+                                    xl:w-[700px]                                    
+                                    xl:h-[400px]
+                                    object-cover
+                                    rounded-[24px]
+                                    shadow-lg
                                     "
                                   />
                                 </div>
@@ -374,7 +381,7 @@ const Home = () => {
                 </div>
               {/* Technology Stack Section */}
             <section className="w-full bg-white">
-                <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
 
                   {/* CONTAINER */}
                   <div
@@ -497,7 +504,7 @@ const Home = () => {
                             className="
                               mt-6
                               w-full
-                              max-w-[260px]
+                              max-w-[360px]
                               sm:max-w-[320px]
                               md:max-w-[360px]
                               lg:max-w-[420px]
@@ -630,7 +637,7 @@ const Home = () => {
                               md:max-w-[420px]
                               lg:max-w-[480px]
                               xl:max-w-[540px]
-                              aspect-[3/5]
+                              aspect-[5/5]
                             "
                           >
                             <img
@@ -639,6 +646,12 @@ const Home = () => {
                               className="
                                 w-full
                                 h-full
+                                md:w-[700px]                              
+                                md:h-[400px]
+                                lg:w-[500px]
+                                lg:h-[500px]
+                                xl:w-[500px]                              
+                                xl:h-[500px]
                                 rounded-[22px]
                                 object-cover
                               "
@@ -672,7 +685,7 @@ const Home = () => {
 
               {/* Driver Tools Section */}
              <section className="w-full bg-white">
-              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-12">
+              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-6 xl:px-12">
 
                 <div
                   className="
@@ -696,7 +709,7 @@ const Home = () => {
                                   sm:text-[32px]
                                   md:text-[40px]
                                   lg:text-[48px]
-                                  xl:text-[52px]
+                                  xl:text-[48px]
                                   font-medium
                                   leading-[1.15]
                                   text-text-primary
@@ -706,7 +719,7 @@ const Home = () => {
                               <span
                                   className="
                                     inline-block
-                                    bg-[#E4FFD4]
+                                    bg-[#E4FFD4]                                  
                                     rounded-md
                                     whitespace-nowrap
                                   "
@@ -769,9 +782,9 @@ const Home = () => {
                           "
                         >
                           <img
-                            src="/assets/location.png"
+                            src="/assets/Location.png"
                             alt="Driver Experience"
-                            className="w-full h-full rounded-[22px] object-cover"
+                            className=" lg:w-[400px] lg:h-[250px] xl:w-[500px] xl:h-[300px]  md:w-[300px] md:h-[200px]  w-[300px] h-[150px] rounded-[17px] object-cover"
                           />
                         </div>
                       </div>
@@ -822,66 +835,61 @@ const Home = () => {
             </section>
 
               {/* Vendor Section */}
-              <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-14 xl:px-16">
+             <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
 
                   <div
                     className="
                       bg-secondary-background
-                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
-                      px-4 py-5
-                      sm:px-6 sm:py-6
+                      rounded-[24px] sm:rounded-[32px] lg:rounded-[44px]
+                      px-4 py-6
+                      sm:px-6 sm:py-8
                       lg:px-10 lg:py-10
-                      mt-12
+                      mt-10 sm:mt-14
                     "
                   >
-                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-stretch">
 
                       {/* LEFT SIDE */}
                       <div className="w-full lg:w-1/2 text-center lg:text-left">
-                         <h3
-                                className="
-                                  text-[26px]
-                                  sm:text-[32px]
-                                  md:text-[40px]
-                                  lg:text-[48px]
-                                  xl:text-[52px]
-                                  font-medium
-                                  leading-[1.15]
-                                  text-text-primary
-                                "
-                              >
-                                Your restaurant grows on  
-                              <span
-                                  className="
-                                    inline-block
-                                    bg-[#E4FFD4]
-                                    rounded-md
-                                    px-1
-                                    whitespace-nowrap
-                                  "
-                                > this platform</span>
 
-                                
-                              </h3>
-                        <p className="
-                    mt-4 
-                    text-sm 
-                    sm:text-base 
-                    text-text-secondary 
-                    max-w-md
-                    px-2
-                  ">
-                          Restaurants can manage menus, handle orders, and reach more customers without building their own app. Built-in insights help improve sales and daily operations.
+                        <h3
+                          className="
+                            text-[26px]
+                            sm:text-[32px]
+                            md:text-[40px]
+                            lg:text-[48px]
+                            font-medium
+                            text-text-primary
+                          "
+                        >
+                          Your restaurant grows on{" "}
+                          <span className="inline-block bg-[#E4FFD4] rounded-md px-2">
+                            this platform
+                          </span>
+                        </h3>
+
+                        <p
+                          className="
+                            mt-4
+                            text-sm
+                            sm:text-base
+                            text-text-secondary
+                            max-w-lg
+                            mx-auto
+                            lg:mx-0
+                          "
+                        >
+                          Restaurants can manage menus, handle orders, and reach more customers
+                          without building their own app. Built-in insights help improve sales
+                          and daily operations.
                         </p>
 
                         {/* META */}
                         <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
                           <div className="flex items-center gap-2">
                             <img src="/images/img_moneybag.svg" alt="Money" className="w-5 h-5" />
-                            <span className="text-sm text-text-secondary">
-                              $10B+ Processed
-                            </span>
+                            <span className="text-sm text-text-secondary">$10B+ Processed</span>
                           </div>
 
                           <div className="flex items-center gap-2">
@@ -894,39 +902,21 @@ const Home = () => {
 
                         <div className="mt-3 flex justify-center lg:justify-start gap-2">
                           <img src="/images/img_headset.svg" alt="Support" className="w-5 h-5" />
-                          <span className="text-sm text-text-secondary">
-                            24/7 Support
-                          </span>
+                          <span className="text-sm text-text-secondary">24/7 Support</span>
                         </div>
 
-                        <div className="mt-6 flex justify-center lg:justify-start">
-                          <Button
-                            text="Try Our Demo"
-                            text_font_size="16px"
-                            text_font_weight="600"
-                            text_color="#0f0f0f"
-                            fill_background_color="#9cee69"
-                            border_border_radius="32px"
-                            padding="14px 28px"
-                            text_align="center"
-                            onClick={() => setShowDemo(true)}
-                          />
-                        </div>
-                      </div>
-                      {/* RIGHT SIDE */}
-                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
-
-                        <span className="text-[24px] sm:text-[32px] lg:text-[48px] font-semibold text-primary-background">
+                        {/* VENDORS */}
+                        <h4 className="mt-10 text-[24px] sm:text-[28px] lg:text-[36px] font-semibold text-primary-background">
                           Vendors
-                        </span>
+                        </h4>
 
-                        <div className="flex flex-col gap-4">
+                        <div className="mt-4 flex flex-col gap-4 w-full max-w-lg mx-auto lg:mx-0">
                           {vendorFeatures.map((feature, index) => (
                             <div
                               key={index}
                               className="
                                 bg-[#F4F4F480]
-                                rounded-[20px]
+                                rounded-[16px]
                                 p-4 sm:p-5
                               "
                             >
@@ -936,21 +926,36 @@ const Home = () => {
                                   alt={feature.title}
                                   className="w-5 h-5"
                                 />
-                                <h4 className="text-base sm:text-lg font-semibold">
+                                <h4 className="text-base font-semibold">
                                   {feature.title}
                                 </h4>
                               </div>
-                              <p className="text-sm sm:text-base text-text-secondary mt-2">
+
+                              <p className="text-sm sm:text-base mt-2 text-text-secondary">
                                 {feature.description}
                               </p>
                             </div>
                           ))}
                         </div>
+                      </div>
 
+                      {/* RIGHT SIDE */}
+                      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-end">
+                        <img
+                          src="/assets/double.png"
+                          alt="mobile-screen"
+                          className="
+                            w-full
+                            max-w-[320px]
+                            sm:max-w-[380px]
+                            md:max-w-[420px]
+                            lg:max-w-[460px]
+                            object-contain
+                          "
+                        />
                       </div>
                     </div>
                   </div>
-
                 </div>
               </section>
 

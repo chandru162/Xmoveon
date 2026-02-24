@@ -25,8 +25,8 @@ const Options = () => {
 
         {/* TITLE */}
         <div className="mb-10 text-center lg:text-left">
-          <h3 className="text-[22px] sm:text-[32px] lg:text-[48px] font-semibold">
-            <span className="inline-block bg-[#E4FFD4] px-2 rounded-md">
+          <h3 className="text-[22px] sm:text-[32px] lg:text-[48px] font-semibold ">
+            <span className="inline-block bg-[#E4FFD4]  rounded-md">
               Monetization
             </span>{" "}
             Options

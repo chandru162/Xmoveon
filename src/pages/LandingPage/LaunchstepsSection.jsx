@@ -43,7 +43,7 @@ const LaunchStepsSection = () => {
                 sm:text-[32px]
                 md:text-[40px]
                 lg:text-[48px]
-                xl:text-[52px]
+                xl:text-[48px]
                 font-medium
                 leading-[1.15]
                 text-text-primary
@@ -56,6 +56,7 @@ const LaunchStepsSection = () => {
                 inline-block
                 bg-[#E4FFD4]
                 rounded-md
+                px-1
                 whitespace-nowrap
               "
             >

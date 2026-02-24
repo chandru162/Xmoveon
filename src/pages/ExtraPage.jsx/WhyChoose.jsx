@@ -44,8 +44,8 @@ const WhyChoose = () => {
     <section className="w-full bg-[#fafafa] py-14 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h3 className="text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-medium t mb-10">
-          Why Choose <span className="font-medium">Xmoveon</span>
+        <h3 className="text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold t mb-10">
+          Why Choose <span className="">Xmoveon</span>
         </h3>
 
         {/* Cards */}

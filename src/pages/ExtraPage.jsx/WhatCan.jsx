@@ -80,7 +80,7 @@ const WhatCan = () => {
 
             {/* IMAGE */}
             <div className="mt-10 flex justify-center lg:justify-start">
-              <div className="w-full max-w-[260px] sm:max-w-[320px] md:max-w-[380px] aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
+              <div className="w-full max-w-[360px] sm:max-w-[320px] md:max-w-[380px] aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
                 <img
                   src="/assets/window.jpg"
                   alt="Build with Xmoveon"

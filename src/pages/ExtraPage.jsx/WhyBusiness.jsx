@@ -24,7 +24,7 @@ const WhyBusinesses = () => {
           "
         >
           {/* LEFT CONTENT */}
-          <div className="text-center lg:text-left">
+          <div className="md:text-center lg:text-left">
             <h3
               className="
                                   text-[26px]
@@ -32,7 +32,7 @@ const WhyBusinesses = () => {
                                   md:text-[40px]
                                   lg:text-[48px]
                                   xl:text-[48px]
-                                  font-medium
+                                  font-semibold
                                   leading-[1.15]
                                   text-text-primary
                                 "
@@ -43,10 +43,10 @@ const WhyBusinesses = () => {
                                     rounded-md
                                     whitespace-nowrap
                                   "
-              > Why Businesses Love Xmoveon</span> <br />
+              > Why Businesses  Love Xmoveon</span> 
 
             </h3>
-            <ul className="mt-4 space-y-2 text-sm sm:text-base text-black/80">
+            <ul className="mt-2 space-y-4 text-sm sm:text-base max-w-[350px] md:max-w-full lg:max-w-full xl:max-w-full">
               <li>● 100% platform ownership — no recurring costs</li>
               <li>● Total control over hosting and data</li>
               <li>● Developer-friendly structure with documentation</li>
@@ -55,7 +55,7 @@ const WhyBusinesses = () => {
           </div>
 
           {/* RIGHT CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto justify-center  lg:justify-end">
+          <div className="flex flex-col sm:flex-row gap-4  lg:w-auto justify-center  lg:justify-end">
             <button
               className="
                 bg-black

@@ -126,7 +126,7 @@ const Who = () => {
 
           {/* RIGHT IMAGE */}
           <div className="flex justify-center">
-            <div className="w-full max-w-[260px] sm:max-w-[360px] md:max-w-[420px] aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
+            <div className="w-full max-w-[340px] sm:max-w-[360px] md:max-w-[420px] aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
               <img
                 src={data.image}
                 alt={data.label}

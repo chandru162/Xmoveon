@@ -21,7 +21,7 @@ const HeroSection = () => {
                     sm:text-[32px]
                     md:text-[40px]
                     lg:text-[48px]
-                    xl:text-[52px]
+                    xl:text-[48px]
                     font-medium
                     leading-[1.15]
                     text-text-primary
@@ -107,11 +107,11 @@ const HeroSection = () => {
                 alt="Platform showcase"
                 className="
                   w-full
-                  max-w-[280px]
+                  max-w-[350px]
                   sm:max-w-[360px]
-                  md:max-w-[420px]
+                  md:max-w-[500px]
                   lg:max-w-[480px]
-                  rounded-[28px]
+                  rounded-[20px]
                 "
               />
 
@@ -119,17 +119,17 @@ const HeroSection = () => {
               <div className="w-full flex flex-col sm:flex-row gap-4">
 
                 {/* CARD 1 */}
-                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4">
+                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4 ">
                   <img
                     src="/assets/Card3.png"
                     alt=""
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[130px] xl:w-full xl:h-full object-cover "
                   />
-                  <div className="relative">
-                    <p className="font-bold text-[16px] text-black">
+                  <div className="relative p-12 text-center">
+                    <p className="font-bold text-[32px] md:text-[16px]  lg:text-[16px]  xl:text-[16px] text-black ">
                       7 Days
                     </p>
-                    <p className="text-[12px] text-black">
+                    <p className="text-[22px] md:text-[12px]  lg:text-[12px]  xl:text-[12px] text-black ">
                       From idea to launch
                     </p>
                   </div>
@@ -140,13 +140,13 @@ const HeroSection = () => {
                   <img
                     src="/assets/Card2.png"
                     alt=""
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[110px] xl:w-full xl:h-full object-cover"
                   />
-                  <div className="relative text-white">
-                    <p className="font-bold text-[16px]">
+                  <div className="relative text-white p-12 text-center">
+                    <p className="font-bold text-[32px] md:text-[16px]  lg:text-[16px]  xl:text-[16px]">
                       6+ Service
                     </p>
-                    <p className="text-[12px] text-gray-200">
+                    <p className="text-[22px] md:text-[12px]  lg:text-[12px]  xl:text-[12px] text-gray-200">
                       categories available
                     </p>
                   </div>
@@ -157,13 +157,13 @@ const HeroSection = () => {
                   <img
                     src="/assets/Card3.png"
                     alt=""
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[130px] xl:w-full xl:h-full object-cover"
                   />
-                  <div className="relative">
-                    <p className="font-bold text-[16px] text-black">
+                  <div className="relative p-12 text-center">
+                    <p className="font-bold text-[36px] md:text-[16px]  lg:text-[16px]  xl:text-[16px] text-black">
                       100% Fully
                     </p>
-                    <p className="text-[12px] text-black">
+                    <p className="text-[22px] md:text-[12px]  lg:text-[12px]  xl:text-[12px] text-black">
                       Customize
                     </p>
                   </div>

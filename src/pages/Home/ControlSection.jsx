@@ -59,8 +59,8 @@ const AdminControl = () => {
             Control
           </span>
 
-          <h2 className="mt-4 text-[22px] sm:text-[28px] lg:text-[40px] font-semibold leading-tight">
-            The admin panel that{" "}
+          <h2 className="mt-4 text-[22px] sm:text-[28px] lg:text-[40px] font-semibold ">
+            The admin panel that{" "} <br />
             <span className="bg-[#E4FFD4] px-3 py-1 rounded-lg">
               runs everything
             </span>
@@ -94,16 +94,16 @@ const AdminControl = () => {
         <div className="mt-14 sm:mt-16 flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
 
           {/* LEFT */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <div className="w-full lg:w-1/2 text-center lg:text-left mx-6">
             <span className="block text-[#9CEE69] font-medium text-[20px] sm:text-[28px] lg:text-[42px]">
               Manage
             </span>
 
-            <h3 className="mt-4 text-[22px] sm:text-[28px] lg:text-[38px] font-semibold leading-tight">
+            <h3 className="mt-4 text-[22px] sm:text-[28px] lg:text-[40px] font-semibold ">
               {activeFeature.heading}
             </h3>
 
-            <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-md mx-auto lg:mx-0">
+            <p className="mt-4 text-sm sm:text-base  max-w-md mx-auto lg:mx-0">
               {activeFeature.description}
             </p>
 
@@ -122,7 +122,7 @@ const AdminControl = () => {
 
           {/* RIGHT */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="w-full max-w-[260px] sm:max-w-[360px] md:max-w-[420px] aspect-[4/3] rounded-[26px] overflow-hidden shadow-lg">
+            <div className="w-full max-w-[360px] sm:max-w-[360px] md:max-w-[420px] aspect-[4/3] rounded-[26px] overflow-hidden shadow-lg">
               <img
                 src={activeFeature.image}
                 alt="Admin Feature"

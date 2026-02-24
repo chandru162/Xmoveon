@@ -34,56 +34,48 @@ const WhyChooseSection = () => {
 
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-           <h3
-                className="
-                  text-[26px]
-                  sm:text-[32px]
-                  md:text-[40px]
-                  lg:text-[48px]
-                  xl:text-[52px]
-                  font-medium
-                  leading-[1.15]
-                  text-text-primary
-                "
-              >
+            <h3
+              className="
+                text-[26px]
+                sm:text-[32px]
+                md:text-[40px]
+                lg:text-[48px]
+                xl:text-[52px]
+                font-medium
+                leading-[1.15]
+                text-text-primary
+              "
+            >
+              <span className="inline-block bg-[#E4FFD4] rounded-md px-2">
+                Why Choose
+              </span>
+              <br />
+              <span className="inline-block mt-1">Xmoveon</span>
+            </h3>
 
-                
-              <span
-                className="
-                  inline-block
-                  bg-[#E4FFD4]
-                  rounded-md
-                  whitespace-nowrap
-                "
-              >
-             Why Choose 
-              </span> <br />
-               
-
-                <span
-                  className="
-                    inline-block
-                    rounded-md
-                    whitespace-nowrap
-                  "
-                >
-                  Xmoveon
-                </span>
-              </h3>
-            <div className="space-y-5 mt-6">
+            {/* BENEFITS */}
+            <div className="mt-8 space-y-4 sm:space-y-5">
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4 justify-center lg:justify-start"
+                  className="
+                    flex
+                    items-start
+                    sm:items-center
+                    gap-3
+                    md:justify-center
+                    lg:justify-start
+                    text-left
+                    max-w-[360px]
+                    mx-auto
+                    lg:mx-0
+                  "
                 >
-                  <div className="w-11 h-11 rounded-full bg-[#E4FFD4] flex items-center justify-center flex-shrink-0">
-                    <img
-                      src={benefit.icon}
-                      alt=""
-                      className="w-5 h-5"
-                    />
+                  <div className="w-11 h-11 rounded-[10px] bg-[#E4FFD4] flex items-center justify-center flex-shrink-0">
+                    <img src={benefit.icon} alt="" className="w-5 h-5" />
                   </div>
-                  <p className="text-[15px] sm:text-[16px] text-[#333]">
+
+                  <p className="text-[15px] sm:text-[16px] leading-snug mt-2">
                     {benefit.title}
                   </p>
                 </div>

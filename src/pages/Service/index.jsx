@@ -441,10 +441,10 @@ const Service = () => {
                           <div
                             className="
                                     w-full
-                                    max-w-[260px]
-                                    sm:max-w-[320px]
-                                    md:max-w-[380px]
-                                    lg:max-w-[480px]
+                                    max-w-[460px]
+                                    sm:max-w-[420px]
+                                    md:max-w-[680px]
+                                    lg:max-w-[780px]
                                     lg:aspect-[4/5]
                                     xl:aspect-[6/5]
                                   "
@@ -454,8 +454,8 @@ const Service = () => {
                               alt="Platform Illustration"
                               className="
                                       w-full
-                                      h-[300px]
-                                      w-[350px]
+                                      h-[200px]
+                                      w-[360px]
                                       md:h-[400px]
                                       lg:h-[350px]
                                       xl:h-[350px]
@@ -474,7 +474,7 @@ const Service = () => {
                             className="
                         mt-5
                         w-full
-                        max-w-[260px]
+                        max-w-[360px]
                         sm:max-w-[320px]
                         md:max-w-[380px]
                         bg-[#EFEFEF]

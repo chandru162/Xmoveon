@@ -98,11 +98,11 @@ const ScaleSuccessSection = () => {
                 className="
                   mt-6
                   w-full
-                  max-w-[260px]
+                  max-w-[350px]
                   sm:max-w-[320px]
                   md:max-w-[360px]
                   lg:max-w-[420px]
-                  rounded-[20px]
+                  rounded-[24px]
                   mx-auto
                   lg:mx-0
                 "

@@ -5,25 +5,25 @@ const cards = [
     tag: "Customers",
     title: "Food arrives fast and fresh",
     desc: "They order from multiple restaurants in one app and track deliveries in real time.",
-    img: "/assets/phone.jpg",
+    img: "/assets/everyone.png",
   },
   {
     tag: "Restaurants",
     title: "Reach hungry customers without building apps",
     desc: "They manage menus, track orders, and watch sales grow through your platform.",
-    img: "/assets/receive.jpg",
+    img: "/assets/everytwo.png",
   },
   {
     tag: "Drivers",
     title: "Earn more with smart routing",
     desc: "They see clear earnings, control schedules, and deliver efficiently every day.",
-    img: "/assets/people.jpg",
+    img: "/assets/everythree.png",
   },
   {
     tag: "Admins",
     title: "Build revenue from commissions",
     desc: "You manage everything from one dashboard and grow your business sustainably.",
-    img: "/assets/desk.jpg",
+    img: "/assets/everyfour.png",
   },
 ];
 
