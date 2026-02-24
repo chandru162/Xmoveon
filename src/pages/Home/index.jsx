@@ -43,6 +43,16 @@ const Home = () => {
     { name: 'Kotlin', icon: '/images2/features/img_vector_deep_purple_400.svg' }
   ];
 
+  
+    const benefits = [
+      { icon: "/images/img_hearts.svg", title: "One-time purchase, lifetime ownership" },
+      { icon: "/images/img_brand_airtable.svg", title: "White-label & customizable" },
+      { icon: "/images/img_camera_selfie.svg", title: "Self-hosted" },
+      { icon: "/images/img_frame_19_light_green_700_54x54.svg", title: "Built for service marketplaces" },
+      { icon: "/images/img_frame_19_62x62.svg", title: "Scalable & flexible architecture" },
+      { icon: "/images/img_frame_19_54x54.svg", title: "No vendor lock-in" },
+    ];
+
   const platformFeatures = [
     {
       icon: '/images2/features/img_layout_dashboard.svg',
@@ -219,7 +229,7 @@ const Home = () => {
 
   const tabs = [
     'Commission management',
-    'Restaurant onboarding', 
+    'Restaurant onboarding',
     'System analytics',
     'Settings control',
     'Revenue tracking',
@@ -259,6 +269,8 @@ const Home = () => {
     }
   ];
 
+  
+
   return (
     <>
       <Helmet>
@@ -275,215 +287,282 @@ const Home = () => {
               {/* Navigation */}
 
               <div className="flex flex-col justify-start items-center w-full">
-                <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
-                  {/* Hero Section */}
-                <section className="w-full bg-secondary-background">
-  <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12 xl:px-20">
+                  <div className="flex flex-col justify-start items-center w-full px-4 sm:px-6 lg:px-8">
 
-    <div className="
-      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
-      bg-secondary-background
-      px-4 py-6
-      sm:px-6 sm:py-8
-      lg:px-12 lg:py-12
-    ">
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                    {/* Hero Section */}
+                    <section className="w-full bg-white overflow-hidden">
+                        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
-        {/* LEFT CONTENT */}
-        <div className="w-full lg:w-[48%]">
-          <h1 className="
-            text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px]
-            font-medium text-text-primary leading-[1.15]
-          ">
-            Connect <br />
-            <span className="bg-[#E4FFD4] px-1">restaurants and</span> <br />
-            customers <br />
-            instantly
-          </h1>
+                          <div className="py-10 sm:py-14 lg:py-20">
+                            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-          <p className="
-            mt-4
-            text-sm sm:text-base
-            text-text-secondary
-            max-w-[520px]
-          ">
-            Build your multi-vendor food delivery platform with our proven solution.
-            Restaurants gain exposure, drivers earn commissions, and you control the
-            entire ecosystem from one powerful admin panel.
-          </p>
+                              {/* LEFT CONTENT */}
+                              <div className="w-full lg:w-[48%] text-center lg:text-left">
+                                <h1
+                                  className="
+                                    text-[26px]
+                                    sm:text-[32px]
+                                    md:text-[40px]
+                                    lg:text-[48px]
+                                    xl:text-[52px]
+                                    font-medium
+                                    leading-[1.15]
+                                    text-black
+                                  "
+                                >
+                                  Connect{" "}
+                                  <span className="inline-block bg-[#E4FFD4] rounded-md ">
+                                    restaurants and
+                                  </span>
+                                  <br />
+                                  <span className="inline-block bg-[#E4FFD4] rounded-md  mt-1">
+                                    customers
+                                  </span><br />
+                                  instantly
+                                </h1>
 
-          <div className="mt-6">
-            <Button
-              text="Try Our Demo"
-              text_font_size="16px"
-              text_font_weight="600"
-              text_color="#0f0f0f"
-              fill_background_color="#9cee69"
-              border_border_radius="999px"
-              padding="14px 28px"
-              text_align="center"
-            />
-          </div>
-        </div>
+                                <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-md mx-auto lg:mx-0">
+                                 Build your multi-vendor food delivery platform with our proven solution. Restaurants gain exposure, drivers earn commissions, and you control the entire ecosystem from one powerful admin panel.
+                                </p>
 
-        {/* RIGHT IMAGE */}
-        <div className="w-full lg:w-[52%] flex justify-center lg:justify-end">
-          <div className="
-            relative
-            w-full
-            max-w-[360px]
-            sm:max-w-[420px]
-            md:max-w-[460px]
-            lg:max-w-[520px]
-          ">
-            <img
-              src="/public/assets/android.jpg"
-              alt="Platform Illustration"
-              className="
-                w-full
-                rounded-[24px] lg:rounded-[28px]
-                object-cover
-              "
-            />
+                                <div className="mt-6 flex justify-center lg:justify-start">
+                                  <Button
+                                    text="Try Our Demo"
+                                    text_font_size="16px"
+                                    text_font_weight="600"
+                                    text_color="#0f0f0f"
+                                    fill_background_color="#9CEE69"
+                                    border_border_radius="999px"
+                                    padding="14px 30px"
+                                    text_align="center"
+                                  />
+                                </div>
+                              </div>
 
-            {/* OPTIONAL PILL BUTTON LIKE IMAGE */}
-            <button
-              className="
-                absolute bottom-4 right-4
-                bg-[#9cee69]
-                text-black
-                text-sm font-medium
-                px-4 py-2
-                rounded-full
-              "
-            >
-              Request demo
-            </button>
-          </div>
-        </div>
+                              {/* RIGHT IMAGE */}
+                              <div className="w-full lg:w-[52%] flex justify-center lg:justify-end">
+                                <div
+                                  className="
+                                    w-full
+                                    max-w-[260px]
+                                    sm:max-w-[320px]
+                                    md:max-w-[380px]
+                                    lg:max-w-[420px]
+                                    aspect-[3/5]
+                                  "
+                                >
+                                  <img
+                                    src="/assets/Frame.png"
+                                    alt="App Preview"
+                                    className="
+                                      w-full
+                                      h-full
+                                      object-cover
+                                      rounded-[24px]
+                                      shadow-lg
+                                    "
+                                  />
+                                </div>
+                              </div>
 
-      </div>
-    </div>
-  </div>
-</section>
+                            </div>
+                          </div>
+
+                        </div>
+                      </section>
+                  </div>
                 </div>
-              </div>
               {/* Technology Stack Section */}
-           <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
+            <section className="w-full bg-white">
+                <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 
+                  {/* CONTAINER */}
                   <div
                     className="
                       bg-secondary-background
-                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
-                      px-4 py-5
-                      sm:px-6 sm:py-6
-                      lg:px-12 lg:py-8
+                      rounded-[20px]
+                      sm:rounded-[28px]
+                      lg:rounded-[40px]
+                      px-4 py-4
+                      sm:px-6 sm:py-5
+                      lg:px-10 lg:py-6
                     "
                   >
                     <div
                       className="
-                        flex flex-wrap
+                        flex
+                        flex-wrap
                         justify-center
                         lg:justify-between
                         items-center
-                        gap-x-6 gap-y-4
+                        gap-x-6
+                        gap-y-4
                         sm:gap-x-8
+                        sm:gap-y-5
                         lg:gap-x-12
-                        xl:gap-x-16
                       "
                     >
 
-                      {/* Flutter */}
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images2/features/img_vector.svg"
-                          alt="Flutter"
-                          className="w-5 sm:w-6 lg:w-7 xl:w-8"
-                        />
-                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
-                          Flutter
-                        </span>
-                      </div>
-
-                      {/* Next.js */}
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images2/features/img_vector.svg"
-                          alt="Next.js"
-                          className="w-5 sm:w-6 lg:w-7 xl:w-8"
-                        />
-                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
-                          Next.js
-                        </span>
-                      </div>
-
-                      {/* React.js */}
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images2/features/img_logos_react_original.svg"
-                          alt="React.js"
-                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
-                        />
-                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
-                          React.js
-                        </span>
-                      </div>
-
-                      {/* Node.js */}
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images2/features/img_logos_nodejs_original.svg"
-                          alt="Node.js"
-                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
-                        />
-                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
-                          Node.js
-                        </span>
-                      </div>
-
-                      {/* SQL */}
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images2/features/img_vector.svg"
-                          alt="SQL"
-                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
-                        />
-                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
-                          SQL
-                        </span>
-                      </div>
-
-                      {/* Kotlin */}
-                      <div className="flex items-center gap-3">
-                        <img
-                          src="/images2/features/img_vector_deep_purple_400.svg"
-                          alt="Kotlin"
-                          className="w-5 sm:w-6 lg:w-7 xl:w-9"
-                        />
-                        <span className="text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
-                          Kotlin
-                        </span>
-                      </div>
+                      {/* ITEM */}
+                      {[
+                        { name: "Flutter", icon: "/images2/features/img_vector.svg" },
+                        { name: "Next.js", icon: "/images2/features/img_vector.svg" },
+                        { name: "React.js", icon: "/images2/features/img_logos_react_original.svg" },
+                        { name: "Node.js", icon: "/images2/features/img_logos_nodejs_original.svg" },
+                        { name: "SQL", icon: "/images2/features/img_vector.svg" },
+                        { name: "Kotlin", icon: "/images2/features/img_vector_deep_purple_400.svg" },
+                      ].map((tech, index) => (
+                        <div
+                          key={index}
+                          className="
+                            flex
+                            items-center
+                            gap-3
+                            min-w-[120px]
+                            justify-center
+                          "
+                        >
+                          <img
+                            src={tech.icon}
+                            alt={tech.name}
+                            className="w-5 sm:w-6"
+                          />
+                          <span className="text-sm sm:text-base lg:text-lg font-semibold">
+                            {tech.name}
+                          </span>
+                        </div>
+                      ))}
 
                     </div>
                   </div>
 
                 </div>
-           </section>
+              </section>
 
 
               {/* Built for Scale Section */}
-                  <ScaleSuccessSection/>
+              <section className="w-full bg-white overflow-hidden">
+                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+
+                    {/* CARD */}
+                    <div className="bg-secondary-background lg:rounded-[48px] py-10 sm:py-12 lg:py-16">
+                      <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+
+                        {/* LEFT */}
+                        <div className="w-full lg:w-1/2 text-center lg:text-left">
+                              <h3
+                                className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[52px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                              >
+                                Built for Scale
+                              <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                >  Designed for </span> <br />
+
+                                <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                >
+                                Success
+                                </span>
+                              </h3>
+                      
+
+                          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
+                            Build and deploy fully customizable service applications without
+                            any coding. Everything you need to start and scale your
+                            on-demand business instantly.
+                          </p>
+
+                          <img
+                            src="/assets/car.jpg"
+                            alt="Platform Dashboard"
+                            className="
+                              mt-6
+                              w-full
+                              max-w-[260px]
+                              sm:max-w-[320px]
+                              md:max-w-[360px]
+                              lg:max-w-[420px]
+                              rounded-[20px]
+                              mx-auto
+                              lg:mx-0
+                            "
+                          />
+                        </div>
+
+                        {/* RIGHT */}
+                        <div className="w-full lg:w-1/2">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            {platformFeatures.map((feature, index) => (
+                              <div
+                                key={index}
+                                className="
+                                  bg-white
+                                  rounded-[16px]
+                                  p-4
+                                  sm:p-5
+                                  flex
+                                  flex-col
+                                  gap-2
+                                  hover:shadow-md
+                                  transition
+                                "
+                              >
+                                <div className="flex items-center gap-3">
+                                  <div className="bg-[#E4FFD4] p-2 rounded-[10px] shrink-0">
+                                    <img
+                                      src={feature.icon}
+                                      alt={feature.title}
+                                      className="w-5 h-5"
+                                    />
+                                  </div>
+                                  <h4 className="text-sm sm:text-base font-semibold text-black">
+                                    {feature.title}
+                                  </h4>
+                                </div>
+
+                                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pl-[44px]">
+                                  {feature.description}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </section>
 
               {/* Customer Experience Section */}
-             <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
+            <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-16 xl:px-20">
 
                   <div
                     className="
                       bg-secondary-background
-                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
+                      rounded-[24px]
+                      sm:rounded-[32px]
+                      lg:rounded-[44px]
                       px-4 py-5
                       sm:px-6 sm:py-6
                       lg:px-10 lg:py-10
@@ -499,7 +578,7 @@ const Home = () => {
                         {/* LEFT CONTENT */}
                         <div className="w-full lg:w-[45%] flex flex-col gap-5">
 
-                          {/* FIRST FEATURE – highlighted */}
+                          {/* HIGHLIGHT FEATURE */}
                           <div className="bg-[#F4F4F480] rounded-[18px] p-4">
                             <div className="flex items-center gap-3">
                               <img
@@ -543,24 +622,33 @@ const Home = () => {
 
                         {/* RIGHT IMAGE */}
                         <div className="w-full lg:w-[55%] flex justify-center lg:justify-end">
-                          <img
-                            src="/public/assets/people.jpg"
-                            alt="Customer Experience"
+                          <div
                             className="
                               w-full
-                              max-w-[320px]
-                              sm:max-w-[420px]
+                              max-w-[280px]
+                              sm:max-w-[360px]
+                              md:max-w-[420px]
                               lg:max-w-[480px]
                               xl:max-w-[540px]
-                              rounded-[22px]
-                              object-cover
+                              aspect-[3/5]
                             "
-                          />
+                          >
+                            <img
+                              src="/assets/multi.png"
+                              alt="Customer Experience"
+                              className="
+                                w-full
+                                h-full
+                                rounded-[22px]
+                                object-cover
+                              "
+                            />
+                          </div>
                         </div>
                       </div>
 
                       {/* BOTTOM BAR */}
-                      <div className="flex justify-between items-center border-t border-border-secondary pt-4 w-full lg:w-[45%]">
+                      <div className="flex items-center justify-between border-t border-border-secondary pt-4 w-full lg:w-[45%]">
                         <button className="px-4 py-2 text-xs border rounded-lg">
                           1 / 4
                         </button>
@@ -584,112 +672,158 @@ const Home = () => {
 
               {/* Driver Tools Section */}
              <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
+              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-12">
 
-                  <div
-                    className="
-                      bg-secondary-background
-                      rounded-[28px] sm:rounded-[36px] lg:rounded-[44px]
-                      px-4 py-5
-                      sm:px-6 sm:py-6
-                      lg:px-10 lg:py-10
-                      mt-10
-                    "
-                  >
-                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
+                <div
+                  className="
+                    bg-secondary-background
+                    rounded-[24px]
+                    sm:rounded-[32px]
+                    lg:rounded-[44px]
+                    px-4 py-5
+                    sm:px-6 sm:py-6
+                    lg:px-10 lg:py-10
+                    mt-10
+                  "
+                >
+                  <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
 
-                      {/* LEFT SIDE */}
-                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
+                    {/* LEFT SIDE */}
+                    <div className="w-full lg:w-1/2 text-center lg:text-left">
+                       <h3
+                                className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[52px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                              >
+                                Tools that help  <br />
+                              <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                > them earn more </span> 
+                              </h3>
 
-                        {/* HEADING */}
-                        <h2 className="text-[28px] sm:text-[34px] lg:text-[48px] font-medium leading-tight">
-                          Tools that help <br />
-                          <span className="bg-[#E4FFD4] px-1">them earn more</span>
-                        </h2>
+                      <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
+                        Drivers get smart routing that saves time and fuel. They see earnings
+                        clearly and manage their schedule on their own terms.
+                      </p>
 
-                        {/* DESCRIPTION */}
-                        <p className="text-sm sm:text-base text-text-secondary max-w-lg">
-                          Drivers get smart routing that saves time and fuel. They see earnings clearly and manage their schedule on their own terms.
-                        </p>
-
-                        {/* CTA */}
-                        <div className="flex items-center gap-4">
-                          <Button
-                            text="Learn"
-                            text_font_size="text-xs"
-                            text_font_weight="font-medium"
-                            text_color="#fff"
-                            fill_background_color="#0f0f0f"
-                            border_border_radius="rounded-lg"
-                            padding="px-4 py-2"
-                          />
-                          <img
-                            src="/images2/features/img_group_1000001743.svg"
-                            alt="Driver Earnings"
-                            className="h-8"
-                          />
+                      {/* META */}
+                      <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
+                        <div className="flex items-center gap-2">
+                          <img src="/images/img_moneybag.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
+                          <span className="text-xs sm:text-sm text-text-secondary">
+                            $10B+ Processed
+                          </span>
                         </div>
 
-                        {/* IMAGE */}
-                        <img
-                          src="/public/assets/car.jpg"
-                          alt="Driver Dashboard"
-                          className="
-                            w-full
-                            max-w-[340px]
-                            sm:max-w-[420px]
-                            lg:max-w-[460px]
-                            rounded-[22px]
-                            object-cover
-                            mt-4
-                          "
+                        <div className="flex items-center gap-2">
+                          <img src="/images/img_code.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
+                          <span className="text-xs sm:text-sm text-text-secondary">
+                            No Coding Required
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="mt-3 flex justify-center lg:justify-start gap-2">
+                        <img src="/images/img_headset.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
+                        <span className="text-xs sm:text-sm text-text-secondary">
+                          24/7 Support
+                        </span>
+                      </div>
+
+                      <div className="mt-6 flex justify-center lg:justify-start">
+                        <Button
+                          text="Try Our Demo"
+                          text_font_size="16px"
+                          text_font_weight="600"
+                          text_color="#0f0f0f"
+                          fill_background_color="#9cee69"
+                          border_border_radius="32px"
+                          padding="14px 28px"
+                          text_align="center"
+                          onClick={() => setShowDemo(true)}
                         />
                       </div>
 
-                      {/* RIGHT SIDE */}
-                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
-
-                        <span className="text-[24px] sm:text-[32px] lg:text-[48px] font-semibold text-primary-background">
-                          Drivers
-                        </span>
-
-                        <div className="flex flex-col gap-4">
-                          {driverFeatures.map((feature, index) => (
-                            <div
-                              key={index}
-                              className="
-                                bg-[#F4F4F480]
-                                rounded-[20px]
-                                p-4 sm:p-5
-                              "
-                            >
-                              <div className="flex items-center gap-3">
-                                <img
-                                  src={feature.icon}
-                                  alt={feature.title}
-                                  className="w-5 h-5"
-                                />
-                                <h4 className="text-base sm:text-lg font-semibold">
-                                  {feature.title}
-                                </h4>
-                              </div>
-                              <p className="text-sm sm:text-base text-text-secondary mt-2">
-                                {feature.description}
-                              </p>
-                            </div>
-                          ))}
+                      {/* IMAGE */}
+                      <div className="mt-6 flex justify-center lg:justify-start">
+                        <div
+                          className="
+                            w-full
+                            max-w-[240px]
+                            sm:max-w-[300px]
+                            md:max-w-[360px]
+                            lg:max-w-[420px]
+                            aspect-[4/5]
+                          "
+                        >
+                          <img
+                            src="/assets/location.png"
+                            alt="Driver Experience"
+                            className="w-full h-full rounded-[22px] object-cover"
+                          />
                         </div>
-
                       </div>
                     </div>
-                  </div>
 
+                    {/* RIGHT SIDE */}
+                    <div className="w-full lg:w-1/2 flex flex-col gap-6">
+                      <span className="text-[22px] sm:text-[28px] lg:text-[40px] font-semibold text-primary-background text-center lg:text-left">
+                        Drivers
+                      </span>
+
+                      <div className="flex flex-col gap-4">
+                        {driverFeatures.map((feature, index) => (
+                          <div
+                            key={index}
+                            className="
+                              bg-[#F4F4F480]
+                              rounded-[20px]
+                              p-4
+                              sm:p-5
+                              hover:shadow-md
+                              transition
+                            "
+                          >
+                            <div className="flex items-center gap-3">
+                              <img
+                                src={feature.icon}
+                                alt={feature.title}
+                                className="w-5 h-5"
+                              />
+                              <h4 className="text-base sm:text-lg font-semibold">
+                                {feature.title}
+                              </h4>
+                            </div>
+
+                            <p className="text-sm sm:text-base text-text-secondary mt-2">
+                              {feature.description}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+
+              </div>
             </section>
 
               {/* Vendor Section */}
-             <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-12">
+              <section className="w-full bg-white">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-14 xl:px-16">
 
                   <div
                     className="
@@ -704,35 +838,81 @@ const Home = () => {
                     <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
 
                       {/* LEFT SIDE */}
-                      <div className="w-full lg:w-[50%] flex flex-col gap-6">
+                      <div className="w-full lg:w-1/2 text-center lg:text-left">
+                         <h3
+                                className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[52px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                              >
+                                Your restaurant grows on  
+                              <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    px-1
+                                    whitespace-nowrap
+                                  "
+                                > this platform</span>
 
-                        {/* HEADING */}
-                        <h2 className="text-[28px] sm:text-[34px] lg:text-[48px] font-medium leading-tight">
-                          Your restaurant grows <br />
-                          <span className="bg-[#E4FFD4] px-1">on this platform</span>
-                        </h2>
-
-                        {/* DESCRIPTION */}
-                        <p className="text-sm sm:text-base text-text-secondary max-w-lg">
-                          Restaurants can manage menus, handle orders, and reach more customers without building their own app. Built-in insights help them grow faster.
+                                
+                              </h3>
+                        <p className="
+                    mt-4 
+                    text-sm 
+                    sm:text-base 
+                    text-text-secondary 
+                    max-w-md
+                    px-2
+                  ">
+                          Restaurants can manage menus, handle orders, and reach more customers without building their own app. Built-in insights help improve sales and daily operations.
                         </p>
 
-                        {/* IMAGE */}
-                        <img
-                          src="/public/assets/restarunt.jpg"
-                          alt="Restaurant Dashboard"
-                          className="
-                            w-full
-                            max-w-[360px]
-                            sm:max-w-[440px]
-                            lg:max-w-[520px]
-                            rounded-[22px]
-                            object-cover
-                            mt-4
-                          "
-                        />
-                      </div>
+                        {/* META */}
+                        <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
+                          <div className="flex items-center gap-2">
+                            <img src="/images/img_moneybag.svg" alt="Money" className="w-5 h-5" />
+                            <span className="text-sm text-text-secondary">
+                              $10B+ Processed
+                            </span>
+                          </div>
 
+                          <div className="flex items-center gap-2">
+                            <img src="/images/img_code.svg" alt="Code" className="w-5 h-5" />
+                            <span className="text-sm text-text-secondary">
+                              No Coding Required
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="mt-3 flex justify-center lg:justify-start gap-2">
+                          <img src="/images/img_headset.svg" alt="Support" className="w-5 h-5" />
+                          <span className="text-sm text-text-secondary">
+                            24/7 Support
+                          </span>
+                        </div>
+
+                        <div className="mt-6 flex justify-center lg:justify-start">
+                          <Button
+                            text="Try Our Demo"
+                            text_font_size="16px"
+                            text_font_weight="600"
+                            text_color="#0f0f0f"
+                            fill_background_color="#9cee69"
+                            border_border_radius="32px"
+                            padding="14px 28px"
+                            text_align="center"
+                            onClick={() => setShowDemo(true)}
+                          />
+                        </div>
+                      </div>
                       {/* RIGHT SIDE */}
                       <div className="w-full lg:w-[50%] flex flex-col gap-6">
 
@@ -775,197 +955,124 @@ const Home = () => {
               </section>
 
               {/* Admin Control Section */}
-                            <ControlSection/>
+              <ControlSection />
               {/* Platform Benefits Section */}
-           <section className="w-full">
-                <div
-                  className="
-                    bg-secondary-background
-                    rounded-[36px]
-                    w-full max-w-[1400px]
-                    mx-auto
-                    px-4 sm:px-6 lg:px-12
-                    py-10 sm:py-14 lg:py-20
-                    mt-14 sm:mt-20
-                  "
-                >
-                  {/* Heading */}
-                  <h2
-                    className="
-                      text-[26px] sm:text-[32px] lg:text-[48px]
-                      font-medium leading-tight
-                      text-text-primary
-                      max-w-3xl
-                      mb-10 sm:mb-14
-                    "
-                  >
-                    The Platform That Powers <br />
-                    Your Marketplace
-                  </h2>
-
-                  {/* Cards Grid */}
+              <section className="w-full">
                   <div
                     className="
-                      grid grid-cols-1 sm:grid-cols-2
-                      gap-5 sm:gap-6 lg:gap-8
+                      bg-secondary-background
+                      rounded-[28px]
+                      sm:rounded-[32px]
+                      lg:rounded-[40px]
+                      w-full
+                      max-w-[1400px]
+                      mx-auto
+                      px-4 sm:px-6 lg:px-16 xl:px-20
+                      py-10 sm:py-14 lg:py-20
+                      mt-12 sm:mt-16 lg:mt-20
                     "
                   >
-                    {platformBenefits?.map((benefit, index) => (
-                      <div
-                        key={index}
-                        className="
-                          bg-[#E9FFD9]
-                          rounded-[22px]
-                          p-5 sm:p-6 lg:p-8
-                          flex flex-col
-                          gap-4
-                        "
-                      >
-                        {/* Icon */}
+                    {/* HEADING */}
+                    <h3
+                                className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[52px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                              >
+                                The Platform That Powers <br />
+                              <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                >  Your Marketplace </span> <br />
+
+                                
+                              </h3>
+
+                    {/* GRID */}
+                    <div
+                      className="
+                        mt-8 sm:mt-10 lg:mt-14
+                        grid
+                        grid-cols-1
+                        sm:grid-cols-2
+                        gap-5
+                        sm:gap-6
+                        lg:gap-8
+                      "
+                    >
+                      {platformBenefits?.map((benefit, index) => (
                         <div
+                          key={index}
                           className="
-                            w-10 h-10
-                            bg-white
-                            rounded-md
-                            flex items-center justify-center
+                            bg-[#E9FFD9]
+                            rounded-[20px]
+                            p-5
+                            sm:p-6
+                            lg:p-8
+                            flex
+                            flex-col
+                            gap-4
+                            hover:shadow-md
+                            transition
                           "
                         >
-                          <img
-                            src={benefit.icon}
-                            alt={benefit.title}
-                            className="w-5 h-5"
-                          />
+                          {/* ICON */}
+                          <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center">
+                            <img
+                              src={benefit.icon}
+                              alt={benefit.title}
+                              className="w-5 h-5"
+                            />
+                          </div>
+
+                          {/* TITLE */}
+                          <h4 className="text-[15px] sm:text-[17px] lg:text-[20px] font-semibold text-text-primary">
+                            {benefit.title}
+                          </h4>
+
+                          {/* DESCRIPTION */}
+                          <p className="text-[13px] sm:text-[14px] lg:text-[16px] text-text-secondary leading-relaxed">
+                            {benefit.description}
+                          </p>
                         </div>
-
-                        {/* Title */}
-                        <h3
-                          className="
-                            text-[15px] sm:text-[17px] lg:text-[20px]
-                            font-semibold
-                            text-text-primary
-                          "
-                        >
-                          {benefit.title}
-                        </h3>
-
-                        {/* Description */}
-                        <p
-                          className="
-                            text-[13px] sm:text-[14px] lg:text-[16px]
-                            text-text-secondary
-                            leading-relaxed
-                          "
-                        >
-                          {benefit.description}
-                        </p>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </section>
+                </section>
 
               {/* Why Everyone Wins Section */}
-              <EveryoneWins/>
+              <EveryoneWins />
 
               {/* Proven Results Section */}
-            <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
-                <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-
-                  <div className="bg-secondary-background rounded-[28px] sm:rounded-[40px]
-                    p-5 sm:p-8 lg:p-12">
-
-                    {/* TOP */}
-                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-
-                      {/* LEFT TEXT */}
-                      <div className="flex-1">
-                        <span className="text-[22px] sm:text-[26px] lg:text-[36px] font-semibold text-primary-background">
-                          Proven
-                        </span>
-
-                        <h2 className="mt-2 text-[26px] sm:text-[32px] lg:text-[48px] font-medium leading-tight">
-                          The{" "}
-                          <span className="bg-[#E4FFD4] px-2 py-1 rounded-md">
-                            numbers speak
-                          </span>
-                        </h2>
-
-                        <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md">
-                          Real results from platforms built on this foundation.
-                        </p>
-                      </div>
-
-                      {/* RIGHT – 5000+ CARD */}
-                      <div className="flex-1 flex lg:justify-end">
-                        <div className="bg-[#E4FFD4] rounded-[28px]
-                          w-full sm:w-[320px] h-[200px]
-                          flex flex-col justify-center items-center text-center px-6">
-
-                          <p className="text-[36px] font-bold">5000+</p>
-                          <p className="text-sm sm:text-base font-medium mt-1">
-                            Restaurants onboarded
-                          </p>
-                          <p className="text-xs sm:text-sm mt-3 text-text-secondary">
-                            Vendors trust the platform to reach new customers daily.
-                          </p>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    {/* BOTTOM CARDS */}
-                    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                      {/* ORDERS */}
-                      <div
-                        className="rounded-[28px] bg-black text-white p-6 sm:p-8"
-                        style={{ backgroundImage: `url(/images/img_group_599.png)` }}
-                      >
-                        <p className="text-[22px] sm:text-[26px] font-semibold">
-                          2M+ Orders processed
-                        </p>
-                        <p className="mt-2 text-sm sm:text-base text-white/80">
-                          Millions of meals delivered through systems like this one.
-                        </p>
-                      </div>
-
-                      {/* DELIVERY */}
-                      <div
-                        className="rounded-[28px] bg-primary-background p-6 sm:p-8"
-                        style={{ backgroundImage: `url(/images2/features/img_group_599_231x297.png)` }}
-                      >
-                        <p className="text-[22px] sm:text-[26px] font-semibold">
-                          28min Average delivery time
-                        </p>
-                        <p className="mt-2 text-sm sm:text-base text-text-primary/80">
-                          Fast enough to keep food hot and customers happy.
-                        </p>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </section>
 
             </div>
           </div>
         </header>
 
-        {/* Contact Form Section */}
-      
-           <WhyChooseSection/>
+        {/* Why Chooose Section */}
 
-         {/* FAQ Section */}
- 
-            <FAQ/>
+       <WhyChooseSection/>
 
-            
+        {/* FAQ Section */}
+
+        <FAQ />
+
+
         {/* Testimonial Section */}
 
-            <TestimonialsSection/>
-       
-     {/* 
+        <TestimonialsSection />
+
+        {/* 
       <Hero/>
       <WhyChoose/>
       <WhatCan/>
@@ -979,7 +1086,7 @@ const Home = () => {
  */}
 
 
-        
+
       </main>
     </>
   );

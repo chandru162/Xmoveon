@@ -7,21 +7,49 @@ const HeroSection = () => {
 
   return (
     <section className="w-full bg-white overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
         {/* HERO CARD */}
-        <div className="bg-white rounded-none lg:rounded-[40px] py-8 sm:py-10 lg:p-10 mt-4 lg:mt-8">
+        <div className="bg-white lg:rounded-[40px] py-8 sm:py-10 lg:p-12 mt-4 lg:mt-8">
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-            {/* LEFT */}
+            {/* LEFT CONTENT */}
             <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h1 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-medium leading-tight text-text-primary">
-                Launch Your On- <br />
-                Demand
-                <span className="bg-[#E4FFD4] px-2 rounded-md">
-                  Super <br /> App in 7 Days
-                </span>
-              </h1>
+                <h3
+                  className="
+                    text-[26px]
+                    sm:text-[32px]
+                    md:text-[40px]
+                    lg:text-[48px]
+                    xl:text-[52px]
+                    font-medium
+                    leading-[1.15]
+                    text-text-primary
+                  "
+                >
+                  Launch Your On-Demand 
+                <span
+                    className="
+                      inline-block
+                      bg-[#E4FFD4]
+                      rounded-md
+                      px-2
+                      whitespace-nowrap
+                    "
+                  > Super</span>
+
+                  <span
+                    className="
+                      inline-block
+                      bg-[#E4FFD4]
+                      rounded-md
+                      whitespace-nowrap
+                    "
+                  >
+                   App in 7 Days
+                  </span>
+                </h3>
+              
 
               <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
                 Build and deploy fully customizable service applications without
@@ -32,13 +60,14 @@ const HeroSection = () => {
               {/* META */}
               <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
                 <div className="flex items-center gap-2">
-                  <img src="/images/img_moneybag.svg" className="w-5 h-5" />
+                  <img src="/images/img_moneybag.svg" alt="" className="w-5 h-5" />
                   <span className="text-sm text-text-secondary">
                     $10B+ Processed
                   </span>
                 </div>
+
                 <div className="flex items-center gap-2">
-                  <img src="/images/img_code.svg" className="w-5 h-5" />
+                  <img src="/images/img_code.svg" alt="" className="w-5 h-5" />
                   <span className="text-sm text-text-secondary">
                     No Coding Required
                   </span>
@@ -46,8 +75,10 @@ const HeroSection = () => {
               </div>
 
               <div className="mt-3 flex justify-center lg:justify-start gap-2">
-                <img src="/images/img_headset.svg" className="w-5 h-5" />
-                <span className="text-sm text-text-secondary">24/7 Support</span>
+                <img src="/images/img_headset.svg" alt="" className="w-5 h-5" />
+                <span className="text-sm text-text-secondary">
+                  24/7 Support
+                </span>
               </div>
 
               <div className="mt-6 flex justify-center lg:justify-start">
@@ -59,75 +90,94 @@ const HeroSection = () => {
                   fill_background_color="#9cee69"
                   border_border_radius="32px"
                   padding="14px 28px"
-                  text_align="center"
-                  onClick={() => setShowDemo(true)}
+                  onClick={() => {
+                  console.log("Try Demo clicked"); 
+                  setShowDemo(true);
+                }}
                 />
               </div>
             </div>
 
-            {/* RIGHT */}
+            {/* RIGHT CONTENT */}
             <div className="w-full lg:w-1/2 flex flex-col items-center gap-6">
 
-              {/* IMAGE – FULL WIDTH ON MOBILE */}
+              {/* MOBILE IMAGE */}
               <img
-                src="/public/assets/mobile.png"
+                src="/assets/mobile.png"
                 alt="Platform showcase"
-                className="w-full max-w-[360px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-full rounded-[28px]"
+                className="
+                  w-full
+                  max-w-[280px]
+                  sm:max-w-[360px]
+                  md:max-w-[420px]
+                  lg:max-w-[480px]
+                  rounded-[28px]
+                "
               />
 
-              {/* STATS */}
+              {/* STATS CARDS */}
               <div className="w-full flex flex-col sm:flex-row gap-4">
-                <div className="bg-[#e4ffd4] rounded-[20px] h-[96px] flex-1 flex items-center px-4">
-                  <div className="text-[18px] font-bold">
-                    7 Days <br />
-                    <span className="text-[12px] font-normal">
+
+                {/* CARD 1 */}
+                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4">
+                  <img
+                    src="/assets/Card3.png"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="relative">
+                    <p className="font-bold text-[16px] text-black">
+                      7 Days
+                    </p>
+                    <p className="text-[12px] text-black">
                       From idea to launch
-                    </span>
+                    </p>
                   </div>
                 </div>
 
-                <div className="bg-black rounded-[20px] h-[96px] flex-1 flex items-center px-4 text-white">
-                  <div>
-                    <div className="flex gap-1 mb-1">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className="w-4 h-4 bg-white rounded" />
-                      ))}
-                    </div>
-                    <div className="text-[14px]">
-                      <span className="font-bold text-[16px]">
-                        6+ Service
-                      </span>{" "}
-                      <br />
+                {/* CARD 2 */}
+                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4">
+                  <img
+                    src="/assets/Card2.png"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="relative text-white">
+                    <p className="font-bold text-[16px]">
+                      6+ Service
+                    </p>
+                    <p className="text-[12px] text-gray-200">
                       categories available
-                    </div>
+                    </p>
                   </div>
                 </div>
 
-                <div className="bg-[#9cee69] rounded-[20px] h-[96px] flex-1 flex items-center px-4">
-                  <div>
-                    <div className="flex gap-1 mb-1">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className="w-4 h-4 bg-white rounded" />
-                      ))}
-                    </div>
-                    <div className="text-[14px]">
-                      <span className="font-bold text-[16px]">
-                        100% Fully
-                      </span>{" "}
-                      <br />
-                      customizable
-                    </div>
+                {/* CARD 3 */}
+                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4">
+                  <img
+                    src="/assets/Card3.png"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="relative">
+                    <p className="font-bold text-[16px] text-black">
+                      100% Fully
+                    </p>
+                    <p className="text-[12px] text-black">
+                      Customize
+                    </p>
                   </div>
                 </div>
+
               </div>
-
             </div>
+
           </div>
         </div>
       </div>
 
-      {showDemo && <DemoPopup onClose={() => setShowDemo(false)} />}
-    </section>
+  <DemoPopup showDemo={showDemo} setShowDemo={setShowDemo} />
+      </section>
   );
 };
 

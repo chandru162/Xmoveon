@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Button from "../components/ui/Button";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [featuresOpen, setFeaturesOpen] = useState(false);
@@ -76,18 +76,19 @@ const Navbar = () => {
 
           {/* CTA (DESKTOP + TABLET) */}
           <div className="hidden md:flex items-center gap-4">
-            <Button
-              text="Get Started"
-              text_font_size="14px"
-              text_font_weight="600"
-              text_color="#0f0f0f"
-              fill_background_color="#9CEE69"
-              border_border_radius="6px"
-              padding="10px 18px"
-              text_align="center"
-            />
-          </div>
-
+           <Link to="/getstart">
+                <Button
+                  text="Get Started"
+                  text_font_size="14px"
+                  text_font_weight="600"
+                  text_color="#0f0f0f"
+                  fill_background_color="#9CEE69"
+                  border_border_radius="6px"
+                  padding="10px 18px"
+                  text_align="center"
+                />
+              </Link>
+              </div>
           {/* HAMBURGER (TABLET + MOBILE) */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -131,16 +132,18 @@ const Navbar = () => {
             <a href="/contact" className="block">Contact</a>
 
             <div className="pt-4">
-              <Button
-                text="Get Started"
-                text_font_size="14px"
-                text_font_weight="600"
-                text_color="#0f0f0f"
-                fill_background_color="#9CEE69"
-                border_border_radius="6px"
-                padding="12px 18px"
-                text_align="center"
-              />
+              <Link to="/getstart">
+                <Button
+                  text="Get Started"
+                  text_font_size="14px"
+                  text_font_weight="600"
+                  text_color="#0f0f0f"
+                  fill_background_color="#9CEE69"
+                  border_border_radius="6px"
+                  padding="10px 18px"
+                  text_align="center"
+                />
+              </Link>
             </div>
           </div>
         )}

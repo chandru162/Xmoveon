@@ -42,45 +42,86 @@ const EcosystemSection = () => {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
         {/* HEADER */}
-        <div className="mb-10 lg:mb-16">
-          <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-text-primary">
-            <span className="bg-[#E4FFD4] px-2 rounded-md">
-              Three Apps,
-            </span>{" "}
-            One Ecosystem
-          </h2>
+        <div className="mb-10 lg:mb-16 text-center lg:text-left">
+         <h3
+                  className="
+                    text-[26px]
+                    sm:text-[32px]
+                    md:text-[40px]
+                    lg:text-[48px]
+                    xl:text-[52px]
+                    font-medium
+                    leading-[1.15]
+                    text-text-primary
+                  "
+                >
+                  <span
+                    className="
+                      inline-block
+                      rounded-md
+                      whitespace-nowrap
+                      bg-[#E4FFD4]
 
-          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl">
+                    "
+                  >
+                     Three Apps,
+                  </span>
+                  <br />
+
+                  <span
+                    className="
+                      inline-block
+                      rounded-md
+                      whitespace-nowrap
+                    "
+                  >
+                    One Ecosystem
+                  </span>
+</h3>
+          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl mx-auto lg:mx-0">
             Complete solution with dedicated apps for every stakeholder in your
             business.
           </p>
         </div>
 
         {/* APPS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-6
+            lg:gap-10
+          "
+        >
           {apps.map((app, index) => (
             <div
               key={index}
               className="
-                bg-[#f9fff5]
+                bg-[#F9FFF5]
                 rounded-[28px]
-                p-6 sm:p-8 lg:p-10
+                p-6
+                sm:p-8
+                lg:p-10
                 hover:shadow-lg
-                transition-shadow
+                transition
+                flex
+                flex-col
               "
             >
               {/* ICON */}
-              <div className="bg-[#e4ffd4] rounded-[12px] w-14 h-14 flex items-center justify-center mb-6">
-                <img src={app.icon} alt="" className="w-7 h-7" />
+              <div className="bg-[#E4FFD4] rounded-[12px] w-14 h-14 flex items-center justify-center mb-6">
+                <img src={app.icon} alt={app.title} className="w-7 h-7" />
               </div>
 
               {/* TITLE */}
-              <h3 className="text-base sm:text-lg font-semibold text-text-secondary mb-2">
+              <h4 className="text-base sm:text-lg font-semibold text-text-secondary mb-2">
                 {app.title}
-              </h3>
+              </h4>
 
               {/* DESC */}
               <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed mb-6">
@@ -88,13 +129,13 @@ const EcosystemSection = () => {
               </p>
 
               {/* FEATURES */}
-              <div className="space-y-3">
+              <div className="space-y-3 mt-auto">
                 {app.features.map((feature, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <img
                       src="/images/img_square_check.svg"
                       alt=""
-                      className="w-5 h-5"
+                      className="w-5 h-5 shrink-0"
                     />
                     <span className="text-sm font-medium text-gray-700">
                       {feature}

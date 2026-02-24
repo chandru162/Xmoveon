@@ -39,7 +39,6 @@ const LandingPage = () => {
             <TestimonialsSection />
           </div>
 
-          <FooterSection />
         </div>
         
       </main>
