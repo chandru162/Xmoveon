@@ -446,7 +446,7 @@ const Service = () => {
                                     md:max-w-[680px]
                                     lg:max-w-[780px]
                                     lg:aspect-[4/5]
-                                    xl:aspect-[6/5]
+                                    xl:aspect-[5/5]
                                   "
                           >
                             <img
@@ -458,7 +458,7 @@ const Service = () => {
                                       w-[360px]
                                       md:h-[400px]
                                       lg:h-[350px]
-                                      xl:h-[350px]
+                                      xl:h-[450px]
                                       md:w-full
                                       lg:w-[400px]
                                       xl:w-[900px]
