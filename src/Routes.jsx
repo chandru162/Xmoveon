@@ -10,6 +10,7 @@ import FooterSection from './pages/LandingPage/FooterSection';
 import Service from './pages/Service';
 
 import TaxiPage from '../src/pages/Features/Taxi'
+import Delivery from '../src/pages/Features/Delivery'
 
 const AppRoutes = () => {
   return (
@@ -22,7 +23,7 @@ const AppRoutes = () => {
           <Route path="/restaurant" element={<HomePage />} />
           <Route path="/Service" element={<Service />} />
           <Route path="/taxi" element={<TaxiPage />} />
-
+          <Route path="/delivery" element={<Delivery />} />
 
         </Routes>
       </Router>

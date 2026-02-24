@@ -38,8 +38,6 @@ const LandingPage = () => {
             <WhyChooseSection />
             <TestimonialsSection />
           </div>
-
-          <FooterSection />
         </div>
         
       </main>

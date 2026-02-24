@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="w-full bg-white border-b">
+    <header className="sticky top-0 w-full bg-white border-b z-50">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-10">
         <div className="flex items-center justify-between h-[72px]">
 
@@ -76,6 +76,7 @@ const Navbar = () => {
 
           {/* CTA (DESKTOP + TABLET) */}
           <div className="hidden md:flex items-center gap-4">
+           <a href="/getstart">
             <Button
               text="Get Started"
               text_font_size="14px"
@@ -86,6 +87,7 @@ const Navbar = () => {
               padding="10px 18px"
               text_align="center"
             />
+            </a>
           </div>
 
           {/* HAMBURGER (TABLET + MOBILE) */}
@@ -131,6 +133,7 @@ const Navbar = () => {
             <a href="/contact" className="block">Contact</a>
 
             <div className="pt-4">
+              <a href="/getstart">
               <Button
                 text="Get Started"
                 text_font_size="14px"
@@ -141,6 +144,7 @@ const Navbar = () => {
                 padding="12px 18px"
                 text_align="center"
               />
+              </a>
             </div>
           </div>
         )}
