@@ -432,3 +432,609 @@ export const RouteIcon = (props) => (
     </defs>
   </svg>
 );
+
+export const MenuIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5876)">
+      <path
+        d="M5 7.5H25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5 15H25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5 22.5H25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5876">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const SectionLayoutIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5881)">
+      <path
+        d="M3.75 6.25C3.75 5.58696 4.01339 4.95107 4.48223 4.48223C4.95107 4.01339 5.58696 3.75 6.25 3.75H23.75C24.413 3.75 25.0489 4.01339 25.5178 4.48223C25.9866 4.95107 26.25 5.58696 26.25 6.25V23.75C26.25 24.413 25.9866 25.0489 25.5178 25.5178C25.0489 25.9866 24.413 26.25 23.75 26.25H6.25C5.58696 26.25 4.95107 25.9866 4.48223 25.5178C4.01339 25.0489 3.75 24.413 3.75 23.75V6.25Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M18.75 21.25H21.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.75 17.5H21.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M16.25 13.75H21.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5881">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const ScalesIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5886)">
+      <path
+        d="M8.75 25H21.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.5 7.5L15 6.25L22.5 7.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15 3.75V25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.25 15L7.5 7.5L3.75 15C3.75 15.9946 4.14509 16.9484 4.84835 17.6517C5.55161 18.3549 6.50544 18.75 7.5 18.75C8.49456 18.75 9.44839 18.3549 10.1517 17.6517C10.8549 16.9484 11.25 15.9946 11.25 15Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M26.25 15L22.5 7.5L18.75 15C18.75 15.9946 19.1451 16.9484 19.8483 17.6517C20.5516 18.3549 21.5054 18.75 22.5 18.75C23.4946 18.75 24.4484 18.3549 25.1517 17.6517C25.8549 16.9484 26.25 15.9946 26.25 15Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5886">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const WindowCardIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5891)">
+      <path
+        d="M3.75 8.75C3.75 8.08696 4.01339 7.45107 4.48223 6.98223C4.95107 6.51339 5.58696 6.25 6.25 6.25H23.75C24.413 6.25 25.0489 6.51339 25.5178 6.98223C25.9866 7.45107 26.25 8.08696 26.25 8.75V21.25C26.25 21.913 25.9866 22.5489 25.5178 23.0178C25.0489 23.4866 24.413 23.75 23.75 23.75H6.25C5.58696 23.75 4.95107 23.4866 4.48223 23.0178C4.01339 22.5489 3.75 21.913 3.75 21.25V8.75Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.5 10H7.5125"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.25 10H11.2625"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5891">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const ArrowButtonIcon = (props) => (
+  <svg
+    {...props}
+    width="134"
+    height="53"
+    viewBox="0 0 134 53"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Outer Border Shapes */}
+    <rect 
+      x="0.5" 
+      y="0.5" 
+      width="132.38" 
+      height="51.056" 
+      rx="25.528" 
+      stroke="currentColor" 
+    />
+    <rect 
+      x="0.5" 
+      y="0.5" 
+      width="114.727" 
+      height="51.056" 
+      rx="25.528" 
+      stroke="currentColor" 
+    />
+    <rect 
+      x="0.5" 
+      y="0.5" 
+      width="99.0353" 
+      height="50" 
+      rx="25" 
+      stroke="currentColor" 
+    />
+
+    {/* Primary Arrow Path */}
+    <path 
+      d="M56.9295 15.1576L34.0176 37.3535L37.7817 41L60.6936 18.8067L60.6936 38.367L66.0176 38.367L66.0176 10L36.7355 10L36.7355 15.1576L56.9295 15.1576Z" 
+      fill="currentColor" 
+    />
+  </svg>
+);
+
+export const ClockIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5956)">
+      <path
+        d="M3.75 15C3.75 16.4774 4.04099 17.9403 4.60636 19.3052C5.17172 20.6701 6.00039 21.9103 7.04505 22.955C8.08971 23.9996 9.3299 24.8283 10.6948 25.3936C12.0597 25.959 13.5226 26.25 15 26.25C16.4774 26.25 17.9403 25.959 19.3052 25.3936C20.6701 24.8283 21.9103 23.9996 22.955 22.955C23.9996 21.9103 24.8283 20.6701 25.3936 19.3052C25.959 17.9403 26.25 16.4774 26.25 15C26.25 13.5226 25.959 12.0597 25.3936 10.6948C24.8283 9.3299 23.9996 8.08971 22.955 7.04505C21.9103 6.00039 20.6701 5.17172 19.3052 4.60636C17.9403 4.04099 16.4774 3.75 15 3.75C13.5226 3.75 12.0597 4.04099 10.6948 4.60636C9.3299 5.17172 8.08971 6.00039 7.04505 7.04505C6.00039 8.08971 5.17172 9.3299 4.60636 10.6948C4.04099 12.0597 3.75 13.5226 3.75 15Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15 8.75V15"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15 15L17.5 11.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5956">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const CopyIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5960)">
+      <path
+        d="M20 20V22.5C20 23.163 19.7366 23.7989 19.2678 24.2678C18.7989 24.7366 18.163 25 17.5 25H7.5C6.83696 25 6.20107 24.7366 5.73223 24.2678C5.26339 23.7989 5 23.163 5 22.5V12.5C5 11.837 5.26339 11.2011 5.73223 10.7322C6.20107 10.2634 6.83696 10 7.5 10H10V7.5C10 6.83696 10.2634 6.20107 10.7322 5.73223C11.2011 5.26339 11.837 5 12.5 5H22.5C23.163 5 23.7989 5.26339 24.2678 5.73223C24.7366 6.20107 25 6.83696 25 7.5V17.5C25 18.163 24.7366 18.7989 24.2678 19.2678C23.7989 19.7366 23.163 20 22.5 20H20Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.5 10H10V12.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10 17.5V20H12.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17.5 10H20V12.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20 17.5V20H17.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5960">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const ShippingIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5964)">
+      <path
+        d="M6.25 21.25C6.25 21.913 6.51339 22.5489 6.98223 23.0178C7.45107 23.4866 8.08696 23.75 8.75 23.75C9.41304 23.75 10.0489 23.4866 10.5178 23.0178C10.9866 22.5489 11.25 21.913 11.25 21.25C11.25 20.587 10.9866 19.9511 10.5178 19.4822C10.0489 19.0134 9.41304 18.75 8.75 18.75C8.08696 18.75 7.45107 19.0134 6.98223 19.4822C6.51339 19.9511 6.25 20.587 6.25 21.25Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M18.75 21.25C18.75 21.913 19.0134 22.5489 19.4822 23.0178C19.9511 23.4866 20.587 23.75 21.25 23.75C21.913 23.75 22.5489 23.4866 23.0178 23.0178C23.4866 22.5489 23.75 21.913 23.75 21.25C23.75 20.587 23.4866 19.9511 23.0178 19.4822C22.5489 19.0134 21.913 18.75 21.25 18.75C20.587 18.75 19.9511 19.0134 19.4822 19.4822C19.0134 19.9511 18.75 20.587 18.75 21.25Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.25 21.25H3.75V13.75M3.75 13.75L6.25 7.5H17.5L22.5 13.75M3.75 13.75H22.5M22.5 13.75H23.75C24.413 13.75 25.0489 14.0134 25.5178 14.4822C25.9866 14.9511 26.25 15.587 26.25 16.25V21.25H23.75M18.75 21.25H11.25M15 13.75V7.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5964">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const SuccessDocumentIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="currentColor"
+  >
+    <g clipPath="url(#clip0_132_5972)">
+      <path
+        d="M12.0187 25H8.75C8.08696 25 7.45107 24.7366 6.98223 24.2678C6.51339 23.7989 6.25 23.163 6.25 22.5V7.5C6.25 6.83696 6.51339 6.20107 6.98223 5.73223C7.45107 5.26339 8.08696 5 8.75 5H18.75C19.413 5 20.0489 5.26339 20.5178 5.73223C20.9866 6.20107 21.25 6.83696 21.25 7.5V17.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17.5 23.75L20 26.25L25 21.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.25 10H16.25"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.25 15H13.75"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_5972">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const CTAArrowIcon = (props) => (
+  <svg
+    {...props}
+    width="134"
+    height="53"
+    viewBox="0 0 134 53"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background Rectangles/Borders */}
+    <rect
+      x="0.5"
+      y="0.5"
+      width="132.38"
+      height="51.056"
+      rx="25.528"
+      stroke="currentColor"
+    />
+    <rect
+      x="0.5"
+      y="0.5"
+      width="114.727"
+      height="51.056"
+      rx="25.528"
+      stroke="currentColor"
+    />
+    <rect
+      x="0.5"
+      y="0.5"
+      width="99.0353"
+      height="51.056"
+      rx="25.528"
+      stroke="currentColor"
+    />
+    
+    {/* Arrow Icon Path */}
+    <path
+      d="M56.9409 36.7227L33.9889 13.7707L37.7596 10L60.7116 32.9493L60.7116 12.7227L66.0449 12.7227L66.0449 42.056L36.7116 42.056L36.7116 36.7227L56.9409 36.7227Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const SetupIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_setup)">
+      <path
+        d="M3.75 21.25L13.75 27.5L22.5 22.5V12.5L17.5 9.375L22.5 6.25L27.5 9.375V14.375L13.75 22.5L8.75 19.375V10L3.75 6.875V21.25Z"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.75 22.5V27.5M8.75 19.375L17.5 14.375M17.5 9.375V14.375M17.5 14.375L22.5 17.5M13.75 16.25V6.875L8.75 3.75L3.75 6.875M8.75 10L13.75 6.875M22.5 12.5L27.5 9.375"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_setup">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const AnalysisIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_analysis)">
+      {/* Magnifying Glass Circle */}
+      <path
+        d="M3.75 12.5C3.75 17.3325 7.6675 21.25 12.5 21.25C17.3325 21.25 21.25 17.3325 21.25 12.5C21.25 7.6675 17.3325 3.75 12.5 3.75C7.6675 3.75 3.75 7.6675 3.75 12.5Z"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Handle */}
+      <path
+        d="M26.25 26.25L18.75 18.75"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Dollar Symbol (S-shape) */}
+      <path
+        d="M15 8.75H11.875C10.8395 8.75 10 9.58947 10 10.625C10 11.6605 10.8395 12.5 11.875 12.5H13.125C14.1605 12.5 15 13.3395 15 14.375C15 15.4105 14.1605 16.25 13.125 16.25H10"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Dollar Vertical Line */}
+      <path
+        d="M12.5 16.25V17.5M12.5 7.5V8.75"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_analysis">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const DurationIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_duration)">
+      {/* Outer Circle */}
+      <path
+        d="M3.75 15C3.75 21.2132 8.7868 26.25 15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15Z"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Clock Hands */}
+      <path
+        d="M15 8.75V15L18.75 18.75"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_duration">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const LocationIcon = (props) => (
+  <svg
+    {...props}
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_location)">
+      {/* Map Fold Lines */}
+      <path
+        d="M15 23.125L11.25 21.25L3.75 25V8.75L11.25 5L18.75 8.75L26.25 5V14.375"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.25 5V21.25M18.75 8.75V15.625"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Location Pin / Drop Icon */}
+      <path
+        d="M26.4013 25.1511C27.4279 23.231 27.5726 21.7495 27.2147 21.0642C26.4502 19.7932 25.2168 18.749 23.75 18.749C22.2832 18.969 21.0988 25.1511C21.6213 25.6748 22.505 26.4573 23.75 27.4998C25.0638 26.3873 26.4013 25.1511Z"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M23.75 22.5V22.5125"
+        stroke="#231E30"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_location">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const ContactIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+      stroke="#101010"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
