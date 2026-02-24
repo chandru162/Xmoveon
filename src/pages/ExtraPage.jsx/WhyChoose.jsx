@@ -2,35 +2,41 @@ import React from "react";
 
 const features = [
   {
-    title: "One-time purchase, lifetime ownership",
-    desc: "Pay once, own it forever.",
-    icon: "💚",
+    icon: "/images/img_hearts.svg",
+    title: "Commission-based revenue",
+    desc: "Earn from every completed transaction.",
   },
   {
-    title: "White-label & customizable",
-    desc: "Tailor every detail to match your brand.",
-    icon: "🎨",
+    icon: "/images/img_brand_airtable.svg",
+    title: "Platform or booking fees",
+    desc: "Apply flat or percentage-based charges.",
   },
   {
-    title: "Self-hosted",
-    desc: "You control your data, hosting, and user experience.",
-    icon: "🔒",
+    icon: "/images/img_camera_selfie.svg",
+    title: "Custom pricing rules",
+    desc: "Total admin control over monetization logic.",
   },
-  {
-    title: "Built for service marketplaces",
-    desc: "Booking, scheduling, messaging, and payments.",
-    icon: "🛠️",
+  {  
+      icon: "/images/img_frame_19_light_green_700_54x54.svg",
+      title: "Built for service marketplaces" ,
+      desc:"booking, scheduling, messaging, and payments."
   },
-  {
-    title: "Scalable & flexible architecture",
-    desc: "Modern stack designed to grow with your business.",
-    icon: "📈",
+  { 
+    
+    icon: "/images/img_frame_19_62x62.svg",
+    title: "Scalable & flexible architecture" ,
+    desc:"modern stack designed to grow with your business."
+
+
   },
-  {
-    title: "No vendor lock-in",
-    desc: "You decide how to deploy and evolve your platform.",
-    icon: "🔗",
-  },
+  { 
+      
+    icon: "/images/img_frame_19_54x54.svg", 
+    title: "No vendor lock-in" ,
+    desc:"you decide how to deploy and evolve your platform."
+
+
+  }
 ];
 
 const WhyChoose = () => {
@@ -38,9 +44,9 @@ const WhyChoose = () => {
     <section className="w-full bg-[#fafafa] py-14 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-10">
-          Why Choose <span className="font-bold">Xmoveon</span>
-        </h2>
+        <h3 className="text-[30px] sm:text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold t mb-10">
+          Why Choose <span className="">Xmoveon</span>
+        </h3>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -51,14 +57,18 @@ const WhyChoose = () => {
             >
               {/* Icon */}
               <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-green-100 text-green-600 mb-4 text-lg">
-                {item.icon}
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="w-5 h-5"
+                />
               </div>
 
               {/* Content */}
-              <h3 className="font-semibold text-gray-900 mb-2">
+              <h3 className="font-bold mb-2">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm  leading-relaxed">
                 {item.desc}
               </p>
             </div>

@@ -41,64 +41,106 @@ const ScaleSuccessSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
-        {/* CARD */}
-        <div className="bg-secondary-background rounded-none lg:rounded-[48px] py-10 lg:py-16">
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
+    <section className="w-full bg-white overflow-hidden py-12 sm:py-16 lg:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
-            {/* LEFT */}
-            <div className="w-full lg:w-[50%] text-center lg:text-left">
-              <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-medium leading-tight text-text-primary">
-                <span className="bg-[#E4FFD4] px-2 rounded-md">
-                  Built for Scale,
-                </span>{" "}
+        {/* MAIN CARD */}
+        <div className="bg-secondary-background lg:rounded-[48px] py-10 sm:py-12 lg:py-16">
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+
+            {/* LEFT CONTENT */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h3
+                className="
+                  text-[26px]
+                  sm:text-[32px]
+                  md:text-[40px]
+                  lg:text-[48px]
+                  xl:text-[52px]
+                  font-medium
+                  leading-[1.15]
+                  text-text-primary
+                "
+              >
+               Built for Scale, 
                 <br />
-                Designed for <br />
-                Success
-              </h2>
 
+                <span
+                  className="
+                    inline-block
+                    bg-[#E4FFD4]
+                    rounded-md                 
+                    whitespace-nowrap
+                  "
+                >
+                  Designed for
+                </span> <br />
+                <span
+                  className="
+                    inline-block
+                    bg-[#E4FFD4]
+                    rounded-md                 
+                    whitespace-nowrap
+                  "
+                >
+                  Success
+                </span>
+              </h3>
               <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
-                Everything you need to launch, manage, and grow your on-demand
-                service business.
+                Build and deploy fully customizable service applications without
+                any coding. Everything you need to start and scale your
+                on-demand business instantly.
               </p>
 
               <img
-                src="/public/assets/car.jpg"
+                src="/assets/car.jpg"
                 alt="Platform Dashboard"
                 className="
                   mt-6
                   w-full
-                  max-w-[320px]
-                  sm:max-w-[380px]
+                  max-w-[350px]
+                  sm:max-w-[320px]
+                  md:max-w-[360px]
                   lg:max-w-[420px]
-                  rounded-[20px]
+                  rounded-[24px]
                   mx-auto
                   lg:mx-0
                 "
               />
             </div>
 
-            {/* RIGHT */}
-            <div className="w-full lg:w-[50%]">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 lg:mt-0">
+            {/* RIGHT FEATURES */}
+            <div className="w-full lg:w-1/2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {platformFeatures.map((feature, index) => (
                   <div
                     key={index}
-                    className="flex flex-col gap-2 p-4 rounded-xl bg-white"
+                    className="
+                      bg-white
+                      rounded-[16px]
+                      p-4
+                      sm:p-5
+                      flex
+                      flex-col
+                      gap-2
+                      hover:shadow-md
+                      transition
+                    "
                   >
-                    <div className="flex items-center gap-2">
-                      <img
-                        src={feature.icon}
-                        alt={feature.title}
-                        className="w-5 h-5 bg-[#E4FFD4] rounded"
-                      />
-                      <h4 className="text-sm sm:text-base font-semibold">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-[#E4FFD4] p-2 rounded-[10px] shrink-0">
+                        <img
+                          src={feature.icon}
+                          alt={feature.title}
+                          className="w-5 h-5"
+                        />
+                      </div>
+                      <h4 className="text-sm sm:text-base font-semibold text-black">
                         {feature.title}
                       </h4>
                     </div>
 
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pl-[46px]">
                       {feature.description}
                     </p>
                   </div>

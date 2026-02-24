@@ -5,43 +5,53 @@ const cards = [
     tag: "Customers",
     title: "Food arrives fast and fresh",
     desc: "They order from multiple restaurants in one app and track deliveries in real time.",
-    img: "/public/assets/phone.jpg",
+    img: "/assets/everyone.png",
   },
   {
     tag: "Restaurants",
     title: "Reach hungry customers without building apps",
     desc: "They manage menus, track orders, and watch sales grow through your platform.",
-    img: "/public/assets/receive.jpg",
+    img: "/assets/everytwo.png",
   },
   {
     tag: "Drivers",
     title: "Earn more with smart routing",
     desc: "They see clear earnings, control schedules, and deliver efficiently every day.",
-    img: "/public/assets/people.jpg",
+    img: "/assets/everythree.png",
   },
   {
     tag: "Admins",
     title: "Build revenue from commissions",
     desc: "You manage everything from one dashboard and grow your business sustainably.",
-    img: "/public/assets/desk.jpg",
+    img: "/assets/everyfour.png",
   },
 ];
 
 const EveryoneWins = () => {
   return (
-    <section className="w-full bg-white py-14 sm:py-18 lg:py-24">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
 
-        {/* Header */}
-        <div className="flex justify-between items-start mb-10 lg:mb-16">
-          <div>
-            <h2 className="text-[26px] sm:text-[32px] lg:text-[48px] font-medium leading-tight">
+        {/* HEADER */}
+        <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-10 lg:mb-16">
+          <div className="text-center sm:text-left">
+            <h2
+              className="
+                text-[26px]
+                sm:text-[32px]
+                lg:text-[48px]
+                font-medium
+                leading-tight
+                text-text-primary
+              "
+            >
+              Everyone wins{" "}
               <span className="bg-[#E4FFD4] px-2 py-1 rounded-md">
-                Everyone wins
-              </span>{" "}
-              here
-            </h2>
-            <p className="mt-3 text-sm sm:text-base text-text-secondary max-w-md">
+                here
+              </span>
+            </h2> <br />
+
+            <p className="mt-3 text-sm sm:text-base text-text-secondary max-w-md mx-auto sm:mx-0">
               Each player in the ecosystem gets what they need to succeed.
             </p>
           </div>
@@ -51,13 +61,16 @@ const EveryoneWins = () => {
           </span>
         </div>
 
-        {/* Cards */}
+        {/* CARDS GRID */}
         <div
           className="
-            grid grid-cols-1
+            grid
+            grid-cols-1
             sm:grid-cols-2
             lg:grid-cols-4
-            gap-5 sm:gap-6 lg:gap-8
+            gap-5
+            sm:gap-6
+            lg:gap-8
           "
         >
           {cards.map((item, index) => (
@@ -69,22 +82,33 @@ const EveryoneWins = () => {
                 overflow-hidden
                 shadow-sm
                 hover:shadow-md
-                transition-all
+                transition
+                flex
+                flex-col
               "
             >
-              {/* Image */}
+              {/* IMAGE */}
               <div className="relative">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-[170px] object-cover"
+                  className="
+                    w-full
+                    h-[160px]
+                    sm:h-[170px]
+                    object-cover
+                  "
                 />
                 <span
                   className="
-                    absolute top-3 left-3
+                    absolute
+                    top-3
+                    left-3
                     bg-white
-                    text-xs font-medium
-                    px-3 py-1
+                    text-xs
+                    font-medium
+                    px-3
+                    py-1
                     rounded-full
                     shadow
                   "
@@ -93,9 +117,9 @@ const EveryoneWins = () => {
                 </span>
               </div>
 
-              {/* Content */}
-              <div className="p-5">
-                <h3 className="text-[15px] lg:text-[16px] font-semibold text-text-primary mb-2">
+              {/* CONTENT */}
+              <div className="p-5 flex flex-col gap-2 flex-1">
+                <h3 className="text-[15px] lg:text-[16px] font-semibold text-text-primary">
                   {item.title}
                 </h3>
                 <p className="text-sm text-text-secondary leading-relaxed">

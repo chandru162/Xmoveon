@@ -1,27 +1,28 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    image: '/assets/Maskgroup.png',
-    quote: 'The team delivered our on-demand app faster than we imagined. Customization and performance were absolutely top-class.',
-    author: 'Startup Founder – Bengaluru',
+    image: "/assets/Maskgroup.png",
+    quote:
+      "The team delivered our on-demand app faster than we imagined. Customization and performance were absolutely top-class.",
+    author: "Startup Founder – Bengaluru",
   },
   {
-    image: '/assets/Maskgroup.png',
-    quote: 'TaxiAppz helped us build a platform that’s lightning fast, highly localized, and perfect for the Indian market.',
-    author: 'Towny Product Team',
+    image: "/assets/Maskgroup.png",
+    quote:
+      "TaxiAppz helped us build a platform that’s lightning fast, highly localized, and perfect for the Indian market.",
+    author: "Towny Product Team",
   },
   {
-    image: '/assets/Maskgroup.png',
-    quote: 'From idea to launch, everything was smooth and transparent. Support and scalability were the biggest wins.',
-    author: 'Enterprise Client – India',
+    image: "/assets/Maskgroup.png",
+    quote:
+      "From idea to launch, everything was smooth and transparent. Support and scalability were the biggest wins.",
+    author: "Enterprise Client – India",
   },
 ];
 
 export default function TestimonialsSection() {
   const [index, setIndex] = useState(0);
-
-  // Error fix: Defining the missing "current" variable
   const current = testimonials[index];
 
   useEffect(() => {
@@ -32,36 +33,71 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="w-full bg-white py-12 md:py-24">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="mb-12 md:mb-16">
-          <h2 className="text-[32px] md:text-[48px] font-bold text-black leading-tight">
-            <span
-              className="bg-[#E4FFD4] px-4 py-1"
-              style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+
+        {/* HEADER */}
+        <div className="mb-10 lg:mb-16 text-center lg:text-left">
+         <h3
+              className="
+                text-[26px]
+                sm:text-[32px]
+                md:text-[40px]
+                lg:text-[48px]
+                xl:text-[52px]
+                font-medium
+                leading-[1.15]
+                text-text-primary
+              "
             >
-              Real Voices
-            </span>
-          </h2>
-          <p className="text-gray-500 mt-6 text-base md:text-lg max-w-[280px] leading-relaxed">
+              Real 
+
+              <span
+                className="
+                  inline-block
+                  bg-[#E4FFD4]
+                  rounded-md
+                  px-3
+                  py-1
+                  mt-2
+                  whitespace-nowrap
+                "
+              >
+               Voices
+              </span>
+            </h3>
+          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl mx-auto lg:mx-0">
             People who built their business on this platform.
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-between">
+        {/* CONTENT */}
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
+          {/* IMAGE */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <img
               src={current.image}
               alt="Client"
-              className="w-full max-w-[500px] h-auto rounded-3xl object-cover shadow-sm"
+              className="
+                w-full
+                max-w-[280px]
+                sm:max-w-[360px]
+                md:max-w-[420px]
+                lg:max-w-[500px]
+                h-auto
+                rounded-3xl
+                object-cover
+                shadow-sm
+              "
             />
           </div>
 
+          {/* TESTIMONIAL CARD */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <GreenCard
               quote={current.quote}
               author={current.author}
-              className="w-full max-w-[560px] h-auto drop-shadow-xl"
+              className="w-full max-w-[560px] drop-shadow-xl"
             />
           </div>
         </div>
@@ -70,9 +106,10 @@ export default function TestimonialsSection() {
   );
 }
 
-function GreenCard({ quote, author, className = '', ...props }) {
+function GreenCard({ quote, author, className = "", ...props }) {
   return (
-    <div className={`relative w-full max-w-[561px] mx-auto ${className}`} {...props}>
+    <div className={`relative w-full ${className}`} {...props}>
+      {/* SVG BACKGROUND */}
       <svg
         viewBox="0 0 561 316"
         preserveAspectRatio="xMidYMid meet"
@@ -85,14 +122,17 @@ function GreenCard({ quote, author, className = '', ...props }) {
         />
       </svg>
 
-      <div className="absolute inset-0 p-3 sm:p-5 md:p-6 lg:p-8 flex flex-col justify-start overflow-hidden">
-        <div className="self-start border border-black/20 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[8px] leading-tight sm:text-[10px] md:text-xs font-semibold uppercase tracking-wider mb-2 sm:mb-3 md:mb-4 mt-4">
-          CLIENT TESTIMONIAL
-        </div>
-        <p className="text-black text-xs sm:text-sm md:text-base lg:text-md font-medium leading-snug sm:leading-relaxed line-clamp-4 sm:line-clamp-3 md:line-clamp-none">
+      {/* CONTENT */}
+      <div className="absolute inset-0 p-3 sm:p-5 md:p-6 lg:p-8 flex flex-col justify-start">
+        <span className="self-start border border-black/20 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-wider mb-3 mt-4">
+          Client Testimonial
+        </span>
+
+        <p className="text-black text-xs sm:text-sm md:text-base lg:text-[17px] font-medium leading-relaxed">
           “{quote}”
         </p>
-        <p className="mt-2 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base font-medium truncate">
+
+        <p className="mt-3 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base font-semibold truncate">
           — {author}
         </p>
       </div>

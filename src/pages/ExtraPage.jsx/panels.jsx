@@ -17,45 +17,74 @@ const panels = [
 
 const Panels = () => {
   return (
-    <section className="w-full py-14 sm:py-16 lg:py-20">
+    <section className="w-full py-12 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* Left */}
-          <div>
-            <div className="flex flex-row justify-start">
-            <h3 className=" text-[24px] md:text-[36px] lg:text-[48px] xl:text-[48px] font-semibold  rounded-full">
-             <span className="bg-[#E4FFD4]"> Panels & </span> <br /> Dashboards
-            </h3>
-            <img 
-                   src="/images2/features/img_group_1000001743.svg" 
-                   alt="Driver Earnings" 
-                   className="w-[61px] sm:w-[75px] md:w-[92px] lg:w-[106px] xl:w-[122px] h-[24px] sm:h-[29px] md:h-[36px] lg:h-[42px] xl:h-[48px] mt-20 mx-4"
+          {/* LEFT */}
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-4">
+              <h3
+                                className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[52px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                              >
+                              Panels & <br />                            
+                               <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                > Dashboards   </span>
+                              </h3>
+
+              <img
+                src="/images2/features/img_group_1000001743.svg"
+                alt="Arrow"
+                className="w-[56px] sm:w-[72px] lg:w-[96px] mt-6 lg:mt-10"
               />
             </div>
 
-            {/* Image */}
-            <div className="mt-8 rounded-3xl overflow-hidden shadow-lg max-w-md">
-              <img
-                src="/public/assets/desk.jpg"
-                alt="Dashboard"
-                className="w-full h-84 object-cover"
-              />
+            {/* IMAGE */}
+            <div className="mt-8 flex justify-center lg:justify-start">
+              <div className="w-full max-w-[360px] sm:max-w-[320px] md:max-w-[380px] aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
+                <img
+                  src="/assets/desk.jpg"
+                  alt="Dashboard"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Right */}
-          <div className="space-y-6">
+          {/* RIGHT */}
+          <div className="flex flex-col gap-4">
             {panels.map((item, index) => (
               <div
                 key={index}
-                className={`p-6 rounded-md bg-[#F4F4F480] w-[80%] 
-                }`}
+                className="
+                  bg-[#F4F4F480]
+                  rounded-[16px]
+                  p-5
+                  sm:p-6
+                  hover:shadow-sm
+                  transition
+                "
               >
-                <h3 className="font-semibold  mb-1">
+                <h4 className="font-semibold text-base sm:text-lg mb-1 text-black">
                   {item.title}
-                </h3>
-                <p className="text-sm  leading-relaxed">
+                </h4>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

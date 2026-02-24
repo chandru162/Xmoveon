@@ -1,21 +1,28 @@
 import React, { useState, useRef, useEffect } from "react";
 import Button from "../components/ui/Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [featuresOpen, setFeaturesOpen] = useState(false);
+  const [featuresOpen, setFeaturesOpen] = useState(false); // desktop
+  const [mobileFeaturesOpen, setMobileFeaturesOpen] = useState(false); // mobile
   const featuresRef = useRef(null);
 
-  // outside click close
+  // outside click close – DESKTOP ONLY
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (featuresRef.current && !featuresRef.current.contains(e.target)) {
         setFeaturesOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () =>
+
+    if (window.innerWidth >= 1024) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   return (
@@ -32,7 +39,7 @@ const Navbar = () => {
             />
           </div>
 
-          {/* DESKTOP / LAPTOP MENU */}
+          {/* DESKTOP MENU */}
           <nav className="hidden lg:flex items-center gap-10 text-[15px] font-medium text-gray-600">
             <a href="/" className="hover:text-black">Home</a>
 
@@ -74,7 +81,7 @@ const Navbar = () => {
             <a href="/contact" className="hover:text-black">Contact</a>
           </nav>
 
-          {/* CTA (DESKTOP + TABLET) */}
+          {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
            <a href="/getstart">
             <Button
@@ -90,7 +97,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* HAMBURGER (TABLET + MOBILE) */}
+          {/* HAMBURGER */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-2"
@@ -110,7 +117,7 @@ const Navbar = () => {
             {/* MOBILE FEATURES DROPDOWN */}
             <div>
               <button
-                onClick={() => setFeaturesOpen(!featuresOpen)}
+                onClick={() => setMobileFeaturesOpen(!mobileFeaturesOpen)}
                 className="flex items-center justify-between w-full"
               >
                 Features
@@ -119,7 +126,7 @@ const Navbar = () => {
                 </svg>
               </button>
 
-              {featuresOpen && (
+              {mobileFeaturesOpen && (
                 <div className="mt-2 ml-3 space-y-2">
                   <a href="/restaurant" className="block">Restaurant</a>
                   <a href="/service" className="block">Service</a>

@@ -10,6 +10,7 @@ import WhatCan from '../ExtraPage.jsx/WhatCan';
 import Panels from '../ExtraPage.jsx/panels';
 import Options from '../ExtraPage.jsx/Options';
 import WhyBusinesses from '../ExtraPage.jsx/WhyBusiness';
+import WhyChoose from '../ExtraPage.jsx/WhyChoose';
 
 
 
@@ -221,7 +222,7 @@ const Service = () => {
 
   const tabs = [
     'Commission management',
-    'Restaurant onboarding', 
+    'Restaurant onboarding',
     'System analytics',
     'Settings control',
     'Revenue tracking',
@@ -261,7 +262,7 @@ const Service = () => {
     }
   ];
 
-    const services = [
+  const services = [
     {
       icon: "/images/img_frame_19.svg",
       title: "One-time purchase, lifetime ownership",
@@ -294,7 +295,7 @@ const Service = () => {
     }
   ];
 
-   const features = [
+  const features = [
     {
       icon: "/images/img_device_mobile_message.svg",
       title: "Service Listings",
@@ -345,251 +346,244 @@ const Service = () => {
               <div className="flex flex-col justify-start items-center w-full">
                 <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
                   {/* Hero Section */}
-          <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
-            <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
-              <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                  <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+                    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
+                      <div className="flex flex-col lg:flex-row  gap-10 lg:gap-16">
 
-                {/* LEFT CONTENT */}
-                <div className="w-full lg:w-1/2 text-center lg:text-left">
-
-                  <h1 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[50px] font-medium leading-[1.2] text-black">
-                    <span className="text-[#9CEE69] block mb-2">
-                      Xmoveon Launch
-                    </span>
-
-                    <span className="inline-block bg-[#E4FFD4] px-3 py-1 rounded-md">
-                      Your Own Service
-                    </span>
-                    <br />
-                    Marketplace
-                  </h1>
-
-                  <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-md mx-auto lg:mx-0">
-                    Build your multi-vendor food delivery platform with our proven solution.
-                    Restaurants gain exposure, drivers earn commissions, and you control
-                    the entire ecosystem from one powerful admin panel.
-                  </p>
-
-                  <div className="mt-6 flex justify-center lg:justify-start">
-                    <Button
-                      text="Try Our Demo"
-                      text_font_size="16px"
-                      text_font_weight="600"
-                      text_color="#0f0f0f"
-                      fill_background_color="#9CEE69"
-                      border_border_radius="32px"
-                      padding="14px 28px"
-                      text_align="center"
-                    />
-                  </div>
-                </div>
-
-                {/* RIGHT CONTENT */}
-                <div className="w-full lg:w-1/2 flex flex-col items-center relative">
-
-                  <img
-                    src="/public/assets/android.jpg"
-                    alt="Platform Illustration"
-                    className="
-                      w-full
-                      max-w-[320px]
-                      sm:max-w-[380px]
-                      md:max-w-[440px]
-                      lg:max-w-[480px]
-                      rounded-[28px]
-                      shadow-md
-                    "
-                  />
-
-                  {/* INFO BUBBLE */}
-                  <div className="
-                    mt-5
-                    w-full
-                    max-w-[320px]
-                    sm:max-w-[380px]
-                    md:max-w-[440px]
-                    bg-[#EFEFEF]
-                    rounded-[22px]
-                    px-5
-                    py-4
-                    text-[13px]
-                    sm:text-[14px]
-                    text-gray-700
-                  ">
-                    Whether you’re a startup, agency, or developer, Xmoveon gives you the
-                    flexibility to create, customize, and scale your own marketplace —
-                    entirely under your brand.
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </section>
-                </div>
-              </div>
-          {/* Why Choose X-Moveon Section */}
-                        
-               <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
-                    <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
-
-                      <div className="bg-white rounded-[36px]">
-
-                        {/* HEADER */}
-                        <div className="mb-10 sm:mb-12">
-                          <h2 className="
-                            text-[26px]
-                            sm:text-[32px]
-                            md:text-[40px]
-                            lg:text-[48px]
-                            font-medium
-                            leading-tight
-                            text-black
-                          ">
-                            <span className="bg-[#E4FFD4] px-3 py-1 rounded-md">
-                              Why Choose
+                        {/* LEFT CONTENT */}
+                        <div className="w-full lg:w-1/2 text-center lg:text-left">
+                          <h3
+                            className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[48px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                          >
+                            <span
+                              className="
+                                    inline-block
+                                    text-[#9CEE69]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                            >
+                              Xmoveon
                             </span>
-                            <br />
-                            <span className="ml-1">Xmoveon</span>
-                          </h2>
+                            <span
+                              className="
+                                    inline-block
+                                    rounded-md
+                                    whitespace-nowrap
+                                    px-1
+                                  "
+                            >
+                              Launch
+                            </span>
+                            <span
+                              className="
+                                    inline-block
+                                    rounded-md
+                                    whitespace-nowrap
+                                    bg-[#E4FFD4]
+
+                                  "
+                            > Your Own Service</span> <br />
+
+                            <span
+                              className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                            >
+                              Marketplace
+                            </span>
+                            <span
+                              className="
+                                    inline-block
+                                    bg-[#E4FFD4]
+                                    rounded-md
+                                    whitespace-nowrap
+                                    px-1
+                                  "
+                            >
+                              Platform
+                            </span>
+                          </h3>
+                          <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
+                            Build your multi-vendor food delivery platform with our proven
+                            solution. Restaurants gain exposure, drivers earn commissions,
+                            and you control the entire ecosystem from one powerful admin panel.
+                          </p>
+
+                          <div className="mt-6 flex justify-center lg:justify-start">
+                            <Button
+                              text="Try Our Demo"
+                              text_font_size="16px"
+                              text_font_weight="600"
+                              text_color="#0f0f0f"
+                              fill_background_color="#9CEE69"
+                              border_border_radius="32px"
+                              padding="14px 28px"
+                              text_align="center"
+                            />
+                          </div>
                         </div>
 
-                        {/* GRID */}
-                        <div
-                          className="
-                            grid
-                            grid-cols-1
-                            sm:grid-cols-2
-                            lg:grid-cols-3
-                            gap-4
-                            sm:gap-6
-                            lg:gap-8
-                          "
-                        >
-                          {services.map((service, index) => (
-                            <div
-                              key={index}
+                        {/* RIGHT CONTENT */}
+                        <div className="w-full lg:w-1/2 flex flex-col items-center">
+                          <div
+                            className="
+                                    w-full
+                                    max-w-[460px]
+                                    sm:max-w-[420px]
+                                    md:max-w-[680px]
+                                    lg:max-w-[780px]
+                                    lg:aspect-[4/5]
+                                    xl:aspect-[6/5]
+                                  "
+                          >
+                            <img
+                              src="/assets/android.jpg"
+                              alt="Platform Illustration"
                               className="
-                                bg-white
-                                rounded-[18px]
-                                p-5
-                                sm:p-6
-                                border
-                                border-[#F0F0F0]
-                                flex
-                                flex-col
-                                gap-3
-                              "
-                            >
-                              {/* ICON + TITLE */}
-                              <div className="flex items-start gap-4">
-                                <div className="bg-[#E4FFD4] rounded-[10px] p-2 shrink-0">
-                                  <img
-                                    src={service.icon}
-                                    alt=""
-                                    className="w-5 h-5"
-                                  />
-                                </div>
+                                      w-full
+                                      h-[200px]
+                                      w-[360px]
+                                      md:h-[400px]
+                                      lg:h-[350px]
+                                      xl:h-[350px]
+                                      md:w-full
+                                      lg:w-[400px]
+                                      xl:w-[900px]
+                                      rounded-[28px]
+                                      object-cover
+                                      shadow-md
+                                    "
+                            />
+                          </div>
 
-                                <h3 className="text-[15px] sm:text-[16px] font-semibold text-black leading-snug">
-                                  {service.title}
-                                </h3>
-                              </div>
-
-                              {/* DESCRIPTION */}
-                              <p className="text-[13px] sm:text-[14px] text-gray-700 leading-relaxed max-w-[280px]">
-                                {service.description}
-                              </p>
-                            </div>
-                          ))}
+                          {/* INFO BUBBLE */}
+                          <div
+                            className="
+                        mt-5
+                        w-full
+                        max-w-[360px]
+                        sm:max-w-[320px]
+                        md:max-w-[380px]
+                        bg-[#EFEFEF]
+                        rounded-[22px]
+                        px-5
+                        py-4
+                        text-[13px]
+                        sm:text-[14px]
+                        text-center
+                      "
+                          >
+                            Whether you’re a startup, agency, or developer, Xmoveon gives you the
+                            flexibility to create, customize, and scale your own marketplace —
+                            entirely under your brand.
+                          </div>
                         </div>
 
                       </div>
                     </div>
                   </section>
+                </div>
+              </div>
+              {/* Why Choose X-Moveon Section */}
+
+              <WhyChoose />
 
               {/* Why Xmoveon For Section */}
 
 
-              <Who/>
+              <Who />
 
 
               {/* What You Can Section */}
 
-                <WhatCan/>
+              <WhatCan />
 
-     {/* MarketPlace Features Section */}
-              
-   <section className="w-full bg-white relative ">
+              {/* MarketPlace Features Section */}
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-4 ">
-        {/* Content */}
-        <div className="relative mx-2 md:mx-6 lg:mx-4 xl:mx-6">
+              <section className="w-full bg-white relative ">
 
-          {/* Header */}
-          <div className="flex  mb-12 lg:mb-12">
+                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-4 ">
+                  {/* Content */}
+                  <div className="relative mx-2 md:mx-6 lg:mx-4 xl:mx-6">
 
-            <div className=" me-8 lg:me-16 xl:me-20">
-              <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-text-primary ms-4 lg:ms-10 xl:ms-16  ">
-                Core Marketplace <span className='bg-[#E4FFD4]'> <br />Features</span>
-              </h2>
-            </div>
+                    {/* Header */}
+                    <div className="flex  mb-12 lg:mb-12">
 
-            {/* <div className="lg:w-1/2">
+                      <div className=" me-8 lg:me-16 xl:me-20">
+                        <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-text-primary ms-4 lg:ms-10 xl:ms-16  ">
+                          <span className='bg-[#E4FFD4]'>  Core Marketplace </span> <span> <br />Features</span>
+                        </h2>
+                      </div>
+
+                      {/* <div className="lg:w-1/2">
               <p className="text-sm sm:text-base text-text-secondary leading-relaxed  mt-4 lg:mt-8 ms-16 lg:ms-12 ">
                 Powerful tools to optimize operations,<br /> increase revenue, and delight your  <br />customers.
               </p>
             </div> */}
-          </div>
+                    </div>
 
-          {/* Features Grid - 2 columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mx-8 lg:mx-20   ">
-            {features?.map((feature, index) => (
-              <div key={index} className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" />
-                  <h3 className="text-lg sm:text-lg font-semibold text-text-secondary">
-                    {feature?.title}
-                  </h3>
+                    {/* Features Grid - 2 columns */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mx-8 lg:mx-20 ">
+                      {features?.map((feature, index) => (
+                        <div key={index} className="space-y-4">
+                          <div className="flex items-start gap-3">
+                            <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" />
+                            <h3 className="text-lg sm:text-lg font-semibold text-text-secondary">
+                              {feature?.title}
+                            </h3>
+                          </div>
+                          <p className="text-sm sm:text-base text-text-secondary leading-relaxed pl-11 lg:text-sm">
+                            {feature?.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <p className="text-sm sm:text-base text-text-secondary leading-relaxed pl-11 lg:text-sm">
-                  {feature?.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+              </section>
 
 
               {/*Panels & Dashboards Section */}
-            
-              <Panels/>
+
+              <Panels />
 
 
               {/*Monetization options Section */}
-                <Options/>
+              <Options />
 
               {/*Why Business  Section */}
-                <WhyBusinesses/>
+              <WhyBusinesses />
             </div>
           </div>
         </header>
 
         {/* Contact Form Section */}
-      
-           <WhyChooseSection/>
 
-         {/* FAQ Section */}
- 
-            <FAQ/>
+        <WhyChooseSection />
 
-            
+        {/* FAQ Section */}
+
+        <FAQ />
+
+
         {/* Testimonial Section */}
 
-            <TestimonialsSection/>
-       
-     {/* 
+        <TestimonialsSection />
+
+        {/* 
       <Hero/>
       <WhyChoose/>
       <WhatCan/>
@@ -603,7 +597,7 @@ const Service = () => {
  */}
 
 
-        
+
       </main>
     </>
   );
