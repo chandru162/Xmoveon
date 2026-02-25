@@ -63,7 +63,7 @@ export const USAFlag = (props) => {
       </mask>
 
       <g mask="url(#usa-mask-0)">
-        <path d="M34 8L34 16L-2 16L-2 8Z" fill="#3D58DB" stroke="#F7FCFF" strokeWidth="4" />
+        <path d="M34 8L34 16L-2 16L-2 8Z" fill="#3D58DB" stroke="currentColor" strokeWidth="4" />
       </g>
 
       <path d="M0 0L0 24L18 12Z" fill="#E31D1C" />
@@ -867,14 +867,14 @@ export const SetupIcon = (props) => (
     <g clipPath="url(#clip0_setup)">
       <path
         d="M3.75 21.25L13.75 27.5L22.5 22.5V12.5L17.5 9.375L22.5 6.25L27.5 9.375V14.375L13.75 22.5L8.75 19.375V10L3.75 6.875V21.25Z"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M13.75 22.5V27.5M8.75 19.375L17.5 14.375M17.5 9.375V14.375M17.5 14.375L22.5 17.5M13.75 16.25V6.875L8.75 3.75L3.75 6.875M8.75 10L13.75 6.875M22.5 12.5L27.5 9.375"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -900,7 +900,7 @@ export const AnalysisIcon = (props) => (
       {/* Magnifying Glass Circle */}
       <path
         d="M3.75 12.5C3.75 17.3325 7.6675 21.25 12.5 21.25C17.3325 21.25 21.25 17.3325 21.25 12.5C21.25 7.6675 17.3325 3.75 12.5 3.75C7.6675 3.75 3.75 7.6675 3.75 12.5Z"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -908,7 +908,7 @@ export const AnalysisIcon = (props) => (
       {/* Handle */}
       <path
         d="M26.25 26.25L18.75 18.75"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -916,7 +916,7 @@ export const AnalysisIcon = (props) => (
       {/* Dollar Symbol (S-shape) */}
       <path
         d="M15 8.75H11.875C10.8395 8.75 10 9.58947 10 10.625C10 11.6605 10.8395 12.5 11.875 12.5H13.125C14.1605 12.5 15 13.3395 15 14.375C15 15.4105 14.1605 16.25 13.125 16.25H10"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -924,7 +924,7 @@ export const AnalysisIcon = (props) => (
       {/* Dollar Vertical Line */}
       <path
         d="M12.5 16.25V17.5M12.5 7.5V8.75"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -951,7 +951,7 @@ export const DurationIcon = (props) => (
       {/* Outer Circle */}
       <path
         d="M3.75 15C3.75 21.2132 8.7868 26.25 15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15Z"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -959,7 +959,7 @@ export const DurationIcon = (props) => (
       {/* Clock Hands */}
       <path
         d="M15 8.75V15L18.75 18.75"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -985,14 +985,14 @@ export const LocationIcon = (props) => (
       {/* Map Fold Lines */}
       <path
         d="M15 23.125L11.25 21.25L3.75 25V8.75L11.25 5L18.75 8.75L26.25 5V14.375"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M11.25 5V21.25M18.75 8.75V15.625"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -1000,14 +1000,14 @@ export const LocationIcon = (props) => (
       {/* Location Pin / Drop Icon */}
       <path
         d="M26.4013 25.1511C27.4279 23.231 27.5726 21.7495 27.2147 21.0642C26.4502 19.7932 25.2168 18.749 23.75 18.749C22.2832 18.969 21.0988 25.1511C21.6213 25.6748 22.505 26.4573 23.75 27.4998C25.0638 26.3873 26.4013 25.1511Z"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M23.75 22.5V22.5125"
-        stroke="#231E30"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -1031,7 +1031,7 @@ export const ContactIcon = (props) => (
   >
     <path
       d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
-      stroke="#101010"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -1053,9 +1053,9 @@ export const LocalisationIcon = (props) => (
 
     <g clip-path="url(#clip0_132_4018)">
       <path d="M4.13672 4.13745H10.343V12.4125H4.13672V4.13745Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M4.13672 16.55H10.343V20.6876H4.13672V16.55Z" stroke="#231E30" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M14.4805 12.4126H20.6868V20.6876H14.4805V12.4126Z" stroke="#231E30" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M14.4805 4.13745H20.6868V8.27497H14.4805V4.13745Z" stroke="#231E30" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4.13672 16.55H10.343V20.6876H4.13672V16.55Z" stroke="currentColor" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14.4805 12.4126H20.6868V20.6876H14.4805V12.4126Z" stroke="currentColor" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14.4805 4.13745H20.6868V8.27497H14.4805V4.13745Z" stroke="currentColor" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
     </g>
     <defs>
       <clipPath id="clip0_132_4018">
