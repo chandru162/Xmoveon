@@ -92,27 +92,27 @@ const TaxiPage = () => {
           showcaseImage: '../../../../public/assets/Illustrationsa.png',
           features: [
             {
-              icon: <MenuIcon className="w-6 h-6" />,
+              icon: <MenuIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               title: 'One-Time License',
               desc: 'Pay once, own forever.',
             },
             {
-              icon: <SectionLayoutIcon className="w-6 h-6" />,
+              icon: <SectionLayoutIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               title: 'Rider & Merchant Apps',
               desc: 'Smooth, responsive, and intuitive.',
             },
             {
-              icon: <ScalesIcon className="w-6 h-6" />,
+              icon: <ScalesIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               title: 'Smart Route Optimization',
               desc: 'Deliver faster with intelligent path planning.',
             },
             {
-              icon: <WindowCardIcon className="w-6 h-6" />,
+              icon: <WindowCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               title: 'Real-Time Tracking Dashboard',
               desc: 'Manage deliveries live from one control panel.',
             },
             {
-              icon: <WindowCardIcon className="w-6 h-6" />,
+              icon: <WindowCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               title: '100% White-Label',
               desc: 'Launch under your brand on web, iOS, and Android.',
             },
@@ -172,23 +172,23 @@ const TaxiPage = () => {
           ctaButton: 'View Dashboard Demo',
           adminFeatures: [
             {
-              icon: <ClockIcon className="w-8 h-8 md:w-10 md:h-10" />,
+              icon: <ClockIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               text: 'Manage drivers, merchants, and delivery zones',
             },
             {
-              icon: <CopyIcon className="w-8 h-8 md:w-10 md:h-10" />,
+              icon: <CopyIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               text: 'Assign parcels automatically or manually',
             },
             {
-              icon: <ShippingIcon className="w-8 h-8 md:w-10 md:h-10" />,
+              icon: <ShippingIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               text: 'Track every package from pickup to drop-off',
             },
             {
-              icon: <RectangleIcon className="w-8 h-8 md:w-10 md:h-10" />,
+              icon: <RectangleIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               text: 'Generate invoices and payout reports',
             },
             {
-              icon: <SuccessDocumentIcon className="w-8 h-8 md:w-10 md:h-10" />,
+              icon: <SuccessDocumentIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               text: 'Analyze performance with live analytics',
             },
           ],
@@ -305,23 +305,23 @@ const TaxiPage = () => {
           description: "We don't just deliver software — we help you launch successfully.",
           services: [
             {
-              icon: <SetupIcon className="w-5 h-5 md:w-6 md:h-6" />,
+              icon: <SetupIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               label: 'Barcode Scanning Integration',
             },
             {
-              icon: <AnalysisIcon className="w-5 h-5 md:w-6 md:h-6" />,
+              icon: <AnalysisIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               label: 'Multi-City & Multi-Hub Management',
             },
             {
-              icon: <DurationIcon className="w-5 h-5 md:w-6 md:h-6" />,
+              icon: <DurationIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               label: 'Customer Wallet & Loyalty Points',
             },
             {
-              icon: <LocationIcon className="w-5 h-5 md:w-6 md:h-6" />,
+              icon: <LocationIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               label: 'Delivery Analytics & Heat Maps',
             },
             {
-              icon: <LocationIcon className="w-5 h-5 md:w-6 md:h-6" />,
+              icon: <LocationIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
               label: 'Custom API Integrations',
             },
           ],

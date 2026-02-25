@@ -15,12 +15,12 @@ const Section1 = ({ data }) => {
           </h1>
 
           <div className="mt-4 flex">
-            <span className="bg-[#D4FFB2] font-semibold text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-0 py-2 md:py-5 rounded-sm md:rounded-md leading-tight text-[#111827] inline-block">
+            <span className="bg-[#E4FFD4] font-semibold text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-0 py-2 md:py-5 rounded-sm md:rounded-md leading-tight text-[#111827] inline-block">
               {data.highlightText1}
             </span>
           </div>
           <div className="mt-2 md:mt-4 flex">
-            <span className="bg-[#D4FFB2] font-semibold text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-0 py-2 md:py-5 rounded-sm md:rounded-md leading-tight text-[#111827] inline-block">
+            <span className="bg-[#E4FFD4] font-semibold text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-0 py-2 md:py-5 rounded-sm md:rounded-md leading-tight text-[#111827] inline-block">
               {data.highlightText2}
             </span>
           </div>

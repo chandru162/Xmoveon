@@ -9,7 +9,7 @@ const Section10 = ({ data }) => {
         <div className="flex-1 space-y-6 md:space-y-8 md:mb-20 lg:mb-40 w-full text-left">
           <h2 className="text-[34px] sm:text-[48px] md:text-[60px] font-semibold text-[#111827] leading-[1.1] tracking-tight">
             {data.title1} <br />
-            <span className="bg-[#D4FFB2] px-4 md:px-6 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mt-2">
+            <span className="bg-[#E4FFD4] px-4 md:px-6 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mt-2">
               {data.title2}
             </span>
           </h2>

@@ -11,11 +11,11 @@ const Section2 = ({ data }) => {
           {/* Left Side: Title content */}
           <div className="flex-1 space-y-6">
             <h2 className="text-[34px] md:text-[60px] font-semibold text-[#111827] leading-[1.1]">
-              <span className="bg-[#D4FFB2] px-0 md:px-0 py-0 inline-block mb-0 rounded-sm md:rounded-md">
+              <span className="bg-[#E4FFD4] px-0 md:px-0 py-0 inline-block mb-0 rounded-sm md:rounded-md">
                 {data.titleHighlight1}
               </span>
               <br className="hidden md:block" />
-              <span className="bg-[#D4FFB2] px-0 md:px-0 py-0 inline-block mb-0 rounded-sm md:rounded-md">
+              <span className="bg-[#E4FFD4] px-0 md:px-0 py-0 inline-block mb-0 rounded-sm md:rounded-md">
                 {data.titleHighlight2}
               </span>
               <br />

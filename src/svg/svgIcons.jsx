@@ -1065,3 +1065,223 @@ export const LocalisationIcon = (props) => (
   </svg>
 
 );
+
+export const LayoutIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_layout_new)">
+      {/* Top Header Block */}
+      <path
+        d="M4 5C4 4.44772 4.44772 4 5 4H19C19.5523 4 20 4.44772 20 5V7C20 7.55228 19.5523 8 19 8H5C4.44772 8 4 7.55228 4 7V5Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Side Image/Icon Square */}
+      <path
+        d="M4 13C4 12.4477 4.44772 12 5 12H9C9.55228 12 10 12.4477 10 13V19C10 19.5523 9.55228 20 9 20H5C4.44772 20 4 19.5523 4 19V13Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Right Side Text Lines */}
+      <path
+        d="M14 12H20M14 16H20M14 20H20"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_layout_new">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const PayPalIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_paypal)">
+      <path
+        d="M17.5 7.2C19.2 8.2 20 10 20 12C20 14.5 17.5 16.5 15 16.5H12.4L11.8 20.1C11.7532 20.3293 11.6276 20.5349 11.4449 20.6811C11.2621 20.8272 11.0339 20.9047 10.8 20.9H8.1C8.02501 20.9015 7.95064 20.8861 7.88239 20.855C7.81415 20.8239 7.75378 20.7778 7.70577 20.7202C7.65775 20.6626 7.62331 20.5949 7.605 20.5222C7.58669 20.4494 7.58498 20.3735 7.6 20.3L7.8 18.9M10 13H12.5C15 13 17.5 10.5 17.5 8C17.5 5 15.6 3 12.5 3H7C6.5 3 6 3.5 6 4L4 18C4 18.5 4.5 19 5 19H7.8L9 14C9.1 13.4 9.4 13 10 13Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_paypal">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const ProfileCardIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_profile)">
+      {/* Main Card Body */}
+      <path
+        d="M20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H8C7.46957 20 6.96086 19.7893 6.58579 19.4142C6.21071 19.0391 6 18.5304 6 18V6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Avatar Circle and Info Lines */}
+      <path
+        d="M10 16H16M11 11C11 12.1046 11.8954 13 13 13C14.1046 13 15 12.1046 15 11C15 9.89543 14.1046 9 13 9C11.8954 9 11 9.89543 11 11Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Side Decorative Lines */}
+      <path
+        d="M4 8H7M4 12H7M4 16H7"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_profile">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const StarIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_star)">
+      <path
+        d="M12.0008 17.75L5.82881 20.995L7.00781 14.122L2.00781 9.25495L8.90781 8.25495L11.9938 2.00195L15.0798 8.25495L21.9798 9.25495L16.9798 14.122L18.1588 20.995L12.0008 17.75Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_star">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const ChatSearchIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_chat_search)">
+      {/* Message Lines */}
+      <path
+        d="M8 9H16M8 13H13"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Chat Bubble Frame */}
+      <path
+        d="M11.008 19.195L8 21V18H6C4.89543 18 4 17.1046 4 16V7C4 5.89543 4.89543 5 6 5H18C19.1046 5 20 5.89543 20 7V11.5"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Magnifying Glass (Search) */}
+      <path
+        d="M15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20.1992 20.2002L21.9992 22.0002"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_chat_search">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const PricingIcon = (props) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_pricing_new)">
+      {/* S-shape for Currency */}
+      <path
+        d="M16.7 8C16.501 7.43524 16.1374 6.94297 15.6563 6.58654C15.1751 6.23011 14.5983 6.02583 14 6H10C9.20435 6 8.44129 6.31607 7.87868 6.87868C7.31607 7.44129 7 8.20435 7 9C7 9.79565 7.31607 10.5587 7.87868 11.1213C8.44129 11.6839 9.20435 12 10 12H14C14.7956 12 15.5587 12.3161 16.1213 12.8787C16.6839 13.4413 17 14.2044 17 15C17 15.7956 16.6839 16.5587 16.1213 17.1213C15.5587 17.6839 14.7956 18 14 18H10C9.40175 17.9742 8.82491 17.7699 8.34373 17.4135C7.86255 17.057 7.49905 16.5648 7.3 16"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Vertical Line for Dollar Symbol */}
+      <path
+        d="M12 3V6M12 18V21"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_pricing_new">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

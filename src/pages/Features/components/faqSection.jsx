@@ -25,7 +25,7 @@ const FAQSection = ({ data }) => {
                 key={idx}
                 className={`transition-all duration-300 rounded-[20px] md:rounded-[25px] border ${
                   isOpen
-                    ? 'bg-[#D4FFB2] border-[#8CFF5E] shadow-sm'
+                    ? 'bg-[#E4FFD4] border-[#8CFF5E] shadow-sm'
                     : 'bg-white border-transparent shadow-sm'
                 }`}
               >
