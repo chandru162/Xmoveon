@@ -8,6 +8,16 @@ import WhyChooseSection from '../LandingPage/WhyChooseSection';
 import FAQ from '../LandingPage/FAQ';
 import EveryoneWins from '../LandingPage/EveryOne';
 import ScaleSuccessSection from '../LandingPage/ScaleSuccessSection';
+import Technology from './Technology';
+
+  import {
+  FlutterIcon,
+  NextjsIcon,
+  ReactIcon,
+  NodejsIcon,
+  SqlIcon,
+  PrismaIcon,
+} from '../../svg/toolsSvgIcons';
 
 
 
@@ -34,14 +44,14 @@ const Home = () => {
     // Handle form submission logic here
   };
 
-  const techStackItems = [
+  /* const techStackItems = [
     { name: 'Flutter', icon: '/images2/features/img_logos_flutter_original.png' },
     { name: 'Next.js', icon: '/images2/features/img_vector.svg' },
     { name: 'React.js', icon: '/images2/features/img_logos_react_original.svg' },
     { name: 'Node.js', icon: '/images2/features/img_logos_nodejs_original.svg' },
     { name: 'SQL', icon: '/images2/features/img_sql_1.png' },
     { name: 'Kotlin', icon: '/images2/features/img_vector_deep_purple_400.svg' }
-  ];
+  ]; */
 
   
     const benefits = [
@@ -236,6 +246,7 @@ const Home = () => {
     'Dispute resolution'
   ];
 
+
   const faqItems = [
     {
       question: 'How long does onboarding take',
@@ -380,72 +391,18 @@ const Home = () => {
                   </div>
                 </div>
               {/* Technology Stack Section */}
-            <section className="w-full bg-white">
-                <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
-
-                  {/* CONTAINER */}
-                  <div
-                    className="
-                      bg-secondary-background
-                      rounded-[20px]
-                      sm:rounded-[28px]
-                      lg:rounded-[40px]
-                      px-4 py-4
-                      sm:px-6 sm:py-5
-                      lg:px-10 lg:py-6
-                    "
-                  >
-                    <div
-                      className="
-                        flex
-                        flex-wrap
-                        justify-center
-                        lg:justify-between
-                        items-center
-                        gap-x-6
-                        gap-y-4
-                        sm:gap-x-8
-                        sm:gap-y-5
-                        lg:gap-x-12
-                      "
-                    >
-
-                      {/* ITEM */}
-                      {[
-                        { name: "Flutter", icon: "/images2/features/img_vector.svg" },
-                        { name: "Next.js", icon: "/images2/features/img_vector.svg" },
-                        { name: "React.js", icon: "/images2/features/img_logos_react_original.svg" },
-                        { name: "Node.js", icon: "/images2/features/img_logos_nodejs_original.svg" },
-                        { name: "SQL", icon: "/images2/features/img_vector.svg" },
-                        { name: "Kotlin", icon: "/images2/features/img_vector_deep_purple_400.svg" },
-                      ].map((tech, index) => (
-                        <div
-                          key={index}
-                          className="
-                            flex
-                            items-center
-                            gap-3
-                            min-w-[120px]
-                            justify-center
-                          "
-                        >
-                          <img
-                            src={tech.icon}
-                            alt={tech.name}
-                            className="w-5 sm:w-6"
-                          />
-                          <span className="text-sm sm:text-base lg:text-lg font-semibold">
-                            {tech.name}
-                          </span>
-                        </div>
-                      ))}
-
-                    </div>
-                  </div>
-
-                </div>
-              </section>
-
+           <Technology
+                  data={{
+                    techStack: [
+                      { name: 'Flutter', logo: <FlutterIcon className="w-8 h-8 md:w-10 md:h-10" /> },
+                      { name: 'Next.js', logo: <NextjsIcon className="w-8 h-8 md:w-10 md:h-10" /> },
+                      { name: 'React.js', logo: <ReactIcon className="w-8 h-8 md:w-10 md:h-10" /> },
+                      { name: 'Node.js', logo: <NodejsIcon className="w-8 h-8 md:w-10 md:h-10" /> },
+                      { name: 'SQL', logo: <SqlIcon className="w-8 h-8 md:w-10 md:h-10" /> },
+                      { name: 'Kotlin', logo: <PrismaIcon className="w-8 h-8 md:w-10 md:h-10" /> },
+                    ],
+                  }}
+            />
 
               {/* Built for Scale Section */}
               <section className="w-full bg-white overflow-hidden">

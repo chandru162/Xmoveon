@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   return (
     <section className="w-full bg-white overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-14">
 
         {/* HERO CARD */}
         <div className="bg-white lg:rounded-[40px] py-8 sm:py-10 lg:p-12 mt-4 lg:mt-8">
@@ -27,7 +27,7 @@ const HeroSection = () => {
                     text-text-primary
                   "
                 >
-                  Launch Your On-Demand 
+                  Launch Your  On- <br />Demand
                 <span
                     className="
                       inline-block
@@ -110,60 +110,61 @@ const HeroSection = () => {
                   max-w-[350px]
                   sm:max-w-[360px]
                   md:max-w-[500px]
-                  lg:max-w-[480px]
+                  lg:max-w-[500px]
+                  xl:max-w-[580px]
                   rounded-[20px]
                 "
               />
 
-              {/* STATS CARDS */}
-              <div className="w-full flex flex-col sm:flex-row gap-4">
+              {/* STATS CARDS  */}
+              <div className="w-full flex flex-col sm:flex-row gap-4 ">
 
                 {/* CARD 1 */}
-                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4 ">
+                <div className="relative flex-1 h-[90px] lg:h-[80px] rounded-[20px] overflow-hidden flex items-center px-4 ">
                   <img
                     src="/assets/Card3.png"
                     alt=""
-                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[130px] xl:w-full xl:h-full object-cover "
+                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[110px] xl:w-full xl:h-[100px] object-cover "
                   />
-                  <div className="relative p-12 text-center">
-                    <p className="font-bold text-[32px] md:text-[16px]  lg:text-[16px]  xl:text-[16px] text-black ">
+                  <div className="relative p-12  lg:p-1 md:p-0 xl:p-0">
+                    <p className="font-bold text-[32px] md:text-[16px]  lg:text-[14px]  xl:text-[16px] text-black ">
                       7 Days
                     </p>
-                    <p className="text-[22px] md:text-[12px]  lg:text-[12px]  xl:text-[12px] text-black ">
+                    <p className="text-[22px] md:text-[12px]  lg:text-[8px]  xl:text-[14px] font-medium ">
                       From idea to launch
                     </p>
                   </div>
                 </div>
 
                 {/* CARD 2 */}
-                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4">
+                <div className="relative flex-1 h-[90px] lg:h-[80px] rounded-[20px] overflow-hidden flex items-center px-4 ">
                   <img
                     src="/assets/Card2.png"
                     alt=""
-                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[110px] xl:w-full xl:h-full object-cover"
+                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-[80px]  md:w-full md:h-[110px] xl:w-full xl:h-[95px] object-cover"
                   />
-                  <div className="relative text-white p-12 text-center">
-                    <p className="font-bold text-[32px] md:text-[16px]  lg:text-[16px]  xl:text-[16px]">
+                  <div className="relative text-white p-12 lg:p-0 md:p-0 xl:p-0 sm:p-8 ">
+                    <p className="font-bold text-[32px] md:text-[16px]  lg:text-[14px]  xl:text-[16px]">
                       6+ Service
                     </p>
-                    <p className="text-[22px] md:text-[12px]  lg:text-[12px]  xl:text-[12px] text-gray-200">
+                    <p className="text-[22px] md:text-[12px]  lg:text-[8px]  xl:text-[14px] font-medium ">
                       categories available
                     </p>
                   </div>
                 </div>
 
                 {/* CARD 3 */}
-                <div className="relative flex-1 h-[90px] rounded-[20px] overflow-hidden flex items-center px-4">
+                <div className="relative flex-1 h-[90px] lg:h-[80px] rounded-[20px] overflow-hidden flex items-center px-4 ">
                   <img
                     src="/assets/Card3.png"
                     alt=""
-                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[130px] xl:w-full xl:h-full object-cover"
+                    className="absolute inset-0 h-[225px] w-full lg:w-full lg:h-full  md:w-full md:h-[110px] xl:w-full xl:h-[100px] object-cover"
                   />
-                  <div className="relative p-12 text-center">
-                    <p className="font-bold text-[36px] md:text-[16px]  lg:text-[16px]  xl:text-[16px] text-black">
+                  <div className="relative p-12 lg:p-0 md:p-0 xl:p-0 ">
+                    <p className="font-bold text-[36px] md:text-[16px]  lg:text-[14px]  xl:text-[16px] text-black ">
                       100% Fully
                     </p>
-                    <p className="text-[22px] md:text-[12px]  lg:text-[12px]  xl:text-[12px] text-black">
+                    <p className="text-[22px] md:text-[12px]  lg:text-[8px]  xl:text-[14px]  font-medium">
                       Customize
                     </p>
                   </div>

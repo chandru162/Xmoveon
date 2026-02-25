@@ -232,7 +232,7 @@ const Service = () => {
   const faqItems = [
     {
       question: 'How long does onboarding take',
-      answer: 'Most restaurants are live within 48 hours. We handle verification and setup so you can focus on growth. Your admin panel gives you full control over the process.',
+      answer: 'Most restaurents are live within 48 hours. We handle verification and setup so you can focus on growth. Your admin panel gives you full control over the process.',
       isOpen: true
     },
     {
@@ -246,12 +246,12 @@ const Service = () => {
       isOpen: false
     },
     {
-      question: 'How do drivers get paid',
+      question: 'How do drivers get  paid',
       answer: '',
       isOpen: false
     },
     {
-      question: 'Can you customize the commission rates',
+      question: 'Can you customize the commmision rates',
       answer: '',
       isOpen: false
     },
@@ -345,95 +345,41 @@ const Service = () => {
 
               <div className="flex flex-col justify-start items-center w-full">
                 <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
-                  {/* Hero Section */}
-                  <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
-                    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
-                      <div className="flex flex-col lg:flex-row  gap-10 lg:gap-16">
+                  {/* Hero Section  */}
+                 <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
+                    <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-                        {/* LEFT CONTENT */}
-                        <div className="w-full lg:w-1/2 text-center lg:text-left">
-                          <h3
-                            className="
-                                  text-[26px]
-                                  sm:text-[32px]
-                                  md:text-[40px]
-                                  lg:text-[48px]
-                                  xl:text-[48px]
-                                  font-medium
-                                  leading-[1.15]
-                                  text-text-primary
-                                "
-                          >
-                            <span
-                              className="
-                                    inline-block
-                                    text-[#9CEE69]
-                                    rounded-md
-                                    whitespace-nowrap
-                                  "
-                            >
-                              Xmoveon
-                            </span>
-                            <span
-                              className="
-                                    inline-block
-                                    rounded-md
-                                    whitespace-nowrap
-                                    px-1
-                                  "
-                            >
-                              Launch
-                            </span>
-                            <span
-                              className="
-                                    inline-block
-                                    rounded-md
-                                    whitespace-nowrap
-                                    bg-[#E4FFD4]
+                      {/* LEFT CONTENT */}
+                      <div className="w-full lg:w-1/2 text-center lg:text-left">
+                        <h3 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium leading-[1.15] text-text-primary">
+                          <span className="text-[#9CEE69]">Xmoveon</span>{" "}
+                          <span>Launch</span>{" "}
+                          <span className="bg-[#E4FFD4] px-2 rounded-md">
+                            Your Own service
+                          </span>
+                          <br />
+                          <span className="bg-[#E4FFD4] px-2 rounded-md">
+                            Marketplace platform
+                          </span>
+                        </h3>
 
-                                  "
-                            > Your Own Service</span> <br />
+                        <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0 text-gray-600">
+                          Build your multi-vendor food delivery platform with our proven solution.
+                          Restaurants gain exposure, drivers earn commissions, and you control
+                          everything from one powerful admin panel.
+                        </p>
 
-                            <span
-                              className="
-                                    inline-block
-                                    bg-[#E4FFD4]
-                                    rounded-md
-                                    whitespace-nowrap
-                                  "
-                            >
-                              Marketplace
-                            </span>
-                            <span
-                              className="
-                                    inline-block
-                                    bg-[#E4FFD4]
-                                    rounded-md
-                                    whitespace-nowrap
-                                    px-1
-                                  "
-                            >
-                              Platform
-                            </span>
-                          </h3>
-                          <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
-                            Build your multi-vendor food delivery platform with our proven
-                            solution. Restaurants gain exposure, drivers earn commissions,
-                            and you control the entire ecosystem from one powerful admin panel.
-                          </p>
-
-                          <div className="mt-6 flex justify-center lg:justify-start">
-                            <Button
-                              text="Try Our Demo"
-                              text_font_size="16px"
-                              text_font_weight="600"
-                              text_color="#0f0f0f"
-                              fill_background_color="#9CEE69"
-                              border_border_radius="32px"
-                              padding="14px 28px"
-                              text_align="center"
-                            />
-                          </div>
+                        <div className="mt-6 flex justify-center lg:justify-start">
+                          <Button
+                            text="Try Our Demo"
+                            text_font_size="16px"
+                            text_font_weight="600"
+                            text_color="#0f0f0f"
+                            fill_background_color="#9CEE69"
+                            border_border_radius="32px"
+                            padding="14px 28px"
+                          />
                         </div>
 
                         {/* RIGHT CONTENT */}
@@ -492,8 +438,30 @@ const Service = () => {
                         </div>
 
                       </div>
+
+                      {/* RIGHT CONTENT */}
+                      <div className="w-full lg:w-1/2 flex flex-col items-center">
+
+                        {/* IMAGE */}
+                        <div className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px] aspect-[5/5]">
+                          <img
+                            src="/assets/android.jpg"
+                            alt="Platform Illustration"
+                            className="w-full h-full object-cover rounded-[28px] shadow-lg"
+                          />
+                        </div>
+
+                        {/* INFO CARD */}
+                        <div className="mt-6 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700">
+                          Whether you’re a startup, agency, or developer, Xmoveon gives you the
+                          flexibility to create, customize, and scale your own marketplace —
+                          entirely under your brand.
+                        </div>
+                      </div>
+
                     </div>
-                  </section>
+                  </div>
+                </section>
                 </div>
               </div>
               {/* Why Choose X-Moveon Section */}
