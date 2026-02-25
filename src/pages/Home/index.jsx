@@ -841,82 +841,119 @@ const Home = () => {
             </section>
 
               {/* Vendor Section */}
-             <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-6 xl:px-12">
+            <section className="w-full bg-white">
+              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-6 xl:px-12">
 
-                  <div
-                    className="
-                      bg-secondary-background
-                      rounded-[24px] sm:rounded-[32px] lg:rounded-[44px]
-                      px-4 py-6
-                      sm:px-6 sm:py-8
-                      lg:px-10 lg:py-10
-                      mt-10 sm:mt-14
-                    "
-                  >
-                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-stretch">
+                <div
+                  className="
+                    bg-secondary-background
+                    rounded-[24px]
+                    sm:rounded-[32px]
+                    lg:rounded-[44px]
+                    px-4 py-5
+                    sm:px-6 sm:py-6
+                    lg:px-10 lg:py-10
+                    mt-10
+                  "
+                >
+                  <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
 
-                      {/* LEFT SIDE */}
-                      <div className="w-full lg:w-1/2 text-center lg:text-left">
+                    {/* LEFT SIDE */}
+                    <div className="w-full lg:w-1/2 text-center lg:text-left">
+                       <h3
+                                className="
+                                  text-[26px]
+                                  sm:text-[32px]
+                                  md:text-[40px]
+                                  lg:text-[48px]
+                                  xl:text-[48px]
+                                  font-medium
+                                  leading-[1.15]
+                                  text-text-primary
+                                "
+                              >
+                                Tools that help  <br />
+                              <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]                                  
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                > them earn more </span> 
+                              </h3>
 
-                        <h3
-                          className="
-                            text-[26px]
-                            sm:text-[32px]
-                            md:text-[40px]
-                            lg:text-[48px]
-                            font-medium
-                            text-text-primary
-                          "
-                        >
-                          Your restaurant grows on{" "}
-                          <span className="inline-block bg-[#E4FFD4] rounded-md px-2">
-                            this platform
+                      <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
+                        Drivers get smart routing that saves time and fuel. They see earnings
+                        clearly and manage their schedule on their own terms.
+                      </p>
+
+                      {/* META */}
+                      <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
+                        <div className="flex items-center gap-2">
+                          <img src="/images/img_moneybag.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
+                          <span className="text-xs sm:text-sm text-text-secondary">
+                            $10B+ Processed
                           </span>
-                        </h3>
+                        </div>
 
-                        <p
+                        <div className="flex items-center gap-2">
+                          <img src="/images/img_code.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
+                          <span className="text-xs sm:text-sm text-text-secondary">
+                            No Coding Required
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="mt-3 flex justify-center lg:justify-start gap-2">
+                        <img src="/images/img_headset.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
+                        <span className="text-xs sm:text-sm text-text-secondary">
+                          24/7 Support
+                        </span>
+                      </div>
+
+                      <div className="mt-6 flex justify-center lg:justify-start">
+                        <Button
+                          text="Try Our Demo"
+                          text_font_size="16px"
+                          text_font_weight="600"
+                          text_color="#0f0f0f"
+                          fill_background_color="#9cee69"
+                          border_border_radius="32px"
+                          padding="14px 28px"
+                          text_align="center"
+                          onClick={() => setShowDemo(true)}
+                        />
+                      </div>
+
+                      {/* IMAGE */}
+                      <div className=" flex justify-center  lg:justify-start">
+                        <div
                           className="
-                            mt-4
-                            text-sm
-                            sm:text-base
-                            text-text-secondary
-                            max-w-lg
-                            mx-auto
-                            lg:mx-0
+                            w-full
+                            max-w-[400px]
+                            sm:max-w-[500px]
+                            md:max-w-[600px]
+                            lg:max-w-[520px]
+                            xl:max-w-[620px]
                           "
                         >
-                          Restaurants can manage menus, handle orders, and reach more customers
-                          without building their own app. Built-in insights help improve sales
-                          and daily operations.
-                        </p>
-
-                        {/* META */}
-                        <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
-                          <div className="flex items-center gap-2">
-                            <img src="/images/img_moneybag.svg" alt="Money" className="w-5 h-5" />
-                            <span className="text-sm text-text-secondary">$10B+ Processed</span>
-                          </div>
-
-                          <div className="flex items-center gap-2">
-                            <img src="/images/img_code.svg" alt="Code" className="w-5 h-5" />
-                            <span className="text-sm text-text-secondary">
-                              No Coding Required
-                            </span>
-                          </div>
+                          <img
+                            src="/assets/vendors.png"
+                            alt="Driver Experience"
+                            className=" lg:w-[380px] lg:h-[400px] xl:w-[420px] xl:h-[500px] mt-5 xl:mt-0 mx-0 md:mx-8 lg:mx-0  md:w-[650px] md:h-[500px]  w-[380px] h-[240px] rounded-[17px] object-cover"
+                          />
                         </div>
+                      </div>
+                    </div>
 
-                        <div className="mt-3 flex justify-center lg:justify-start gap-2">
-                          <img src="/images/img_headset.svg" alt="Support" className="w-5 h-5" />
-                          <span className="text-sm text-text-secondary">24/7 Support</span>
-                        </div>
+                    {/* RIGHT SIDE */}
+                    <div className="w-full lg:w-1/2 flex flex-col gap-6">
+                      <span className="text-[22px] sm:text-[28px] lg:text-[40px] font-semibold text-primary-background text-center lg:text-left mt-0 lg:mt-12">
+                        Vendors
+                      </span>
 
-                        {/* VENDORS */}
-                        <h4 className="mt-10 text-[24px] sm:text-[28px] lg:text-[36px] font-semibold text-primary-background">
-                          Vendors
-                        </h4>
-
-                        <div className="mt-4 flex flex-col gap-4 w-full max-w-lg mx-auto lg:mx-0">
+                     <div className="mt-4 flex flex-col gap-4 w-full max-w-lg mx-auto lg:mx-0">
                           {vendorFeatures.map((feature, index) => (
                             <div
                               key={index}
@@ -943,31 +980,13 @@ const Home = () => {
                             </div>
                           ))}
                         </div>
-                      </div>
-
-                      {/* RIGHT SIDE */}
-                      <div className=" flex justify-center  lg:justify-start">
-                        <div
-                          className="
-                            w-full
-                            max-w-[240px]
-                            sm:max-w-[300px]
-                            md:max-w-[600px]
-                            lg:max-w-[420px]
-                            aspect-[5/5]
-                          "
-                        >
-                          <img
-                            src="/assets/vendors.png"
-                            alt="Driver Experience"
-                            className=" lg:w-[380px] lg:h-[270px] xl:w-[500px] xl:h-[300px]  mx-0 md:mx-8 lg:mx-0 md:w-[550px] md:h-[200px]  w-[300px] h-[150px] rounded-[17px] object-cover"
-                          />
-                        </div>
-                      </div>
                     </div>
+
                   </div>
                 </div>
-              </section>
+
+              </div>
+            </section>
 
               {/* Admin Control Section */}
               <ControlSection />

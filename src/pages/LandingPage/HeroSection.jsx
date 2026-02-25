@@ -103,7 +103,7 @@ const HeroSection = () => {
 
               {/* MOBILE IMAGE */}
               <img
-                src="/assets/mobile.png"
+                src="/assets/launch.png"
                 alt="Platform showcase"
                 className="
                   w-full

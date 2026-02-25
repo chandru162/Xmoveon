@@ -6,35 +6,35 @@ const features = [
     heading: "Set commission rates per restaurant",
     description:
       "Configure custom commission structures for each restaurant, cuisine, or individual vendor. Changes take effect immediately across the platform.",
-    image: "/assets/Group.png",
+    image: "/assets/control1.png",
   },
   {
     title: "Restaurant onboarding",
     heading: "Onboard restaurants faster",
     description:
       "Add, verify, and manage restaurant partners easily with streamlined onboarding and approval workflows.",
-    image: "/assets/Group.png",
+    image: "/assets/control2.png",
   },
   {
     title: "System analytics",
     heading: "Track system performance",
     description:
       "Monitor orders, revenue, growth metrics, and operational insights from a single analytics dashboard.",
-    image: "/assets/Group.png",
+    image: "/assets/control3.png",
   },
   {
     title: "Settings control",
     heading: "Control platform settings",
     description:
       "Manage platform-wide configurations, permissions, and feature toggles with full control.",
-    image: "/assets/Group.png",
+    image: "/assets/control4.png",
   },
   {
     title: "Revenue tracking",
     heading: "Track platform revenue",
     description:
       "View detailed revenue reports, payouts, and financial summaries in real time.",
-    image: "/assets/Group.png",
+    image: "/assets/control2.png",
   },
   {
     title: "Dispute resolution",
