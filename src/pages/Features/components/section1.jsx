@@ -7,20 +7,20 @@ const Section1 = ({ data }) => {
         
         {/* Left Side: Typography */}
         <div className="flex-1 flex flex-col pt-4 w-full">
-          <h1 className="text-[32px] sm:text-[40px] md:text-[68px] text-[#111827] leading-[1.05] tracking-tight">
+          <h1 className="text-[32px] sm:text-[40px] font-semibold md:text-[60px] text-[#111827] leading-[1.05] tracking-tight">
             {data.title1} -
           </h1>
-          <h1 className="text-[32px] sm:text-[40px] md:text-[68px] text-[#111827] leading-[1.05] tracking-tight">
+          <h1 className="text-[32px] sm:text-[40px] font-semibold md:text-[60px] text-[#111827] leading-[1.05] tracking-tight">
             {data.title2} 
           </h1>
 
           <div className="mt-4 flex">
-            <span className="bg-[#D4FFB2] text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-7 py-2 md:py-3 rounded-sm leading-tight text-[#111827] inline-block">
+            <span className="bg-[#D4FFB2] font-semibold text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-0 py-2 md:py-5 rounded-sm md:rounded-md leading-tight text-[#111827] inline-block">
               {data.highlightText1}
             </span>
           </div>
           <div className="mt-2 md:mt-4 flex">
-            <span className="bg-[#D4FFB2] text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-7 py-2 md:py-3 rounded-sm leading-tight text-[#111827] inline-block">
+            <span className="bg-[#D4FFB2] font-semibold text-[24px] sm:text-[34px] md:text-[60px] px-5 md:px-0 py-2 md:py-5 rounded-sm md:rounded-md leading-tight text-[#111827] inline-block">
               {data.highlightText2}
             </span>
           </div>
@@ -46,16 +46,6 @@ const Section1 = ({ data }) => {
         <div className="flex-1 w-full lg:max-w-[620px] flex flex-col gap-8">
           <div className="relative rounded-[30px] md:rounded-[55px] overflow-hidden shadow-sm border border-gray-50 aspect-[1.2/1] lg:aspect-auto lg:h-[500px]">
             <img src={data.image} alt="Visual" className="w-full h-full object-cover" />
-
-            {/* Tag */}
-            <div className="absolute top-4 left-4 md:top-8 md:left-8 bg-white/95 backdrop-blur-sm px-3 py-1.5 md:px-5 md:py-2.5 rounded-full flex items-center gap-2 md:gap-3 shadow-md border border-gray-100">
-              <div className="w-5 h-5 md:w-6 md:h-6 flex items-center justify-center bg-gray-100 rounded-md text-[10px] md:text-base">
-                📦
-              </div>
-              <span className="text-[10px] md:text-[13px] font-bold text-gray-900 uppercase tracking-widest">
-                {data.category}
-              </span>
-            </div>
           </div>
 
           {/* Mobile Button: Image-ku keela varum (Hidden on Desktop) */}

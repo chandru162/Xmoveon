@@ -61,7 +61,7 @@ const TaxiPage = () => {
           subTitle: 'Launch your own parcel delivery platform with full ownership.',
           description:
             'Manage bookings, drivers, routes, and real-time deliveries — all under your brand.Pay once, own it forever — no subscriptions, no vendor lock-in.',
-          image: TaxiImage,
+          image: '../../../../public/assets/Frame 1597883618.png',
           category: 'Delivery',
         }}
       />
@@ -89,7 +89,7 @@ const TaxiPage = () => {
           mainTitlePlain: '',
           topDescription:
             'Xmoveon Parcel combines automation, tracking, and analytics to streamline delivery operations — from pickup to proof of delivery.',
-          showcaseImage: Illustrations,
+          showcaseImage: '../../../../public/assets/Illustrationsa.png',
           features: [
             {
               icon: <MenuIcon className="w-6 h-6" />,
@@ -129,7 +129,7 @@ const TaxiPage = () => {
           categories: [
             {
               label: 'Customers',
-              image: '/assets/rider-image.jpg',
+              image: '../../../../public/assets/Frame-a.png',
               features: [
                 'Book parcel pickups in seconds',
                 'Track delivery in real time',
@@ -139,7 +139,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Drivers / Couriers',
-              image: '/assets/driver-image.jpg',
+              image: '../../../../public/assets/Frame-b.png',
               features: [
                 'Accept or reject delivery tasks',
                 'Use in-app navigation and route optimization',
@@ -149,7 +149,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Vendors / Merchants',
-              image: '/assets/fleet-image.jpg',
+              image: '../../../../public/assets/Frame-c.png',
               features: [
                 'Schedule bulk or recurring pickups',
                 'Manage multiple locations and accounts',
@@ -235,22 +235,22 @@ const TaxiPage = () => {
             {
               title: 'Per Delivery Commission',
               desc: 'Earn from every order completed',
-              image: image1,
+              image: '../../../../public/assets/Revenue Growth.png',
             },
             {
               title: 'Merchant Subscription Plans',
               desc: 'Offer premium access to high-volume vendors',
-              image: image2,
+              image: '../../../../public/assets/Revenue Growth.png',
             },
             {
               title: 'Surge Pricing & Service Fees',
               desc: 'Adjust rates dynamically during peak hours.',
-              image: '/assets/surge.jpg',
+              image: '../../../../public/assets/Revenue Growth.png',
             },
             {
               title: 'Promotions & Ads',
               desc: 'Enable banner ads or merchant promotions within the app.',
-              image: '/assets/ads.jpg',
+              image: '../../../../public/assets/Revenue Growth.png',
             },
           ],
         }}

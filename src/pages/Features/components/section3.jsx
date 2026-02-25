@@ -7,17 +7,17 @@ const Section3 = ({ data }) => {
         {/* Header: Mobile-la stacked, Desktop-la flex-row */}
         <div className="flex flex-col md:flex-row items-start justify-between mb-10 md:mb-16 gap-4">
           <h2 className="text-[32px] sm:text-[42px] md:text-[60px] text-[#111827] leading-[1.1] tracking-tight">
-            <span className="bg-[#D4FFB2] md:px-6 px-1 py-1 rounded-t-[20px]  rounded-br-[20px] md:rounded-br-[25px] inline-block mb-0">
+            <span className="md:px-0 px-1 py-1 rounded-t-[20px] font-semibold  rounded-br-[20px] md:rounded-br-[25px] inline-block mb-0">
               {data.mainTitleHighlight1}
             </span>
             <br/>
-            <span className="bg-[#D4FFB2] px-4 md:px-6 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mb-2">
+            <span className="bg-[#D4FFB2] px-4 md:px-0 py-1 font-semibold rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mb-2">
               {data.mainTitleHighlight2}
             </span>
             <br />
             {data.mainTitlePlain}
           </h2>
-          <h3 className="text-[#8CFF5E] text-[20px] md:text-[40px] max-w-[300px] leading-tight md:leading-10">
+          <h3 className="text-[#8CFF5E] text-[20px] font-semibold md:text-[40px] max-w-[300px] leading-tight md:leading-10 md:mt-20">
             {data.sideTitle}
           </h3>
         </div>
@@ -32,7 +32,7 @@ const Section3 = ({ data }) => {
             <div className="space-y-8 md:space-y-10">
               {data.features.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4 md:gap-6 group">
-                  <div className="text-xl md:text-2xl mt-1 grayscale group-hover:grayscale-0 transition-all">
+                  <div className="text-xl md:text-2xl mt-1 ">
                     {item.icon}
                   </div>
                   <div>

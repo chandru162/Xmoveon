@@ -455,7 +455,6 @@ const Service = () => {
                               className="
                                       w-full
                                       h-[200px]
-                                      w-[360px]
                                       md:h-[400px]
                                       lg:h-[350px]
                                       xl:h-[350px]

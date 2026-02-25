@@ -1,56 +1,73 @@
 import React, { useState } from 'react';
 
 const FAQSection = ({ data }) => {
-  // மொபைலில் முதல் கேள்வி திறந்தே இருக்க வேண்டுமானால் 0 வைக்கலாம், இல்லையெனில் -1
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="w-full bg-gray-100 py-16 md:py-24 px-6 md:px-16 lg:px-24 font-sans text-black overflow-hidden">
-      <div className="max-w-4xl mx-auto">
-        
-        {/* Header - Responsive Font Sizes */}
-        <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-[40px] md:text-[60px] font-bold mb-4 tracking-tight leading-none">FAQ</h2>
-          <p className="text-gray-500 text-[16px] md:text-lg font-medium px-4">
+    <section className="w-full  py-12 md:py-20 px-6 md:px-16 lg:px-24 font-sans text-black overflow-hidden">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8 md:mb-10">
+          <h2 className="text-[36px] md:text-[54px] font-bold mb-3 tracking-tight leading-none">
+            FAQ
+          </h2>
+          <p className="text-gray-500 text-[15px] md:text-lg font-medium">
             Everything you need to know about getting started.
           </p>
         </div>
 
         {/* FAQ List */}
-        <div className="relative space-y-4">
-          
+        <div className="space-y-3">
           {data.faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <div 
+              <div
                 key={idx}
-                className={`relative z-10 transition-all duration-300 rounded-[25px] md:rounded-[35px] border ${
-                  isOpen ? "bg-[#D4FFB2] border-[#8CFF5E] shadow-md" : "bg-white border-transparent shadow-sm"
+                className={`transition-all duration-300 rounded-[20px] md:rounded-[25px] border ${
+                  isOpen
+                    ? 'bg-[#D4FFB2] border-[#8CFF5E] shadow-sm'
+                    : 'bg-white border-transparent shadow-sm'
                 }`}
               >
-                <button 
+                <button
                   onClick={() => setOpenIndex(isOpen ? -1 : idx)}
-                  className="w-full px-6 md:px-10 py-6 md:py-9 flex justify-between items-center text-left gap-4"
+                  className="w-full px-5 md:px-8 py-4 md:py-6 flex justify-between items-center text-left gap-4"
                 >
-                  <span className="text-[18px] md:text-[24px] font-semibold leading-snug">
+                  <span className="text-[17px] md:text-[21px] font-semibold leading-tight">
                     {faq.question}
                   </span>
-                  
-                  {/* Circle Icon with Arrow - Responsive size */}
-                  <div className={`flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                    isOpen ? "bg-[#8CFF5E] rotate-180 shadow-inner" : "bg-[#8CFF5E] shadow-sm"
-                  }`}>
-                    <svg width="12" height="7" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-[14px]">
-                      <path d="M1 1L7 7L13 1" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+
+                  {/* Icon - Adjusted size */}
+                  <div
+                    className={`flex-shrink-0 w-5 h-5 md:w-5 md:h-5 rounded-full flex items-center justify-center transition-all duration-300 ${
+                      isOpen ? 'bg-[#8CFF5E] rotate-180' : 'bg-[#8CFF5E]'
+                    }`}
+                  >
+                    <svg
+                      width="10"
+                      height="6"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L7 7L13 1"
+                        stroke="black"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                 </button>
 
-                {/* Answer Area - Smooth Transition fix */}
-                <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  isOpen ? "max-h-[500px] opacity-100 pb-6 md:pb-9" : "max-h-0 opacity-0"
-                }`}>
-                  <div className="px-6 md:px-10 text-[16px] md:text-[18px] text-gray-700 leading-relaxed">
+                {/* Answer Area - Tightened Padding */}
+                <div
+                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                    isOpen ? 'max-h-[500px] opacity-100 pb-5 md:pb-7' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="px-5 md:px-8 text-[15px] md:text-[17px] text-gray-700 leading-snug">
                     {faq.answer}
                   </div>
                 </div>
