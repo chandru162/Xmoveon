@@ -17,29 +17,29 @@ const tabs = [
   },
   {
     label: "Agencies & Development Studios",
-    tagline: "Deliver client projects faster — with full flexibility.",
+    tagline: "Deliver powerful, custom marketplaces for your clients — faster and smarter",
     description:
-      "Build and deploy white-label service platforms for multiple clients without recurring platform costs.",
-    title: "Why Agencies",
-    highlight: "Choose Xmoveon",
+      "Use Xmoveon as your white-label foundation to cut dev time, increase profit margins, and offer clients full code ownership.",
+    title: "Why Agencies ",
+    highlight: "Use It",
     points: [
-      "White-label & client-ready",
-      "Faster project delivery",
-      "Custom branding & features",
+      "One-time license, unlimited customization",
+      "70% faster deployment for client projects",
+      "Adaptable for any service niche",
     ],
     image: "/assets/men.jpg",
   },
   {
     label: "Developers & Tech Founders",
-    tagline: "Build scalable products — your way.",
+    tagline: "Get the flexibility you’ve always wanted — no black-box SaaS limitations.",
     description:
-      "Use a modern, extensible foundation to build and scale service platforms with full technical control.",
-    title: "Why Developers",
-    highlight: "Trust It",
+      "Xmoveon gives you modular, clean source code to build scalable platforms your way.",
+    title: "Why Developers ",
+    highlight: "Love It",
     points: [
-      "Modern & scalable architecture",
-      "Full code & hosting control",
-      "No vendor lock-in",
+      "Open architecture for integrations and API flexibility",
+      "Scalable backend with documentation",
+      "Works with any hosting or payment provider",
     ],
     image: "/assets/men.jpg",
   },
@@ -68,7 +68,7 @@ const Who = () => {
                 className={`text-xs sm:text-sm px-4 py-2 rounded-full transition whitespace-nowrap ${
                   activeTab === index
                     ? "bg-[#9CEE69] font-semibold text-black"
-                    : "bg-transparent text-black hover:bg-gray-100"
+                    : "bg-transparent text-black hover:bg-gray-100 border border-gray-400"
                 }`}
               >
                 {tab.label}
