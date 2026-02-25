@@ -26,7 +26,7 @@ const Section10 = ({ data }) => {
             {data.services.map((service, idx) => (
               <div
                 key={idx}
-                className="bg-[#ecedf0] p-5 md:p-6 rounded-[22px] md:rounded-[25px] flex items-center gap-4 md:gap-6 hover:bg-[#d7d9db] transition-all cursor-default group w-full lg:max-w-[500px] border border-transparent hover:border-gray-300"
+                className="bg-[#ecedf0] p-5 md:p-6 rounded-[22px] md:rounded-[25px] flex items-center gap-4 md:gap-6 hover:bg-[#f3f3f3] transition-all cursor-default group w-full lg:max-w-[500px] border border-transparent hover:border-gray-300"
               >
                 {/* Icon Placeholder */}
                 <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center text-xl md:text-2xl ">
