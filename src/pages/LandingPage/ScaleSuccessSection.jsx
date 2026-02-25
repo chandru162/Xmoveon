@@ -1,154 +1,151 @@
 import React from "react";
+import {
+  RectangleIcon,
+  MessageIcon,
+  TopologyIcon,
+  RouteIcon,
+  CloverIcon,
+  HeartPinIcon,
+} from "../../svg/svgIcons";
 
 const ScaleSuccessSection = () => {
-  const platformFeatures = [
-    {
-      icon: "/images2/features/img_layout_dashboard.svg",
-      title: "Localisation",
-      description:
-        "Multi-language and multi-currency support with regional settings.",
-    },
-    {
-      icon: "/images2/features/img_sparkles.svg",
-      title: "Blazing Fast",
-      description:
-        "Built with latest technology for lightning fast loading times.",
-    },
-    {
-      icon: "/images2/features/img_file_power.svg",
-      title: "Source Code",
-      description:
-        "Full source code ownership with complete customization freedom.",
-    },
-    {
-      icon: "/images2/features/img_clock_play.svg",
-      title: "99.9% Uptime",
-      description:
-        "Enterprise-grade infrastructure ensures your app is always available.",
-    },
-    {
-      icon: "/images2/features/img_device_mobile_check.svg",
-      title: "Fully Customizable",
-      description:
-        "Intuitive drag-and-drop configuration without coding knowledge.",
-    },
-    {
-      icon: "/images2/features/img_clock_2.svg",
-      title: "Support",
-      description:
-        "Includes setup and deployment. Optional maintenance and enhancements.",
-    },
-  ];
+ const Scale = [
+     {
+       icon: <MessageIcon />,
+       title: "In-App Communication",
+       description:
+         "Seamless chat and call features between customers, drivers, and vendors.",
+     },
+     {
+       icon: <RectangleIcon />,
+       title: "Dynamic Pricing Engine",
+       description:
+         "Real-time pricing adjustment based on demand, distance, and time.",
+     },
+     {
+       icon: <HeartPinIcon />,
+       title: "Advanced Safety Features",
+       description:
+         "SOS button, emergency contacts, and ride/order tracking for user safety.",
+     },
+     {
+       icon: <TopologyIcon />,
+       title: "Granular Business Controls",
+       description:
+         "Manage permissions, commissions, and service parameters easily.",
+     },
+     {
+       icon: <CloverIcon />,
+       title: "Marketing Tools",
+       description:
+         "Push notifications, promo codes, and referral programs built-in.",
+     },
+     {
+       icon: <RouteIcon />,
+       title: "Smart Route Optimization",
+       description:
+         "AI-powered routing for faster delivery and improved efficiency.",
+     },
+   ];
+
 
   return (
-    <section className="w-full bg-white overflow-hidden py-12 sm:py-16 lg:py-24">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
         {/* MAIN CARD */}
-        <div className="bg-secondary-background lg:rounded-[48px] py-10 sm:py-12 lg:py-16">
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+        <div className="bg-white lg:rounded-[42px] py-8 sm:py-10 lg:py-14">
 
-            {/* LEFT CONTENT */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h3
+          {/* HEADER */}
+          <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-10">
+           <h3
+              className="
+                text-[26px]
+                sm:text-[32px]
+                md:text-[40px]
+                lg:text-[48px]
+                xl:text-[52px]
+                font-medium
+                leading-[1.15]
+                text-text-primary
+              "
+            >
+            Built for Scale, <br />
+              
+
+              <span
                 className="
-                  text-[26px]
-                  sm:text-[32px]
-                  md:text-[40px]
-                  lg:text-[48px]
-                  xl:text-[52px]
-                  font-medium
-                  leading-[1.15]
-                  text-text-primary
+                  inline-block
+                  bg-[#E4FFD4]
+                  rounded-md               
+                  whitespace-nowrap
                 "
               >
-               Built for Scale, 
-                <br />
+              Designed for 
+              </span> <br />
 
-                <span
-                  className="
-                    inline-block
-                    bg-[#E4FFD4]
-                    rounded-md                 
-                    whitespace-nowrap
-                  "
-                >
-                  Designed for
-                </span> <br />
-                <span
-                  className="
-                    inline-block
-                    bg-[#E4FFD4]
-                    rounded-md                 
-                    whitespace-nowrap
-                  "
-                >
-                  Success
-                </span>
-              </h3>
-              <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
-                Build and deploy fully customizable service applications without
-                any coding. Everything you need to start and scale your
-                on-demand business instantly.
-              </p>
-
-              <img
-                src="/assets/car.jpg"
-                alt="Platform Dashboard"
+             <span
                 className="
-                  mt-6
-                  w-full
-                  max-w-[350px]
-                  sm:max-w-[320px]
-                  md:max-w-[360px]
-                  lg:max-w-[420px]
-                  rounded-[24px]
-                  mx-auto
-                  lg:mx-0
+                  inline-block
+                  bg-[#E4FFD4]
+                  rounded-md               
+                  whitespace-nowrap
                 "
-              />
-            </div>
+              >Success</span>
+</h3>
 
-            {/* RIGHT FEATURES */}
-            <div className="w-full lg:w-1/2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                {platformFeatures.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="
-                      bg-white
-                      rounded-[16px]
-                      p-4
-                      sm:p-5
-                      flex
-                      flex-col
-                      gap-2
-                      hover:shadow-md
-                      transition
-                    "
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="bg-[#E4FFD4] p-2 rounded-[10px] shrink-0">
-                        <img
-                          src={feature.icon}
-                          alt={feature.title}
-                          className="w-5 h-5"
-                        />
+            <p className="text-sm sm:text-base text-text-secondary max-w-md">
+             Everything you need to launch, manage, and grow your on-demand service business.
+
+            </p>
+          </div>
+
+          {/* SERVICES GRID */}
+          <div
+            className="
+              grid
+              grid-cols-1
+              sm:grid-cols-2
+              xl:grid-cols-3
+              gap-6
+              lg:gap-10
+            "
+          >
+            {Scale.map((Scale, index) => (
+              <div
+                key={index}
+                className="
+                  bg-[#F4F4F480]
+                  rounded-[20px]
+                  p-5
+                  sm:p-6
+                  lg:p-8
+                  flex
+                  flex-col
+                  gap-4
+                  hover:shadow-md
+                  transition
+                "
+              >
+                <div className="flex items-center gap-4">
+                   <div className="flex-shrink-0 w-12 h-12 rounded-[12px] bg-[#E4FFD4] flex items-center justify-center">
+                      <div className="w-6 h-6 text-[#56E000]">
+                        {Scale.icon}
                       </div>
-                      <h4 className="text-sm sm:text-base font-semibold text-black">
-                        {feature.title}
-                      </h4>
                     </div>
 
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pl-[46px]">
-                      {feature.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+                  <h4 className="text-base sm:text-lg font-semibold text-black">
+                    {Scale.title}
+                  </h4>
+                </div>
 
+                <p className="text-sm sm:text-[15px] text-black leading-relaxed">
+                  {Scale.description}
+                </p>
+              </div>
+            ))}
           </div>
+
         </div>
       </div>
     </section>

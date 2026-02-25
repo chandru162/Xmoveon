@@ -612,35 +612,35 @@ export const ArrowButtonIcon = (props) => (
     xmlns="http://www.w3.org/2000/svg"
   >
     {/* Outer Border Shapes */}
-    <rect 
-      x="0.5" 
-      y="0.5" 
-      width="132.38" 
-      height="51.056" 
-      rx="25.528" 
-      stroke="currentColor" 
+    <rect
+      x="0.5"
+      y="0.5"
+      width="132.38"
+      height="51.056"
+      rx="25.528"
+      stroke="currentColor"
     />
-    <rect 
-      x="0.5" 
-      y="0.5" 
-      width="114.727" 
-      height="51.056" 
-      rx="25.528" 
-      stroke="currentColor" 
+    <rect
+      x="0.5"
+      y="0.5"
+      width="114.727"
+      height="51.056"
+      rx="25.528"
+      stroke="currentColor"
     />
-    <rect 
-      x="0.5" 
-      y="0.5" 
-      width="99.0353" 
-      height="50" 
-      rx="25" 
-      stroke="currentColor" 
+    <rect
+      x="0.5"
+      y="0.5"
+      width="99.0353"
+      height="50"
+      rx="25"
+      stroke="currentColor"
     />
 
     {/* Primary Arrow Path */}
-    <path 
-      d="M56.9295 15.1576L34.0176 37.3535L37.7817 41L60.6936 18.8067L60.6936 38.367L66.0176 38.367L66.0176 10L36.7355 10L36.7355 15.1576L56.9295 15.1576Z" 
-      fill="currentColor" 
+    <path
+      d="M56.9295 15.1576L34.0176 37.3535L37.7817 41L60.6936 18.8067L60.6936 38.367L66.0176 38.367L66.0176 10L36.7355 10L36.7355 15.1576L56.9295 15.1576Z"
+      fill="currentColor"
     />
   </svg>
 );
@@ -846,7 +846,7 @@ export const CTAArrowIcon = (props) => (
       rx="25.528"
       stroke="currentColor"
     />
-    
+
     {/* Arrow Icon Path */}
     <path
       d="M56.9409 36.7227L33.9889 13.7707L37.7596 10L60.7116 32.9493L60.7116 12.7227L66.0449 12.7227L66.0449 42.056L36.7116 42.056L36.7116 36.7227L56.9409 36.7227Z"
@@ -1037,4 +1037,31 @@ export const ContactIcon = (props) => (
       strokeLinejoin="round"
     />
   </svg>
+);
+
+
+
+export const LocalisationIcon = (props) => (
+  <svg
+    {...props}
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+
+
+    <g clip-path="url(#clip0_132_4018)">
+      <path d="M4.13672 4.13745H10.343V12.4125H4.13672V4.13745Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4.13672 16.55H10.343V20.6876H4.13672V16.55Z" stroke="#231E30" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14.4805 12.4126H20.6868V20.6876H14.4805V12.4126Z" stroke="#231E30" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14.4805 4.13745H20.6868V8.27497H14.4805V4.13745Z" stroke="#231E30" style="stroke:#231E30;stroke:color(display-p3 0.1373 0.1176 0.1882);stroke-opacity:1;" stroke-width="1.65501" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_132_4018">
+        <rect width="24.8251" height="24.8251" fill="white" style="fill:white;fill-opacity:1;" />
+      </clipPath>
+    </defs>
+  </svg>
+
 );

@@ -42,11 +42,11 @@ const WhyBusinesses = () => {
                                     inline-block
                                     rounded-md
                                     whitespace-nowrap
-                                  "
-              > Why Businesses  Love Xmoveon</span> 
+                                    "
+              > Why Businesses  Love <br />Xmoveon</span> 
 
             </h3>
-            <ul className="mt-2 space-y-4 text-sm sm:text-base max-w-[350px] md:max-w-full lg:max-w-full xl:max-w-full">
+            <ul className="mt-2 space-y-4 text-sm sm:text-base max-w-[270px] md:max-w-full lg:max-w-full xl:max-w-full">
               <li>● 100% platform ownership — no recurring costs</li>
               <li>● Total control over hosting and data</li>
               <li>● Developer-friendly structure with documentation</li>
