@@ -2,7 +2,7 @@ import React from 'react';
 
 const Technology = ({ data }) => {
   return (
-    <section className="w-full bg-gray-100 py-12 md:py-20 px-6 md:px-16 lg:px-24 font-sans">
+    <section className="w-full  py-12 md:py-20 px-6 md:px-16 lg:px-24 font-sans">
       <div className="max-w-[1440px] mx-auto text-center md:text-left">
         {/* Tech Logos Grid - Mobile First Column Logic */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-12 place-items-center md:place-items-start">

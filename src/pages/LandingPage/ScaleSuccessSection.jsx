@@ -9,44 +9,51 @@ import {
 } from "../../svg/svgIcons";
 
 const ScaleSuccessSection = () => {
- const Scale = [
+  const services = [
+
      {
-       icon: <MessageIcon />,
-       title: "In-App Communication",
-       description:
-         "Seamless chat and call features between customers, drivers, and vendors.",
-     },
+      icon: "/images2/features/img_layout_dashboard.svg",
+      title: "Localisation",
+      description:
+        "Multi-language and multi-currency support with regional settings.",
+    },
+
+    {
+      icon: "/images2/features/img_sparkles.svg",
+      title: " Blazing Fast",
+      description:
+        "Built with latest technology for lightning fast loading times.",
+    },
      {
-       icon: <RectangleIcon />,
-       title: "Dynamic Pricing Engine",
-       description:
-         "Real-time pricing adjustment based on demand, distance, and time.",
-     },
-     {
-       icon: <HeartPinIcon />,
-       title: "Advanced Safety Features",
-       description:
-         "SOS button, emergency contacts, and ride/order tracking for user safety.",
-     },
-     {
-       icon: <TopologyIcon />,
-       title: "Granular Business Controls",
-       description:
-         "Manage permissions, commissions, and service parameters easily.",
-     },
-     {
-       icon: <CloverIcon />,
-       title: "Marketing Tools",
-       description:
-         "Push notifications, promo codes, and referral programs built-in.",
-     },
-     {
-       icon: <RouteIcon />,
-       title: "Smart Route Optimization",
-       description:
-         "AI-powered routing for faster delivery and improved efficiency.",
-     },
-   ];
+      icon: "/images2/features/img_file_power.svg",
+      title: "Source Code",
+      description:
+        "Full source code ownership with complete customization freedom.",
+    },
+
+    {
+      icon: "/images2/features/img_clock_play.svg",
+      title: "99.9% Uptime",
+      description:
+        "Enterprise-grade infrastructure ensures your app is always available.",
+    },
+
+    {
+      icon: "/images2/features/img_device_mobile_check.svg",
+      title: "Fully Customizable",
+      description:
+        "Intuitive drag-and-drop configuration without coding knowledge.",
+    },
+
+    {
+      icon: "/images2/features/img_clock_2.svg",
+      title: " Support ",
+      description:
+        "Includes setup and deployment. Optional maintenance and enhancements.",
+    },
+
+   
+  ];
 
 
   return (
@@ -111,7 +118,7 @@ const ScaleSuccessSection = () => {
               lg:gap-10
             "
           >
-            {Scale.map((Scale, index) => (
+            {services.map((service, index) => (
               <div
                 key={index}
                 className="
@@ -128,19 +135,21 @@ const ScaleSuccessSection = () => {
                 "
               >
                 <div className="flex items-center gap-4">
-                   <div className="flex-shrink-0 w-12 h-12 rounded-[12px] bg-[#E4FFD4] flex items-center justify-center">
-                      <div className="w-6 h-6 text-[#56E000]">
-                        {Scale.icon}
-                      </div>
-                    </div>
+                  <div className="bg-[#E4FFD4] rounded-[12px] p-3 shrink-0">
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-6 h-6"
+                    />
+                  </div>
 
                   <h4 className="text-base sm:text-lg font-semibold text-black">
-                    {Scale.title}
+                    {service.title}
                   </h4>
                 </div>
 
                 <p className="text-sm sm:text-[15px] text-black leading-relaxed">
-                  {Scale.description}
+                  {service.description}
                 </p>
               </div>
             ))}

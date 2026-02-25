@@ -280,6 +280,53 @@ const Home = () => {
     }
   ];
 
+  const services = [
+
+     {
+      icon: "/images2/features/img_layout_dashboard.svg",
+      title: "Localisation",
+      description:
+        "Multi-language and multi-currency support with regional settings.",
+    },
+
+    {
+      icon: "/images2/features/img_sparkles.svg",
+      title: " Blazing Fast",
+      description:
+        "Built with latest technology for lightning fast loading times.",
+    },
+     {
+      icon: "/images2/features/img_file_power.svg",
+      title: "Source Code",
+      description:
+        "Full source code ownership with complete customization freedom.",
+    },
+
+    {
+      icon: "/images2/features/img_clock_play.svg",
+      title: "99.9% Uptime",
+      description:
+        "Enterprise-grade infrastructure ensures your app is always available.",
+    },
+
+    {
+      icon: "/images2/features/img_device_mobile_check.svg",
+      title: "Fully Customizable",
+      description:
+        "Intuitive drag-and-drop configuration without coding knowledge.",
+    },
+
+    {
+      icon: "/images2/features/img_clock_2.svg",
+      title: " Support ",
+      description:
+        "Includes setup and deployment. Optional maintenance and enhancements.",
+    },
+
+   
+  ];
+
+
   
 
   return (
@@ -364,20 +411,18 @@ const Home = () => {
                                   "
                                 >
                                   <img
-                                    src="/assets/Frame.png"
+                                    src="/assets/Frame2.png"
                                     alt="App Preview"
                                     className="
                                     w-[380px]
                                     h-[200px]
-                                    md:w-[560px]                                    
-                                    md:h-[300px]
+                                    md:w-[660px]                                    
+                                    md:h-[440px]
                                     lg:w-[480px]                                    
-                                    lg:h-[360px]
+                                    lg:h-[380px]
                                     xl:w-[700px]                                    
-                                    xl:h-[400px]
+                                    xl:h-[500px]
                                     object-cover
-                                    rounded-[24px]
-                                    shadow-lg
                                     "
                                   />
                                 </div>
@@ -405,115 +450,119 @@ const Home = () => {
             />
 
               {/* Built for Scale Section */}
-              <section className="w-full bg-white overflow-hidden">
-                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+              <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
+                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
-                    {/* CARD */}
-                    <div className="bg-secondary-background lg:rounded-[48px] py-10 sm:py-12 lg:py-16">
-                      <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+                    {/* MAIN CARD */}
+                    <div className="bg-white lg:rounded-[42px] py-8 sm:py-10 lg:py-14">
 
-                        {/* LEFT */}
-                        <div className="w-full lg:w-1/2 text-center lg:text-left">
-                              <h3
-                                className="
-                                  text-[26px]
-                                  sm:text-[32px]
-                                  md:text-[40px]
-                                  lg:text-[48px]
-                                  xl:text-[52px]
-                                  font-medium
-                                  leading-[1.15]
-                                  text-text-primary
-                                "
-                              >
-                                Built for Scale
-                              <span
-                                  className="
-                                    inline-block
-                                    bg-[#E4FFD4]
-                                    rounded-md
-                                    whitespace-nowrap
-                                  "
-                                >  Designed for </span> <br />
+                      {/* HEADER */}
+                      <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-10">
+                      <h3
+                          className="
+                            text-[26px]
+                            sm:text-[32px]
+                            md:text-[40px]
+                            lg:text-[48px]
+                            xl:text-[48px]
+                            font-medium
+                            md:text-center
+                            "
+                        >
+                        Built for Scale, {""}
+                          <span
+                            className="
+                              inline-block
+                              bg-[#E4FFD4]
+                              rounded-md               
+                              whitespace-nowrap
+                            "
+                          >
+                          Designed for 
+                          </span> <br />
 
-                                <span
-                                  className="
-                                    inline-block
-                                    bg-[#E4FFD4]
-                                    rounded-md
-                                    whitespace-nowrap
-                                  "
-                                >
-                                Success
-                                </span>
-                              </h3>
-                      
+                        <span
+                            className="
+                              inline-block
+                              bg-[#E4FFD4]
+                              rounded-md               
+                              whitespace-nowrap
+                            "
+                          >Success</span> <br />
 
-                          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
-                            Build and deploy fully customizable service applications without
-                            any coding. Everything you need to start and scale your
-                            on-demand business instantly.
-                          </p>
+                           <span className=" inline-block text-[16px] lg:text-[14px] xl:text-[16px] max-w-md mt-2 lg:mt-0 xl:mt-2 ">
+                               Everything you need to launch,manage,and grow your on-demand service business.
 
-                          <img
-                            src="/assets/car.jpg"
+                              </span>
+                     </h3>
+                      <img
+                            src="/assets/Group2.png"
                             alt="Platform Dashboard"
                             className="
-                              mt-6
+                              
                               w-full
                               max-w-[360px]
                               sm:max-w-[320px]
-                              md:max-w-[360px]
+                              md:max-w-[660px]
                               lg:max-w-[420px]
+                              xl:max-w-[520px]
                               rounded-[20px]
                               mx-auto
                               lg:mx-0
                             "
                           />
-                        </div>
-
-                        {/* RIGHT */}
-                        <div className="w-full lg:w-1/2">
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                            {platformFeatures.map((feature, index) => (
-                              <div
-                                key={index}
-                                className="
-                                  bg-white
-                                  rounded-[16px]
-                                  p-4
-                                  sm:p-5
-                                  flex
-                                  flex-col
-                                  gap-2
-                                  hover:shadow-md
-                                  transition
-                                "
-                              >
-                                <div className="flex items-center gap-3">
-                                  <div className="bg-[#E4FFD4] p-2 rounded-[10px] shrink-0">
-                                    <img
-                                      src={feature.icon}
-                                      alt={feature.title}
-                                      className="w-5 h-5"
-                                    />
-                                  </div>
-                                  <h4 className="text-sm sm:text-base font-semibold text-black">
-                                    {feature.title}
-                                  </h4>
-                                </div>
-
-                                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pl-[44px]">
-                                  {feature.description}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
 
                       </div>
-                    </div>
 
+                      {/* SERVICES GRID */}
+                      <div
+                        className="
+                          grid
+                          grid-cols-1
+                          sm:grid-cols-2
+                          xl:grid-cols-3
+                          gap-6
+                          lg:gap-10
+                        "
+                      >
+                        {services.map((service, index) => (
+                          <div
+                            key={index}
+                            className="
+                              bg-[#F4F4F480]
+                              rounded-[20px]
+                              p-5
+                              sm:p-6
+                              lg:p-8
+                              flex
+                              flex-col
+                              gap-4
+                              hover:shadow-md
+                              transition
+                            "
+                          >
+                            <div className="flex items-center gap-4">
+                              <div className="bg-[#E4FFD4] rounded-[12px] p-3 shrink-0">
+                                <img
+                                  src={service.icon}
+                                  alt={service.title}
+                                  className="w-6 h-6"
+                                />
+                              </div>
+
+                              <h4 className="text-base sm:text-lg font-semibold text-black">
+                                {service.title}
+                              </h4>
+                            </div>
+
+                            <p className="text-sm sm:text-[15px] text-black leading-relaxed">
+                              {service.description}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+
+                    </div>
                   </div>
                 </section>
 
@@ -598,17 +647,17 @@ const Home = () => {
                             "
                           >
                             <img
-                              src="/assets/multi.png"
+                              src="/assets/illustration2.png"
                               alt="Customer Experience"
                               className="
                                 w-full
                                 h-full
                                 md:w-[700px]                              
                                 md:h-[400px]
-                                lg:w-[500px]
+                                lg:w-[600px]
                                 lg:h-[500px]
                                 xl:w-[500px]                              
-                                xl:h-[500px]
+                                xl:h-[600px]
                                 rounded-[22px]
                                 object-cover
                               "
@@ -727,21 +776,21 @@ const Home = () => {
                       </div>
 
                       {/* IMAGE */}
-                      <div className="mt-6 flex justify-center lg:justify-start">
+                      <div className=" flex justify-center  lg:justify-start">
                         <div
                           className="
                             w-full
                             max-w-[240px]
                             sm:max-w-[300px]
-                            md:max-w-[360px]
+                            md:max-w-[600px]
                             lg:max-w-[420px]
-                            aspect-[4/5]
+                            aspect-[5/5]
                           "
                         >
                           <img
-                            src="/assets/Location.png"
+                            src="/assets/Location2.png"
                             alt="Driver Experience"
-                            className=" lg:w-[400px] lg:h-[250px] xl:w-[500px] xl:h-[300px]  md:w-[300px] md:h-[200px]  w-[300px] h-[150px] rounded-[17px] object-cover"
+                            className=" lg:w-[380px] lg:h-[270px] xl:w-[500px] xl:h-[300px] mt-5 mx-0 md:mx-8 lg:mx-0 md:w-[550px] md:h-[200px]  w-[300px] h-[150px] rounded-[17px] object-cover"
                           />
                         </div>
                       </div>
@@ -793,7 +842,7 @@ const Home = () => {
 
               {/* Vendor Section */}
              <section className="w-full bg-white">
-                <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-6 xl:px-12">
 
                   <div
                     className="
@@ -897,19 +946,23 @@ const Home = () => {
                       </div>
 
                       {/* RIGHT SIDE */}
-                      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-end">
-                        <img
-                          src="/assets/double.png"
-                          alt="mobile-screen"
+                      <div className=" flex justify-center  lg:justify-start">
+                        <div
                           className="
                             w-full
-                            max-w-[320px]
-                            sm:max-w-[380px]
-                            md:max-w-[420px]
-                            lg:max-w-[460px]
-                            object-contain
+                            max-w-[240px]
+                            sm:max-w-[300px]
+                            md:max-w-[600px]
+                            lg:max-w-[420px]
+                            aspect-[5/5]
                           "
-                        />
+                        >
+                          <img
+                            src="/assets/vendors.png"
+                            alt="Driver Experience"
+                            className=" lg:w-[380px] lg:h-[270px] xl:w-[500px] xl:h-[300px]  mx-0 md:mx-8 lg:mx-0 md:w-[550px] md:h-[200px]  w-[300px] h-[150px] rounded-[17px] object-cover"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
