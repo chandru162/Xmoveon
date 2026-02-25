@@ -4,11 +4,11 @@ const Section4 = ({ data }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="w-full bg-gray-100 py-12 md:py-20 px-6 lg:px-24 font-sans overflow-hidden">
+    <section className="w-full  py-12 md:py-20 px-6 lg:px-24 font-sans overflow-hidden">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center">
         
         {/* Main Title - Responsive sizing */}
-        <h2 className="text-[32px] sm:text-[44px] md:text-[60px] text-[#111827] leading-[1.1] mb-8 md:mb-12 max-w-[900px] text-center">
+        <h2 className="text-[32px] sm:text-[44px] font-semibold md:text-[60px] text-[#111827] leading-[1.1] mb-8 md:mb-12 max-w-[900px] text-center">
           {data.title}
         </h2>
 
@@ -52,7 +52,7 @@ const Section4 = ({ data }) => {
 
           {/* Right Side: Image Card */}
           <div className="flex-1 w-full order-1 lg:order-2">
-            <div className="rounded-[30px] md:rounded-[45px] overflow-hidden shadow-xl bg-white aspect-video lg:h-[350px]">
+            <div className="rounded-[30px] md:rounded-[45px]">
               <img
                 src={data.categories[activeTab].image}
                 alt={data.categories[activeTab].label}

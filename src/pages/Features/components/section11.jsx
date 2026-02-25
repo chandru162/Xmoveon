@@ -24,7 +24,7 @@ function Section11({data}) {
           
           {/* LEFT CONTENT */}
           <div className="max-w-[520px] text-black">
-            <h1 className="text-[34px] md:text-[40px] font-bold leading-tight">
+            <h1 className="text-[34px] md:text-[40px] font-semibold leading-tight">
               About Xmoveon
             </h1>
 

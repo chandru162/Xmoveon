@@ -2,12 +2,12 @@ import React from 'react';
 
 const Section6 = ({ data }) => {
   return (
-    <section className="w-full py-16 md:py-24 px-6 md:px-16 lg:px-24 font-sans overflow-hidden bg-gray-100">
+    <section className="w-full py-16 md:py-24 px-6 md:px-16 lg:px-24 font-sans overflow-hidden ">
       <div className="max-w-[1440px] mx-auto">
         
         {/* Header Section */}
         <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
-          <h2 className="text-[38px] sm:text-[48px] md:text-[60px] leading-tight">
+          <h2 className="text-[38px] sm:text-[48px] md:text-[60px] font-semibold leading-tight">
             <span className="text-black">How</span>{' '}
             <span className="bg-[#D4FFB2] text-black px-4 md:px-6 py-2 md:py-6 rounded-t-[15px] md:rounded-t-[20px] rounded-br-[10px] inline-block">
               It Works
@@ -33,7 +33,7 @@ const Section6 = ({ data }) => {
           {data.steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-[25px] md:rounded-[30px] p-8 md:p-12 flex flex-col justify-center 
+              className="bg-gray-100 rounded-[25px] md:rounded-[30px] p-8 md:p-12 flex flex-col justify-center 
                          min-h-[220px] md:h-[250px] w-full max-w-[450px] mx-auto  
                          hover:scale-[1.02] transition-transform duration-300 shadow-sm"
             >
@@ -54,7 +54,7 @@ const Section6 = ({ data }) => {
         </div>
 
         {/* End Result Banner */}
-        <div className="w-full bg-white rounded-[25px] md:rounded-[30px] p-8 md:p-10 flex flex-col justify-center gap-4 md:gap-6 mt-6 md:mt-8 max-w-[950px] mx-auto hover:scale-[1.02] transition-transform duration-300 shadow-sm">
+        <div className="w-full bg-gray-100 rounded-[25px] md:rounded-[30px] p-8 md:p-10 flex flex-col justify-center gap-4 md:gap-6 mt-6 md:mt-8 max-w-[950px] mx-auto hover:scale-[1.02] transition-transform duration-300 shadow-sm">
           <h3 className="text-[36px] md:text-[64px] text-[#8CFF5E] font-bold leading-none">
             End result
           </h3>

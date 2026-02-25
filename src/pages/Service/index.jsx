@@ -381,6 +381,62 @@ const Service = () => {
                             padding="14px 28px"
                           />
                         </div>
+
+                        {/* RIGHT CONTENT */}
+                        <div className="w-full lg:w-1/2 flex flex-col items-center">
+                          <div
+                            className="
+                                    w-full
+                                    max-w-[460px]
+                                    sm:max-w-[420px]
+                                    md:max-w-[680px]
+                                    lg:max-w-[780px]
+                                    lg:aspect-[4/5]
+                                    xl:aspect-[6/5]
+                                  "
+                          >
+                            <img
+                              src="/assets/android.jpg"
+                              alt="Platform Illustration"
+                              className="
+                                      w-full
+                                      h-[200px]
+                                      md:h-[400px]
+                                      lg:h-[350px]
+                                      xl:h-[350px]
+                                      md:w-full
+                                      lg:w-[400px]
+                                      xl:w-[900px]
+                                      rounded-[28px]
+                                      object-cover
+                                      shadow-md
+                                    "
+                            />
+                          </div>
+
+                          {/* INFO BUBBLE */}
+                          <div
+                            className="
+                        mt-5
+                        w-full
+                        max-w-[360px]
+                        sm:max-w-[320px]
+                        md:max-w-[380px]
+                        bg-[#EFEFEF]
+                        rounded-[22px]
+                        px-5
+                        py-4
+                        text-[13px]
+                        sm:text-[14px]
+                        text-center
+                      "
+                          >
+                            Whether you’re a startup, agency, or developer, Xmoveon gives you the
+                            flexibility to create, customize, and scale your own marketplace —
+                            entirely under your brand.
+                          </div>
+                        </div>
+
                       </div>
 
                       {/* RIGHT CONTENT */}
