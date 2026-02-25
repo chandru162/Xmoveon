@@ -72,11 +72,10 @@ const ScaleSuccessSection = () => {
                             md:text-[40px]
                             lg:text-[48px]
                             xl:text-[48px]
-                            font-medium
-                            md:text-center
+                            font-semibold
                             "
                         >
-                        Built for Scale, {""}
+                        Built for Scale, {""} 
                           <span
                             className="
                               inline-block
@@ -85,7 +84,7 @@ const ScaleSuccessSection = () => {
                               whitespace-nowrap
                             "
                           >
-                          Designed for 
+                          Designed for
                           </span> <br />
 
                         <span
@@ -97,7 +96,7 @@ const ScaleSuccessSection = () => {
                             "
                           >Success</span> <br />
 
-                           <span className=" inline-block text-[16px] lg:text-[14px] xl:text-[16px] max-w-md mt-2 lg:mt-0 xl:mt-2 ">
+                           <span className=" inline-block  max-w-md mt-2 lg:mt-0 xl:mt-2 text-sm sm:text-base font-medium">
                                Everything you need to launch,manage,and grow your on-demand service business.
 
                               </span>
@@ -162,7 +161,7 @@ const ScaleSuccessSection = () => {
                               </h4>
                             </div>
 
-                            <p className="text-sm sm:text-[15px] text-black leading-relaxed">
+                            <p className="text-sm sm:text-base  text-black leading-relaxed">
                               {service.description}
                             </p>
                           </div>

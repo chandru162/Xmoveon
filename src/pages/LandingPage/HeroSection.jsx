@@ -21,8 +21,8 @@ const HeroSection = () => {
                     sm:text-[32px]
                     md:text-[40px]
                     lg:text-[48px]
-                    xl:text-[48px]
-                    font-medium
+                    xl:text-[52px]
+                    font-semibold
                     leading-[1.15]
                     text-text-primary
                   "

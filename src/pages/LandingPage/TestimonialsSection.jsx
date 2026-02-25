@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
         {/* HEADER */}
-        <div className="mb-10 lg:mb-16 text-center lg:text-left">
+        <div className="mb-10 lg:mb-16 text-center md:text-left lg:text-left">
          <h3
               className="
                 text-[26px]
@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
                 md:text-[40px]
                 lg:text-[48px]
                 xl:text-[52px]
-                font-medium
+                font-semibold
                 leading-[1.15]
                 text-text-primary
               "
@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
                Voices
               </span>
             </h3>
-          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl mx-auto lg:mx-0">
+          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl  lg:mx-0">
             People who built their business on this platform.
           </p>
         </div>

@@ -33,7 +33,7 @@ const WhyChooseSection = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
           {/* LEFT CONTENT */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <div className="w-full lg:w-1/2 md:text-center text-left lg:text-left">
             <h3
               className="
                 text-[26px]
@@ -41,15 +41,15 @@ const WhyChooseSection = () => {
                 md:text-[40px]
                 lg:text-[48px]
                 xl:text-[52px]
-                font-medium
+                font-semibold
                 leading-[1.15]
                 text-text-primary
               "
             >
               <span className="inline-block bg-[#E4FFD4] rounded-md px-2">
                 Why Choose
-              </span>
-              <br />
+              </span> {""}
+              
               <span className="inline-block mt-1">Xmoveon</span>
             </h3>
 
@@ -63,7 +63,6 @@ const WhyChooseSection = () => {
                     items-start
                     sm:items-center
                     gap-3
-                    md:justify-center
                     lg:justify-start
                     text-left
                     max-w-[360px]
@@ -75,7 +74,7 @@ const WhyChooseSection = () => {
                     <img src={benefit.icon} alt="" className="w-5 h-5" />
                   </div>
 
-                  <p className="text-[15px] sm:text-[16px] leading-snug mt-2">
+                  <p className="text-sm sm:text-base font-medium leading-snug mt-2">
                     {benefit.title}
                   </p>
                 </div>

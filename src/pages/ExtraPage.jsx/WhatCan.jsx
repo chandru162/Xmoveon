@@ -25,7 +25,7 @@ const WhatCan = () => {
                                   md:text-[40px]
                                   lg:text-[48px]
                                   xl:text-[52px]
-                                  font-medium
+                                  font-semibold
                                   leading-[1.15]
                                   text-text-primary
                                 "
@@ -91,7 +91,7 @@ const WhatCan = () => {
           </div>
 
           {/* RIGHT */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 lg:mt-40">
             {services.map((service, index) => (
               <div
                 key={index}

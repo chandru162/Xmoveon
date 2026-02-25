@@ -361,7 +361,7 @@ const Service = () => {
 
                       {/* LEFT CONTENT */}
                       <div className="w-full lg:w-1/2 text-center lg:text-left">
-                        <h3 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium leading-[1.15] text-text-primary">
+                        <h3 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.15] text-text-primary">
                           <span className="text-[#9CEE69]">Xmoveon</span>{" "}
                           <span>Launch</span>{" "}
                           <span className="bg-[#E4FFD4] px-2 rounded-md">
@@ -460,7 +460,7 @@ const Service = () => {
                     <div className="flex  mb-12 lg:mb-12">
 
                       <div className=" me-8 lg:me-16 xl:me-20">
-                        <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-medium text-text-primary ms-4 lg:ms-10 xl:ms-16  ">
+                        <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] xl:text-[52px] font-semibold text-text-primary ms-4 lg:ms-10 xl:ms-16  ">
                           <span className='bg-[#E4FFD4]'>  Core Marketplace </span> <span> <br />Features</span>
                         </h2>
                       </div>
@@ -483,7 +483,7 @@ const Service = () => {
                               {feature?.title}
                             </h3>
                           </div>
-                          <p className="text-sm sm:text-base text-text-secondary leading-relaxed pl-11 lg:text-sm">
+                          <p className="text-sm sm:text-base text-text-secondary leading-relaxed pl-11 ">
                             {feature?.description}
                           </p>
                         </div>

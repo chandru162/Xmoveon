@@ -55,7 +55,7 @@ const Who = () => {
 
         {/* TOP */}
         <div className="text-center mb-10">
-          <h2 className="text-[26px] sm:text-[36px] lg:text-[48px] font-medium">
+          <h2 className="text-[26px] sm:text-[36px] lg:text-[48px] xl:text-[52px] font-semibold">
             Who Xmoveon Is For
           </h2>
 
@@ -90,7 +90,7 @@ const Who = () => {
 
           {/* LEFT */}
           <div className="text-center lg:text-left">
-            <h3 className="text-[24px] sm:text-[32px] lg:text-[48px] font-medium">
+            <h3 className="text-[24px] sm:text-[32px] lg:text-[48px] font-semibold">
               {data.title}
               <br />
               <span className="inline-block bg-[#E4FFD4] px-2 py-1 rounded-md mt-1">

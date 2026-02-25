@@ -40,8 +40,8 @@ const EveryoneWins = () => {
                 text-[26px]
                 sm:text-[32px]
                 lg:text-[48px]
-                font-medium
-                leading-tight
+                xl:text-[52px]
+                font-semibold
                 text-text-primary
               "
             >
@@ -51,7 +51,7 @@ const EveryoneWins = () => {
               </span>
             </h2> <br />
 
-            <p className="mt-3 text-sm sm:text-base text-text-secondary max-w-md mx-auto sm:mx-0">
+            <p className="text-sm sm:text-base text-text-secondary max-w-md mx-auto sm:mx-0">
               Each player in the ecosystem gets what they need to succeed.
             </p>
           </div>

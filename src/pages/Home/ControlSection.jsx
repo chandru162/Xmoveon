@@ -59,7 +59,7 @@ const AdminControl = () => {
             Control
           </span>
 
-          <h2 className="mt-4 text-[22px] sm:text-[28px] lg:text-[40px] font-semibold ">
+          <h2 className="mt-4 text-[22px] sm:text-[28px] md:text-[36px] lg:text-[48px] xl:text-[52px] font-semibold ">
             The admin panel that{" "} <br />
             <span className="bg-[#E4FFD4] px-3 py-1 rounded-lg">
               runs everything

@@ -363,7 +363,7 @@ const Home = () => {
                                     md:text-[40px]
                                     lg:text-[48px]
                                     xl:text-[52px]
-                                    font-medium
+                                    font-semibold
                                     leading-[1.15]
                                     text-black
                                   "
@@ -372,10 +372,10 @@ const Home = () => {
                                   <span className="inline-block bg-[#E4FFD4] rounded-md ">
                                     restaurants and
                                   </span>
-                                  <br />
-                                  <span className="inline-block bg-[#E4FFD4] rounded-md  mt-1">
-                                    customers
-                                  </span><br />
+                                  {""}
+                                  <span className="inline-block bg-[#E4FFD4] rounded-md px-1 mt-1">
+                                    customers 
+                                  </span>{""}
                                   instantly
                                 </h1>
 
@@ -407,7 +407,6 @@ const Home = () => {
                                     md:max-w-[680px]
                                     lg:max-w-[920px]
                                     xl:max-w-[1000px]
-                                    aspect-[5/5]
                                   "
                                 >
                                   <img
@@ -464,9 +463,11 @@ const Home = () => {
                             sm:text-[32px]
                             md:text-[40px]
                             lg:text-[48px]
-                            xl:text-[48px]
-                            font-medium
+                            xl:text-[52px]
+                            font-semibold
+                            text-center
                             md:text-center
+                            lg:text-left
                             "
                         >
                         Built for Scale, {""}
@@ -490,7 +491,7 @@ const Home = () => {
                             "
                           >Success</span> <br />
 
-                           <span className=" inline-block text-[16px] lg:text-[14px] xl:text-[16px] max-w-md mt-2 lg:mt-0 xl:mt-2 ">
+                           <span className=" inline-block text-[16px] lg:text-[14px] xl:text-[16px] max-w-md mt-2 lg:mt-0 xl:mt-2 font-medium">
                                Everything you need to launch,manage,and grow your on-demand service business.
 
                               </span>
@@ -555,7 +556,7 @@ const Home = () => {
                               </h4>
                             </div>
 
-                            <p className="text-sm sm:text-[15px] text-black leading-relaxed">
+                            <p className="text-sm sm:text-base leading-relaxed">
                               {service.description}
                             </p>
                           </div>
@@ -715,13 +716,13 @@ const Home = () => {
                                   sm:text-[32px]
                                   md:text-[40px]
                                   lg:text-[48px]
-                                  xl:text-[48px]
-                                  font-medium
+                                  xl:text-[52px]
+                                  font-semibold
                                   leading-[1.15]
                                   text-text-primary
                                 "
                               >
-                                Tools that help  <br />
+                                Tools that help <br />
                               <span
                                   className="
                                     inline-block
@@ -729,7 +730,7 @@ const Home = () => {
                                     rounded-md
                                     whitespace-nowrap
                                   "
-                                > them earn more </span> 
+                                >them earn more</span> 
                               </h3>
 
                       <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
@@ -761,19 +762,17 @@ const Home = () => {
                         </span>
                       </div>
 
-                      <div className="mt-6 flex justify-center lg:justify-start">
-                        <Button
-                          text="Try Our Demo"
-                          text_font_size="16px"
-                          text_font_weight="600"
-                          text_color="#0f0f0f"
-                          fill_background_color="#9cee69"
-                          border_border_radius="32px"
-                          padding="14px 28px"
-                          text_align="center"
-                          onClick={() => setShowDemo(true)}
-                        />
-                      </div>
+                       <div className="mt-8 flex items-center justify-center lg:justify-start gap-4">
+                                <button className="bg-black text-white px-7 py-2.5 rounded-full text-sm hover:opacity-90 transition">
+                                  Learn
+                                </button>
+
+                                <img
+                                  src="/images2/features/img_group_1000001743.svg"
+                                  alt="arrow"
+                                  className="w-[52px] sm:w-[68px]"
+                                />
+                              </div>
 
                       {/* IMAGE */}
                       <div className=" flex justify-center  lg:justify-start">
@@ -866,13 +865,13 @@ const Home = () => {
                                   sm:text-[32px]
                                   md:text-[40px]
                                   lg:text-[48px]
-                                  xl:text-[48px]
-                                  font-medium
+                                  xl:text-[52px]
+                                  font-semibold
                                   leading-[1.15]
                                   text-text-primary
                                 "
                               >
-                                Tools that help  <br />
+                                Your restaurant grows<br />
                               <span
                                   className="
                                     inline-block
@@ -880,7 +879,7 @@ const Home = () => {
                                     rounded-md
                                     whitespace-nowrap
                                   "
-                                > them earn more </span> 
+                                >  on this platform </span> 
                               </h3>
 
                       <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
@@ -1014,7 +1013,7 @@ const Home = () => {
                                   md:text-[40px]
                                   lg:text-[48px]
                                   xl:text-[52px]
-                                  font-medium
+                                  font-semibold
                                   leading-[1.15]
                                   text-text-primary
                                 "

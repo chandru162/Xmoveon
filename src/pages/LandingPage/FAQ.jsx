@@ -36,7 +36,12 @@ const FAQ = () => {
 
         {/* HEADER */}
         <div className="text-center mb-10">
-          <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-semibold text-black">
+          <h2 className="text-[26px]
+                sm:text-[32px]
+                md:text-[40px]
+                lg:text-[48px]
+                xl:text-[52px]
+                font-semibold text-black">
             FAQ
           </h2>
           <p className="mt-2 text-sm sm:text-base text-gray-500">
