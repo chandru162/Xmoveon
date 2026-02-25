@@ -9,7 +9,7 @@ const Section6 = ({ data }) => {
         <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
           <h2 className="text-[38px] sm:text-[48px] md:text-[60px] font-semibold leading-tight">
             <span className="text-black">How</span>{' '}
-            <span className="bg-[#D4FFB2] text-black px-4 md:px-6 py-2 md:py-6 rounded-t-[15px] md:rounded-t-[20px] rounded-br-[10px] inline-block">
+            <span className="bg-[#E4FFD4] text-black px-4 md:px-6 py-2 md:py-6 rounded-t-[15px] md:rounded-t-[20px] rounded-br-[10px] inline-block">
               It Works
             </span>
           </h2>

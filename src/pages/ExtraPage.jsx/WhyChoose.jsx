@@ -56,7 +56,7 @@ const WhyChoose = () => {
               className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition"
             >
               {/* Icon */}
-              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-green-100 text-green-600 mb-4 text-lg">
+              <div className="w-10 h-10 flex items-center justify-center rounded-sm bg-[#E4FFD4] text-[#5C9B35] mb-4 text-lg">
                 <img
                   src={item.icon}
                   alt={item.title}

@@ -12,6 +12,15 @@ import Options from '../ExtraPage.jsx/Options';
 import WhyBusinesses from '../ExtraPage.jsx/WhyBusiness';
 import WhyChoose from '../ExtraPage.jsx/WhyChoose';
 
+import {
+  LayoutIcon,
+  PayPalIcon,
+  ProfileCardIcon,
+  StarIcon,
+  ChatSearchIcon,
+  PricingIcon,
+} from '../../svg/svgIcons';
+
 
 
 const Service = () => {
@@ -297,32 +306,32 @@ const Service = () => {
 
   const features = [
     {
-      icon: "/images/img_device_mobile_message.svg",
+      icon: <LayoutIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
       title: "Service Listings",
       description: "Create detailed listings with images, pricing, and availability."
     },
     {
-      icon: "/images/img_layout_dashboard_gray_900_01.svg",
+      icon: <PayPalIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
       title: "Payments",
       description: " Instant or scheduled bookings made simple."
     },
     {
-      icon: "/images/img_heart_pin.svg",
+      icon: <ProfileCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
       title: "Booking & Scheduling",
       description: "In-platform communication between customers and providers."
     },
     {
-      icon: "/images/img_topology_full_hierarchy.svg",
+      icon: <StarIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
       title: "Reviews & Ratings",
       description: "Supports multiple payment options and commissions."
     },
     {
-      icon: "/images/img_clover.svg",
+      icon: <ChatSearchIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
       title: "Marketing Messaging",
       description: "Build trust with verified feedback."
     },
     {
-      icon: "/images/img_brand_walmart.svg",
+      icon: <PricingIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
       title: " Flexible Pricing",
       description: " Offer fixed, hourly, or request-based pricing models."
     }
@@ -395,45 +404,6 @@ const Service = () => {
                                     xl:aspect-[6/5]
                                   "
                           >
-                            <img
-                              src="/assets/android.jpg"
-                              alt="Platform Illustration"
-                              className="
-                                      w-full
-                                      h-[200px]
-                                      md:h-[400px]
-                                      lg:h-[350px]
-                                      xl:h-[350px]
-                                      md:w-full
-                                      lg:w-[400px]
-                                      xl:w-[900px]
-                                      rounded-[28px]
-                                      object-cover
-                                      shadow-md
-                                    "
-                            />
-                          </div>
-
-                          {/* INFO BUBBLE */}
-                          <div
-                            className="
-                        mt-5
-                        w-full
-                        max-w-[360px]
-                        sm:max-w-[320px]
-                        md:max-w-[380px]
-                        bg-[#EFEFEF]
-                        rounded-[22px]
-                        px-5
-                        py-4
-                        text-[13px]
-                        sm:text-[14px]
-                        text-center
-                      "
-                          >
-                            Whether you’re a startup, agency, or developer, Xmoveon gives you the
-                            flexibility to create, customize, and scale your own marketplace —
-                            entirely under your brand.
                           </div>
                         </div>
 
@@ -452,7 +422,7 @@ const Service = () => {
                         </div>
 
                         {/* INFO CARD */}
-                        <div className="mt-6 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700">
+                        <div className="mt-6 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700 ">
                           Whether you’re a startup, agency, or developer, Xmoveon gives you the
                           flexibility to create, customize, and scale your own marketplace —
                           entirely under your brand.
@@ -507,7 +477,8 @@ const Service = () => {
                       {features?.map((feature, index) => (
                         <div key={index} className="space-y-4">
                           <div className="flex items-start gap-3">
-                            <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" />
+                            {/* <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" /> */}
+                            <div>{feature?.icon}</div>
                             <h3 className="text-lg sm:text-lg font-semibold text-text-secondary">
                               {feature?.title}
                             </h3>

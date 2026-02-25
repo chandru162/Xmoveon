@@ -11,7 +11,7 @@ const Section3 = ({ data }) => {
               {data.mainTitleHighlight1}
             </span>
             <br/>
-            <span className="bg-[#D4FFB2] px-4 md:px-0 py-1 font-semibold rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mb-2">
+            <span className="bg-[#E4FFD4] px-4 md:px-0 py-1 font-semibold rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mb-2">
               {data.mainTitleHighlight2}
             </span>
             <br />

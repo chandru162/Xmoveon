@@ -10,7 +10,7 @@ const Section7 = ({ data }) => {
           {/* LEFT SIDE: Title & Image */}
           <div className="flex-1 space-y-8 md:space-y-12 w-full order-1">
             <h2 className="text-[32px] sm:text-[44px] md:text-[60px] font-semibold text-[#111827] leading-[1.1] tracking-tight">
-              <span className="bg-[#D4FFB2] px-4 md:px-6 py-1 rounded-t-[18px] md:rounded-t-[25px] rounded-br-[18px] md:rounded-br-[25px] inline-block mb-2">
+              <span className="bg-[#E4FFD4] px-4 md:px-6 py-1 rounded-t-[18px] md:rounded-t-[25px] rounded-br-[18px] md:rounded-br-[25px] inline-block mb-2">
                 {data.titleHighlight}
               </span>
               <br />

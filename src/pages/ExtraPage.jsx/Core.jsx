@@ -28,7 +28,7 @@ const Core = () =>{
                       {features?.map((feature, index) => (
                         <div key={index} className="space-y-4">
                           <div className="flex items-start gap-3">
-                            <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" />
+                            <div>{feature?.icon}</div>
                             <h3 className="text-lg sm:text-lg font-semibold text-text-secondary">
                               {feature?.title}
                             </h3>
