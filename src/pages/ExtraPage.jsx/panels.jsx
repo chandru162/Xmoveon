@@ -18,130 +18,93 @@ export const ArrowButtonIcon = ({ className }) => (
   </svg>
 );
 
-/*  COMPONENT */
+/*  COMPONENT  */
 const Panels = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const data = {
-    leftIcon: (
-      <ArrowButtonIcon className="w-14 h-14 md:w-20 md:h-20 text-[#8CFF5E]" />
+    ArrowIcon: (
+      <ArrowButtonIcon className="w-16 h-16 md:w-28 md:h-28 text-[#8CFF5E]" />
     ),
-    categories: [
+    models: [
       {
-        label: "Admin Dashboard",
+        title: "Admin Dashboard",
+        desc: "Manage users, commissions, approvals, and reports — all in one place.",
         image: "/assets/Admin.png",
-        features: [
-          "Manage users, commissions, approvals, and reports — all in one place.Real-time booking and tracking",
-          "All your management tools — users, revenue, bookings, and insights — unified in one place",
-          "Oversee operations, track performance, and manage reports in real time",
-          "Control users, payments, approvals, and analytics — from a single powerful dashboard."
-          
-        ],
       },
       {
-        label: "Service Provider Panel",
+        title: "Service Provider Panel",
+        desc: "Control services, availability, and earnings seamlessly.",
         image: "/assets/Service.png",
-        features: [
-          "Control services, availability, and earnings seamlessly.",
-          "Organize appointments, adjust pricing, and view real-time earnings.",
-          "Take control of your services, clients, and payouts with ease.",
-          "Update availability, track bookings, and monitor earnings effortlessly."
-        ],
       },
       {
-        label: "Customer Panel",
+        title: "Customer Panel",
+        desc: "Search, compare, and book services through a modern, intuitive interface.",
         image: "/assets/Customer.png",
-        features: [
-          "Search, compare, and book services through a modern, intuitive interface.",
-          "Explore services, compare options, and book with confidence.",
-          'Schedule appointments, track progress, and pay securely online.',
-          ""
-          
-        ],
       },
+      
     ],
   };
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-20 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto flex flex-col ">
-        
-        {/* TITLE  AND IMAGE*/}
-        <div className="flex flex-row">
-        <h2 className="text-[28px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold  mb-8 md:mb-14">
-           Panals & <br />  
-             <span>
-              Dashboard
-         <img
+      <div className="max-w-[1440px] mx-auto">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
+          {/* LEFT */}
+          <div className="flex-1 space-y-8 md:space-y-12 order-1">
+            <h2 className="text-[28px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-semibold text-[#111827] ">
+             <span className="bg-[#E4FFD4]"> Panels </span> & Dashboards 
+             <img
                 src="/images2/features/img_group_1000001743.svg"
                 alt="Arrow"
-                className="w-[56px] sm:w-[72px] lg:w-[96px] "
+                className="w-[56px] sm:w-[72px] lg:w-[96px]"
               />
-              </span> 
-        </h2>
-       
-        </div>
-       
-        {/* TABS */}
-        <div className="w-full flex gap-3 sm:gap-4 justify-start md:justify-center overflow-x-auto no-scrollbar mb-10">
-          {data.categories.map((cat, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`px-5 sm:px-7 py-2.5 rounded-full text-sm sm:text-base font-semibold border transition-all duration-300 whitespace-nowrap
-                ${
-                  activeTab === index
-                    ? "bg-[#8CFF5E] border-[#8CFF5E] text-black shadow-md"
-                    : "border-gray-300 text-gray-600 hover:bg-gray-100"
-                }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        {/* CONTENT */}
-        <div className="w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-20 max-w-[1200px]">
-          
-          {/* LEFT */}
-       
-            <div className="flex-1 order-1 lg:order-2 w-full">
+            </h2>
+            
+            {/* IMAGE */}
             <div className="rounded-[24px] sm:rounded-[36px] overflow-hidden bg-gray-100">
               <img
-                src={data.categories[activeTab].image}
-                alt={data.categories[activeTab].label}
-                className="w-full h-[220px] sm:h-[320px] lg:h-[400px] object-cover transition-all duration-500"
+                src={data.models[activeIndex].image}
+                alt={data.models[activeIndex].title}
+                className="w-full h-[220px] sm:h-[320px] lg:h-[380px] object-cover transition-all duration-500"
               />
             </div>
 
             {/* DOTS */}
-            <div className="flex justify-center gap-2 mt-6">
-              {data.categories.map((_, i) => (
+            <div className="flex justify-center gap-2">
+              {data.models.map((_, i) => (
                 <div
                   key={i}
                   className={`h-2 rounded-full transition-all duration-300 ${
-                    activeTab === i ? "w-8 bg-[#8CFF5E]" : "w-2 bg-gray-300"
+                    i === activeIndex ? "w-8 bg-[#8CFF5E]" : "w-2 bg-gray-300"
                   }`}
                 />
               ))}
             </div>
           </div>
-          {/* RIGHT */}
-             <div className="flex-1 order-2 lg:order-2">
-            <ul className="space-y-4 sm:space-y-5 bg-[#EDEDED] p-4 rounded-md font-semibold">
-              {data.categories[activeTab].features.map((item, idx) => (
-                <li
-                  key={idx}
-                  className="flex gap-3 text-[#111827] text-[15px] sm:text-[18px] "
-                >
-                  <span className="text-[#8CFF5E] text-lg ">●</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
 
-            
+          {/* RIGHT */}
+          <div className="flex-1 space-y-4 md:space-y-6 pt-2 lg:pt-24 order-2">
+            {data.models.map((item, idx) => (
+              <div
+                key={idx}
+                onClick={() => setActiveIndex(idx)}
+                className={`cursor-pointer p-4 sm:p-5 rounded-[18px] transition-all duration-300 ${
+                  idx === activeIndex
+                    ? "bg-[#F3F4F6] shadow-md border-l-4 border-[#8CFF5E]"
+                    : "hover:bg-gray-50 border-l-4 border-transparent"
+                }`}
+              >
+                <h4 className="text-[17px] sm:text-[22px] md:text-[24px] font-bold text-[#111827]">
+                  {item.title}
+                </h4>
+                <p className="text-[#6B7280] text-[14px] sm:text-[16px] md:text-[18px] mt-2 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
           </div>
+
         </div>
       </div>
     </section>

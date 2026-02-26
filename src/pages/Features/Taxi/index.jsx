@@ -63,7 +63,6 @@ const TaxiPage = () => {
           image: '../../../../public/assets/251.png',
         }}
       />
-
       <Section2
         data={{
           titleHighlight1: 'Trusted by Taxi',

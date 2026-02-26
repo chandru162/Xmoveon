@@ -76,7 +76,7 @@ const FAQ = () => {
 
                   {/* ICON */}
                   <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#9CEE69] text-black text-sm font-bold">
-                    {isOpen ? "−" : "+"}
+                    {isOpen ? "-" : "+"}
                   </span>
                 </button>
 

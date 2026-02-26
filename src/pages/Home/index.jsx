@@ -18,6 +18,7 @@ import Technology from './Technology';
   SqlIcon,
   PrismaIcon,
 } from '../../svg/toolsSvgIcons';
+import Proven from './Proven';
 
 
 
@@ -1087,6 +1088,8 @@ const Home = () => {
               <EveryoneWins />
 
               {/* Proven Results Section */}
+
+              <Proven/>
 
             </div>
           </div>
