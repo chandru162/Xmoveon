@@ -24,18 +24,18 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-[80px]">
           
           {/* LOGO */}
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <a href="/">
               <img src="/images/img_xmoveon.svg" alt="Xmoveon" className="w-[130px] sm:w-[150px] lg:w-[170px]" />
             </a>
           </div>
 
           {/* DESKTOP MENU */}
-          <nav className="hidden lg:flex items-center gap-10 text-[16px] font-semibold text-[#4B5563]">
-            <a href="/" className="hover:text-[#58bd19] transition-colors">Home</a>
+          <nav className="hidden lg:flex items-center  gap-12 text-[16px] font-semibold text-[#4B5563] ">
+            <a href="/" className="hover:text-[#58bd19] transition-colors ">Home</a>
 
             {/* FEATURES DROPDOWN */}
-            <div ref={featuresRef} className="relative group">
+            <div ref={featuresRef} className="relative group ">
               <button
                 onClick={() => setFeaturesOpen(!featuresOpen)}
                 className={`flex items-center gap-1 hover:text-[#58bd19] transition-colors ${featuresOpen ? 'text-black' : ''}`}
@@ -57,8 +57,8 @@ const Navbar = () => {
               </div>
             </div>
 
-            <a href="/blog" className="hover:text-[#58bd19] transition-colors">Blog</a>
-            <a href="/contact" className="hover:text-[#58bd19] transition-colors">Contact</a>
+            <a href="/blog" className="hover:text-[#58bd19] transition-colors ">Blog</a>
+            <a href="/contact" className="hover:text-[#58bd19] transition-colors ">Contact</a>
           </nav>
 
           {/* CTA */}

@@ -3,12 +3,36 @@ import { useState } from "react";
 const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+
+   const res = await fetch("http://localhost:5000/api/mail/send-demo-mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          email,
+          message,
+        }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        alert(data.message);
+      }
   };
 
-  if (!showDemo) return null; // 🔥 VERY IMPORTANT (prevents blank page)
+
+
+  if (!showDemo) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-2 sm:px-4">
@@ -24,7 +48,7 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
 
         {!submitted ? (
           <>
-            <h2 className="mb-4 text-xl font-semibold text-lime-400">
+            <h2 className="mb-4 text-xl font-semibold text-lime-400 ">
               Try Our Demo
             </h2>
 
@@ -34,6 +58,8 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
                 placeholder="Full Name"
                 required
                 pattern="^[A-Za-z ]+$"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full rounded-md border border-lime-400/40 bg-transparent px-4 py-2 text-sm text-white outline-none"
               />
 
@@ -43,6 +69,8 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
                 required
                 pattern="^[0-9]{10}$"
                 maxLength="10"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 className="w-full rounded-md border border-white/30 bg-transparent px-4 py-2 text-sm text-white outline-none"
               />
 
@@ -50,6 +78,8 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
                 type="email"
                 placeholder="Email"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full rounded-md border border-white/30 bg-transparent px-4 py-2 text-sm text-white outline-none"
               />
 
@@ -58,14 +88,15 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
                 required
                 minLength={10}
                 rows="3"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-full rounded-md border border-white/30 bg-transparent px-4 py-2 text-sm text-white outline-none resize-none"
               />
 
-              <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-md">
-                <input type="checkbox" required />
-                <span className="text-xs text-black">I'm not a robot</span>
-              </div>
-
+               <div className="flex items-center gap-2 bg-black px-3 py-3 rounded-[14px] w-60 cursor-pointer">
+                        <input type="checkbox" className=" cursor-pointer" required />
+                        <span className="text-xs  text-white">I'm not a robot</span>
+                      </div>
               <button
                 type="submit"
                 className="mx-auto flex rounded-full bg-lime-400 px-6 py-2 text-sm font-semibold text-black"

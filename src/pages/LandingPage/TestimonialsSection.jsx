@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-24">
 
         {/* HEADER */}
         <div className="mb-10 lg:mb-16 text-center md:text-left lg:text-left">

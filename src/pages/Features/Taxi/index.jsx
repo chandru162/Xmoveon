@@ -18,6 +18,12 @@ import image2 from '../../../../public/assets/Card2.png';
 import image3 from '../../../../public/assets/Card3.png';
 import TaxiImage from '../../../../public/assets/Illustration.png';
 import Illustrations from '../../../../public/assets/Illustrations.png';
+import self1 from '../../../../public/assets/Green1.png';
+import self2 from '../../../../public/assets/Black1.png';
+import self3 from '../../../../public/assets/Green3.png'
+
+
+
 
 // Icons
 import {
@@ -53,7 +59,6 @@ const TaxiPage = () => {
       
       <Section1
         data={{
-          title1: 'Xmoveon Taxi',
           title2: 'Launch Your',
           highlightText1: 'Branded Ride-',
           highlightText2: 'Hailing Platform',
@@ -75,13 +80,13 @@ const TaxiPage = () => {
             'Entrepreneurs launching local ride-hailing startups',
             'Agencies building white-label transport apps',
           ],
-          images: [image1, image2, image3],
+          images: [self1, self2, self3],
         }}
       />
 
        <Section3
         data={{
-          sideTitle: 'Why Choose \n Xmoveon Taxi',
+          sideTitle: 'Why Choose Us?',
           mainTitleHighlight1: 'Built for Scale.',
           mainTitleHighlight2: 'Designed for Success.',
           mainTitlePlain: '',
@@ -227,9 +232,9 @@ const TaxiPage = () => {
           },
           footerDescription: 'Xmoveon has helped startups, taxi operators, and agencies launch profitable mobility platforms in record time.',
           cards: [
-            { highlightText: '5000+', title: 'Active Drivers', image: image1, textColor: 'black' },
-            { highlightText: '99.9%', title: 'Uptime', image: image2, textColor: 'white' },
-            { highlightText: 'Global Deployments', title: '', image: image3, textColor: 'black' },
+            { highlightText: '5000+', title: 'Active Drivers', image: self1, textColor: 'black' },
+            { highlightText: '99.9%', title: 'Uptime', image: self2, textColor: 'white' },
+            { highlightText: 'Global Deployments', title: '', image: self3, textColor: 'black' },
           ],
         }}
       />

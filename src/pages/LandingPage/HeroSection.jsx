@@ -58,7 +58,7 @@ const HeroSection = () => {
               </p>
 
               {/* META */}
-              <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
+              <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <div className="flex items-center gap-2">
                   <img src="/images/img_moneybag.svg" alt="" className="w-5 h-5" />
                   <span className="text-sm text-text-secondary">
@@ -81,7 +81,7 @@ const HeroSection = () => {
                 </span>
               </div>
 
-              <div className="mt-6 flex justify-center lg:justify-start">
+              <div className="mt-6 lg:mt-14  flex justify-center lg:justify-start ">
                 <Button
                   text="Try Our Demo"
                   text_font_size="16px"

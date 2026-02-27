@@ -5,7 +5,7 @@ import { ContactIcon } from '../../svg/svgIcons';
 const WhyBusinesses = () => {
   return (
     <section className="w-full">
-      <div className="w-full py-10 md:py-20 px-1 rounded-md">
+      <div className="w-full py-10 md:py-20 lg:py-8 px-1 rounded-md">
         {/* Banner Container */}
         <div className="relative max-w-[1200px] mx-auto overflow-hidden ">
           {/* SVG Background - Full Height Stretch */}

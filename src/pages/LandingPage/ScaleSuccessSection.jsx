@@ -12,41 +12,41 @@ const ScaleSuccessSection = () => {
   const services = [
 
      {
-      icon: "/images2/features/img_layout_dashboard.svg",
+      icon: "/public/assets/built1.png",
       title: "Localisation",
       description:
         "Multi-language and multi-currency support with regional settings.",
     },
 
     {
-      icon: "/images2/features/img_sparkles.svg",
+      icon: "/public/assets/built20.png",
       title: " Blazing Fast",
       description:
         "Built with latest technology for lightning fast loading times.",
     },
      {
-      icon: "/images2/features/img_file_power.svg",
+      icon: "/public/assets/built3.png",
       title: "Source Code",
       description:
         "Full source code ownership with complete customization freedom.",
     },
 
     {
-      icon: "/images2/features/img_clock_play.svg",
+      icon: "/public/assets/built4.png",
       title: "99.9% Uptime",
       description:
         "Enterprise-grade infrastructure ensures your app is always available.",
     },
 
     {
-      icon: "/images2/features/img_device_mobile_check.svg",
+      icon: "/public/assets/built5.png",
       title: "Fully Customizable",
       description:
         "Intuitive drag-and-drop configuration without coding knowledge.",
     },
 
     {
-      icon: "/images2/features/img_clock_2.svg",
+      icon: "/public/assets/built6.png",
       title: " Support ",
       description:
         "Includes setup and deployment. Optional maintenance and enhancements.",
@@ -57,7 +57,7 @@ const ScaleSuccessSection = () => {
 
 
   return (
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
+      <section className="w-full bg-white py-12 sm:py-16 lg:py-0 overflow-hidden">
                   <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
                     {/* MAIN CARD */}

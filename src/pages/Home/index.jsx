@@ -19,6 +19,7 @@ import Technology from './Technology';
   PrismaIcon,
 } from '../../svg/toolsSvgIcons';
 import Proven from './Proven';
+import Icon from './Icon';
 
 
 
@@ -369,15 +370,15 @@ const Home = () => {
                                     text-black
                                   "
                                 >
-                                  Connect{" "}
+                                  The Complete {" "}
                                   <span className="inline-block bg-[#E4FFD4] rounded-md ">
-                                    restaurants and
+                                    White-Label customers 
                                   </span>
                                   {""}
-                                  <span className="inline-block bg-[#E4FFD4] rounded-md px-1 mt-1">
-                                    customers 
-                                  </span>{""}
-                                  instantly
+                                  <span className="inline-block bg-[#E4FFD4] rounded-md ">
+                                       instantly Solution
+                                  </span>
+                               
                                 </h1>
 
                                 <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
@@ -447,10 +448,12 @@ const Home = () => {
                       { name: 'Kotlin', logo: <PrismaIcon className="w-8 h-8 md:w-10 md:h-10" /> },
                     ],
                   }}
-            />
+            /> <br />
+
+            <Icon/>
 
               {/* Built for Scale Section */}
-              <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
+              <section className="w-full bg-white py-12 sm:py-16 lg:py-4 overflow-hidden">
                   <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
                     {/* MAIN CARD */}
@@ -569,7 +572,7 @@ const Home = () => {
                 </section>
 
               {/* Customer Experience Section */}
-            <section className="w-full bg-white">
+            <section className="w-full bg-white ">
                 <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-16 xl:px-20">
 
                   <div
@@ -580,7 +583,7 @@ const Home = () => {
                       lg:rounded-[44px]
                       px-4 py-5
                       sm:px-6 sm:py-6
-                      lg:px-10 lg:py-10
+                      lg:px-2 lg:py-0
                       mt-8
                     "
                     style={{ backgroundImage: `url(/images2/features/img_background.svg)` }}
@@ -591,7 +594,7 @@ const Home = () => {
                       <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
 
                         {/* LEFT CONTENT */}
-                        <div className="w-full lg:w-[45%] flex flex-col gap-5">
+                        <div className="w-full lg:w-[40%] flex flex-col gap-5">
 
                           {/* HIGHLIGHT FEATURE */}
                           <div className="bg-[#F4F4F480] rounded-[18px] p-4">
@@ -627,7 +630,7 @@ const Home = () => {
                                     {feature.title}
                                   </h4>
                                 </div>
-                                <p className="text-sm sm:text-base mt-2 text-text-secondary">
+                                <p className="text-sm sm:text-base mt-2 ">
                                   {feature.description}
                                 </p>
                               </div>
@@ -644,22 +647,22 @@ const Home = () => {
                               sm:max-w-[360px]
                               md:max-w-[420px]
                               lg:max-w-[480px]
-                              xl:max-w-[540px]
+                              xl:max-w-[550px]
                               aspect-[5/5]
+                              mt-4
+                              lg:mt-12
                             "
                           >
                             <img
-                              src="/assets/illustration2.png"
+                              src="/assets/newMobiles.png"
                               alt="Customer Experience"
                               className="
                                 w-full
                                 h-full
                                 md:w-[700px]                              
                                 md:h-[400px]
-                                lg:w-[600px]
-                                lg:h-[500px]
-                                xl:w-[500px]                              
-                                xl:h-[600px]
+                                lg:h-[400px]
+                                xl:h-[440px]
                                 rounded-[22px]
                                 object-cover
                               "
@@ -774,26 +777,7 @@ const Home = () => {
                                   className="w-[52px] sm:w-[68px]"
                                 />
                               </div>
-
-                      {/* IMAGE */}
-                      <div className=" flex justify-center  lg:justify-start">
-                        <div
-                          className="
-                            w-full
-                            max-w-[240px]
-                            sm:max-w-[300px]
-                            md:max-w-[600px]
-                            lg:max-w-[420px]
-                            aspect-[5/5]
-                          "
-                        >
-                          <img
-                            src="/assets/Location2.png"
-                            alt="Driver Experience"
-                            className=" lg:w-[380px] lg:h-[270px] xl:w-[500px] xl:h-[300px] mt-5 mx-0 md:mx-8 lg:mx-0 md:w-[550px] md:h-[200px]  w-[300px] h-[150px] rounded-[17px] object-cover"
-                          />
-                        </div>
-                      </div>
+                     
                     </div>
 
                     {/* RIGHT SIDE */}
@@ -1086,10 +1070,6 @@ const Home = () => {
 
               {/* Why Everyone Wins Section */}
               <EveryoneWins />
-
-              {/* Proven Results Section */}
-
-              <Proven/>
 
             </div>
           </div>

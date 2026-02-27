@@ -4,32 +4,32 @@ const LaunchStepsSection = () => {
   const steps = [
     {
       number: "01",
-      title: "Choose Services",
+      title: "Complete Delivery Platform",
       description:
-        "Select from taxi, delivery, errands, grocery, home services.",
+        "A fully built ecosystem with customer, vendor, driver apps, and admin dashboard — ready to launch.",
     },
     {
       number: "02",
-      title: "Add Your Branding",
+      title: "We Brand It for You",
       description:
-        "Customize colors, logos, and design themes to match your brand",
+        "Fully customized with your logo, colors, app name, and business configuration.",
     },
     {
       number: "03",
-      title: "Deploy Your Apps",
+      title: " We Launch It for You",
       description:
-        "Launch customer, vendor, and driver apps on iOS and Android.",
+        "Deployed to App Store and Play Store with backend, hosting, and setup handled.",
     },
     {
       number: "04",
-      title: "Start Earning",
+      title: "You Scale the Business",
       description:
-        "Go live with fully functioning platform and our success toolkits.",
+        "Operate, grow, and optimize your platform with real-time analytics and control.",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-8 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
         {/* MAIN CARD */}

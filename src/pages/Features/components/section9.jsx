@@ -36,35 +36,35 @@ const Section9 = ({ data }) => {
         </div>
 
         {/* BOTTOM CONTENT: 3 Images Row-wise */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 md:mt-[-70px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 md:mt-[-70px] lg:mt-[20px]">
           
           {/* Card 1 – Active Drivers */}
           <div className="relative w-full aspect-[2/1] group">
-            <img src={data.cards[0].image} alt="" className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute top-[25%] left-[10%] px-2">
-              <span className="block text-[32px] md:text-[36px] font-bold text-[#111827]">{data.cards[0].highlightText}</span>
-              <p className="text-[20px] md:text-[22px] text-[#111827] font-medium leading-tight">{data.cards[0].title}</p>
+            <img src={data.cards[0].image} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute top-[25%] left-[25%] md:top-[30%] md:left-[12%] lg:top-[26%] lg:left-[24%]  px-2">
+               <span className=" text-[22px] md:text-[20px]  font-bold leading-8">{data.cards[0].highlightText}</span>
+                <p className="text-[18px] md:text-[20px] font-medium">{data.cards[0].title}</p> 
             </div>
           </div>
 
           {/* Card 2 – Uptime */}
           <div className="relative w-full aspect-[2/1] group">
-            <img src={data.cards[1].image} alt="" className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute top-[30%] left-[10%] px-2 text-white">
+            <img src={data.cards[1].image} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute  top-[30%] left-[25%] md:top-[35%] md:left-[12%] lg:top-[26%] lg:left-[24%]   px-2 text-white">
               <div className='flex items-baseline gap-2'>
-                <span className="text-[30px] md:text-[34px] font-bold">{data.cards[1].highlightText}</span>
-                <span className="text-[18px] md:text-[20px] font-medium">{data.cards[1].title}</span>
+                 <span className=" text-[22px] md:text-[20px]  font-semibold leading-8">{data.cards[1].highlightText}</span>
+                <span className="text-[18px] md:text-[20px] font-medium">{data.cards[1].title}</span> 
               </div>
             </div>
           </div>
 
           {/* Card 3 – Global Deployments */}
           <div className="relative w-full aspect-[2/1] group">
-            <img src={data.cards[2].image} alt="" className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute top-[30%] left-[10%] px-2">
-              <h1 className="text-[22px] md:text-[28px] font-bold text-[#111827] leading-snug">
-                {data.cards[2].highlightText}
-              </h1>
+            <img src={data.cards[2].image} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute top-[25%] left-[25%] md:top-[30%] md:left-[12%] lg:top-[26%] lg:left-[24%]  px-2">
+              <h4 className=" text-[22px] md:text-[20px] text-black font-semibold leading-8">
+                    {data.cards[2].highlightText}
+            </h4>
             </div>
           </div>
 

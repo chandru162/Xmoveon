@@ -7,9 +7,7 @@ const Section1 = ({ data }) => {
         
         {/* Left Side: Typography */}
         <div className="flex-1 flex flex-col pt-4 w-full">
-          <h1 className="text-[32px] sm:text-[40px] font-semibold md:text-[60px] text-[#111827] leading-[1.05] tracking-tight">
-            {data.title1} -
-          </h1>
+          
           <h1 className="text-[32px] sm:text-[40px] font-semibold md:text-[60px] text-[#111827] leading-[1.05] tracking-tight">
             {data.title2} 
           </h1>
@@ -44,7 +42,7 @@ const Section1 = ({ data }) => {
 
         {/* Right Side: Image & Mobile Button */}
         <div className="flex-1 w-full lg:max-w-[620px] flex flex-col gap-8">
-          <div className="relative rounded-[30px] md:rounded-[55px] overflow-hidden shadow-sm border border-gray-50 aspect-[1.2/1] lg:aspect-auto lg:h-[500px]">
+          <div className="relative rounded-[30px] md:rounded-[55px] overflow-hidden shadow-sm border border-gray-50 aspect-[1.2/1] lg:aspect-auto lg:h-[430px]">
             <img src={data.image} alt="Visual" className="w-full h-full object-cover" />
           </div>
 

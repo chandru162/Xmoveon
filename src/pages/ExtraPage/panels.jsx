@@ -38,7 +38,7 @@ const Panels = () => {
         image: "/assets/Service.png",
       },
       {
-        title: "Customer Panel",
+        title: "customer apps",
         desc: "Search, compare, and book services through a modern, intuitive interface.",
         image: "/assets/Customer.png",
       },
@@ -47,7 +47,7 @@ const Panels = () => {
   };
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-20 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-28 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
           {/* LEFT */}
@@ -62,7 +62,7 @@ const Panels = () => {
             </h2>
             
             {/* IMAGE */}
-            <div className="rounded-[24px] sm:rounded-[36px] overflow-hidden bg-gray-100">
+            <div className="rounded-[24px] sm:rounded-[36px] overflow-hidden ">
               <img
                 src={data.models[activeIndex].image}
                 alt={data.models[activeIndex].title}

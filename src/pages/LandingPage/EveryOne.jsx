@@ -97,6 +97,7 @@ const EveryoneWins = () => {
                     h-[160px]
                     sm:h-[170px]
                     object-cover
+                    font-semibold
                   "
                 />
                 <span
@@ -104,13 +105,14 @@ const EveryoneWins = () => {
                     absolute
                     top-3
                     left-3
-                    bg-white
+                    bg-black
                     text-xs
                     font-medium
                     px-3
                     py-1
                     rounded-full
                     shadow
+                    text-[#9CEE19]
                   "
                 >
                   {item.tag}
@@ -119,7 +121,7 @@ const EveryoneWins = () => {
 
               {/* CONTENT */}
               <div className="p-5 flex flex-col gap-2 flex-1">
-                <h3 className="text-[15px] lg:text-[16px] font-semibold text-text-primary">
+                <h3 className="text-[15px] lg:text-[16px] font-semibold text-text-primary ">
                   {item.title}
                 </h3>
                 <p className="text-sm text-text-secondary leading-relaxed">

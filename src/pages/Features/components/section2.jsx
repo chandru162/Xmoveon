@@ -43,29 +43,29 @@ const Section2 = ({ data }) => {
         </div>
 
         {/* Bottom Section: 3 Images Row-wise */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 md:mt-[-70px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 md:mt-[-70px] lg:mt-[20px]">
           
           {/* Card 1 - Self-Hosted */}
-          <div className="relative w-full aspect-[2/1] group overflow-hidden">
-            <img src={data.images[0]} alt="" className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
-            <h4 className="absolute top-[40%] left-[15%] md:top-[40%] md:left-[15%] text-[22px] md:text-[30px] text-[#111827] font-bold">
-              Self-Hosted
+          <div className="relative w-full  group overflow-hidden">
+            <img src={data.images[0]} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
+               <h4 className="absolute top-[40%] left-[15%] text-[22px]  md:top-[34%] md:left-[16%] lg:left-[30%] lg:top-[34%] md:text-[20px] text-black font-semibold leading-8">
+                  Self-Hosted
             </h4>
           </div>
 
           {/* Card 2 - Source Code */}
-          <div className="relative w-full aspect-[2/1] group overflow-hidden">
-            <img src={data.images[1]} alt="" className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
-            <h4 className="absolute top-[40%] left-[15%] text-[22px] md:top-[40%] md:left-[15%] md:text-[30px] text-white font-bold leading-8">
-              Full Source Code <br /> Ownership
+          <div className="relative w-full  group overflow-hidden">
+            <img src={data.images[1]} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
+              <h4 className="absolute top-[40%] left-[15%] text-[22px] md:top-[30%] md:left-[16%] lg:left-[30%] lg:top-[34%] md:text-[20px] text-white font-semibold leading-8">
+                  Full Source Code <br /> Ownership
             </h4>
           </div>
 
           {/* Card 3 - Infrastructure */}
-          <div className="relative w-full aspect-[2/1] group overflow-hidden">
-            <img src={data.images[2]} alt="" className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
-            <h4 className="absolute top-[40%] left-[15%] text-[22px] md:top-[40%] md:left-[15%] md:text-[30px] text-[#111827] font-bold leading-8">
-              Scalable <br /> Infrastructure
+          <div className="relative w-full  group overflow-hidden">
+            <img src={data.images[2]} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
+              <h4 className="absolute top-[40%] left-[15%] text-[22px] md:top-[30%] md:left-[16%] lg:left-[30%] lg:top-[34%] md:text-[20px] text-black font-semibold leading-8">
+                  Scalable <br />Infrastructure
             </h4>
           </div>
 

@@ -6,42 +6,60 @@ const EcosystemSection = () => {
       icon: "/images/img_device_mobile_heart.svg",
       title: "Customer App",
       description:
-        "Smooth interface for customers to make orders and book services.",
+        "Smooth interface for customers to place orders and book services effortlessly.",
       features: [
         "Browse Services",
-        "Real-time Tracking",
-        "Payment Integration",
-        "Order History",
+        "Smart Search & Filters",
+        "Real-time Order Tracking",
+        "Multiple Payment Options",
+        "Secure Checkout",
+        "Order History & Reorders",
+        "Ratings & Reviews",
+        "Push Notifications",
+        "Promo Codes & Offers",
+        "In-App Chat Support",
+        "Multi-Language Support"
       ],
     },
     {
       icon: "/images/img_building_store.svg",
       title: "Vendor App",
       description:
-        "Complete management system to receive and manage requests.",
+        "Complete management system to receive, process, and manage customer requests.",
       features: [
-        "Order Management",
-        "Inventory Control",
-        "Analytics Dashboard",
-        "Customer Insights",
+        "Real-Time Order Management",
+        "Accept / Reject Orders",
+        "Menu & Pricing Control",
+        "Inventory Management",
+        "Sales & Revenue Reports",
+        "Performance Analytics",
+        "Commission & Settlement Tracking",
+        "Delivery Status Monitoring",
+        "Notification Alerts",
       ],
     },
     {
       icon: "/images/img_device_mobile_heart.svg",
       title: "Driver App",
       description:
-        "Optimized app for drivers and delivery partners with navigation.",
+        "Optimized app for drivers and delivery partners with smart navigation and earnings tracking.",
       features: [
+        "Smart Order Allocation",
         "Route Optimization",
-        "Earnings Tracks",
-        "Job Acceptance",
-        "Navigation",
-      ],
+        "Live GPS Navigation",
+        "Earnings Tracking",
+        "Daily / Weekly Reports",
+        "Job Acceptance & Rejection",
+        "Online / Offline Availability",
+        "Real-Time Status Updates",
+        "Delivery History",
+        "In-App Communication"     
+       ],
     },
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-12 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
 
         {/* HEADER */}

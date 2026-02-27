@@ -21,14 +21,14 @@ const WhyChooseSection = () => {
     { icon: "/images/img_hearts.svg", title: "One-time purchase, lifetime ownership" },
     { icon: "/images/img_brand_airtable.svg", title: "White-label & customizable" },
     { icon: "/images/img_camera_selfie.svg", title: "Self-hosted" },
-    { icon: "/images/img_frame_19_light_green_700_54x54.svg", title: "Built for service marketplaces" },
+    { icon: "/images/img_frame_19_light_green_700_54x54.svg", title: "Built for Enterprise Marketplaces" },
     { icon: "/images/img_frame_19_62x62.svg", title: "Scalable & flexible architecture" },
     { icon: "/images/img_frame_19_54x54.svg", title: "No vendor lock-in" },
   ];
 
   return (
     <section className="w-full bg-white py-14 sm:py-16 lg:py-24">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-28">
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
@@ -135,6 +135,10 @@ const WhyChooseSection = () => {
                     focus:ring-[#9CEE69]/30
                   "
                 />
+                <div className="flex items-center gap-2 bg-black px-3 py-3 rounded-[14px] w-60 cursor-pointer">
+                        <input type="checkbox" className=" cursor-pointer" required />
+                        <span className="text-xs  text-white">I'm not a robot</span>
+                      </div>
 
                 <div className="flex justify-center pt-4">
                   <button
@@ -152,6 +156,7 @@ const WhyChooseSection = () => {
                       transition
                     "
                   >
+                     
                     Submit
                     <img
                       src="/images/img_iconoirarrowtr_black_900.svg"

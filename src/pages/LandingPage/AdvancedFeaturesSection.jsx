@@ -135,8 +135,8 @@ const AdvancedFeaturesSection = () => {
               "
             >
               {/* ICON */}
-              <div className="flex-shrink-0 w-12 h-12 rounded-[12px] bg-[#E4FFD4] flex items-center justify-center">
-                <div className="w-6 h-6 text-[#56E000]">
+              <div className="flex-shrink-0  bg-[#E4FFD4] rounded-[10px] w-14 h-14 flex items-center justify-center ">
+                <div className=" text-[#56E000] ">
                   {feature.icon}
                 </div>
               </div>

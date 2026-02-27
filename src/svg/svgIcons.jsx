@@ -118,8 +118,8 @@ export const IndiaFlag = (props) => {
 export const MessageIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
+    width="25"
+    height="25"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -156,8 +156,8 @@ export const MessageIcon = (props) => (
 export const RectangleIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
+    width="25"
+    height="25"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -200,8 +200,8 @@ export const RectangleIcon = (props) => (
 export const HeartPinIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
+    width="25"
+    height="25"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -238,8 +238,8 @@ export const HeartPinIcon = (props) => (
 export const TopologyIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
+    width="25"
+    height="25"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -336,8 +336,8 @@ export const TopologyIcon = (props) => (
 export const CloverIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
+    width="25"
+    height="25"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -380,8 +380,8 @@ export const CloverIcon = (props) => (
 export const RouteIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
+    width="25"
+    height="25"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -436,8 +436,8 @@ export const RouteIcon = (props) => (
 export const MenuIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
+    width="25"
+    height="25"
     viewBox="0 0 30 30"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -1281,6 +1281,133 @@ export const PricingIcon = (props) => (
     <defs>
       <clipPath id="clip0_pricing_new">
         <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+
+export const worldIcon = (props)=>{
+
+    <svg 
+    {...props}
+    width="45"
+    height="45" 
+    viewBox="0 0 45 45" 
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+
+        <g clip-path="url(#clip0_422_2812)">
+        <path d="M34.5337 24.9239C38.7403 28.8478 41.0418 32.2652 40.2086 33.917C38.8412 36.5966 29.5948 33.4417 19.5518 26.873C9.51252 20.3043 2.47584 12.807 3.84133 10.1292C4.69293 8.45905 9.21153 9.31432 14.4918 11.6067" stroke="#5C9B35" style="stroke:#5C9B35;stroke:color(display-p3 0.3608 0.6078 0.2078);stroke-opacity:1;" stroke-width="2.00219" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.17578 22.0241C9.17578 23.7112 9.50809 25.3818 10.1537 26.9405C10.7994 28.4993 11.7457 29.9155 12.9387 31.1085C14.1317 32.3015 15.548 33.2479 17.1067 33.8935C18.6654 34.5391 20.336 34.8714 22.0232 34.8714C23.7103 34.8714 25.3809 34.5391 26.9396 33.8935C28.4983 33.2479 29.9146 32.3015 31.1076 31.1085C32.3006 29.9155 33.2469 28.4993 33.8926 26.9405C34.5382 25.3818 34.8705 23.7112 34.8705 22.0241C34.8705 20.3369 34.5382 18.6663 33.8926 17.1076C33.2469 15.5489 32.3006 14.1326 31.1076 12.9396C29.9146 11.7466 28.4983 10.8003 26.9396 10.1546C25.3809 9.509 23.7103 9.1767 22.0232 9.1767C20.336 9.1767 18.6654 9.509 17.1067 10.1546C15.548 10.8003 14.1317 11.7466 12.9387 12.9396C11.7457 14.1326 10.7994 15.5489 10.1537 17.1076C9.50809 18.6663 9.17578 20.3369 9.17578 22.0241Z" stroke="#5C9B35" style="stroke:#5C9B35;stroke:color(display-p3 0.3608 0.6078 0.2078);stroke-opacity:1;" stroke-width="2.00219" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_422_2812">
+        <rect width="44.0481" height="44.0481" fill="white" style="fill:white;fill-opacity:1;"/>
+        </clipPath>
+        </defs>
+        </svg>
+
+}
+
+
+export const WorldIcon = (props) => (
+  <svg {...props} width="45" height="45" viewBox="0 0 45 45" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clipPath="url(#clip0_422_2812)">
+      <path d="M34.5337 24.9239C38.7403 28.8478..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M9.17578 22.0241C9.17578 23.7112..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_422_2812">
+        <rect width="44.0481" height="44.0481" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const SunIcon = (props) => (
+  <svg {...props} width="45" height="45" viewBox="0 0 45 45" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clipPath="url(#clip0_422_30381)">
+      <path d="M22.0249 14.6827C23.4613 14.6827..."
+        fill="#5C9B35"/>
+      <path d="M22.0228 3.67065..."
+        fill="#5C9B35"/>
+      <path d="M32.4724 8.9803..."
+        fill="#5C9B35"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_422_30381">
+        <rect width="44.0481" height="44.0481" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const FileIcon = (props) => (
+  <svg {...props} width="45" height="45" viewBox="0 0 45 45" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clipPath="url(#clip0_422_30412)">
+      <path d="M16.5171 9.1767H12.8465..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16.5195 9.17672C16.5195 8.2032..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M25.6929 20.1887H21.1046..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_422_30412">
+        <rect width="44.0481" height="44.0481" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const EditIcon = (props) => (
+  <svg {...props} width="45" height="45" viewBox="0 0 45 45" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clipPath="url(#clip0_422_30423)">
+      <path d="M22.0255 27.5301L37.4149 12.0857..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M29.3672 9.17664L34.8732 14.6827"
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16.5196 12.9758C13.3 13.4346..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_422_30423">
+        <rect width="44.0481" height="44.0481" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const HeadphoneIcon = (props) => (
+  <svg {...props} width="45" height="45" viewBox="0 0 45 45" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clipPath="url(#clip0_422_30434)">
+      <path d="M7.33984 27.5301C7.33984 26.5565..." stroke="#5C9B35"
+        strokeWidth="2.00219" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M27.5312 27.5301C27.5312 26.5565..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M7.33984 27.53V22.024C7.33984 18.1299..."
+        stroke="#5C9B35" strokeWidth="2.00219"
+        strokeLinecap="round" strokeLinejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_422_30434">
+        <rect width="44.0481" height="44.0481" fill="white"/>
       </clipPath>
     </defs>
   </svg>

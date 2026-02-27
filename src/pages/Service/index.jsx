@@ -5,12 +5,12 @@ import FooterSection from '../LandingPage/FooterSection';
 import TestimonialsSection from '../LandingPage/TestimonialsSection';
 import WhyChooseSection from '../LandingPage/WhyChooseSection';
 import FAQ from '../LandingPage/FAQ';
-import Who from '../ExtraPage.jsx/Who';
-import WhatCan from '../ExtraPage.jsx/WhatCan';
-import Panels from '../ExtraPage.jsx/panels';
-import Options from '../ExtraPage.jsx/Options';
-import WhyBusinesses from '../ExtraPage.jsx/WhyBusiness';
-import WhyChoose from '../ExtraPage.jsx/WhyChoose';
+import Who from '../ExtraPage/Who';
+import WhatCan from '../ExtraPage/WhatCan';
+import Panels from '../ExtraPage/panels';
+import Options from '../ExtraPage/Options';
+import WhyBusinesses from '../ExtraPage/WhyBusiness';
+import WhyChoose from '../ExtraPage/WhyChoose';
 
 import {
   LayoutIcon,
@@ -337,6 +337,15 @@ const Service = () => {
     }
   ];
 
+  const New = [
+
+      {
+        icon : <worldIcon className ="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+        description: "Global Ready Multi-language and multi-currency support with flexible regional configuration"
+      } ,
+    
+  ];
+
   return (
     <>
       <Helmet>
@@ -355,31 +364,33 @@ const Service = () => {
               <div className="flex flex-col justify-start items-center w-full">
                 <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
                   {/* Hero Section  */}
-                 <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
-                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
+                 <section className="w-full bg-white py-12 sm:py-16 lg:py-8">
+                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-24">
                     <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
                       {/* LEFT CONTENT */}
                       <div className="w-full lg:w-1/2 text-center lg:text-left">
-                        <h3 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.15] text-text-primary">
-                          <span className="text-[#9CEE69]">Xmoveon</span>{" "}
+                        <h3 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.20] text-text-primary">
                           <span>Launch</span>{" "}
                           <span className="bg-[#E4FFD4] px-2 rounded-md">
                             Your Own service
                           </span>
-                          <br />
+                          {""}
                           <span className="bg-[#E4FFD4] px-2 rounded-md">
                             Marketplace platform
                           </span>
                         </h3>
+                        <p className='mt-6  text-sm sm:text-base max-w-md mx-auto lg:mx-0 '>
+                         Built for full ownership. One-time payment. No subscriptions.
+                        </p>
 
-                        <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0 text-gray-600">
+                        <p className="mt-4 lg:mt-6 text-sm sm:text-base max-w-md mx-auto lg:mx-0 ">
                           Build your multi-vendor food delivery platform with our proven solution.
                           Restaurants gain exposure, drivers earn commissions, and you control
                           everything from one powerful admin panel.
                         </p>
 
-                        <div className="mt-6 flex justify-center lg:justify-start">
+                        <div className="mt-4 lg:mt-8 flex justify-center lg:justify-start">
                           <Button
                             text="Try Our Demo"
                             text_font_size="16px"
@@ -400,8 +411,7 @@ const Service = () => {
                                     sm:max-w-[420px]
                                     md:max-w-[680px]
                                     lg:max-w-[780px]
-                                    lg:aspect-[4/5]
-                                    xl:aspect-[6/5]
+                                
                                   "
                           >
                           </div>
@@ -413,14 +423,13 @@ const Service = () => {
                       <div className="w-full lg:w-1/2 flex flex-col items-center">
 
                         {/* IMAGE */}
-                        <div className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px] aspect-[5/5]">
+                        <div className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px]  lg:max-w-[640px] lg:max-h-[380px]   aspect-[5/5]">
                           <img
-                            src="/assets/android.jpg"
+                            src="/assets/Android.png"
                             alt="Platform Illustration"
-                            className="w-full h-full object-cover rounded-[28px] shadow-lg"
+                            className="w-full h-full object-cover rounded-[20px] "
                           />
                         </div>
-
                         {/* INFO CARD */}
                         <div className="mt-6 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700 ">
                           Whether you’re a startup, agency, or developer, Xmoveon gives you the
