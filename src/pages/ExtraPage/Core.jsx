@@ -11,7 +11,13 @@ const Core = () =>{
                     <div className="flex  mb-12 lg:mb-12">
 
                       <div className=" me-8 lg:me-16 xl:me-20">
-                        <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] xl:text-[52px] font-semibold text-text-primary ms-4 lg:ms-10 xl:ms-16  ">
+                        <h2 className="   text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15] ms-4 lg:ms-10 xl:ms-16  ">
                           <span className='bg-[#E4FFD4]'>  Core Marketplace </span> <span> <br />Features</span>
                         </h2>
                       </div>
@@ -33,7 +39,7 @@ const Core = () =>{
                               {feature?.title}
                             </h3>
                           </div>
-                          <p className="text-sm sm:text-base text-text-secondary leading-relaxed pl-11 lg:text-sm">
+                          <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed pl-11 lg:text-sm">
                             {feature?.description}
                           </p>
                         </div>
@@ -45,4 +51,4 @@ const Core = () =>{
 
                     }
 
-                    export default Core ;
+  export default Core ;

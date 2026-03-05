@@ -2,14 +2,20 @@ import React from 'react';
 
 const Section5 = ({ data }) => {
   return (
-    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24 font-sans">
+    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24 ">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-24">
         
         {/* Left Side: Title and Action Buttons */}
-        <div className="flex-1 space-y-8 md:space-y-20 w-full">
-          <h2 className="text-[32px] sm:text-[42px] md:text-[60px] font-semibold text-[#111827] leading-[1.1] tracking-tight text-left">
+        <div className="flex-1 space-y-4 md:space-y-4 w-full">
+          <h2 className="text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15] text-left">
             {data.title1}{' '}
-            <span className="bg-[#E4FFD4] px-4 md:px-5 py-1 rounded-t-[18px] md:rounded-t-[25px] rounded-br-[18px] md:rounded-br-[25px] inline-block">
+            <span className="bg-[#E4FFD4] px-0 md:px-0 py-1 rounded-t-[18px] md:rounded-t-[25px] rounded-br-[18px] md:rounded-br-[25px] inline-block">
               {data.title2}
             </span>
             <br />
@@ -43,7 +49,7 @@ const Section5 = ({ data }) => {
               </div>
 
               {/* Feature Text */}
-              <p className="text-[16px] md:text-[21px] text-[#111827] leading-tight font-medium">
+              <p className="text-[16px] md:text-[20px] text-[#111827] leading-tight font-medium">
                 {feature.text}
               </p>
             </div>

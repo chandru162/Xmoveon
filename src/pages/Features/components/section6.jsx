@@ -2,14 +2,14 @@ import React from 'react';
 
 const Section6 = ({ data }) => {
   return (
-    <section className="w-full py-16 md:py-24 px-6 md:px-16 lg:px-24 font-sans overflow-hidden ">
+    <section className="w-full py-8 md:py-16 px-6 md:px-16 lg:px-24  overflow-hidden ">
       <div className="max-w-[1440px] mx-auto">
         
         {/* Header Section */}
         <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
           <h2 className="text-[38px] sm:text-[48px] md:text-[60px] font-semibold leading-tight">
-            <span className="text-black">How</span>{' '}
-            <span className="bg-[#E4FFD4] text-black px-4 md:px-6 py-2 md:py-6 rounded-t-[15px] md:rounded-t-[20px] rounded-br-[10px] inline-block">
+            <span className="text-black">How</span>
+            <span className="bg-[#E4FFD4] text-black px-1 md:px-2 py-2 md:py-6 rounded-t-[15px] md:rounded-t-[20px] rounded-br-[10px] inline-block">
               It Works
             </span>
           </h2>
@@ -21,8 +21,8 @@ const Section6 = ({ data }) => {
         </div>
 
         {/* Sub-description with Arrow */}
-        <div className="flex flex-col md:flex-row items-center gap-4 mt-8 mb-12 text-center md:text-left">
-          <p className="text-[16px] md:text-[18px] text-gray-600 max-w-md">
+        <div className="flex flex-col md:flex-row items-center gap-4 mt-2 mb-12 text-center md:text-left">
+          <p className="text-sm sm:text-base  max-w-md">
             From concept to launch in just 7 days. No technical expertise required.
           </p>
           <div className="hidden md:block transform rotate-90 md:rotate-0">{data.ArrowIcon}</div>

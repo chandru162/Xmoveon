@@ -11,6 +11,9 @@ import Panels from '../ExtraPage/panels';
 import Options from '../ExtraPage/Options';
 import WhyBusinesses from '../ExtraPage/WhyBusiness';
 import WhyChoose from '../ExtraPage/WhyChoose';
+import WhySection from '../ExtraPage/WhySection';
+import Testi from '../ExtraPage/Testi';
+import DemoPopup from '../LandingPage/DemoPopup';
 
 import {
   LayoutIcon,
@@ -45,6 +48,8 @@ const Service = () => {
     e?.preventDefault();
     // Handle form submission logic here
   };
+    const [showDemo, setShowDemo] = useState(false);
+
 
   const techStackItems = [
     { name: 'Flutter', icon: '/images2/features/img_logos_flutter_original.png' },
@@ -365,18 +370,28 @@ const Service = () => {
                 <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
                   {/* Hero Section  */}
                  <section className="w-full bg-white py-12 sm:py-16 lg:py-8">
-                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-24">
+                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
                       {/* LEFT CONTENT */}
                       <div className="w-full lg:w-1/2 text-center lg:text-left">
-                        <h3 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.20] text-text-primary">
-                          <span>Launch</span>{" "}
-                          <span className="bg-[#E4FFD4] px-2 rounded-md">
-                            Your Own service
-                          </span>
-                          {""}
-                          <span className="bg-[#E4FFD4] px-2 rounded-md">
+                        <h3 className="text-[26px]
+                                        sm:text-[32px]
+                                        md:text-[40px]
+                                        lg:text-[48px]
+                                        xl:text-[52px]
+                                        font-semibold
+                                        leading-[1.15]">    
+                          <span>Launch</span> {""}
+                          <span
+                                  className="
+                                    inline-block
+                                    bg-[#E4FFD4]                                  
+                                    rounded-md
+                                    whitespace-nowrap
+                                  "
+                                >Your Own Service </span> <br />
+                          <span className="bg-[#E4FFD4]  rounded-md">
                             Marketplace platform
                           </span>
                         </h3>
@@ -390,17 +405,28 @@ const Service = () => {
                           everything from one powerful admin panel.
                         </p>
 
-                        <div className="mt-4 lg:mt-8 flex justify-center lg:justify-start">
-                          <Button
-                            text="Try Our Demo"
-                            text_font_size="16px"
-                            text_font_weight="600"
-                            text_color="#0f0f0f"
-                            fill_background_color="#9CEE69"
-                            border_border_radius="32px"
-                            padding="14px 28px"
+                        <div className="mt-8 flex items-center justify-center lg:justify-start gap-4">
+                                    <Button
+                                      text="Try Our Demo"
+                                      text_font_size="16px"
+                                      text_font_weight="600"
+                                      text_color="#0f0f0f"
+                                      fill_background_color="#9CEE69"
+                                      border_border_radius="32px"
+                                      padding="14px 28px"
+                                      onClick={() => {
+                                      console.log("Try Demo clicked"); 
+                                      setShowDemo(true);
+                                    }}
                           />
-                        </div>
+
+                <img
+                src="/images2/features/img_group_1000001743.svg"
+                alt="arrow"
+                className="w-[52px] sm:w-[68px]"
+              />
+              </div>
+       
 
                         {/* RIGHT CONTENT */}
                         <div className="w-full lg:w-1/2 flex flex-col items-center">
@@ -423,15 +449,15 @@ const Service = () => {
                       <div className="w-full lg:w-1/2 flex flex-col items-center">
 
                         {/* IMAGE */}
-                        <div className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px]  lg:max-w-[640px] lg:max-h-[380px]   aspect-[5/5]">
+                        <div className="w-full max-w-[320px] sm:max-w-[480px] md:max-w-[520px]  lg:max-w-[640px] lg:max-h-[380px] ">
                           <img
-                            src="/assets/Android.png"
+                            src="/assets/Serviceimage.webp"
                             alt="Platform Illustration"
                             className="w-full h-full object-cover rounded-[20px] "
                           />
                         </div>
                         {/* INFO CARD */}
-                        <div className="mt-6 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700 ">
+                        <div className="mt-16 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700 ">
                           Whether you’re a startup, agency, or developer, Xmoveon gives you the
                           flexibility to create, customize, and scale your own marketplace —
                           entirely under your brand.
@@ -469,7 +495,13 @@ const Service = () => {
                     <div className="flex  mb-12 lg:mb-12">
 
                       <div className=" me-8 lg:me-16 xl:me-20">
-                        <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] xl:text-[52px] font-semibold text-text-primary ms-4 lg:ms-10 xl:ms-16  ">
+                        <h2 className="   text-[26px]
+                                          sm:text-[32px]
+                                          md:text-[40px]
+                                          lg:text-[48px]
+                                          xl:text-[52px]
+                                          font-semibold
+                                          leading-[1.15] ms-4 lg:ms-4 xl:ms-2  ">
                           <span className='bg-[#E4FFD4]'>  Core Marketplace </span> <span> <br />Features</span>
                         </h2>
                       </div>
@@ -487,12 +519,12 @@ const Service = () => {
                         <div key={index} className="space-y-4">
                           <div className="flex items-start gap-3">
                             {/* <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" /> */}
-                            <div>{feature?.icon}</div>
-                            <h3 className="text-lg sm:text-lg font-semibold text-text-secondary">
+                            <div className=''>{feature?.icon}</div>
+                            <h3 className="text-lg sm:text-lg font-semibold ">
                               {feature?.title}
                             </h3>
                           </div>
-                          <p className="text-sm sm:text-base text-text-secondary leading-relaxed pl-11 ">
+                          <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed pl-11 ">
                             {feature?.description}
                           </p>
                         </div>
@@ -519,7 +551,7 @@ const Service = () => {
 
         {/* Contact Form Section */}
 
-        <WhyChooseSection />
+        <WhySection />
 
         {/* FAQ Section */}
 
@@ -528,7 +560,7 @@ const Service = () => {
 
         {/* Testimonial Section */}
 
-        <TestimonialsSection />
+        <Testi />
 
         {/* 
       <Hero/>
@@ -544,6 +576,7 @@ const Service = () => {
  */}
 
 
+                     <DemoPopup showDemo={showDemo} setShowDemo={setShowDemo} />
 
       </main>
     </>

@@ -2,22 +2,28 @@ import React from 'react';
 
 const Section3 = ({ data }) => {
   return (
-    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24 font-sans">
+    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24 ">
       <div className="max-w-[1440px] mx-auto">
         {/* Header: Mobile-la stacked, Desktop-la flex-row */}
         <div className="flex flex-col md:flex-row items-start justify-between mb-10 md:mb-16 gap-4">
-          <h2 className="text-[32px] sm:text-[42px] md:text-[60px] text-[#111827] leading-[1.1] tracking-tight">
+          <h2 className=" text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]">
             <span className="md:px-0 px-1 py-1 rounded-t-[20px] font-semibold  rounded-br-[20px] md:rounded-br-[25px] inline-block mb-0">
               {data.mainTitleHighlight1}
             </span>
             <br/>
-            <span className="bg-[#E4FFD4] px-4 md:px-0 py-1 font-semibold rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mb-2">
+            <span className="bg-[#E4FFD4]  md:px-0 py-1 font-semibold rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mb-2">
               {data.mainTitleHighlight2}
             </span>
             <br />
             {data.mainTitlePlain}
           </h2>
-          <h3 className="text-[#8CFF5E] text-[20px] font-semibold md:text-[40px] max-w-[300px] leading-tight md:leading-10 md:mt-20">
+          <h3 className="text-[#9CEE69] font-semibold text-[20px] sm:text-[28px] lg:text-[42px] xl:text-[46px] max-w-[300px]  md:leading-10">
             {data.sideTitle}
           </h3>
         </div>
@@ -36,10 +42,10 @@ const Section3 = ({ data }) => {
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="text-[18px] md:text-[22px] font-semibold text-[#111827]">
+                    <h4 className="text-[18px] lg:text-lg font-semibold text-[#111827]">
                       {item.title}
                     </h4>
-                    <p className="text-[#6B7280] text-[14px] md:text-[16px] mt-1">{item.desc}</p>
+                    <p className="text-sm sm:text-[16px] text-[#5f5f5f] mt-1">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -48,11 +54,11 @@ const Section3 = ({ data }) => {
 
           {/* Right Side: Image Card (Mobile-la last-ah varum) */}
           <div className="flex-1 w-full order-2">
-            <div className="flex justify-center items-center overflow-hidden rounded-[20px] md:rounded-[40px] md:mt-12">
+            <div className="flex justify-center items-center overflow-hidden rounded-[20px] md:rounded-[40px] md:mt-12 lg:mt-32">
               <img
                 src={data.showcaseImage}
                 alt="Showcase"
-                className="w-full h-auto md:h-[500px]  hover:scale-105 transition-transform duration-500 object-cover"
+                className="w-full h-auto md:h-[370px] lg:h-[350px]   transition-transform duration-500 object-cover"
               />
             </div>
           </div>

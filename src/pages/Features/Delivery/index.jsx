@@ -13,9 +13,12 @@ import Section11 from '../components/Section11';
 import FAQSection from '../components/faqSection';
 
 // Assets
-import image1 from '../../../../public/assets/Card3.png';
-import image2 from '../../../../public/assets/Card2.png';
-import image3 from '../../../../public/assets/Card3.png';
+import Selfcard from '../../../../public/assets/Selfcardimage.webp';
+import Sourcecard from '../../../../public/assets/Sourcecardimage.webp';
+import Scalablecard from '../../../../public/assets/Scalablecardimage.webp';
+import Ordercardimage from '../../../../public/assets/Orderimage.webp';
+import Uptimecardimage from '../../../../public/assets/Uptimecardimage.webp';
+import Globalcardimage from '../../../../public/assets/Globalcardimage.webp';
 import TaxiImage from '../../../../public/assets/Illustration.png';
 import Illustrations from '../../../../public/assets/Illustrations.png';
 
@@ -61,7 +64,7 @@ const TaxiPage = () => {
           subTitle: 'Launch your own parcel delivery platform with full ownership.',
           description:
             'Manage bookings, drivers, routes, and real-time deliveries — all under your brand.Pay once, own it forever — no subscriptions, no vendor lock-in.',
-          image: '../../../../public/assets/Frame 1597883618.png',
+          image: '../../../../public/assets/Deliveryimage.webp',
           category: 'Delivery',
         }}
       />
@@ -76,7 +79,7 @@ const TaxiPage = () => {
             'Xmoveon Parcel helps delivery companies, eCommerce startups, and logistics networks launch reliable, scalable dispatch platforms that they own completely.',
           featureTitle: 'Trusted By',
           features: ['Courier Aggregators', 'E-Commerce Platforms ', 'Delivery Startups'],
-          images: [image1, image2, image3],
+          images: [Selfcard, Sourcecard, Scalablecard],
         }}
       />
 
@@ -89,7 +92,7 @@ const TaxiPage = () => {
           mainTitlePlain: '',
           topDescription:
             'Xmoveon Parcel combines automation, tracking, and analytics to streamline delivery operations — from pickup to proof of delivery.',
-          showcaseImage: '../../../../public/assets/Illustrationsa.png',
+          showcaseImage: '../../../../public/assets/Efficiencyimage.webp',
           features: [
             {
               icon: <MenuIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
@@ -129,7 +132,7 @@ const TaxiPage = () => {
           categories: [
             {
               label: 'Customers',
-              image: '../../../../public/assets/Frame-a.png',
+              image: '../../../../public/assets/Courierimage.webp',
               features: [
                 'Book parcel pickups in seconds',
                 'Track delivery in real time',
@@ -139,7 +142,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Drivers / Couriers',
-              image: '../../../../public/assets/Frame-b.png',
+              image: '../../../../public/assets/Deliveryimage.webp',
               features: [
                 'Accept or reject delivery tasks',
                 'Use in-app navigation and route optimization',
@@ -149,7 +152,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Vendors / Merchants',
-              image: '../../../../public/assets/Frame-c.png',
+              image: '../../../../public/assets/Vendorimage.webp',
               features: [
                 'Schedule bulk or recurring pickups',
                 'Manage multiple locations and accounts',
@@ -203,7 +206,7 @@ const TaxiPage = () => {
             {
               number: '01',
               title: 'Customer books pickup',
-              description: 'via mobile app or web portal',
+              description: 'via mobile app ',
             },
             {
               number: '02',
@@ -272,7 +275,7 @@ const TaxiPage = () => {
       />
 
       {/* Section 9: Testimonials & Stats */}
-      <Section9
+      {/* <Section9
         data={{
           title1: 'Proven',
           title2: 'Performance & ',
@@ -286,16 +289,15 @@ const TaxiPage = () => {
             'Xmoveon has helped startups, taxi operators, and agencies launch profitable mobility platforms in record time.',
           cards: [
             {
-              highlightText: '10,000+',
-              title: 'Orders Processed',
-              image: image1,
-              textColor: 'black',
+              image:Ordercardimage,
             },
-            { highlightText: '99.9%', title: 'Uptime', image: image2, textColor: 'white' },
-            { highlightText: 'Global Deployments', title: '', image: image3, textColor: 'black' },
+            {
+              image: Uptimecardimage,
+            },
+            { image: Globalcardimage },
           ],
-        }}
-      />
+        }} */}
+      
 
       {/* Section 10: Additional Services */}
       <Section10

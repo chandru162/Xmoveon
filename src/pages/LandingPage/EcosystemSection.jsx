@@ -1,18 +1,21 @@
 import React from "react";
 
+import {
+  StoreShopIcon,
+  DocumentHeartIcon
+} from '../../svg/svgIcons';
+
 const EcosystemSection = () => {
   const apps = [
     {
-      icon: "/images/img_device_mobile_heart.svg",
+      icon: <DocumentHeartIcon/>,
       title: "Customer App",
       description:
         "Smooth interface for customers to place orders and book services effortlessly.",
       features: [
         "Browse Services",
-        "Smart Search & Filters",
         "Real-time Order Tracking",
         "Multiple Payment Options",
-        "Secure Checkout",
         "Order History & Reorders",
         "Ratings & Reviews",
         "Push Notifications",
@@ -22,7 +25,7 @@ const EcosystemSection = () => {
       ],
     },
     {
-      icon: "/images/img_building_store.svg",
+      icon: <StoreShopIcon/>,
       title: "Vendor App",
       description:
         "Complete management system to receive, process, and manage customer requests.",
@@ -39,7 +42,7 @@ const EcosystemSection = () => {
       ],
     },
     {
-      icon: "/images/img_device_mobile_heart.svg",
+      icon: <DocumentHeartIcon/>,
       title: "Driver App",
       description:
         "Optimized app for drivers and delivery partners with smart navigation and earnings tracking.",
@@ -51,7 +54,6 @@ const EcosystemSection = () => {
         "Daily / Weekly Reports",
         "Job Acceptance & Rejection",
         "Online / Offline Availability",
-        "Real-Time Status Updates",
         "Delivery History",
         "In-App Communication"     
        ],
@@ -60,7 +62,7 @@ const EcosystemSection = () => {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-12 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* HEADER */}
         <div className="mb-10 lg:mb-16 text-center lg:text-left">
@@ -132,17 +134,19 @@ const EcosystemSection = () => {
               "
             >
               {/* ICON */}
-              <div className="bg-[#E4FFD4] rounded-[12px] w-14 h-14 flex items-center justify-center mb-6">
-                <img src={app.icon} alt={app.title} className="w-7 h-7" />
+              <div className="bg-[#E4FFD4]  rounded-[20px] w-14 h-14 flex items-center justify-center mb-6">
+                <div className=" text-[#56E000] ">
+                                  {app.icon}
+                                </div>
               </div>
 
               {/* TITLE */}
-              <h4 className="text-base sm:text-lg font-semibold text-text-secondary mb-2">
+              <h4 className="text-base sm:text-lg font-semibold  mb-2">
                 {app.title}
               </h4>
 
               {/* DESC */}
-              <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed mb-6">
+              <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed mb-6">
                 {app.description}
               </p>
 
@@ -155,7 +159,7 @@ const EcosystemSection = () => {
                       alt=""
                       className="w-5 h-5 shrink-0"
                     />
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="text-sm text-[14px] font-medium">
                       {feature}
                     </span>
                   </div>

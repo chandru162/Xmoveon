@@ -50,20 +50,19 @@ const AdvancedFeaturesSection = () => {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* HEADER */}
         <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-12">
           <h3
               className="
-                text-[26px]
+                 text-[26px]
                 sm:text-[32px]
                 md:text-[40px]
                 lg:text-[48px]
                 xl:text-[52px]
                 font-semibold
                 leading-[1.15]
-                text-text-primary
               "
             >
              Advanced 
@@ -98,13 +97,12 @@ const AdvancedFeaturesSection = () => {
                   bg-[#E4FFD4]
                   rounded-md
                   whitespace-nowrap
-                  px-1
                 "
               >
               Growth
               </span>
             </h3>
-          <p className="mt-2 sm:mt-4 text-sm sm:text-base text-text-secondary max-w-md">
+          <p className="mt-2 sm:mt-4 text-sm sm:text-base  max-w-md">
             Powerful tools to optimize operations, increase revenue, and delight
             your customers.
           </p>
@@ -127,11 +125,12 @@ const AdvancedFeaturesSection = () => {
                 flex
                 gap-4
                 items-start
+                bg-[#F4F4F480]
                 p-4
                 sm:p-5
-                rounded-[16px]
-                hover:bg-[#F6FFF0]
+                rounded-[20px]
                 transition
+                cursor-pointer
               "
             >
               {/* ICON */}
@@ -143,10 +142,10 @@ const AdvancedFeaturesSection = () => {
 
               {/* CONTENT */}
               <div>
-                <h4 className="text-base sm:text-lg font-semibold text-text-secondary mb-1">
+                <h4 className="text-base sm:text-lg font-semibold  mb-1">
                   {feature.title}
                 </h4>
-                <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed">
+                <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                   {feature.description}
                 </p>
               </div>

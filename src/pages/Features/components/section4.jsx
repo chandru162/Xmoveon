@@ -4,11 +4,17 @@ const Section4 = ({ data }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="w-full  py-12 md:py-20 px-6 lg:px-24 font-sans overflow-hidden">
+    <section className="w-full  py-12 md:py-20 px-6 lg:px-24  overflow-hidden">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center">
         
         {/* Main Title - Responsive sizing */}
-        <h2 className="text-[32px] sm:text-[44px] font-semibold md:text-[60px] text-[#111827] leading-[1.1] mb-8 md:mb-12 max-w-[900px] text-center">
+        <h2 className=" text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15] mb-8 md:mb-12 max-w-[900px] text-center">
           {data.title}
         </h2>
 
@@ -37,7 +43,7 @@ const Section4 = ({ data }) => {
               {data.categories[activeTab].features.map((feature, idx) => (
                 <li
                   key={idx}
-                  className="flex items-start gap-3 md:gap-4 text-[#111827] text-[16px] md:text-[20px] leading-tight md:leading-5"
+                  className="flex items-start gap-3 md:gap-4 text-[#111827] text-[16px] md:text-[18px] leading-tight md:leading-5"
                 >
                   <span className="text-[#8CFF5E] text-xl">●</span>
                   {feature}

@@ -2,19 +2,19 @@ import React from 'react';
 
 const Section10 = ({ data }) => {
   return (
-    <section className="w-full  py-16 md:py-24 px-6 md:px-16 lg:px-24 font-sans">
+    <section className="w-full  py-16 md:py-16 px-6 md:px-16 lg:px-24 ">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-24">
         
         {/* Left Side: Title and Intro */}
         <div className="flex-1 space-y-6 md:space-y-8 md:mb-20 lg:mb-40 w-full text-left">
           <h2 className="text-[34px] sm:text-[48px] md:text-[60px] font-semibold text-[#111827] leading-[1.1] tracking-tight">
             {data.title1} <br />
-            <span className="bg-[#E4FFD4] px-4 md:px-6 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mt-2">
+            <span className="bg-[#E4FFD4] px-0 md:px-0 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mt-2">
               {data.title2}
             </span>
           </h2>
 
-          <p className="text-[#4B5563] text-[16px] md:text-[20px] max-w-md leading-relaxed">
+          <p className="text-[#4B5563] text-[16px] md:text-[18px] max-w-md leading-relaxed">
             {data.description ||
               "We don't just deliver software — we help you launch successfully."}
           </p>
@@ -34,7 +34,7 @@ const Section10 = ({ data }) => {
                 </div>
 
                 {/* Service Label */}
-                <span className="text-[16px] md:text-[21px] font-semibold text-[#111827] leading-tight">
+                <span className="text-[16px] md:text-[18px] font-semibold text-[#111827] leading-tight">
                   {service.label}
                 </span>
               </div>

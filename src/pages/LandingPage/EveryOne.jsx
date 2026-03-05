@@ -5,44 +5,45 @@ const cards = [
     tag: "Customers",
     title: "Food arrives fast and fresh",
     desc: "They order from multiple restaurants in one app and track deliveries in real time.",
-    img: "/assets/everyone1.png",
+    img: "/assets/Everyoneimage.webp",
   },
   {
     tag: "Restaurants",
     title: "Reach hungry customers without building apps",
     desc: "They manage menus, track orders, and watch sales grow through your platform.",
-    img: "/assets/everyone2.png",
+    img: "/assets/Everytwoimage.webp",
   },
   {
     tag: "Drivers",
     title: "Earn more with smart routing",
     desc: "They see clear earnings, control schedules, and deliver efficiently every day.",
-    img: "/assets/everyone3.png",
+    img: "/assets/Everythreeimage.webp",
   },
   {
     tag: "Admins",
     title: "Build revenue from commissions",
     desc: "You manage everything from one dashboard and grow your business sustainably.",
-    img: "/assets/everyone4.png",
+    img: "/assets/Everyfourimage.webp",
   },
 ];
 
 const EveryoneWins = () => {
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-24">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
 
         {/* HEADER */}
         <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-10 lg:mb-16">
           <div className="text-center sm:text-left">
             <h2
               className="
-                text-[26px]
-                sm:text-[32px]
-                lg:text-[48px]
-                xl:text-[52px]
-                font-semibold
-                text-text-primary
+                   text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]
               "
             >
               Everyone wins{" "}
@@ -51,14 +52,12 @@ const EveryoneWins = () => {
               </span>
             </h2> <br />
 
-            <p className="text-sm sm:text-base text-text-secondary max-w-md mx-auto sm:mx-0">
+            <p className="text-sm sm:text-base max-w-md mx-auto sm:mx-0">
               Each player in the ecosystem gets what they need to succeed.
             </p>
           </div>
 
-          <span className="hidden sm:block text-[#9CEE69] font-semibold text-[20px] lg:text-[36px]">
-            Why
-          </span>
+         
         </div>
 
         {/* CARDS GRID */}
@@ -105,14 +104,14 @@ const EveryoneWins = () => {
                     absolute
                     top-3
                     left-3
-                    bg-black
+                    text-white
                     text-xs
                     font-medium
                     px-3
                     py-1
                     rounded-full
                     shadow
-                    text-[#9CEE19]
+                    bg-[#9CEE19]
                   "
                 >
                   {item.tag}
@@ -121,12 +120,10 @@ const EveryoneWins = () => {
 
               {/* CONTENT */}
               <div className="p-5 flex flex-col gap-2 flex-1">
-                <h3 className="text-[15px] lg:text-[16px] font-semibold text-text-primary ">
+                <h3 className="text-sm sm:text-base lg:text-lg font-semibold ">
                   {item.title}
                 </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  {item.desc}
-                </p>
+              
               </div>
             </div>
           ))}

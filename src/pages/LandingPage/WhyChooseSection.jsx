@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { HeartIcon , PackageIcon , ProfileIcon , CodeIcon ,HomeIcon , LogoutIcon  } from "../../svg/svgIcons";
+
 const WhyChooseSection = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -18,39 +20,56 @@ const WhyChooseSection = () => {
   };
 
   const benefits = [
-    { icon: "/images/img_hearts.svg", title: "One-time purchase, lifetime ownership" },
-    { icon: "/images/img_brand_airtable.svg", title: "White-label & customizable" },
-    { icon: "/images/img_camera_selfie.svg", title: "Self-hosted" },
-    { icon: "/images/img_frame_19_light_green_700_54x54.svg", title: "Built for Enterprise Marketplaces" },
-    { icon: "/images/img_frame_19_62x62.svg", title: "Scalable & flexible architecture" },
-    { icon: "/images/img_frame_19_54x54.svg", title: "No vendor lock-in" },
+    { 
+      icon: <HeartIcon/>, 
+      title: "One-time purchase, lifetime ownership" 
+    },
+    {
+       icon: <PackageIcon/>, 
+       title: "White-label & customizable"
+    },
+    { 
+      icon: <ProfileIcon/>, 
+      title: "Self-hosted" 
+    },
+    { 
+      icon: <CodeIcon/>,
+       title: "Built for Enterprise Marketplaces"
+    },
+    { 
+      icon: <HomeIcon/>,
+       title: "Scalable & flexible architecture"
+    },
+    { 
+      icon: <LogoutIcon/>,
+       title: "No vendor lock-in"
+   },
   ];
 
   return (
     <section className="w-full bg-white py-14 sm:py-16 lg:py-24">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 xl:px-28">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
           {/* LEFT CONTENT */}
-          <div className="w-full lg:w-1/2 md:text-center text-left lg:text-left">
+          <div className="w-full lg:w-1/2 md:text-left text-left lg:text-left">
             <h3
               className="
-                text-[26px]
-                sm:text-[32px]
-                md:text-[40px]
-                lg:text-[48px]
-                xl:text-[52px]
-                font-semibold
-                leading-[1.15]
-                text-text-primary
+                      text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]
               "
             >
-              <span className="inline-block bg-[#E4FFD4] rounded-md px-2">
+              <span className="inline-block bg-[#E4FFD4] rounded-md px-2 md:px-0 lg:px-2 ">
                 Why Choose
               </span> {""}
               
-              <span className="inline-block mt-1">Xmoveon</span>
+              <span className="inline-block mt-1 lg:px-3">Xmoveon</span>
             </h3>
 
             {/* BENEFITS */}
@@ -66,15 +85,19 @@ const WhyChooseSection = () => {
                     lg:justify-start
                     text-left
                     max-w-[360px]
-                    mx-auto
-                    lg:mx-0
+                    mx-12
+                    md:mx-8
+                    xl:mx-4
+                    lg:mx-4
                   "
                 >
-                  <div className="w-11 h-11 rounded-[10px] bg-[#E4FFD4] flex items-center justify-center flex-shrink-0">
-                    <img src={benefit.icon} alt="" className="w-5 h-5" />
-                  </div>
+              <div className="flex-shrink-0  bg-[#E4FFD4] rounded-[10px] w-8 h-8 flex items-center justify-center ">
+                <div className=" text-[#56E000] ">
+                  {benefit.icon}
+                </div>
+              </div>
 
-                  <p className="text-sm sm:text-base font-medium leading-snug mt-2">
+                  <p className="text-sm sm:text-base font-semibold leading-snug mt-2">
                     {benefit.title}
                   </p>
                 </div>

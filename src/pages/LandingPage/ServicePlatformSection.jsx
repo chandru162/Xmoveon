@@ -1,48 +1,60 @@
 import React from "react";
 
+import {
+  AddDocumentIcon,
+  TruckIcon,
+  BoxIcon,
+  BikeDeliveryIcon,
+  StoreIcon,
+  HomeIcon,
+} from '../../svg/svgIcons';
+
 const ServicePlatformSection = () => {
-  const services = [
-    {
-      icon: "/images/img_frame_19.svg",
-      title: "Taxi Booking",
-      description:
-        "Real-time tracking, auto dispatching, driver app, and admin dashboard.",
-    },
-    {
-      icon: "/images/img_frame_19_light_green_700.svg",
-      title: "Food Delivery",
-      description:
-        "Ordering, tracking, menu management, and seamless payments integration.",
-    },
-    {
-      icon: "/images/img_box.svg",
-      title: "Courier Delivery",
-      description:
-        "Package sending, route optimization, delivery proof, and tracking.",
-    },
-    {
-      icon: "/images/img_frame_19_light_green_700_62x62.svg",
-      title: "Grocery Delivery",
-      description:
-        "Category grouping, inventory management, scheduling, and instant checkout.",
-    },
-    {
-      icon: "/images/img_frame_19_62x62.svg",
-      title: "Home Services",
-      description:
-        "Book handy services, repair plumbing, AC maintenance and more on demand.",
-    },
-    {
-      icon: "/images/img_report_medical.svg",
-      title: "Pharmacy",
-      description:
-        "Prescription uploads, medicine delivery, order history, and health tracking.",
-    },
-  ];
+   const services = [
+  
+        {
+             icon: <StoreIcon />,
+             title: "Taxi Booking",
+             description:
+               "Real-time tracking, auto dispatching, driver app, and admin dashboard.",
+           },
+           {
+             icon: <BikeDeliveryIcon />,
+             title: "Food Delivery",
+             description:
+               "Ordering, tracking, menu management, and seamless payments integration.",
+           },
+           {
+             icon: <BoxIcon />,
+             title: "Courier Delivery",
+             description:
+               "Package sending, route optimization, delivery proof, and tracking.",
+           },
+           {
+             icon: <TruckIcon />,
+             title: "Grocery Delivery",
+             description:
+               "Category grouping, inventory management, scheduling, and instant checkout.",
+           },
+           {
+             icon: <AddDocumentIcon />,
+             title: "Home Services",
+             description:
+               "Book handy services, repair plumbing, AC maintenance and more on demand.",
+           },
+           {
+             icon: <HomeIcon />,
+             title: "Pharmacy ",
+             description:
+               "Prescription uploads, medicine delivery, order history, and health tracking.",
+           },
+  
+     
+    ];
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* MAIN CARD */}
         <div className="bg-white lg:rounded-[42px] py-8 sm:py-10 lg:py-14">
@@ -58,7 +70,6 @@ const ServicePlatformSection = () => {
                 xl:text-[52px]
                 font-semibold
                 leading-[1.15]
-                text-text-primary
               "
             >
               All-in-
@@ -83,61 +94,60 @@ const ServicePlatformSection = () => {
                   whitespace-nowrap
                 "
               >Platform</span>
-</h3>
+            </h3>
 
-            <p className="text-sm sm:text-base text-text-secondary max-w-md">
+            <p className="text-sm sm:text-base max-w-md">
               Choose from multiple service categories and launch your customized
               super app.
             </p>
           </div>
 
           {/* SERVICES GRID */}
-          <div
-            className="
-              grid
-              grid-cols-1
-              sm:grid-cols-2
-              xl:grid-cols-3
-              gap-6
-              lg:gap-10
-            "
-          >
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="
-                  bg-[#F4F4F480]
-                  rounded-[20px]
-                  p-5
-                  sm:p-6
-                  lg:p-8
-                  flex
-                  flex-col
-                  gap-4
-                  hover:shadow-md
-                  transition
-                "
-              >
-                <div className="flex items-center gap-4">
-                  <div className="bg-[#E4FFD4] rounded-[12px] p-3 shrink-0">
-                    <img
-                      src={service.icon}
-                      alt={service.title}
-                      className="w-6 h-6"
-                    />
+                    <div
+                      className="
+                        grid
+                        grid-cols-1
+                        sm:grid-cols-2
+                        xl:grid-cols-3
+                        gap-6
+                        lg:gap-10
+                      "
+                    >
+                    {services.map((service, index) => (
+                      <div
+                        key={index}
+                        className="
+                          bg-[#F4F4F480]
+                          rounded-[20px]
+                          p-5
+                          sm:p-6
+                          lg:p-8
+                          flex
+                          flex-col
+                          gap-4
+                          hover:shadow-md
+                          transition
+                        "
+                      >
+                        <div className="flex items-center gap-4">
+                            <div className="flex-shrink-0  bg-[#E4FFD4] rounded-[10px] w-14 h-14 flex items-center justify-center ">
+                                <div className=" text-[#56E000] ">
+                                  {service.icon}
+                                </div>
+                            </div>
+
+                          <h4 className="text-base sm:text-lg font-semibold text-black">
+                            {service.title}
+                          </h4>
+                        </div>
+
+                        <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
+                          {service.description}
+                        </p>
+                      </div>
+                    ))}
                   </div>
 
-                  <h4 className="text-base sm:text-lg font-semibold text-black">
-                    {service.title}
-                  </h4>
-                </div>
-
-                <p className="text-sm sm:text-[15px] text-black leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
 
         </div>
       </div>

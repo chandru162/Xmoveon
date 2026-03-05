@@ -9,7 +9,7 @@ import FAQ from '../LandingPage/FAQ';
 import EveryoneWins from '../LandingPage/EveryOne';
 import ScaleSuccessSection from '../LandingPage/ScaleSuccessSection';
 import Technology from './Technology';
-
+import DemoPopup from '../LandingPage/DemoPopup';
   import {
   FlutterIcon,
   NextjsIcon,
@@ -17,9 +17,44 @@ import Technology from './Technology';
   NodejsIcon,
   SqlIcon,
   PrismaIcon,
+  
 } from '../../svg/toolsSvgIcons';
+
+
+import {
+  LocalisationIcon,
+  OrbitIcon,
+  DocumentArrowIcon,
+  HistoryIcon,
+  MobileCheckIcon,
+  ClockBoxIcon,
+  StaredIcon ,
+  UserIcon ,
+  MapHeartIcon ,
+  BookmarkIcon, 
+  BoxIcon,
+  ClockingIcon,
+  CubeNetworkIcon ,
+  SearchSettingsIcon ,
+  DeliveryBoxIcon,
+  LinkIcon ,
+  StoredIcon ,
+  ApprovalIcon,
+  MenuIcon,
+  AddDocumentIcon,
+  StoreIcon,
+  BalanceIcon,
+  StorefulIcon,
+  BookmarkedIcon,
+  ClockedIcon,
+  MarkStoredIcon ,
+  MarkStorefulIcon ,
+  MarkLinkIcon
+} from "../../svg/svgIcons"
 import Proven from './Proven';
 import Icon from './Icon';
+import WhySection from '../ExtraPage/WhySection';
+import Testi from '../ExtraPage/Testi';
 
 
 
@@ -106,25 +141,25 @@ const Home = () => {
 
   const customerFeatures = [
     {
-      icon: '/images2/features/img_album.svg',
+      icon: <BookmarkIcon/>,
       title: 'Browse and order',
       description: 'Explore menus from dozens of restaurants in seconds.',
-      bgColor: 'bg-background-gray'
+      bgColor: 'bg-[#E4FFD4]'
     },
     {
-      icon: '/images2/features/img_map_2.svg',
+      icon: <MapHeartIcon/>,
       title: 'Live order tracking',
       description: 'Watch your meal move from kitchen to doorstep in real time.',
       isActive: false
     },
     {
-      icon: '/images2/features/img_moneybag.svg',
+      icon: <UserIcon/>,
       title: 'Secure payments',
       description: 'Cards, wallets, and cash handled safely every transaction.',
       isActive: false
     },
     {
-      icon: '/images2/features/img_star_half_filled.svg',
+      icon: <StaredIcon/>,
       title: 'Rate and review',
       description: 'Rate and review',
       isActive: false
@@ -133,25 +168,25 @@ const Home = () => {
 
   const driverFeatures = [
     {
-      icon: '/images2/features/img_brand_laravel.svg',
+      icon: <CubeNetworkIcon/>,
       title: 'Smart Routing',
       description: 'Optimized routes that reduce travel time and fuel costs for faster deliveries.',
       bgColor: 'bg-background-gray'
     },
     {
-      icon: '/images2/features/img_zoom_money.svg',
+      icon: <SearchSettingsIcon/>,
       title: 'Earnings Transparency',
       description: 'Clear visibility into trip earnings, incentives, and daily income in real time.',
       bgColor: 'bg-background-gray'
     },
     {
-      icon: '/images2/features/img_clock.svg',
+      icon: <ClockedIcon />,
       title: 'Flexible Availability',
       description: 'Drivers can go online or offline anytime and work on their own schedule.',
       bgColor: 'bg-background-gray'
     },
     {
-      icon: '/images2/features/img_map_2.svg',
+      icon: <BookmarkedIcon/>,
       title: 'Easy Navigation & Tracking',
       description: 'Built-in maps and live tracking for smooth pickups, drop-offs, and deliveries.',
       bgColor: 'bg-background-gray'
@@ -160,25 +195,25 @@ const Home = () => {
 
   const vendorFeatures = [
     {
-      icon: '/images2/features/img_menu_2.svg',
+      icon: <MenuIcon/>,
       title: 'Menus',
       description: 'Update items, prices, and availability instantly across the platform.',
       bgColor: 'bg-background-gray'
     },
     {
-      icon: '/images2/features/img_align_box_right_bottom.svg',
+      icon: <BalanceIcon/>,
       title: 'Orders',
       description: 'Manage incoming orders smoothly, even during peak hours.',
       bgColor: 'bg-background-gray'
     },
     {
-      icon: '/images2/features/img_scale.svg',
+      icon: <StoredIcon/>,
       title: 'Sales',
       description: 'Understand performance and identify best-selling items.',
       bgColor: 'bg-background-gray'
     },
     {
-      icon: '/images2/features/img_app_window.svg',
+      icon:<LinkIcon/>,
       title: 'Promotions & Visibility',
       description: 'Boost reach with offers and featured listings.',
       bgColor: 'bg-background-gray'
@@ -187,25 +222,25 @@ const Home = () => {
 
   const platformBenefits = [
     {
-      icon: '/images2/features/img_thumb_up.svg',
+      icon: <ApprovalIcon/>,
       title: 'Customers get what they want',
       description: 'Search by cuisine, distance, or rating.\nOrder in seconds flat.',
       bgColor: 'bg-accent-light-green'
     },
     {
-      icon: '/images2/features/img_building_store.svg',
+      icon: <MarkStoredIcon/>,
       title: 'Restaurants keep their independence',
       description: 'They control menus, pricing, and how they operate day to day.',
       bgColor: 'bg-accent-pale-green'
     },
     {
-      icon: '/images2/features/img_plug_connected.svg',
+      icon: <MarkLinkIcon/>,
       title: 'You build the business that connects them',
       description: 'One dashboard runs the whole operation and generates your revenue',
       bgColor: 'bg-accent-pale-green'
     },
     {
-      icon: '/images2/features/img_frame_1597883414.svg',
+      icon: <MarkStorefulIcon/>,
       title: 'Drivers work when they choose',
       description: 'Flexible hours, clear pay, and routes that make sense economically.',
       bgColor: 'bg-accent-light-green'
@@ -282,53 +317,49 @@ const Home = () => {
     }
   ];
 
-  const services = [
+ const services = [
+ 
+       {
+            icon: <LocalisationIcon />,
+            title: "Localisation",
+            description:
+              "Multi-language and multi-currency support with regional settings.",
+          },
+          {
+            icon: <OrbitIcon />,
+            title: "Blazing Fast",
+            description:
+              "Built with latest technology for lightning fast loading times.",
+          },
+          {
+            icon: <DocumentArrowIcon />,
+            title: "Source Code",
+            description:
+              "Full source code ownership with complete customization freedom.",
+          },
+          {
+            icon: <HistoryIcon />,
+            title: "99.9% Uptime",
+            description:
+              "Enterprise-grade infrastructure ensures your app is always available.",
+          },
+          {
+            icon: <MobileCheckIcon />,
+            title: "Fully Customizable",
+            description:
+              "Intuitive drag-and-drop configuration without coding knowledge.",
+          },
+          {
+            icon: <ClockBoxIcon />,
+            title: "Support ",
+            description:
+              "Includes setup and deployment. Optional maintenance and enhancements.",
+          },
+ 
+    
+   ];
 
-     {
-      icon: "/images2/features/img_layout_dashboard.svg",
-      title: "Localisation",
-      description:
-        "Multi-language and multi-currency support with regional settings.",
-    },
-
-    {
-      icon: "/images2/features/img_sparkles.svg",
-      title: " Blazing Fast",
-      description:
-        "Built with latest technology for lightning fast loading times.",
-    },
-     {
-      icon: "/images2/features/img_file_power.svg",
-      title: "Source Code",
-      description:
-        "Full source code ownership with complete customization freedom.",
-    },
-
-    {
-      icon: "/images2/features/img_clock_play.svg",
-      title: "99.9% Uptime",
-      description:
-        "Enterprise-grade infrastructure ensures your app is always available.",
-    },
-
-    {
-      icon: "/images2/features/img_device_mobile_check.svg",
-      title: "Fully Customizable",
-      description:
-        "Intuitive drag-and-drop configuration without coding knowledge.",
-    },
-
-    {
-      icon: "/images2/features/img_clock_2.svg",
-      title: " Support ",
-      description:
-        "Includes setup and deployment. Optional maintenance and enhancements.",
-    },
-
-   
-  ];
-
-
+     const [showDemo, setShowDemo] = useState(false);
   
 
   return (
@@ -351,14 +382,14 @@ const Home = () => {
 
                     {/* Hero Section */}
                     <section className="w-full bg-white overflow-hidden">
-                        <div className="max-w-[1440px] mx-auto mx-4 sm:mx-6 lg:mx-8 xl:mx-16">
+                        <div className="max-w-[1440px] mx-auto mx-4 sm:mx-6 lg:mx-2 xl:mx-8">
 
                           <div className="py-10 sm:py-14 lg:py-20">
                             <div className="flex flex-col lg:flex-row  gap-10 lg:gap-16">
 
                               {/* LEFT CONTENT */}
                               <div className="w-full lg:w-[48%] text-center lg:text-left">
-                                <h1
+                                <h3
                                   className="
                                     text-[26px]
                                     sm:text-[32px]
@@ -367,7 +398,6 @@ const Home = () => {
                                     xl:text-[52px]
                                     font-semibold
                                     leading-[1.15]
-                                    text-black
                                   "
                                 >
                                   The Complete {" "}
@@ -379,23 +409,26 @@ const Home = () => {
                                        instantly Solution
                                   </span>
                                
-                                </h1>
+                                </h3>
 
                                 <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
                                  Build your multi-vendor food delivery platform with our proven solution. Restaurants gain exposure, drivers earn commissions, and you control the entire ecosystem from one powerful admin panel.
                                 </p>
 
                                 <div className="mt-6 flex justify-center lg:justify-start">
-                                  <Button
-                                    text="Try Our Demo"
-                                    text_font_size="16px"
-                                    text_font_weight="600"
-                                    text_color="#0f0f0f"
-                                    fill_background_color="#9CEE69"
-                                    border_border_radius="999px"
-                                    padding="14px 30px"
-                                    text_align="center"
-                                  />
+                                      <Button
+                                          text="Try Our Demo"
+                                            text_font_size="16px"
+                                            text_font_weight="600"
+                                            text_color="#0f0f0f"
+                                            fill_background_color="#9cee69"
+                                            border_border_radius="32px"
+                                            padding="14px 28px"
+                                            onClick={() => {
+                                            console.log("Try Demo clicked"); 
+                                            setShowDemo(true);
+                                          }}  
+                                      />  
                                 </div>
                               </div>
 
@@ -412,11 +445,11 @@ const Home = () => {
                                   "
                                 >
                                   <img
-                                    src="/assets/Frame2.png"
+                                    src="/assets/Restaurentimage.webp"
                                     alt="App Preview"
                                     className="
                                     w-[380px]
-                                    h-[200px]
+                                    h-[290px]
                                     md:w-[660px]                                    
                                     md:h-[440px]
                                     lg:w-[480px]                                    
@@ -454,7 +487,7 @@ const Home = () => {
 
               {/* Built for Scale Section */}
               <section className="w-full bg-white py-12 sm:py-16 lg:py-4 overflow-hidden">
-                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
 
                     {/* MAIN CARD */}
                     <div className="bg-white lg:rounded-[42px] py-8 sm:py-10 lg:py-14">
@@ -463,15 +496,16 @@ const Home = () => {
                       <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-10">
                       <h3
                           className="
-                            text-[26px]
-                            sm:text-[32px]
-                            md:text-[40px]
-                            lg:text-[48px]
-                            xl:text-[52px]
-                            font-semibold
-                            text-center
-                            md:text-center
-                            lg:text-left
+                              text-[26px]
+                              sm:text-[32px]
+                              md:text-[40px]
+                              lg:text-[48px]
+                              xl:text-[52px]
+                              font-semibold
+                              leading-[1.15]
+                              text-center
+                              md:text-center
+                              lg:text-left
                             "
                         >
                         Built for Scale, {""}
@@ -501,7 +535,7 @@ const Home = () => {
                               </span>
                      </h3>
                       <img
-                            src="/assets/Group2.png"
+                            src="/assets/Scaleimage.webp"
                             alt="Platform Dashboard"
                             className="
                               
@@ -520,52 +554,51 @@ const Home = () => {
                       </div>
 
                       {/* SERVICES GRID */}
+                       <div
+                          className="
+                            grid
+                            grid-cols-1
+                            sm:grid-cols-2
+                            xl:grid-cols-3
+                            gap-6
+                            lg:gap-10
+                          "
+                    >
+                    {services.map((service, index) => (
                       <div
+                        key={index}
                         className="
-                          grid
-                          grid-cols-1
-                          sm:grid-cols-2
-                          xl:grid-cols-3
-                          gap-6
-                          lg:gap-10
+                          bg-[#F4F4F480]
+                          rounded-[20px]
+                          p-5
+                          sm:p-6
+                          lg:p-8
+                          flex
+                          flex-col
+                          gap-4
+                          hover:shadow-md
+                          transition
                         "
                       >
-                        {services.map((service, index) => (
-                          <div
-                            key={index}
-                            className="
-                              bg-[#F4F4F480]
-                              rounded-[20px]
-                              p-5
-                              sm:p-6
-                              lg:p-8
-                              flex
-                              flex-col
-                              gap-4
-                              hover:shadow-md
-                              transition
-                            "
-                          >
-                            <div className="flex items-center gap-4">
-                              <div className="bg-[#E4FFD4] rounded-[12px] p-3 shrink-0">
-                                <img
-                                  src={service.icon}
-                                  alt={service.title}
-                                  className="w-6 h-6"
-                                />
-                              </div>
-
-                              <h4 className="text-base sm:text-lg font-semibold text-black">
-                                {service.title}
-                              </h4>
+                        <div className="flex items-center gap-4">
+                            <div className="flex-shrink-0  bg-[#E4FFD4] rounded-[10px] w-14 h-14 flex items-center justify-center ">
+                                <div className=" text-[#56E000] ">
+                                  {service.icon}
+                                </div>
                             </div>
 
-                            <p className="text-sm sm:text-base leading-relaxed">
-                              {service.description}
-                            </p>
-                          </div>
-                        ))}
+                          <h4 className="text-base sm:text-lg font-semibold text-black">
+                            {service.title}
+                          </h4>
+                        </div>
+
+                        <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
+                          {service.description}
+                        </p>
                       </div>
+                    ))}
+                  </div>
+
 
                     </div>
                   </div>
@@ -573,7 +606,7 @@ const Home = () => {
 
               {/* Customer Experience Section */}
             <section className="w-full bg-white ">
-                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-16 xl:px-20">
+                <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-12">
 
                   <div
                     className="
@@ -595,20 +628,21 @@ const Home = () => {
 
                         {/* LEFT CONTENT */}
                         <div className="w-full lg:w-[40%] flex flex-col gap-5">
+                           <span className="text-[22px] sm:text-[28px] lg:text-[40px] font-semibold text-primary-background text-center lg:text-left">
+                             Customers
+                          </span>
 
                           {/* HIGHLIGHT FEATURE */}
                           <div className="bg-[#F4F4F480] rounded-[18px] p-4">
                             <div className="flex items-center gap-3">
-                              <img
-                                src="/images2/features/img_album.svg"
-                                alt="Browse and order"
-                                className="w-5 h-5"
-                              />
+                              <div className="   text-[#56E000] bg-[#E4FFD4] w-6 h-6 ">
+                                  <BookmarkIcon/>
+                                </div>
                               <h4 className="text-base sm:text-lg font-semibold">
                                 Browse and order
                               </h4>
                             </div>
-                            <p className="text-sm sm:text-base mt-2 text-text-secondary">
+                            <p className="text-sm sm:text-[16px] text-[#5f5f5f] mt-2">
                               Explore menus from dozens of restaurants in seconds.
                             </p>
                           </div>
@@ -620,17 +654,15 @@ const Home = () => {
                                 key={index}
                                 className="bg-[#F4F4F480] rounded-[18px] p-4"
                               >
-                                <div className="flex items-center gap-3">
-                                  <img
-                                    src={feature.icon}
-                                    alt={feature.title}
-                                    className="w-5 h-5"
-                                  />
+                                <div className="flex items-center gap-3 ">
+                                <div className=" text-[#56E000] bg-[#E4FFD4] w-6 h-6 ">
+                                  {feature.icon}
+                                </div>
                                   <h4 className="text-base sm:text-lg font-semibold">
                                     {feature.title}
                                   </h4>
                                 </div>
-                                <p className="text-sm sm:text-base mt-2 ">
+                                <p className=" text-sm sm:text-[16px] text-[#5f5f5f] mt-2 ">
                                   {feature.description}
                                 </p>
                               </div>
@@ -643,26 +675,27 @@ const Home = () => {
                           <div
                             className="
                               w-full
-                              max-w-[280px]
+                              max-w-[360px]
                               sm:max-w-[360px]
                               md:max-w-[420px]
-                              lg:max-w-[480px]
-                              xl:max-w-[550px]
-                              aspect-[5/5]
+                              lg:max-w-[750px]
+                              xl:max-w-[600px]
                               mt-4
                               lg:mt-12
                             "
                           >
                             <img
-                              src="/assets/newMobiles.png"
+                              src="/assets/Browserimage.webp"
                               alt="Customer Experience"
                               className="
                                 w-full
                                 h-full
                                 md:w-[700px]                              
                                 md:h-[400px]
-                                lg:h-[400px]
+                                lg:h-[300px]
                                 xl:h-[440px]
+                                lg:max-w-[560px]
+                                xl:max-w-[560px]
                                 rounded-[22px]
                                 object-cover
                               "
@@ -677,26 +710,36 @@ const Home = () => {
                           1 / 4
                         </button>
 
-                        <button className="flex items-center gap-2 px-6 py-2 bg-black text-white rounded-lg text-xs">
-                          Discover
-                          <img
-                            src="/images2/features/img_iconoirarrowtr_white_a700.svg"
-                            alt="Arrow"
-                            className="w-4 h-4"
-                          />
-                        </button>
+                        <div className="mt-0 flex items-center justify-center lg:justify-start gap-4 mx-0 lg:mx-4">
+                                    <Button
+                                      text="Discover"
+                                      text_font_size="16px"
+                                      text_font_weight="600"
+                                      text_color="#fff"
+                                      fill_background_color="#0f0f0f"
+                                      border_border_radius="32px"
+                                      padding="14px 28px"
+                                      onClick={() => {
+                                      console.log("Try Demo clicked"); 
+                                      setShowDemo(true);
+                                    }}
+                                  
+                                    />
+                                   
+                                </div>
                       </div>
 
                     </div>
                   </div>
 
                 </div>
+                
               </section>
 
 
               {/* Driver Tools Section */}
              <section className="w-full bg-white">
-              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-6 xl:px-12">
+              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-0 xl:px-4">
 
                 <div
                   className="
@@ -723,7 +766,6 @@ const Home = () => {
                                   xl:text-[52px]
                                   font-semibold
                                   leading-[1.15]
-                                  text-text-primary
                                 "
                               >
                                 Tools that help <br />
@@ -737,7 +779,7 @@ const Home = () => {
                                 >them earn more</span> 
                               </h3>
 
-                      <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-md mx-auto lg:mx-0">
+                      <p className="mt-4 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
                         Drivers get smart routing that saves time and fuel. They see earnings
                         clearly and manage their schedule on their own terms.
                       </p>
@@ -746,14 +788,14 @@ const Home = () => {
                       <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
                         <div className="flex items-center gap-2">
                           <img src="/images/img_moneybag.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
-                          <span className="text-xs sm:text-sm text-text-secondary">
+                          <span className="text-xs sm:text-sm ">
                             $10B+ Processed
                           </span>
                         </div>
 
                         <div className="flex items-center gap-2">
                           <img src="/images/img_code.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
-                          <span className="text-xs sm:text-sm text-text-secondary">
+                          <span className="text-sm sm:text-sm ">
                             No Coding Required
                           </span>
                         </div>
@@ -761,22 +803,48 @@ const Home = () => {
 
                       <div className="mt-3 flex justify-center lg:justify-start gap-2">
                         <img src="/images/img_headset.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />
-                        <span className="text-xs sm:text-sm text-text-secondary">
+                        <span className="text-xs sm:text-sm ">
                           24/7 Support
                         </span>
                       </div>
 
-                       <div className="mt-8 flex items-center justify-center lg:justify-start gap-4">
-                                <button className="bg-black text-white px-7 py-2.5 rounded-full text-sm hover:opacity-90 transition">
-                                  Learn
-                                </button>
+                       <div className="mt-8 flex items-center justify-center lg:justify-start gap-4 mx-0 lg:mx-4">
+                                    <Button
+                                      text="Learn"
+                                      text_font_size="16px"
+                                      text_font_weight="600"
+                                      text_color="#fff"
+                                      fill_background_color="#0f0f0f"
+                                      border_border_radius="32px"
+                                      padding="14px 28px"
+                                      onClick={() => {
+                                      console.log("Try Demo clicked"); 
+                                      setShowDemo(true);
+                                    }}
+                                    />
+                                    <img
+                                    src="/images2/features/img_group_1000001743.svg"
+                                    alt="arrow"
+                                    className="w-[52px] sm:w-[68px]"
+                                  />
+                      </div>
 
-                                <img
-                                  src="/images2/features/img_group_1000001743.svg"
-                                  alt="arrow"
-                                  className="w-[52px] sm:w-[68px]"
+                               <img
+                                  src="/assets/Scaleimage.webp"
+                                  alt="Platform Dashboard"
+                                  className="
+                                    mt-4
+                                    w-full
+                                    max-w-[320px]
+                                    sm:max-w-[320px]
+                                    md:max-w-[660px]
+                                    lg:max-w-[420px]
+                                    xl:max-w-[520px]
+                                    rounded-[20px]
+                                    mx-auto
+                                    lg:mx-0
+                                  "
                                 />
-                              </div>
                      
                     </div>
 
@@ -800,17 +868,15 @@ const Home = () => {
                             "
                           >
                             <div className="flex items-center gap-3">
-                              <img
-                                src={feature.icon}
-                                alt={feature.title}
-                                className="w-5 h-5"
-                              />
+                              <div className='  text-[#56E000] bg-[#E4FFD4] w-8 h-8'>
+                                {feature.icon}
+                              </div>
                               <h4 className="text-base sm:text-lg font-semibold">
                                 {feature.title}
                               </h4>
                             </div>
 
-                            <p className="text-sm sm:text-base text-text-secondary mt-2">
+                            <p className="text-sm sm:text-[16px] text-[#5f5f5f] mt-2">
                               {feature.description}
                             </p>
                           </div>
@@ -826,7 +892,7 @@ const Home = () => {
 
               {/* Vendor Section */}
             <section className="w-full bg-white">
-              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-6 xl:px-12">
+              <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-0 xl:px-4">
 
                 <div
                   className="
@@ -911,11 +977,11 @@ const Home = () => {
                       </div>
 
                       {/* IMAGE */}
-                      <div className=" flex justify-center  lg:justify-start">
+                      <div className=" flex justify-center  lg:justify-start mt-4">
                         <div
                           className="
                             w-full
-                            max-w-[400px]
+                            max-w-[320px]
                             sm:max-w-[500px]
                             md:max-w-[600px]
                             lg:max-w-[520px]
@@ -923,9 +989,9 @@ const Home = () => {
                           "
                         >
                           <img
-                            src="/assets/vendors.png"
+                            src="/assets/Platformimage.webp"
                             alt="Driver Experience"
-                            className=" lg:w-[380px] lg:h-[400px] xl:w-[420px] xl:h-[500px] mt-5 xl:mt-0 mx-0 md:mx-8 lg:mx-0  md:w-[650px] md:h-[500px]  w-[380px] h-[240px] rounded-[17px] object-cover"
+                            className=" lg:w-[380px] lg:h-[400px] xl:w-[420px] xl:h-[500px] mt-5 xl:mt-0 mx-0 md:mx-8 lg:mx-0  md:w-[650px] md:h-[500px]  w-[400px] h-[380px] rounded-[17px] object-cover"
                           />
                         </div>
                       </div>
@@ -947,18 +1013,16 @@ const Home = () => {
                                 p-4 sm:p-5
                               "
                             >
-                              <div className="flex items-center gap-3">
-                                <img
-                                  src={feature.icon}
-                                  alt={feature.title}
-                                  className="w-5 h-5"
-                                />
-                                <h4 className="text-base font-semibold">
+                              <div className="flex items-center gap-1 ">
+                                <div className=' text-[#56E000] bg-[#E4FFD4] w-8 h-8'>
+                                  {feature.icon}
+                                </div>
+                                <h4 className="text-base lg:text-lg font-semibold">
                                   {feature.title}
                                 </h4>
                               </div>
 
-                              <p className="text-sm sm:text-base mt-2 text-text-secondary">
+                              <p className="text-sm sm:text-[16px] text-[#5f5f5f] mt-2 ">
                                 {feature.description}
                               </p>
                             </div>
@@ -985,7 +1049,7 @@ const Home = () => {
                       w-full
                       max-w-[1400px]
                       mx-auto
-                      px-4 sm:px-6 lg:px-16 xl:px-20
+                      px-4 sm:px-6 lg:px-8 xl:px-12
                       py-10 sm:py-14 lg:py-20
                       mt-12 sm:mt-16 lg:mt-20
                     "
@@ -993,14 +1057,13 @@ const Home = () => {
                     {/* HEADING */}
                     <h3
                                 className="
-                                  text-[26px]
-                                  sm:text-[32px]
-                                  md:text-[40px]
-                                  lg:text-[48px]
-                                  xl:text-[52px]
-                                  font-semibold
-                                  leading-[1.15]
-                                  text-text-primary
+                                      text-[26px]
+                                      sm:text-[32px]
+                                      md:text-[40px]
+                                      lg:text-[48px]
+                                      xl:text-[52px]
+                                      font-semibold
+                                      leading-[1.15]
                                 "
                               >
                                 The Platform That Powers <br />
@@ -1042,24 +1105,26 @@ const Home = () => {
                             gap-4
                             hover:shadow-md
                             transition
+                            mx-0
+                            md:mx-0
+                            lg:mx-4
+                            xl:mx-8
                           "
                         >
                           {/* ICON */}
                           <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center">
-                            <img
-                              src={benefit.icon}
-                              alt={benefit.title}
-                              className="w-5 h-5"
-                            />
+                            <div>
+                              {benefit.icon}
+                            </div>
                           </div>
 
                           {/* TITLE */}
-                          <h4 className="text-[15px] sm:text-[17px] lg:text-[20px] font-semibold text-text-primary">
+                          <h4 className="text-sm sm:text-base lg:text-lg font-semibold ">
                             {benefit.title}
                           </h4>
 
                           {/* DESCRIPTION */}
-                          <p className="text-[13px] sm:text-[14px] lg:text-[16px] text-text-secondary leading-relaxed">
+                          <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                             {benefit.description}
                           </p>
                         </div>
@@ -1077,7 +1142,7 @@ const Home = () => {
 
         {/* Why Chooose Section */}
 
-       <WhyChooseSection/>
+       <WhySection/>
 
         {/* FAQ Section */}
 
@@ -1086,7 +1151,7 @@ const Home = () => {
 
         {/* Testimonial Section */}
 
-        <TestimonialsSection />
+        <Testi />
 
         {/* 
       <Hero/>
@@ -1102,7 +1167,7 @@ const Home = () => {
  */}
 
 
-
+           <DemoPopup showDemo={showDemo} setShowDemo={setShowDemo} />
       </main>
     </>
   );

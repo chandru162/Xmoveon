@@ -30,34 +30,34 @@ const Panels = () => {
       {
         title: "Admin Dashboard",
         desc: "Manage users, commissions, approvals, and reports — all in one place.",
-        image: "/assets/Admin.png",
+        image: "/assets/Adminimage.webp",
       },
       {
         title: "Service Provider Panel",
         desc: "Control services, availability, and earnings seamlessly.",
-        image: "/assets/Service.png",
+        image: "/assets/ServiceDashboardimage.webp",
       },
       {
-        title: "customer apps",
+        title: "Customer Apps",
         desc: "Search, compare, and book services through a modern, intuitive interface.",
-        image: "/assets/Customer.png",
+        image: "/assets/Customerimage.webp",
       },
       
     ],
   };
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-28 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-12 xl:px-12 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
           {/* LEFT */}
           <div className="flex-1 space-y-8 md:space-y-12 order-1">
             <h2 className="text-[28px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-semibold text-[#111827] ">
-             <span className="bg-[#E4FFD4]"> Panels </span> & Dashboards 
+             <span className="bg-[#E4FFD4]"> Panels </span> & Dashboards <br />
              <img
                 src="/images2/features/img_group_1000001743.svg"
                 alt="Arrow"
-                className="w-[56px] sm:w-[72px] lg:w-[96px]"
+                className="w-[56px] sm:w-[72px] lg:w-[90px]"
               />
             </h2>
             
@@ -66,7 +66,7 @@ const Panels = () => {
               <img
                 src={data.models[activeIndex].image}
                 alt={data.models[activeIndex].title}
-                className="w-full h-[220px] sm:h-[320px] lg:h-[380px] object-cover transition-all duration-500"
+                className="w-full h-[220px] sm:h-[320px]  md:h-[450px] lg:h-[300px] xl:h-[350px] object-cover transition-all duration-500"
               />
             </div>
 
@@ -95,10 +95,10 @@ const Panels = () => {
                     : "hover:bg-gray-50 border-l-4 border-transparent"
                 }`}
               >
-                <h4 className="text-[17px] sm:text-[22px] md:text-[24px] font-bold text-[#111827]">
+                <h4 className="text-[17px] sm:text-[22px] md:text-[24px] lg:text-lg font-bold text-[#111827]">
                   {item.title}
                 </h4>
-                <p className="text-[#6B7280] text-[14px] sm:text-[16px] md:text-[18px] mt-2 leading-relaxed">
+                <p className="text-sm sm:text-[16px] text-[#5f5f5f]  mt-2 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

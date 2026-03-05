@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Button from "../../components/ui/Button";
+import DemoPopup from "../LandingPage/DemoPopup";
 
 const tabs = [
   {
@@ -13,7 +15,7 @@ const tabs = [
       "Keep 100% ownership & control",
       "Full design & feature freedom",
     ],
-    image: "/assets/men.jpg",
+    image: "/assets/Founderimage.webp",
   },
   {
     label: "Agencies & Development Studios",
@@ -27,7 +29,7 @@ const tabs = [
       "70% faster deployment for client projects",
       "Adaptable for any service niche",
     ],
-    image: "/assets/men.jpg",
+    image: "/assets/Agencyimage.webp",
   },
   {
     label: "Developers & Tech Founders",
@@ -41,21 +43,29 @@ const tabs = [
       "Scalable backend with documentation",
       "Works with any hosting or payment provider",
     ],
-    image: "/assets/men.jpg",
+    image: "/assets/Developerimage.webp",
   },
 ];
 
 const Who = () => {
   const [activeTab, setActiveTab] = useState(0);
   const data = tabs[activeTab];
+    const [showDemo, setShowDemo] = useState(false);
+
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-white py-4 sm:py-8 lg:py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-12">
 
         {/* TOP */}
         <div className="text-center mb-10">
-          <h2 className="text-[26px] sm:text-[36px] lg:text-[48px] xl:text-[52px] font-semibold">
+          <h2 className="   text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]">
             Who Xmoveon Is For
           </h2>
 
@@ -80,7 +90,7 @@ const Who = () => {
             {data.tagline}
           </p>
 
-          <p className="mt-3 max-w-2xl mx-auto text-sm sm:text-base text-gray-700">
+          <p className="mt-3 max-w-2xl mx-auto text-sm sm:text-base ">
             {data.description}
           </p>
         </div>
@@ -106,37 +116,47 @@ const Who = () => {
                 </li>
               ))}
             </ul>
+            
 
             {/* CTA */}
-            <div className="mt-6 flex items-center justify-center lg:justify-start gap-5">
-              <button className="flex items-center gap-3 bg-black text-white px-5 py-3 rounded-full text-sm hover:opacity-90 transition">
-                Access
-                <span className="w-8 h-8 flex items-center justify-center bg-white text-black rounded-full">
-                  ↗
-                </span>
-              </button>
-
-              <img
+            <div className="mt-8 flex items-center justify-center lg:justify-start gap-4 mx-0 lg:mx-4">
+                <Button
+                  text="Access"
+                  text_font_size="16px"
+                  text_font_weight="600"
+                  text_color="#fff"
+                  fill_background_color="#0f0f0f"
+                  border_border_radius="32px"
+                  padding="14px 28px"
+                  onClick={() => {
+                  console.log("Try Demo clicked"); 
+                  setShowDemo(true);
+                }}
+                />
+                <img
                 src="/images2/features/img_group_1000001743.svg"
-                alt="Arrow"
-                className="w-[56px] sm:w-[72px] lg:w-[96px]"
+                alt="arrow"
+                className="w-[52px] sm:w-[68px]"
               />
             </div>
-          </div>
+            </div>
+            
+      
 
           {/* RIGHT IMAGE */}
           <div className="flex justify-center">
-            <div className="w-full max-w-[340px] sm:max-w-[360px] md:max-w-[420px] aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
+            <div className="w-full max-w-[340px] sm:max-w-[360px] md:max-w-[420px] rounded-3xl overflow-hidden ">
               <img
                 src={data.image}
                 alt={data.label}
                 className="w-full h-full object-cover"
               />
             </div>
+            </div>
           </div>
 
         </div>
-      </div>
+
     </section>
   );
 };

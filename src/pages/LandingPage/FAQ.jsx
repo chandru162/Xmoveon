@@ -36,15 +36,16 @@ const FAQ = () => {
 
         {/* HEADER */}
         <div className="text-center mb-10">
-          <h2 className="text-[26px]
-                sm:text-[32px]
-                md:text-[40px]
-                lg:text-[48px]
-                xl:text-[52px]
-                font-semibold text-black">
+          <h2 className="   text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]">
             FAQ
           </h2>
-          <p className="mt-2 text-sm sm:text-base text-gray-500">
+          <p className="mt-2 text-sm sm:text-base ">
             Everything you need to know about getting started.
           </p>
         </div>
@@ -70,7 +71,7 @@ const FAQ = () => {
                   }
                   className="w-full flex items-center justify-between px-6 py-5 text-left"
                 >
-                  <span className="text-[15px] sm:text-[16px] font-medium text-black">
+                  <span className="text-[18px] sm:text-[18px] lg:text-[18px] font-medium ">
                     {item.q}
                   </span>
 
@@ -82,7 +83,7 @@ const FAQ = () => {
 
                 {/* ANSWER */}
                 {isOpen && (
-                  <div className="px-6 pb-5 text-sm sm:text-base text-gray-700 leading-relaxed">
+                  <div className="px-6 pb-5 text-[16px] leading-relaxed">
                     {item.a}
                   </div>
                 )}

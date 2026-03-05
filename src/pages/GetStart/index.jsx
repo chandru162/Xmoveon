@@ -64,32 +64,40 @@ const ContactSection = () => {
                 type="text"
                 placeholder="Full Name"
                 className="bg-white/5 border border-white/10 rounded-full px-7 py-4 outline-none focus:border-[#9CEE69] focus:bg-white/20 transition-all text-sm w-full backdrop-blur-sm"
+                required
               />
               <input
                 type="tel"
                 placeholder="Phone Number"
                 className="bg-white/5 border border-white/10 rounded-full px-7 py-4 outline-none focus:border-[#9CEE69] focus:bg-white/20 transition-all text-sm w-full backdrop-blur-sm"
+                required
               />
               <input
                 type="email"
                 placeholder="Email"
                 className="bg-white/5 border border-white/10 rounded-full px-7 py-4 outline-none focus:border-[#9CEE69] focus:bg-white/20 transition-all text-sm w-full backdrop-blur-sm"
+                required
               />
               <input
                 type="text"
                 placeholder="Message"
                 className="bg-white/5 border border-white/10 rounded-full px-7 py-4 outline-none focus:border-[#9CEE69] focus:bg-white/20 transition-all text-sm w-full backdrop-blur-sm"
-              />
+                required
+            />
             </div>
 
             <div className="flex justify-center pt-6">
               <button
                 type="submit"
-                className="bg-[#9CEE69] text-black font-bold py-4 px-12 rounded-full hover:scale-105 active:scale-95 transition-all text-[16px] shadow-lg shadow-[#9cee69]/20"
+                className="bg-[#9CEE69] text-black font-bold py-4 px-12 rounded-full hover:scale-105 active:scale-95 transition-all text-[16px] shadow-lg shadow-[#9cee69]/20 "
               >
                 Submit Now
               </button>
             </div>
+            <div className="flex items-center gap-2 bg-black px-3 py-3 rounded-[14px] w-60 cursor-pointer">
+                        <input type="checkbox" className=" cursor-pointer" required />
+                        <span className="text-xs  text-white">I'm not a robot</span>
+                      </div>
           </form>
         </div>
         <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[#9CEE69]/10 blur-[120px] rounded-full pointer-events-none" />
@@ -132,6 +140,8 @@ const ContactSection = () => {
                     {loc.phone}
                   </p>
                 )}
+
+        
               </div>
             </div>
           ))}

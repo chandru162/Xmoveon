@@ -30,13 +30,13 @@ const LaunchStepsSection = () => {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-8 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* MAIN CARD */}
         <div className="bg-white lg:rounded-[40px] py-8 sm:py-10 lg:p-12 mt-4 lg:mt-8">
 
           {/* HEADER */}
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-12 mb-10">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-12 mb-10 mx-0 md:mx-8 lg:mx-0">
           <h3
               className="
                 text-[26px]
@@ -46,7 +46,9 @@ const LaunchStepsSection = () => {
                 xl:text-[52px]
                 font-semibold
                 leading-[1.15]
-                text-text-primary
+                px-2
+                lg:px-0
+                md:px-0
               "
             >
            Launch in 4   
@@ -56,8 +58,10 @@ const LaunchStepsSection = () => {
                 inline-block
                 bg-[#E4FFD4]
                 rounded-md
-                px-1
                 whitespace-nowrap
+                px-2
+                lg:px-0
+                md:px-0
               "
             >
              Simple Steps
@@ -65,7 +69,7 @@ const LaunchStepsSection = () => {
           </h3>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <p className="text-sm sm:text-base text-text-secondary max-w-md text-center sm:text-left">
+              <p className="text-sm sm:text-base max-w-md text-center sm:text-left">
                 From concept to launch in just 7 days. No technical expertise
                 required.
               </p>
@@ -97,11 +101,11 @@ const LaunchStepsSection = () => {
                   {step.number}
                 </div>
 
-                <h3 className="text-base sm:text-lg font-bold text-text-secondary mb-2">
+                <h3 className="text-base sm:text-lg font-semibold  mb-2">
                   {step.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-[#5f5f5f] leading-relaxed">
+                <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                   {step.description}
                 </p>
               </div>

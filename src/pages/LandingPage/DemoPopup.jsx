@@ -8,35 +8,44 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-   const res = await fetch("http://localhost:5000/api/mail/send-demo-mail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          phone,
-          email,
-          message,
-        }),
-      });
+  try {
+    const res = await fetch("http://localhost:5001/api/mail/send-demo-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        phone,
+        message,
+      }),
+    });
 
-      if (!res.ok) {
-        const data = await res.json();
-        alert(data.message);
-      }
-  };
+    const data = await res.json();
+    console.log("Server Response:", data);
 
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      alert(data.message);
+    }
+
+  } catch (error) {
+    console.error("Fetch Error:", error);
+    alert("Something went wrong");
+  }
+};
 
 
   if (!showDemo) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-2 sm:px-4">
-      <div className="relative w-full max-w-md rounded-2xl bg-gradient-to-b from-[#0b0b0b] to-[#141414] p-4 sm:p-6 lg:p-8 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-2 sm:px-4 mt-8 lg:mt-12">
+      <div className="relative w-full max-w-md rounded-[20px] bg-gradient-to-b from-[#0b0b0b] to-[#141414] p-4 sm:p-6 lg:p-8 shadow-2xl">
 
         {/* Close Button */}
         <button
@@ -123,4 +132,4 @@ const DemoPopup = ({ showDemo = false, setShowDemo = () => {} }) => {
   );
 };
 
-export default DemoPopup;
+export default DemoPopup; 

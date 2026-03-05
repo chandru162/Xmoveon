@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section9 = ({ data }) => {
   return (
-    <section className="w-full bg-white py-12 md:py-24 px-6 md:px-16 lg:px-24 font-sans overflow-hidden">
+    <section className="w-full bg-white py-12 md:py-24 px-6 md:px-16 lg:px-24  overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         
         {/* TOP CONTENT: Title (Left) & Testimonial (Right) */}
@@ -10,10 +10,16 @@ const Section9 = ({ data }) => {
           
           {/* Top Left: Title Content */}
           <div className="flex-1 space-y-6">
-            <h2 className="text-[34px] md:text-[60px] font-semibold text-[#111827] leading-[1.1] tracking-tight">
+            <h2 className="   text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]">
               {data.title1} <br />
               {data.title2} <br />
-              <span className="bg-[#E4FFD4] px-4 md:px-6 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mt-2">
+              <span className="bg-[#E4FFD4] px-0 md:px-0 py-1 rounded-t-[20px] md:rounded-t-[25px] rounded-br-[20px] md:rounded-br-[25px] inline-block mt-2">
                 {data.title3}
               </span>
             </h2>
@@ -40,8 +46,8 @@ const Section9 = ({ data }) => {
           
           {/* Card 1 – Active Drivers */}
           <div className="relative w-full aspect-[2/1] group">
-            <img src={data.cards[0].image} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute top-[25%] left-[25%] md:top-[30%] md:left-[12%] lg:top-[26%] lg:left-[24%]  px-2">
+            <img src={data.cards[0].image} alt="" className="w-full h-[130px] object-contain transition-transform duration-500 group-hover:scale-105 " />
+            <div className="absolute top-[25%] left-[25%] md:top-[30%] md:left-[12%] lg:top-[26%] lg:left-[24%]  ">
                <span className=" text-[22px] md:text-[20px]  font-bold leading-8">{data.cards[0].highlightText}</span>
                 <p className="text-[18px] md:text-[20px] font-medium">{data.cards[0].title}</p> 
             </div>

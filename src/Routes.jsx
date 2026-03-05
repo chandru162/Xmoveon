@@ -18,10 +18,10 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/getstart" element={<GetStart />} />
-        <Route path="/restaurant" element={<HomePage />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/taxi" element={<TaxiPage />} />
-        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/food-delivery-app" element={<HomePage />} />
+        <Route path="/service-marketplace" element={<Service />} />
+        <Route path="/ondemand-taxi-app" element={<TaxiPage />} />
+        <Route path="/ondemand-delivery-app" element={<Delivery />} />
       </Routes>
 
       <FooterSection />

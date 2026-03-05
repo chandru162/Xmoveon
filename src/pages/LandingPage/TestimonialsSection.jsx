@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    image: "/assets/Maskgroup.png",
+    image: "/assets/Townyimage.webp",
     quote:
       "The team delivered our on-demand app faster than we imagined. Customization and performance were absolutely top-class.",
     author: "Startup Founder – Bengaluru",
   },
   {
-    image: "/assets/Maskgroup.png",
+    image: "/assets/Townyimage.webp",
     quote:
       "TaxiAppz helped us build a platform that’s lightning fast, highly localized, and perfect for the Indian market.",
     author: "Towny Product Team",
   },
   {
-    image: "/assets/Maskgroup.png",
+    image: "/assets/Townyimage.webp",
     quote:
       "From idea to launch, everything was smooth and transparent. Support and scalability were the biggest wins.",
     author: "Enterprise Client – India",
@@ -34,20 +34,19 @@ export default function TestimonialsSection() {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-8">
 
         {/* HEADER */}
         <div className="mb-10 lg:mb-16 text-center md:text-left lg:text-left">
          <h3
               className="
-                text-[26px]
-                sm:text-[32px]
-                md:text-[40px]
-                lg:text-[48px]
-                xl:text-[52px]
-                font-semibold
-                leading-[1.15]
-                text-text-primary
+              text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]
               "
             >
               Real 
@@ -66,7 +65,7 @@ export default function TestimonialsSection() {
                Voices
               </span>
             </h3>
-          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl  lg:mx-0">
+          <p className="mt-4 text-sm sm:text-base max-w-xl  lg:mx-0">
             People who built their business on this platform.
           </p>
         </div>
@@ -132,7 +131,7 @@ function GreenCard({ quote, author, className = "", ...props }) {
           “{quote}”
         </p>
 
-        <p className="mt-3 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base font-semibold truncate">
+        <p className="mt-0 sm:mt-1 md:mt-2 text-xs sm:text-sm md:text-base font-semibold truncate">
           — {author}
         </p>
       </div>

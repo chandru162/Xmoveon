@@ -26,8 +26,8 @@ const FooterSection = () => {
 
               {/* PRODUCT */}
               <div>
-                <h3 className="text-lg font-semibold mb-6">Product</h3>
-                <ul className="space-y-4 text-sm text-gray-300">
+                <h3 className="text-xl font-semibold mb-6">Product</h3>
+                <ul className="space-y-4 text-sm sm:text-base ">
                   {productLinks.map((item, i) => (
                     <li key={i} className="hover:text-white cursor-pointer">
                       {item}
@@ -38,8 +38,8 @@ const FooterSection = () => {
 
               {/* ABOUT */}
               <div>
-                <h3 className="text-lg font-semibold mb-6">About</h3>
-                <ul className="space-y-4 text-sm text-gray-300">
+                <h3 className="text-xl font-semibold mb-6">About</h3>
+                <ul className="space-y-4 text-sm sm:text-base">
                   {aboutLinks.map((item, i) => (
                     <li key={i} className="hover:text-white cursor-pointer">
                       {item}
@@ -50,8 +50,8 @@ const FooterSection = () => {
 
               {/* SUPPORT */}
               <div>
-                <h3 className="text-lg font-semibold mb-6">Support</h3>
-                <ul className="space-y-4 text-sm text-gray-300">
+                <h3 className="text-xl font-semibold mb-6">Support</h3>
+                <ul className="space-y-4 text-sm sm:text-base  ">
                   {supportLinks.map((item, i) => (
                     <li key={i} className="hover:text-white cursor-pointer">
                       {item}
@@ -65,16 +65,23 @@ const FooterSection = () => {
 
           {/* RIGHT – CONNECT */}
           <div className="flex-1">
-            <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-semibold mb-4">
+            <h3 className="text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]
+                       mb-4">
               Connect
-            </h2>
-            <p className="text-sm sm:text-base text-gray-300 mb-8 max-w-md">
+            </h3>
+            <p className="text-sm sm:text-base  mb-8 max-w-md">
               Reach out for demos, partnerships, or support questions.
             </p>
 
-            <div className="text-sm sm:text-base text-gray-300 space-y-4 leading-relaxed">
+            <div className="text-sm sm:text-base space-y-4 leading-relaxed">
               <p>
-                <span className="font-semibold text-white">Address:</span>
+                <span className=" text-white">Address:</span>
                 <br />
                 1A, Spectrum building Phase - 2,
                 <br />
@@ -103,7 +110,7 @@ const FooterSection = () => {
 
         {/* DIVIDER */}
         <div className="border-t border-gray-700 mt-14 pt-6">
-          <p className="text-xs sm:text-sm text-gray-400 text-center lg:text-left">
+          <p className="text-xs sm:text-sm  text-center lg:text-left">
             © 2024 On-Demand Food Delivery App Solution. All Rights Reserved.
             Privacy Policy · Terms Of Service · Cookie Settings
           </p>

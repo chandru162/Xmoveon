@@ -17,11 +17,13 @@ import image1 from '../../../../public/assets/Card3.png';
 import image2 from '../../../../public/assets/Card2.png';
 import image3 from '../../../../public/assets/Card3.png';
 import TaxiImage from '../../../../public/assets/Illustration.png';
-import Illustrations from '../../../../public/assets/Illustrations.png';
-import self1 from '../../../../public/assets/Green1.png';
-import self2 from '../../../../public/assets/Black1.png';
-import self3 from '../../../../public/assets/Green3.png'
-
+import Illustrations from '../../../../public/assets/Scaleimage.webp';
+import Selfcard from '../../../../public/assets/Selfcardimage.webp';
+import Sourcecard from '../../../../public/assets/Sourcecardimage.webp';
+import Scalablecard from '../../../../public/assets/Scalablecardimage.webp';
+import Activecardimage from '../../../../public/assets/Activecardimage.webp';
+import Uptimecardimage from '../../../../public/assets/Uptimecardimage.webp';
+import Globalcardimage from '../../../../public/assets/Globalcardimage.webp';
 
 
 
@@ -65,7 +67,7 @@ const TaxiPage = () => {
           subTitle: 'Connect drivers and passengers instantly.',
           description:
             'Build your own taxi booking app like Uber or Bolt — fully white-label, one-time purchase, and no recurring fees.',
-          image: '../../../../public/assets/251.png',
+          image: '../../../../public/assets/Taxiimage.webp',
         }}
       />
       <Section2
@@ -80,7 +82,7 @@ const TaxiPage = () => {
             'Entrepreneurs launching local ride-hailing startups',
             'Agencies building white-label transport apps',
           ],
-          images: [self1, self2, self3],
+          images: [Selfcard , Sourcecard , Scalablecard ],
         }}
       />
 
@@ -131,7 +133,7 @@ const TaxiPage = () => {
           categories: [
             {
               label: 'Riders',
-              image: '../../../../public/assets/apple-logo (1) 1 [Vectorized].png',
+              image: '../../../../public/assets/Ridersimage.webp',
               features: [
                 'Real-time booking and tracking',
                 'Estimated fares before ride confirmation',
@@ -141,7 +143,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Drivers',
-              image: '../../../../public/assets/apple-logo (1) 1 [Vectorized]a.png',
+              image: '../../../../public/assets/Driversimage.webp',
               features: [
                 'Simple onboarding and ID verification',
                 'Accept or decline rides instantly',
@@ -151,7 +153,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Fleet Owners',
-              image: '../../../../public/assets/apple-logo (1) 1 [Vectorized]b.png',
+              image: '../../../../public/assets/Fleetimage.webp',
               features: [
                 'Manage multiple vehicles and drivers',
                 'Assign or reassign rides effortlessly',
@@ -200,10 +202,10 @@ const TaxiPage = () => {
           titleMain: 'Monetization Models',
           ArrowIcon: <ArrowButtonIcon className="w-20 h-20 md:w-32 md:h-32" />,
           models: [
-            { title: 'Commission per Ride', desc: 'Earn a cut from every completed trip.', image: '../../../../public/assets/Rectangle 40033.png' },
-            { title: 'Subscription Plans', desc: 'Offer flexible driver membership options.', image: '../../../../public/assets/Rectangle 40033.png' },
-            { title: 'Surge & Dynamic Pricing', desc: 'Boost earnings during peak hours.', image: '../../../../public/assets/Rectangle 40033.png' },
-            { title: 'Promotions & Ads', desc: 'Monetize in-app space with local brand partnerships.', image: '../../../../public/assets/Rectangle 40033.png' },
+            { title: 'Commission per Ride', desc: 'Earn a cut from every completed trip.', image: '../../../../public/assets/Scaleimage.webp' },
+            { title: 'Subscription Plans', desc: 'Offer flexible driver membership options.', image: '../../../../public/assets/Scaleimage.webp' },
+            { title: 'Surge & Dynamic Pricing', desc: 'Boost earnings during peak hours.', image: '../../../../public/assets/Scaleimage.webp' },
+            { title: 'Promotions & Ads', desc: 'Monetize in-app space with local brand partnerships.', image: '../../../../public/assets/Scaleimage.webp' },
           ],
         }}
       />
@@ -221,23 +223,7 @@ const TaxiPage = () => {
         }}
       />
 
-        <Section9
-        data={{
-          title1: 'Proven',
-          title2: 'Performance & ',
-          title3: 'Client Success',
-          testimonial: {
-            quote: 'Xmoveon Taxi helped us scale our ride-hailing startup across three cities within 4 months — no downtime, full control.',
-            author: 'CityCab Founder',
-          },
-          footerDescription: 'Xmoveon has helped startups, taxi operators, and agencies launch profitable mobility platforms in record time.',
-          cards: [
-            { highlightText: '5000+', title: 'Active Drivers', image: self1, textColor: 'black' },
-            { highlightText: '99.9%', title: 'Uptime', image: self2, textColor: 'white' },
-            { highlightText: 'Global Deployments', title: '', image: self3, textColor: 'black' },
-          ],
-        }}
-      />
+
 
       <Section10
         data={{

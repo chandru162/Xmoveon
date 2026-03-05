@@ -1,18 +1,19 @@
 import React from "react";
+import { HeartIcon , ProfileIcon ,PackageIcon } from "../../svg/svgIcons";
 
 const benefits = [
   {
-    icon: "/images/img_hearts.svg",
+    icon: <HeartIcon/>,
     title: "Commission-based revenue",
     desc: "Earn from every completed transaction.",
   },
   {
-    icon: "/images/img_brand_airtable.svg",
+    icon: <PackageIcon/>,
     title: "Platform or booking fees",
     desc: "Apply flat or percentage-based charges.",
   },
   {
-    icon: "/images/img_camera_selfie.svg",
+    icon: <ProfileIcon/>,
     title: "Custom pricing rules",
     desc: "Total admin control over monetization logic.",
   },
@@ -21,11 +22,17 @@ const benefits = [
 const Options = () => {
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-12">
 
         {/* TITLE */}
         <div className="mb-10 text-center lg:text-left">
-          <h3 className="text-[22px] sm:text-[32px] lg:text-[48px] font-semibold ">
+          <h3 className="   text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]">
             <span className="inline-block bg-[#E4FFD4]  rounded-md">
               Monetization
             </span>{" "}
@@ -51,24 +58,22 @@ const Options = () => {
             >
               {/* ICON */}
               <div className="w-10 h-10 bg-[#E4FFD4] rounded-xl flex items-center justify-center">
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="w-5 h-5"
-                />
+                <div>
+                  {item.icon}   
               </div>
-
+            </div>
               {/* CONTENT */}
-              <h4 className="font-semibold text-gray-900 text-base sm:text-lg">
+              <h4 className="font-semibold  text-base sm:text-lg">
                 {item.title}
               </h4>
 
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
+        
 
       </div>
     </section>
