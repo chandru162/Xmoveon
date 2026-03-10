@@ -4,7 +4,7 @@ const Section4 = ({ data }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="w-full  py-12 md:py-20 px-6 lg:px-24  overflow-hidden">
+    <section className="w-full  py-12 md:py-20 px-6 md:px-16 lg:px-20 xl:px-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center">
         
         {/* Main Title - Responsive sizing */}
@@ -39,30 +39,30 @@ const Section4 = ({ data }) => {
           
           {/* Left Side: Features List */}
           <div className="flex-1 space-y-6 w-full order-2 lg:order-1">
-            <ul className="space-y-4 md:space-y-6">
+            <ul className="space-y-4 md:space-y-6 mt-4">
               {data.categories[activeTab].features.map((feature, idx) => (
                 <li
                   key={idx}
                   className="flex items-start gap-3 md:gap-4 text-[#111827] text-[16px] md:text-[18px] leading-tight md:leading-5"
                 >
-                  <span className="text-[#8CFF5E] text-xl">●</span>
+                  <span className="text-[#0f0f0f] text-md">●</span>
                   {feature}
                 </li>
               ))}
             </ul>
 
-            <div className="pt-4 md:pt-6 flex justify-start">
+            <div className="pt-4 md:pt-6 flex justify-start ">
               {data.leftIcon}
             </div>
           </div>
 
           {/* Right Side: Image Card */}
           <div className="flex-1 w-full order-1 lg:order-2">
-            <div className="rounded-[30px] md:rounded-[45px]">
+            <div className="">
               <img
                 src={data.categories[activeTab].image}
                 alt={data.categories[activeTab].label}
-                className="w-full h-full object-cover transition-opacity duration-500"
+                className="w-full h-auto object-cover transition-opacity duration-500"
               />
             </div>
 

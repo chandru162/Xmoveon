@@ -7,7 +7,7 @@ const Section1 = ({ data }) => {
   const [showDemo, setShowDemo] = useState(false);
 
   return (
-    <section className="w-full bg-white pt-10 pb-16 md:pt-16 md:pb-20 px-6 md:px-16 lg:px-24 overflow-hidden">
+    <section className="w-full bg-white pt-10 pb-16 md:pt-16 md:pb-20 px-6 md:px-16 lg:px-20 xl:px-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-24">
         
         {/* Left Side */}
@@ -30,11 +30,11 @@ const Section1 = ({ data }) => {
           </div>
 
           <div className="mt-4 md:mt-6 space-y-6 md:space-y-8">
-            <p className="text-sm sm:text-base lg:text-lg font-medium">
+            <p className="text-sm sm:text-base lg:text-base ">
               {data.subTitle}
             </p>
 
-            <p className="text-sm sm:text-base lg:text-base text-[#4B5563] max-w-[540px]">
+            <p className="text-sm sm:text-base lg:text-base  max-w-[540px]">
               {data.description}
             </p>
             
@@ -58,8 +58,8 @@ const Section1 = ({ data }) => {
         {/* Right Side */}
         <div className="flex-1 w-full lg:max-w-[620px] flex flex-col gap-8">
           
-          <div className="relative rounded-[30px] md:rounded-[55px] overflow-hidden shadow-sm border border-gray-50 aspect-[1.2/1] lg:aspect-auto lg:h-[430px]">
-            <img src={data.image} alt="Visual" className="w-full h-full object-cover" />
+          <div className="relative overflow-hidden ">
+            <img src={data.image} alt="Visual" className="w-full h-auto object-cover" />
           </div>
 
         </div>

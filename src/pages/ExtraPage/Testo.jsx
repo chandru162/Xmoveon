@@ -21,7 +21,7 @@ const testimonials = [
   },
 ];
 
-export default function TestimonialsSection() {
+export default function Testo() {
   const [index, setIndex] = useState(0);
   const current = testimonials[index];
 
@@ -33,57 +33,53 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden  font-poppins">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-8">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-12 lg:px-16 xl:px-20">
 
         {/* HEADER */}
         <div className="mb-10 lg:mb-16 text-center md:text-left lg:text-left">
-
-          <h3
-            className="
-              text-[26px]
-              sm:text-[32px]
-              md:text-[40px]
-              lg:text-[48px]
-              xl:text-[52px]
-              font-semibold
-              leading-[1.15]
-            "
-          >
-            Real
-
-            <span
+         <h3
               className="
-                inline-block
-                bg-[#E4FFD4]
-                rounded-md
-                px-3
-                py-1
-                mt-2
-                whitespace-nowrap
+              text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]
               "
             >
-              Voices
-            </span>
-          </h3>
+              Real 
 
-          <p className="mt-4 text-sm sm:text-base max-w-xl lg:mx-0">
+              <span
+                className="
+                  inline-block
+                  bg-[#E4FFD4]
+                  rounded-md
+                  px-3
+                  py-1
+                  mt-2
+                  whitespace-nowrap
+                "
+              >
+               Voices
+              </span>
+            </h3>
+          <p className="mt-4 text-sm sm:text-base max-w-xl  lg:mx-0">
             People who built their business on this platform.
           </p>
-
         </div>
 
         {/* CONTENT */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
-
           {/* IMAGE */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-
             <img
               src={current.image}
               alt="Client"
               className="
                 w-full
+                max-w-[280px]
                 max-w-[280px]
                 sm:max-w-[300px]
                 md:max-w-[340px]
@@ -95,22 +91,17 @@ export default function TestimonialsSection() {
                 xl:mx-24
               "
             />
-
           </div>
 
           {/* TESTIMONIAL CARD */}
           <div className="w-full lg:w-1/2 flex justify-center">
-
             <GreenCard
               quote={current.quote}
               author={current.author}
               className="w-full max-w-[500px] drop-shadow-xl xl:me-12"
             />
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
@@ -119,7 +110,6 @@ export default function TestimonialsSection() {
 function GreenCard({ quote, author, className = "", ...props }) {
   return (
     <div className={`relative w-full ${className}`} {...props}>
-
       {/* SVG BACKGROUND */}
       <svg
         viewBox="0 0 561 316"
@@ -135,7 +125,6 @@ function GreenCard({ quote, author, className = "", ...props }) {
 
       {/* CONTENT */}
       <div className="absolute inset-0 p-3 sm:p-5 md:p-6 lg:p-8 flex flex-col justify-start">
-
         <span className="self-start border border-black/20 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[9px] sm:text-[10px] md:text-xs font-semibold uppercase tracking-wider mb-3 mt-4">
           Client Testimonial
         </span>
@@ -144,12 +133,10 @@ function GreenCard({ quote, author, className = "", ...props }) {
           “{quote}”
         </p>
 
-        <p className="mt-0 sm:mt-1 md:mt-2 text-xs sm:text-sm md:text-base font-semibold truncate">
+        <p className="mt-3 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base font-semibold truncate">
           — {author}
         </p>
-
       </div>
-
     </div>
   );
 }

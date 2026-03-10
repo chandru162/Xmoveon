@@ -4,7 +4,7 @@ const Section7 = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24  overflow-hidden">
+    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-20 xl:px-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-24">
           {/* LEFT SIDE: Title & Image */}
@@ -29,11 +29,11 @@ const Section7 = ({ data }) => {
             </h2>
 
             {/* HERO IMAGE (Shows after title in Mobile) */}
-            <div className="rounded-[30px] md:rounded-[45px]">
+            <div className="">
               <img
                 src={data.models[activeIndex].image}
                 alt={data.models[activeIndex].title}
-                className="w-full h-full object-cover transition-all duration-500"
+                className="w-full h-auto object-cover transition-all duration-500"
               />
             </div>
 
@@ -48,10 +48,10 @@ const Section7 = ({ data }) => {
                 onClick={() => setActiveIndex(idx)}
                 className="cursor-pointer p-4 md:p-4 rounded-[20px] md:rounded-[20px] transition-all duration-300 bg-[#F3F4F6] shadow-md border-l-4 border-[#8CFF5E]"                
               >
-                <h4 className="text-[18px] md:text-[24px] font-bold text-[#111827]">
+                <h4 className="text-base sm:text-lg font-semibold text-black">
                   {item.title}
                 </h4>
-                <p className="text-[#6B7280] text-[15px] md:text-[18px] mt-2 leading-relaxed">
+                <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                   {item.desc}
                 </p>
               </div>

@@ -120,36 +120,57 @@ export const IndiaFlag = (props) => {
 export const MessageIcon = (props) => (
   <svg
     {...props}
-     width="24"
-    height="24"
-    viewBox="0 0 20 20"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_4151)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_message)">
+      {/* Top message bubble */}
       <path
-        d="M8.80273 2.40039H16.8044V8.80174H14.4039L11.2032 10.4021V8.80174H8.80273V2.40039Z"
-        strokeWidth="1.60034"
+        d="M27.6 18.6H40.4V28.2H36.56L31.44 30.6V28.2H27.6V18.6Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Main box */}
       <path
-        d="M12.0017 12.8028V16.0035C12.0017 16.2157 11.9174 16.4192 11.7673 16.5693C11.6173 16.7194 11.4137 16.8037 11.2015 16.8037H4.80017C4.58795 16.8037 4.38442 16.7194 4.23436 16.5693C4.0843 16.4192 4 16.2157 4 16.0035V4.80114C4 4.58893 4.0843 4.3854 4.23436 4.23534C4.38442 4.08528 4.58795 4.00098 4.80017 4.00098H6.40051"
-        strokeWidth="1.60034"
+        d="M32 34.4V39.6C32 39.944 31.8633 40.2739 31.6198 40.5174C31.3763 40.7609 31.0464 40.8976 30.7024 40.8976H20.4C20.056 40.8976 19.7261 40.7609 19.4826 40.5174C19.2391 40.2739 19.1024 39.944 19.1024 39.6V21.6C19.1024 21.256 19.2391 20.9261 19.4826 20.6826C19.7261 20.4391 20.056 20.3024 20.4 20.3024H23.6"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Dot */}
       <path
-        d="M8.00195 14.4028V14.4108"
-        strokeWidth="1.60034"
+        d="M26 36.8V36.88"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_4151">
-        <rect width="19.204" height="19.204" fill="white" />
+      <clipPath id="clip0_message">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -158,42 +179,66 @@ export const MessageIcon = (props) => (
 export const RectangleIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 20 20"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_4156)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_grid)">
+      {/* Top Left */}
       <path
-        d="M3.20117 3.20068H8.00218V9.60203H3.20117V3.20068Z"
-        strokeWidth="1.60034"
+        d="M18 18H26V30H18V18Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Bottom Left */}
       <path
-        d="M3.20117 12.8027H8.00218V16.0034H3.20117V12.8027Z"
-        strokeWidth="1.60034"
+        d="M18 34H26V40H18V34Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Bottom Right */}
       <path
-        d="M11.2031 9.60205H16.0041V16.0034H11.2031V9.60205Z"
-        strokeWidth="1.60034"
+        d="M34 30H42V40H34V30Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Top Right */}
       <path
-        d="M11.2031 3.20068H16.0041V6.40136H11.2031V3.20068Z"
-        strokeWidth="1.60034"
+        d="M34 18H42V24H34V18Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_4156">
-        <rect width="19.204" height="19.204" fill="white" />
+      <clipPath id="clip0_grid">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -202,36 +247,82 @@ export const RectangleIcon = (props) => (
 export const HeartPinIcon = (props) => (
   <svg
     {...props}
-     width="24"
-    height="24"
-    viewBox="0 0 20 20"
+    width="48"
+    height="48"
+    viewBox="0 0 55 55"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_4162)">
+    {/* Background */}
+    <rect
+      width="54.014"
+      height="54.014"
+      rx="9"
+      fill="none"
+    />
+
+    {/* Heart */}
+    <g clipPath="url(#clip0_favorite)">
       <path
-        d="M9.60254 16.0032L3.60128 10.0596C3.20544 9.67439 2.89364 9.21141 2.68552 8.6998C2.4774 8.18819 2.37747 7.63903 2.39201 7.0869C2.40656 6.53477 2.53526 5.99163 2.77003 5.49169C3.00479 4.99174 3.34053 4.54582 3.7561 4.182C4.17167 3.81819 4.65806 3.54436 5.18466 3.37776C5.71125 3.21115 6.26664 3.15539 6.81585 3.21398C7.36505 3.27256 7.89618 3.44423 8.37578 3.71817C8.85538 3.99211 9.27307 4.36238 9.60254 4.80567C10.1993 4.0103 11.0709 3.46567 12.0474 3.27794C13.0239 3.09021 14.0353 3.27284 14.8844 3.79023C15.7336 4.30761 16.3597 5.12268 16.6406 6.07654C16.9215 7.0304 16.8372 8.05469 16.404 8.94974"
-        strokeWidth="1.60034"
+        d="
+          M29.275 33.759
+          L27.006 36.009
+          L18.566 27.651
+          C18.009 27.109 17.571 26.458 17.278 25.738
+          C16.985 25.019 16.845 24.246 16.865 23.47
+          C16.886 22.694 17.067 21.93 17.397 21.227
+          C17.727 20.524 18.199 19.896 18.784 19.385
+          C19.368 18.873 20.052 18.488 20.793 18.254
+          C21.533 18.02 22.314 17.941 23.087 18.023
+          C23.859 18.106 24.606 18.347 25.28 18.733
+          C25.955 19.118 26.542 19.639 27.006 20.262
+          C27.886 19.09 29.189 18.308 30.637 18.082
+          C32.085 17.856 33.564 18.204 34.76 19.052
+          C35.955 19.9 36.773 21.181 37.038 22.623
+          C37.303 24.064 36.995 25.552 36.18 26.771
+        "
+        stroke="#56E000"
+        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M16.9004 16.1001C17.2362 15.7644 17.4649 15.3367 17.5576 14.871C17.6503 14.4054 17.6028 13.9227 17.4211 13.484C17.2394 13.0453 16.9317 12.6704 16.537 12.4066C16.1422 12.1428 15.678 12.002 15.2032 12.002C14.7284 12.002 14.2643 12.1428 13.8695 12.4066C13.4747 12.6704 13.1671 13.0453 12.9854 13.484C12.8037 13.9227 12.7562 14.4054 12.8489 14.871C12.9416 15.3367 13.1703 15.7644 13.5061 16.1001C13.8406 16.4354 14.4063 16.9363 15.2032 17.6036C16.0442 16.8915 16.6107 16.3906 16.9004 16.1001Z"
-        strokeWidth="1.60034"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M15.2031 14.4028V14.4108"
-        strokeWidth="1.60034"
+        d="
+          M31.497 36.009
+          L36.219 31.257
+          C36.804 30.665 37.131 29.867 37.131 29.036
+          C37.131 28.204 36.804 27.406 36.219 26.814
+          C35.932 26.523 35.59 26.291 35.213 26.132
+          C34.836 25.974 34.43 25.892 34.021 25.891
+          C33.612 25.89 33.206 25.971 32.828 26.128
+          C32.451 26.285 32.108 26.516 31.82 26.807
+          L31.504 27.124
+          L31.191 26.805
+          C30.903 26.514 30.561 26.282 30.184 26.123
+          C29.807 25.965 29.402 25.883 28.992 25.882
+          C28.583 25.881 28.178 25.962 27.8 26.119
+          C27.422 26.276 27.079 26.507 26.791 26.798
+          C26.205 27.388 25.877 28.186 25.875 29.017
+          C25.874 29.849 26.2 30.647 26.783 31.24
+          L31.489 36.009
+          H31.497
+        "
+        stroke="#56E000"
+        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_4162">
-        <rect width="19.204" height="19.204" fill="white" />
+      <clipPath id="clip0_favorite">
+        <rect
+          width="27.007"
+          height="27.007"
+          transform="translate(13.504 13.503)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -240,96 +331,134 @@ export const HeartPinIcon = (props) => (
 export const TopologyIcon = (props) => (
   <svg
     {...props}
-     width="24"
-    height="24"
-    viewBox="0 0 20 20"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_4167)">
-      <path
-        d="M16.0034 14.4031C16.0034 13.9786 15.8348 13.5716 15.5347 13.2715C15.2346 12.9713 14.8275 12.8027 14.4031 12.8027C13.9786 12.8027 13.5716 12.9713 13.2715 13.2715C12.9713 13.5716 12.8027 13.9786 12.8027 14.4031C12.8027 14.8275 12.9713 15.2346 13.2715 15.5347C13.5716 15.8348 13.9786 16.0034 14.4031 16.0034C14.8275 16.0034 15.2346 15.8348 15.5347 15.5347C15.8348 15.2346 16.0034 14.8275 16.0034 14.4031Z"
-        strokeWidth="1.60034"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_network)">
+      {/* Top Right */}
+      <circle
+        cx="39"
+        cy="39"
+        r="3"
+        stroke="#56E000"
+        strokeWidth="2.06089"
       />
-      <path
-        d="M6.40185 14.4031C6.40185 13.9786 6.23324 13.5716 5.93312 13.2715C5.633 12.9713 5.22594 12.8027 4.80151 12.8027C4.37707 12.8027 3.97002 12.9713 3.6699 13.2715C3.36978 13.5716 3.20117 13.9786 3.20117 14.4031C3.20117 14.8275 3.36978 15.2346 3.6699 15.5347C3.97002 15.8348 4.37707 16.0034 4.80151 16.0034C5.22594 16.0034 5.633 15.8348 5.93312 15.5347C6.23324 15.2346 6.40185 14.8275 6.40185 14.4031Z"
-        strokeWidth="1.60034"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+
+      {/* Bottom Left */}
+      <circle
+        cx="23"
+        cy="39"
+        r="3"
+        stroke="#56E000"
+        strokeWidth="2.06089"
       />
-      <path
-        d="M6.40185 4.80102C6.40185 4.37658 6.23324 3.96953 5.93312 3.66941C5.633 3.36929 5.22594 3.20068 4.80151 3.20068C4.37707 3.20068 3.97002 3.36929 3.6699 3.66941C3.36978 3.96953 3.20117 4.37658 3.20117 4.80102C3.20117 5.22546 3.36978 5.63251 3.6699 5.93263C3.97002 6.23275 4.37707 6.40136 4.80151 6.40136C5.22594 6.40136 5.633 6.23275 5.93312 5.93263C6.23324 5.63251 6.40185 5.22546 6.40185 4.80102Z"
-        strokeWidth="1.60034"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+
+      {/* Top Left */}
+      <circle
+        cx="23"
+        cy="23"
+        r="3"
+        stroke="#56E000"
+        strokeWidth="2.06089"
       />
-      <path
-        d="M16.0034 4.80102C16.0034 4.37658 15.8348 3.96953 15.5347 3.66941C15.2346 3.36929 14.8275 3.20068 14.4031 3.20068C13.9786 3.20068 13.5716 3.36929 13.2715 3.66941C12.9713 3.96953 12.8027 4.37658 12.8027 4.80102C12.8027 5.22546 12.9713 5.63251 13.2715 5.93263C13.5716 6.23275 13.9786 6.40136 14.4031 6.40136C14.8275 6.40136 15.2346 6.23275 15.5347 5.93263C15.8348 5.63251 16.0034 5.22546 16.0034 4.80102Z"
-        strokeWidth="1.60034"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+
+      {/* Bottom Right */}
+      <circle
+        cx="39"
+        cy="23"
+        r="3"
+        stroke="#56E000"
+        strokeWidth="2.06089"
       />
-      <path
-        d="M11.2026 9.6018C11.2026 9.17737 11.034 8.77031 10.7339 8.47019C10.4338 8.17007 10.0267 8.00146 9.60229 8.00146C9.17785 8.00146 8.7708 8.17007 8.47068 8.47019C8.17056 8.77031 8.00195 9.17737 8.00195 9.6018C8.00195 10.0262 8.17056 10.4333 8.47068 10.7334C8.7708 11.0335 9.17785 11.2021 9.60229 11.2021C10.0267 11.2021 10.4338 11.0335 10.7339 10.7334C11.034 10.4333 11.2026 10.0262 11.2026 9.6018Z"
-        strokeWidth="1.60034"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+
+      {/* Center */}
+      <circle
+        cx="31"
+        cy="31"
+        r="3"
+        stroke="#56E000"
+        strokeWidth="2.06089"
       />
+
+      {/* Vertical lines */}
       <path
-        d="M4.80078 6.40137V12.8027"
-        strokeWidth="1.60034"
+        d="M23 26V36"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
       <path
-        d="M14.4023 12.8027V6.40137"
-        strokeWidth="1.60034"
+        d="M39 36V26"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
+      {/* Horizontal lines */}
       <path
-        d="M6.40039 4.80078H12.8017"
-        strokeWidth="1.60034"
+        d="M26 23H36"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
       <path
-        d="M12.8017 14.4028H6.40039"
-        strokeWidth="1.60034"
+        d="M36 39H26"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
+      {/* Diagonals */}
       <path
-        d="M6.00195 6.00146L8.40246 8.40197"
-        strokeWidth="1.60034"
+        d="M25 25L29 29"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
       <path
-        d="M10.8027 10.8022L13.2032 13.2028"
-        strokeWidth="1.60034"
+        d="M33 33L37 37"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
       <path
-        d="M13.2032 6.00146L10.8027 8.40197"
-        strokeWidth="1.60034"
+        d="M37 25L33 29"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
+
       <path
-        d="M8.40246 10.8022L6.00195 13.2028"
-        strokeWidth="1.60034"
+        d="M29 33L25 37"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_4167">
-        <rect width="19.204" height="19.204" fill="white" />
+      <clipPath id="clip0_network">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -338,42 +467,56 @@ export const TopologyIcon = (props) => (
 export const CloverIcon = (props) => (
   <svg
     {...props}
-     width="24"
-    height="24"
-    viewBox="0 0 20 20"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_4174)">
+    <rect width="61.8268" height="61.8268" rx="10.3045" fill="none" />
+
+    <g clipPath="url(#clip0_clover)">
       <path
-        d="M9.60155 8.0015L6.88337 5.24892C6.57384 4.93406 6.40039 4.5102 6.40039 4.06867C6.40039 3.62714 6.57384 3.20328 6.88337 2.88842C7.03533 2.73358 7.21663 2.61059 7.41666 2.52662C7.6167 2.44266 7.83147 2.39941 8.04842 2.39941C8.26537 2.39941 8.48014 2.44266 8.68018 2.52662C8.88021 2.61059 9.06151 2.73358 9.21347 2.88842L9.60155 3.20049L9.98963 2.88842C10.1416 2.73358 10.3229 2.61059 10.5229 2.52662C10.723 2.44266 10.9377 2.39941 11.1547 2.39941C11.3716 2.39941 11.5864 2.44266 11.7864 2.52662C11.9865 2.61059 12.1678 2.73358 12.3197 2.88842C12.6293 3.20328 12.8027 3.62714 12.8027 4.06867C12.8027 4.5102 12.6293 4.93406 12.3197 5.24892L9.60155 8.0015Z"
-        strokeWidth="1.60034"
+        d="M31 27.5L26.7 23.2C26.2 22.7 25.9 22 25.9 21.3C25.9 20.6 26.2 19.9 26.7 19.4C27 19.1 27.4 18.9 27.8 18.7C28.2 18.5 28.6 18.4 29 18.4C29.4 18.4 29.8 18.5 30.2 18.7C30.6 18.9 31 19.1 31.3 19.4L31.7 19.7L32.1 19.4C32.4 19.1 32.8 18.9 33.2 18.7C33.6 18.5 34 18.4 34.4 18.4C34.8 18.4 35.2 18.5 35.6 18.7C36 18.9 36.4 19.1 36.7 19.4C37.2 19.9 37.5 20.6 37.5 21.3C37.5 22 37.2 22.7 36.7 23.2L32.4 27.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M9.60155 11.2021L6.88337 13.9547C6.57384 14.2696 6.40039 14.6934 6.40039 15.135C6.40039 15.5765 6.57384 16.0004 6.88337 16.3152C7.03533 16.4701 7.21663 16.5931 7.41666 16.677C7.6167 16.761 7.83147 16.8042 8.04842 16.8042C8.26537 16.8042 8.48014 16.761 8.68018 16.677C8.88021 16.5931 9.06151 16.4701 9.21347 16.3152L9.60155 16.0032L9.98963 16.3152C10.1416 16.4701 10.3229 16.5931 10.5229 16.677C10.723 16.761 10.9377 16.8042 11.1547 16.8042C11.3716 16.8042 11.5864 16.761 11.7864 16.677C11.9865 16.5931 12.1678 16.4701 12.3197 16.3152C12.6293 16.0004 12.8027 15.5765 12.8027 15.135C12.8027 14.6934 12.6293 14.2696 12.3197 13.9547L9.60155 11.2021Z"
-        strokeWidth="1.60034"
+        d="M31 34.5L26.7 38.8C26.2 39.3 25.9 40 25.9 40.7C25.9 41.4 26.2 42.1 26.7 42.6C27 42.9 27.4 43.1 27.8 43.3C28.2 43.5 28.6 43.6 29 43.6C29.4 43.6 29.8 43.5 30.2 43.3C30.6 43.1 31 42.9 31.3 42.6L31.7 42.3L32.1 42.6C32.4 42.9 32.8 43.1 33.2 43.3C33.6 43.5 34 43.6 34.4 43.6C34.8 43.6 35.2 43.5 35.6 43.3C36 43.1 36.4 42.9 36.7 42.6C37.2 42.1 37.5 41.4 37.5 40.7C37.5 40 37.2 39.3 36.7 38.8L32.4 34.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M11.2031 9.60204L13.9557 6.88386C14.2706 6.57433 14.6944 6.40088 15.136 6.40088C15.5775 6.40088 16.0013 6.57433 16.3162 6.88386C16.471 7.03582 16.594 7.21711 16.678 7.41715C16.762 7.61719 16.8052 7.83196 16.8052 8.04891C16.8052 8.26585 16.762 8.48062 16.678 8.68066C16.594 8.8807 16.471 9.062 16.3162 9.21395L16.0041 9.60204L16.3162 9.99012C16.471 10.1421 16.594 10.3234 16.678 10.5234C16.762 10.7234 16.8052 10.9382 16.8052 11.1552C16.8052 11.3721 16.762 11.5869 16.678 11.7869C16.594 11.987 16.471 12.1683 16.3162 12.3202C16.0013 12.6297 15.5775 12.8032 15.136 12.8032C14.6944 12.8032 14.2706 12.6297 13.9557 12.3202L11.2031 9.60204Z"
-        strokeWidth="1.60034"
+        d="M34.5 31L38.8 26.7C39.3 26.2 40 25.9 40.7 25.9C41.4 25.9 42.1 26.2 42.6 26.7C42.9 27 43.1 27.4 43.3 27.8C43.5 28.2 43.6 28.6 43.6 29C43.6 29.4 43.5 29.8 43.3 30.2C43.1 30.6 42.9 31 42.6 31.3L42.3 31.7L42.6 32.1C42.9 32.4 43.1 32.8 43.3 33.2C43.5 33.6 43.6 34 43.6 34.4C43.6 34.8 43.5 35.2 43.3 35.6C43.1 36 42.9 36.4 42.6 36.7C42.1 37.2 41.4 37.5 40.7 37.5C40 37.5 39.3 37.2 38.8 36.7L34.5 32.4"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M8.00248 9.60204L5.2499 6.88386C4.93503 6.57433 4.51118 6.40088 4.06965 6.40088C3.62812 6.40088 3.20426 6.57433 2.8894 6.88386C2.73456 7.03582 2.61156 7.21711 2.5276 7.41715C2.44364 7.61719 2.40039 7.83196 2.40039 8.04891C2.40039 8.26585 2.44364 8.48062 2.5276 8.68066C2.61156 8.8807 2.73456 9.062 2.8894 9.21395L3.20146 9.60204L2.8894 9.99012C2.73456 10.1421 2.61156 10.3234 2.5276 10.5234C2.44364 10.7234 2.40039 10.9382 2.40039 11.1552C2.40039 11.3721 2.44364 11.5869 2.5276 11.7869C2.61156 11.987 2.73456 12.1683 2.8894 12.3202C3.20426 12.6297 3.62812 12.8032 4.06965 12.8032C4.51118 12.8032 4.93503 12.6297 5.2499 12.3202L8.00248 9.60204Z"
-        strokeWidth="1.60034"
+        d="M27.5 31L23.2 26.7C22.7 26.2 22 25.9 21.3 25.9C20.6 25.9 19.9 26.2 19.4 26.7C19.1 27 18.9 27.4 18.7 27.8C18.5 28.2 18.4 28.6 18.4 29C18.4 29.4 18.5 29.8 18.7 30.2C18.9 30.6 19.1 31 19.4 31.3L19.7 31.7L19.4 32.1C19.1 32.4 18.9 32.8 18.7 33.2C18.5 33.6 18.4 34 18.4 34.4C18.4 34.8 18.5 35.2 18.7 35.6C18.9 36 19.1 36.4 19.4 36.7C19.9 37.2 20.6 37.5 21.3 37.5C22 37.5 22.7 37.2 23.2 36.7L27.5 32.4"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_4174">
-        <rect width="19.204" height="19.204" fill="white" />
+      <clipPath id="clip0_clover">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -382,54 +525,73 @@ export const CloverIcon = (props) => (
 export const RouteIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 20 20"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_4179)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_direction)">
       <path
-        d="M9.60156 6.43324V2.40039"
-        strokeWidth="1.60034"
+        d="M31 24V17"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M12.4023 8.00189L16.0031 6.00146"
-        strokeWidth="1.60034"
+        d="M36 28L42 24.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M12.4023 11.2021L16.0031 13.2026"
-        strokeWidth="1.60034"
+        d="M36 34L42 37.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M9.60156 12.7705V16.8034"
-        strokeWidth="1.60034"
+        d="M31 38V45"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M6.80193 11.2021L3.20117 13.2026"
-        strokeWidth="1.60034"
+        d="M26 34L20 37.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M6.80193 8.00149L3.20117 5.99707"
-        strokeWidth="1.60034"
+        d="M26 28L20 24.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_4179">
-        <rect width="19.204" height="19.204" fill="white" />
+      <clipPath id="clip0_direction">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -440,41 +602,57 @@ export const RouteIcon = (props) => (
 
 
 
-/* PLATFORM FEATURES SVG ICONS START */
+/* VENDORS FEATURES SVG ICONS START */
 
 export const MenuIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_5876)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_menu)">
       <path
-        d="M5 7.5H25"
-        strokeWidth="2"
+        d="M20 24H42"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M5 15H25"
-        strokeWidth="2"
+        d="M20 31H42"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M5 22.5H25"
-        strokeWidth="2"
+        d="M20 38H42"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_5876">
-        <rect width="30" height="30" fill="white" />
+      <clipPath id="clip0_menu">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -483,104 +661,118 @@ export const MenuIcon = (props) => (
 export const BalanceIcon = (props) => (
   <svg
     {...props}
-    width="20"
-    height="20"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0_menu)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_balance)">
       {/* Container */}
       <path
         d="
-          M3.719 6.2
-          C3.719 5.542 3.98 4.911 4.445 4.446
-          C4.91 3.981 5.541 3.72 6.199 3.72
-          H23.558
-          C24.215 3.72 24.846 3.981 25.311 4.446
-          C25.776 4.911 26.038 5.542 26.038 6.2
-          V23.559
-          C26.038 24.216 25.776 24.847 25.311 25.312
-          C24.846 25.777 24.215 26.039 23.558 26.039
-          H6.199
-          C5.541 26.039 4.91 25.777 4.445 25.312
-          C3.98 24.847 3.719 24.216 3.719 23.559
-          V6.2
+          M18 21
+          C18 20.2 18.3 19.4 18.9 18.8
+          C19.5 18.2 20.3 17.9 21.1 17.9
+          H40
+          C40.8 17.9 41.6 18.2 42.2 18.8
+          C42.8 19.4 43.1 20.2 43.1 21
+          V40
+          C43.1 40.8 42.8 41.6 42.2 42.2
+          C41.6 42.8 40.8 43.1 40 43.1
+          H21.1
+          C20.3 43.1 19.5 42.8 18.9 42.2
+          C18.3 41.6 18 40.8 18 40
+          V21
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Lines */}
       <path
-        d="M18.598 21.079H21.078"
+        d="M36 38H39"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
       <path
-        d="M13.641 17.359H21.08"
+        d="M30 34H39"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
       <path
-        d="M16.117 13.639H21.077"
+        d="M33 30H39"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
     </g>
 
     <defs>
-      <clipPath id="clip0_menu">
-        <rect width="29.758" height="29.758" fill="white" />
+      <clipPath id="clip0_balance">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
 );
-
 export const StoredIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-     <rect
+    {/* Background */}
+    <rect
       width="61.8268"
       height="61.8268"
       rx="10.3045"
       fill="#E4FFD4"
     />
-    <g clipPath="url(#clip0_balance)">
+
+    <g clipPath="url(#clip0_stored)">
       {/* Base */}
       <path
-        d="M8.68 24.799H21.079"
+        d="M24 42H38"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Top bar */}
       <path
-        d="M7.441 7.44L14.881 6.2L22.321 7.44"
+        d="M22 24L31 22L40 24"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Center pole */}
       <path
-        d="M14.879 3.72V24.799"
+        d="M31 18V42"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -588,16 +780,16 @@ export const StoredIcon = (props) => (
       {/* Left scale */}
       <path
         d="
-          M11.158 14.879
-          L7.439 7.44
-          L3.719 14.879
-          C3.719 15.866 4.111 16.812 4.808 17.51
-          C5.506 18.207 6.452 18.599 7.439 18.599
-          C8.425 18.599 9.371 18.207 10.069 17.51
-          C10.766 16.812 11.158 15.866 11.158 14.879
+          M27 33
+          L22 24
+          L17 33
+          C17 34.3 17.5 35.6 18.5 36.5
+          C19.5 37.5 20.8 38 22 38
+          C23.3 38 24.5 37.5 25.5 36.5
+          C26.5 35.6 27 34.3 27 33
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -605,24 +797,29 @@ export const StoredIcon = (props) => (
       {/* Right scale */}
       <path
         d="
-          M26.037 14.879
-          L22.318 7.44
-          L18.598 14.879
-          C18.598 15.866 18.99 16.812 19.687 17.51
-          C20.385 18.207 21.331 18.599 22.318 18.599
-          C23.304 18.599 24.25 18.207 24.948 17.51
-          C25.645 16.812 26.037 15.866 26.037 14.879
+          M45 33
+          L40 24
+          L35 33
+          C35 34.3 35.5 35.6 36.5 36.5
+          C37.5 37.5 38.8 38 40 38
+          C41.3 38 42.5 37.5 43.5 36.5
+          C44.5 35.6 45 34.3 45 33
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
 
     <defs>
-      <clipPath id="clip0_balance">
-        <rect width="29.758" height="29.758" fill="white" />
+      <clipPath id="clip0_stored">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -631,109 +828,129 @@ export const StoredIcon = (props) => (
 export const LinkIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-
-     <rect
+    {/* Background */}
+    <rect
       width="61.8268"
       height="61.8268"
       rx="10.3045"
       fill="#E4FFD4"
     />
 
-    <g clipPath="url(#clip0_window)">
+    <g clipPath="url(#clip0_link)">
       {/* Frame */}
       <path
         d="
-          M3.719 8.68
-          C3.719 8.022 3.98 7.391 4.445 6.926
-          C4.91 6.461 5.541 6.2 6.199 6.2
-          H23.558
-          C24.215 6.2 24.846 6.461 25.311 6.926
-          C25.776 7.391 26.038 8.022 26.038 8.68
-          V21.079
-          C26.038 21.737 25.776 22.367 25.311 22.832
-          C24.846 23.298 24.215 23.559 23.558 23.559
-          H6.199
-          C5.541 23.559 4.91 23.298 4.445 22.832
-          C3.98 22.367 3.719 21.737 3.719 21.079
-          V8.68
+          M18 24
+          C18 23.2 18.3 22.4 18.9 21.8
+          C19.5 21.2 20.3 20.9 21.1 20.9
+          H40
+          C40.8 20.9 41.6 21.2 42.2 21.8
+          C42.8 22.4 43.1 23.2 43.1 24
+          V38
+          C43.1 38.8 42.8 39.6 42.2 40.2
+          C41.6 40.8 40.8 41.1 40 41.1
+          H21.1
+          C20.3 41.1 19.5 40.8 18.9 40.2
+          C18.3 39.6 18 38.8 18 38
+          V24
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Dots */}
       <path
-        d="M7.441 9.919H7.454"
+        d="M23 26H23.1"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
       <path
-        d="M11.16 9.919H11.173"
+        d="M27 26H27.1"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
     </g>
 
     <defs>
-      <clipPath id="clip0_window">
-        <rect width="29.758" height="29.758" fill="white" />
+      <clipPath id="clip0_link">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
 );
 
-/*  PLATFORM FEATURES SVG ICONS END  */
+/*  VENDORS FEATURES SVG ICONS END  */
 
 
 export const SectionLayoutIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_5881)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+      stroke="none"
+    />
+
+    <g clipPath="url(#clip0_sectionlayout)">
+      {/* Outer Box */}
       <path
-        d="M3.75 6.25C3.75 5.58696 4.01339 4.95107 4.48223 4.48223C4.95107 4.01339 5.58696 3.75 6.25 3.75H23.75C24.413 3.75 25.0489 4.01339 25.5178 4.48223C25.9866 4.95107 26.25 5.58696 26.25 6.25V23.75C26.25 24.413 25.9866 25.0489 25.5178 25.5178C25.0489 25.9866 24.413 26.25 23.75 26.25H6.25C5.58696 26.25 4.95107 25.9866 4.48223 25.5178C4.01339 25.0489 3.75 24.413 3.75 23.75V6.25Z"
-        strokeWidth="2"
+        d="M18 22C18 21.2 18.3 20.4 18.9 19.8C19.5 19.2 20.3 18.9 21.1 18.9H40.9C41.7 18.9 42.5 19.2 43.1 19.8C43.7 20.4 44 21.2 44 22V40C44 40.8 43.7 41.6 43.1 42.2C42.5 42.8 41.7 43.1 40.9 43.1H21.1C20.3 43.1 19.5 42.8 18.9 42.2C18.3 41.6 18 40.8 18 40V22Z"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Lines */}
       <path
-        d="M18.75 21.25H21.25"
-        strokeWidth="2"
+        d="M36 38H40"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
       <path
-        d="M13.75 17.5H21.25"
-        strokeWidth="2"
+        d="M30 34H40"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
       <path
-        d="M16.25 13.75H21.25"
-        strokeWidth="2"
+        d="M33 30H40"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_5881">
-        <rect width="30" height="30" fill="white" />
+      <clipPath id="clip0_sectionlayout">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -741,48 +958,72 @@ export const SectionLayoutIcon = (props) => (
 export const ScalesIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_5886)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+      stroke="none"
+    />
+
+    <g clipPath="url(#clip0_scales)">
+      {/* Base */}
       <path
-        d="M8.75 25H21.25"
-        strokeWidth="2"
+        d="M24 42H38"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Top bar */}
       <path
-        d="M7.5 7.5L15 6.25L22.5 7.5"
-        strokeWidth="2"
+        d="M22 24L31 22L40 24"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Center pole */}
       <path
-        d="M15 3.75V25"
-        strokeWidth="2"
+        d="M31 18V42"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Left scale */}
       <path
-        d="M11.25 15L7.5 7.5L3.75 15C3.75 15.9946 4.14509 16.9484 4.84835 17.6517C5.55161 18.3549 6.50544 18.75 7.5 18.75C8.49456 18.75 9.44839 18.3549 10.1517 17.6517C10.8549 16.9484 11.25 15.9946 11.25 15Z"
-        strokeWidth="2"
+        d="M27 33L22 24L17 33C17 34.3 17.5 35.6 18.5 36.5C19.5 37.5 20.8 38 22 38C23.3 38 24.5 37.5 25.5 36.5C26.5 35.6 27 34.3 27 33Z"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Right scale */}
       <path
-        d="M26.25 15L22.5 7.5L18.75 15C18.75 15.9946 19.1451 16.9484 19.8483 17.6517C20.5516 18.3549 21.5054 18.75 22.5 18.75C23.4946 18.75 24.4484 18.3549 25.1517 17.6517C25.8549 16.9484 26.25 15.9946 26.25 15Z"
-        strokeWidth="2"
+        d="M45 33L40 24L35 33C35 34.3 35.5 35.6 36.5 36.5C37.5 37.5 38.8 38 40 38C41.3 38 42.5 37.5 43.5 36.5C44.5 35.6 45 34.3 45 33Z"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_5886">
-        <rect width="30" height="30" fill="white" />
+      <clipPath id="clip0_scales">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -791,36 +1032,52 @@ export const ScalesIcon = (props) => (
 export const WindowCardIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     stroke="#56E000"
   >
-    <g clipPath="url(#clip0_132_5891)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+      stroke="none"
+    />
+
+    <g clipPath="url(#clip0_windowcard)">
+      {/* Window Frame */}
       <path
-        d="M3.75 8.75C3.75 8.08696 4.01339 7.45107 4.48223 6.98223C4.95107 6.51339 5.58696 6.25 6.25 6.25H23.75C24.413 6.25 25.0489 6.51339 25.5178 6.98223C25.9866 7.45107 26.25 8.08696 26.25 8.75V21.25C26.25 21.913 25.9866 22.5489 25.5178 23.0178C25.0489 23.4866 24.413 23.75 23.75 23.75H6.25C5.58696 23.75 4.95107 23.4866 4.48223 23.0178C4.01339 22.5489 3.75 21.913 3.75 21.25V8.75Z"
-        strokeWidth="2"
+        d="M18 24C18 23.2 18.3 22.4 18.9 21.8C19.5 21.2 20.3 20.9 21.1 20.9H40.9C41.7 20.9 42.5 21.2 43.1 21.8C43.7 22.4 44 23.2 44 24V38C44 38.8 43.7 39.6 43.1 40.2C42.5 40.8 41.7 41.1 40.9 41.1H21.1C20.3 41.1 19.5 40.8 18.9 40.2C18.3 39.6 18 38.8 18 38V24Z"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Top dots */}
       <path
-        d="M7.5 10H7.5125"
-        strokeWidth="2"
+        d="M23 26H23.2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
       <path
-        d="M11.25 10H11.2625"
-        strokeWidth="2"
+        d="M28 26H28.2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_132_5891">
-        <rect width="30" height="30" fill="white" />
+      <clipPath id="clip0_windowcard">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -829,43 +1086,38 @@ export const WindowCardIcon = (props) => (
 export const ArrowButtonIcon = (props) => (
   <svg
     {...props}
-    width="134"
-    height="53"
-    viewBox="0 0 134 53"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* Outer Border Shapes */}
+    {/* Background */}
     <rect
-      x="0.5"
-      y="0.5"
-      width="132.38"
-      height="51.056"
-      rx="25.528"
-      stroke="#56E000"
-    />
-    <rect
-      x="0.5"
-      y="0.5"
-      width="114.727"
-      height="51.056"
-      rx="25.528"
-      stroke="#56E000"
-    />
-    <rect
-      x="0.5"
-      y="0.5"
-      width="99.0353"
-      height="50"
-      rx="25"
-      stroke="#56E000"
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
     />
 
-    {/* Primary Arrow Path */}
-    <path
-      d="M56.9295 15.1576L34.0176 37.3535L37.7817 41L60.6936 18.8067L60.6936 38.367L66.0176 38.367L66.0176 10L36.7355 10L36.7355 15.1576L56.9295 15.1576Z"
-      fill="#56E000"
-    />
+    <g clipPath="url(#clip0_arrow)">
+      {/* Arrow */}
+      <path
+        d="M34 23L26 31L28.2 33.2L36.2 25.2V33H39V20H26V23H34Z"
+        fill="#0f0f0f"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_arrow">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
 
@@ -1052,7 +1304,7 @@ export const CTAArrowIcon = (props) => (
       width="132.38"
       height="51.056"
       rx="25.528"
-      stroke="#56E000"
+      stroke="#0f0f0f"
     />
     <rect
       x="0.5"
@@ -1060,7 +1312,7 @@ export const CTAArrowIcon = (props) => (
       width="114.727"
       height="51.056"
       rx="25.528"
-      stroke="#56E000"
+      stroke="#0f0f0f"
     />
     <rect
       x="0.5"
@@ -1068,13 +1320,13 @@ export const CTAArrowIcon = (props) => (
       width="99.0353"
       height="51.056"
       rx="25.528"
-      stroke="#56E000"
+      stroke="#0f0f0f"
     />
 
     {/* Arrow Icon Path */}
     <path
       d="M56.9409 36.7227L33.9889 13.7707L37.7596 10L60.7116 32.9493L60.7116 12.7227L66.0449 12.7227L66.0449 42.056L36.7116 42.056L36.7116 36.7227L56.9409 36.7227Z"
-      fill="#56E000"
+      fill="#0f0f0f"
     />
   </svg>
 );
@@ -1267,149 +1519,311 @@ export const ContactIcon = (props) => (
 export const LocalisationIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 32 32"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0_localisation)">
-      {/* Top Left Block */}
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_grid)">
+      {/* Top Left */}
       <path
-        d="M5.19531 5.19702H12.991V15.5912H5.19531V5.19702Z"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M18 18H26V30H18V18Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
-      {/* Bottom Left Block */}
+      {/* Bottom Left */}
       <path
-        d="M5.19531 20.7883H12.991V25.9854H5.19531V20.7883Z"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M18 34H26V40H18V34Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
-      {/* Bottom Right Block */}
+      {/* Bottom Right */}
       <path
-        d="M18.1914 15.5913H25.9871V25.9855H18.1914V15.5913Z"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M34 30H42V40H34V30Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
-      {/* Top Right Block */}
+      {/* Top Right */}
       <path
-        d="M18.1914 5.19702H25.9871V10.3941H18.1914V5.19702Z"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M34 18H42V24H34V18Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
 
     <defs>
-      <clipPath id="clip0_localisation">
-        <rect width="31.1827" height="31.1827" fill="white" />
+      <clipPath id="clip0_grid">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
 );
-
 export const OrbitIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 32 32"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0_orbit)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_sparkle)">
       <path
-        d="M20.789 23.3869C21.4782 23.3869 22.1392 23.6607 22.6265 24.148C23.1138 24.6353 23.3876 25.2963 23.3876 25.9855C23.3876 25.2963 23.6614 24.6353 24.1487 24.148C24.636 23.6607 25.297 23.3869 25.9862 23.3869C25.297 23.3869 24.636 23.1131 24.1487 22.6258C23.6614 22.1385 23.3876 21.4775 23.3876 20.7884C23.3876 21.4775 23.1138 22.1385 22.6265 22.6258C22.1392 23.1131 21.4782 23.3869 20.789 23.3869ZM20.789 7.79558C21.4782 7.79558 22.1392 8.06935 22.6265 8.55668C23.1138 9.044 23.3876 9.70495 23.3876 10.3941C23.3876 9.70495 23.6614 9.044 24.1487 8.55668C24.636 8.06935 25.297 7.79558 25.9862 7.79558C25.297 7.79558 24.636 7.5218 24.1487 7.03448C23.6614 6.54715 23.3876 5.8862 23.3876 5.19702C23.3876 5.8862 23.1138 6.54715 22.6265 7.03448C22.1392 7.5218 21.4782 7.79558 20.789 7.79558ZM11.6941 23.3869C11.6941 21.3194 12.5154 19.3365 13.9774 17.8745C15.4394 16.4126 17.4222 15.5912 19.4898 15.5912C17.4222 15.5912 15.4394 14.7699 13.9774 13.3079C12.5154 11.846 11.6941 9.86312 11.6941 7.79558C11.6941 9.86312 10.8728 11.846 9.41081 13.3079C7.94883 14.7699 5.96598 15.5912 3.89844 15.5912C5.96598 15.5912 7.94883 16.4126 9.41081 17.8745C10.8728 19.3365 11.6941 21.3194 11.6941 23.3869Z"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M36.5 38
+        C37.6 38 38.6 38.4 39.4 39.2
+        C40.2 40 40.6 41 40.6 42
+        C40.6 41 41 40 41.8 39.2
+        C42.6 38.4 43.6 38 44.7 38
+        C43.6 38 42.6 37.6 41.8 36.8
+        C41 36 40.6 35 40.6 34
+        C40.6 35 40.2 36 39.4 36.8
+        C38.6 37.6 37.6 38 36.5 38Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M36.5 23
+        C37.6 23 38.6 23.4 39.4 24.2
+        C40.2 25 40.6 26 40.6 27
+        C40.6 26 41 25 41.8 24.2
+        C42.6 23.4 43.6 23 44.7 23
+        C43.6 23 42.6 22.6 41.8 21.8
+        C41 21 40.6 20 40.6 19
+        C40.6 20 40.2 21 39.4 21.8
+        C38.6 22.6 37.6 23 36.5 23Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M25 38
+        C25 35 26.2 32.2 28.3 30.1
+        C30.4 28 33.2 26.8 36.2 26.8
+        C33.2 26.8 30.4 25.6 28.3 23.5
+        C26.2 21.4 25 18.6 25 15.6
+        C25 18.6 23.8 21.4 21.7 23.5
+        C19.6 25.6 16.8 26.8 13.8 26.8
+        C16.8 26.8 19.6 28 21.7 30.1
+        C23.8 32.2 25 35 25 38Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_orbit">
-        <rect width="31.1827" height="31.1827" fill="white" />
+      <clipPath id="clip0_sparkle">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
 );
 
 export const DocumentArrowIcon = (props) => (
-  <svg {...props} width="24" height="24" viewBox="0 0 32 32" fill="none">
-    <g clipPath="url(#clip0_doc)">
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_docArrow)">
+      {/* Fold */}
       <path
-        d="M18.1914 3.89795V9.09506C18.1914 9.43965 18.3283 9.77013 18.572 10.0138C18.8156 10.2575 19.1461 10.3943 19.4907 10.3943H24.6878"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M34 17V22C34 22.5 34.2 22.9 34.6 23.3C35 23.7 35.4 24 35.9 24H40"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Document */}
       <path
-        d="M22.0874 27.2849H9.09465C8.40547 27.2849 7.74452 27.0112 7.25719 26.5238C6.76987 26.0365 6.49609 25.3756 6.49609 24.6864V6.4965C6.49609 5.80732 6.76987 5.14637 7.25719 4.65905C7.74452 4.17172 8.40547 3.89795 9.09465 3.89795H18.1896L24.686 10.3943V24.6864C24.686 25.3756 24.4122 26.0365 23.9249 26.5238C23.4376 27.0112 22.7766 27.2849 22.0874 27.2849Z"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="
+        M37 42H25
+        C23.9 42 23 41.6 22.2 40.8
+        C21.4 40 21 39.1 21 38
+        V20
+        C21 18.9 21.4 18 22.2 17.2
+        C23 16.4 23.9 16 25 16
+        H34
+        L40 22
+        V38
+        C40 39.1 39.6 40 38.8 40.8
+        C38 41.6 37.1 42 36 42
+        Z
+        "
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
+      {/* Arrow */}
       <path
-        d="M15.5907 14.292L12.9922 18.1898H18.1893L15.5907 22.0877"
-        stroke="currentColor"
-        strokeWidth="2.07884"
+        d="M31 29L28 34H34L31 38"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
+    <defs>
+      <clipPath id="clip0_docArrow">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
-
 export const HistoryIcon = (props) => (
-  <svg {...props} width="24" height="24" viewBox="0 0 32 32" fill="none">
-    <path
-      d="M15.5898 9.09497V15.5914L18.1884 18.1899"
-      stroke="currentColor"
-      strokeWidth="2.07884"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
     />
-    <path
-      d="M22.0859 28.584L28.5823 24.6862L22.0859 20.7883V28.584Z"
-      stroke="currentColor"
-      strokeWidth="2.07884"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M16.9125 27.2109C14.4671 27.4888 11.9963 26.9881 9.85208 25.78C7.70783 24.5719 5.99942 22.7181 4.97014 20.4825C3.94087 18.2469 3.64321 15.7436 4.11956 13.329C4.59591 10.9143 5.82197 8.71158 7.62315 7.03438C9.42433 5.35717 11.7088 4.29103 14.1512 3.98779C16.5936 3.68455 19.0694 4.15967 21.226 5.34549C23.3827 6.53131 25.1102 8.36737 26.1626 10.5922C27.2149 12.817 27.5385 15.3171 27.0872 17.7366"
-      stroke="currentColor"
-      strokeWidth="2.07884"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+
+    <g clipPath="url(#clip0_time)">
+      <g transform="translate(15.457 15.4568) scale(1.24)">
+
+        <path
+          d="M12.4121 7.24072V12.4126L14.4809 14.4814"
+          stroke="#56E000"
+          strokeWidth="2.06089"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+        <path
+          d="M17.584 22.7563L22.7559 19.6532L17.584 16.55V22.7563Z"
+          stroke="#56E000"
+          strokeWidth="2.06089"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+        <path
+          d="M13.4643 21.6631C11.5174 21.8843 9.55041 21.4857 7.84333 20.5239C6.13625 19.5622 4.77615 18.0863 3.95672 16.3065C3.1373 14.5267 2.90032 12.5337 3.27955 10.6114C3.65878 8.68906 4.63488 6.93541 6.06884 5.60015C7.50279 4.26489 9.32149 3.41612 11.2659 3.1747C13.2104 2.93329 15.1814 3.31154 16.8984 4.2556C18.6153 5.19965 19.9906 6.66137 20.8284 8.43259C21.6662 10.2038 21.9238 12.1942 21.5645 14.1204"
+          stroke="#56E000"
+          strokeWidth="2.06089"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+      </g>
+    </g>
+
+    <defs>
+      <clipPath id="clip0_time">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
 export const MobileCheckIcon = (props) => (
-  <svg {...props} width="24" height="24" viewBox="0 0 32 32" fill="none">
+  <svg
+    {...props}
+    width="48"
+    height="48"
+    viewBox="0 0 55 55"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="54.014"
+      height="54.014"
+      rx="9"
+      fill="none"
+    />
+
+    {/* Mobile */}
     <path
-      d="M14.9429 27.2849H10.3954C9.70625 27.2849 9.0453 27.0112 8.55797 26.5238C8.07065 26.0365 7.79688 25.3756 7.79688 24.6864V6.4965C7.79688 5.80732 8.07065 5.14637 8.55797 4.65905C9.0453 4.17172 9.70625 3.89795 10.3954 3.89795H20.7897C21.4788 3.89795 22.1398 4.17172 22.6271 4.65905C23.1144 5.14637 23.3882 5.80732 23.3882 6.4965V18.8396"
-      stroke="currentColor"
-      strokeWidth="2.07884"
+      d="M25.5 38H21.5C20.6 38 19.8 37.7 19.2 37.1C18.6 36.5 18.3 35.7 18.3 34.8V18.5C18.3 17.6 18.6 16.8 19.2 16.2C19.8 15.6 20.6 15.3 21.5 15.3H30.5C31.4 15.3 32.2 15.6 32.8 16.2C33.4 16.8 33.7 17.6 33.7 18.5V29.5"
+      stroke="#56E000"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <path d="M19.4883 24.6862L22.0868 27.2848L27.2839 22.0876"
-      stroke="currentColor"
-      strokeWidth="2.07884"
+
+    {/* Check */}
+    <path
+      d="M30.5 34.5L33.5 37.5L39.5 31.5"
+      stroke="#56E000"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -1417,18 +1831,31 @@ export const MobileCheckIcon = (props) => (
 );
 
 export const ClockBoxIcon = (props) => (
-  <svg {...props} width="24" height="24" viewBox="0 0 32 32" fill="none">
+  <svg
+    {...props}
+    width="48"
+    height="48"
+    viewBox="0 0 55 55"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect width="54.014" height="54.014" rx="9" fill="none" />
+
+    {/* Box */}
     <path
-      d="M5.19531 6.4963C5.19531 6.15171 5.3322 5.82123 5.57586 5.57757C5.81952 5.33391 6.15 5.19702 6.49459 5.19702H24.6845C25.0291 5.19702 25.3595 5.33391 25.6032 5.57757C25.8469 5.82123 25.9838 6.15171 25.9838 6.4963V24.6862C25.9838 25.0308 25.8469 25.3613 25.6032 25.6049C25.3595 25.8486 25.0291 25.9855 24.6845 25.9855H6.49459C6.15 25.9855 5.81952 25.8486 5.57586 25.6049C5.3322 25.3613 5.19531 25.0308 5.19531 24.6862V6.4963Z"
-      stroke="currentColor"
-      strokeWidth="2.07884"
+      d="M18 19C18 18.6 18.2 18.2 18.5 17.9C18.8 17.6 19.2 17.4 19.6 17.4H35.4C35.8 17.4 36.2 17.6 36.5 17.9C36.8 18.2 37 18.6 37 19V35C37 35.4 36.8 35.8 36.5 36.1C36.2 36.4 35.8 36.6 35.4 36.6H19.6C19.2 36.6 18.8 36.4 18.5 36.1C18.2 35.8 18 35.4 18 35V19Z"
+      stroke="#56E000"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
+
+    {/* Clock hand */}
     <path
-      d="M15.5898 9.09497V15.5914L19.4877 19.4892"
-      stroke="currentColor"
-      strokeWidth="2.07884"
+      d="M27.5 21.5V27.5L31.5 31.5"
+      stroke="#56E000"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -1438,41 +1865,57 @@ export const ClockBoxIcon = (props) => (
 export const LayoutIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0_layout_new)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_layout)">
       {/* Top Header Block */}
       <path
-        d="M4 5C4 4.44772 4.44772 4 5 4H19C19.5523 4 20 4.44772 20 5V7C20 7.55228 19.5523 8 19 8H5C4.44772 8 4 7.55228 4 7V5Z"
+        d="M18 20C18 19.2 18.7 18.5 19.5 18.5H42.5C43.3 18.5 44 19.2 44 20V23C44 23.8 43.3 24.5 42.5 24.5H19.5C18.7 24.5 18 23.8 18 23V20Z"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       {/* Side Image/Icon Square */}
       <path
-        d="M4 13C4 12.4477 4.44772 12 5 12H9C9.55228 12 10 12.4477 10 13V19C10 19.5523 9.55228 20 9 20H5C4.44772 20 4 19.5523 4 19V13Z"
+        d="M18 31C18 30.2 18.7 29.5 19.5 29.5H26C26.8 29.5 27.5 30.2 27.5 31V40C27.5 40.8 26.8 41.5 26 41.5H19.5C18.7 41.5 18 40.8 18 40V31Z"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       {/* Right Side Text Lines */}
       <path
-        d="M14 12H20M14 16H20M14 20H20"
+        d="M31 30H44M31 35H44M31 40H44"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_layout_new">
-        <rect width="24" height="24" fill="white" />
+      <clipPath id="clip0_layout">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -1481,24 +1924,38 @@ export const LayoutIcon = (props) => (
 export const PayPalIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_paypal)">
       <path
-        d="M17.5 7.2C19.2 8.2 20 10 20 12C20 14.5 17.5 16.5 15 16.5H12.4L11.8 20.1C11.7532 20.3293 11.6276 20.5349 11.4449 20.6811C11.2621 20.8272 11.0339 20.9047 10.8 20.9H8.1C8.02501 20.9015 7.95064 20.8861 7.88239 20.855C7.81415 20.8239 7.75378 20.7778 7.70577 20.7202C7.65775 20.6626 7.62331 20.5949 7.605 20.5222C7.58669 20.4494 7.58498 20.3735 7.6 20.3L7.8 18.9M10 13H12.5C15 13 17.5 10.5 17.5 8C17.5 5 15.6 3 12.5 3H7C6.5 3 6 3.5 6 4L4 18C4 18.5 4.5 19 5 19H7.8L9 14C9.1 13.4 9.4 13 10 13Z"
+        d="M38 25C40.2 26.2 41.2 28.5 41.2 31C41.2 34.2 38 36.8 34.8 36.8H31.5L30.7 41.5C30.65 41.8 30.48 42.05 30.24 42.22C30 42.39 29.7 42.48 29.4 42.45H25.9C25.8 42.45 25.7 42.43 25.62 42.39C25.54 42.35 25.47 42.29 25.41 42.22C25.35 42.15 25.31 42.06 25.29 41.97C25.27 41.88 25.27 41.79 25.29 41.7L25.5 39.8M28.3 33H31.5C34.8 33 38 29.7 38 26.5C38 22.8 35.5 20 31.5 20H24.3C23.7 20 23 20.7 23 21.4L20.7 39C20.7 39.7 21.4 40.4 22.1 40.4H25.5L27 33.8C27.15 33.2 27.5 33 28.3 33Z"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
       <clipPath id="clip0_paypal">
-        <rect width="24" height="24" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -1507,54 +1964,60 @@ export const PayPalIcon = (props) => (
 export const ProfileCardIcon = (props) => (
   <svg
     {...props}
-    width="26"
-    height="26"
-    viewBox="0 0 26 26"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    stroke="#56E000"
   >
-    <g clipPath="url(#clip0_227_5098)">
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_profile)">
       <path
-        d="M21.4047 6.42119V19.2636C21.4047 19.8313 21.1792 20.3757 20.7778 20.7771C20.3764 21.1785 19.8319 21.404 19.2643 21.404H8.56227C7.99461 21.404 7.45019 21.1785 7.04878 20.7771C6.64738 20.3757 6.42188 19.8313 6.42188 19.2636V6.42119C6.42188 5.85352 6.64738 5.3091 7.04878 4.9077C7.45019 4.5063 7.99461 4.28079 8.56227 4.28079H19.2643C19.8319 4.28079 20.3764 4.5063 20.7778 4.9077C21.1792 5.3091 21.4047 5.85352 21.4047 6.42119Z"
-        strokeWidth="2.1404"
+        d="M42 24V40C42 40.8 41.7 41.6 41.1 42.2C40.5 42.8 39.7 43.1 39 43.1H26C25.3 43.1 24.5 42.8 23.9 42.2C23.3 41.6 23 40.8 23 40V24C23 23.2 23.3 22.4 23.9 21.8C24.5 21.2 25.3 20.9 26 20.9H39C39.7 20.9 40.5 21.2 41.1 21.8C41.7 22.4 42 23.2 42 24Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M10.7012 17.1232H17.1224"
-        strokeWidth="2.1404"
+        d="M28 38H37"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M29.5 30C29.5 30.8 29.8 31.6 30.4 32.2C31 32.8 31.8 33.1 32.6 33.1C33.4 33.1 34.2 32.8 34.8 32.2C35.4 31.6 35.7 30.8 35.7 30C35.7 29.2 35.4 28.4 34.8 27.8C34.2 27.2 33.4 26.9 32.6 26.9C31.8 26.9 31 27.2 30.4 27.8C29.8 28.4 29.5 29.2 29.5 30Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M11.7715 11.7722C11.7715 12.3399 11.997 12.8843 12.3984 13.2857C12.7998 13.6871 13.3442 13.9126 13.9119 13.9126C14.4796 13.9126 15.024 13.6871 15.4254 13.2857C15.8268 12.8843 16.0523 12.3399 16.0523 11.7722C16.0523 11.2045 15.8268 10.6601 15.4254 10.2587C15.024 9.85731 14.4796 9.63181 13.9119 9.63181C13.3442 9.63181 12.7998 9.85731 12.3984 10.2587C11.997 10.6601 11.7715 11.2045 11.7715 11.7722Z"
-        strokeWidth="2.1404"
+        d="M19 26H23M19 31H23M19 36H23"
+        stroke="#56E000"
+        strokeWidth="2.06089"
         strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M4.28125 8.5616H7.49185"
-        strokeWidth="2.1404"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M4.28125 12.8424H7.49185"
-        strokeWidth="2.1404"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M4.28125 17.1232H7.49185"
-        strokeWidth="2.1404"
-        strokeLinecap="round"
-        strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_227_5098">
-        <rect width="25.6848" height="25.6848" fill="white" />
+      <clipPath id="clip0_profile">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -1562,24 +2025,38 @@ export const ProfileCardIcon = (props) => (
 export const StarIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_star)">
       <path
-        d="M12.0008 17.75L5.82881 20.995L7.00781 14.122L2.00781 9.25495L8.90781 8.25495L11.9938 2.00195L15.0798 8.25495L21.9798 9.25495L16.9798 14.122L18.1588 20.995L12.0008 17.75Z"
+        d="M31 40L23.5 44L25 35.5L19 30L27.5 28.5L31 21L34.5 28.5L43 30L37 35.5L38.5 44L31 40Z"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
       <clipPath id="clip0_star">
-        <rect width="24" height="24" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -1587,48 +2064,65 @@ export const StarIcon = (props) => (
 export const ChatSearchIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_chat_search)">
       {/* Message Lines */}
       <path
-        d="M8 9H16M8 13H13"
+        d="M24 27H38M24 33H33"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       {/* Chat Bubble Frame */}
       <path
-        d="M11.008 19.195L8 21V18H6C4.89543 18 4 17.1046 4 16V7C4 5.89543 4.89543 5 6 5H18C19.1046 5 20 5.89543 20 7V11.5"
+        d="M30 42L26 44V40H23C21.5 40 20.5 39 20.5 37.5V24.5C20.5 23 21.5 22 23 22H41C42.5 22 43.5 23 43.5 24.5V30"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* Magnifying Glass (Search) */}
+
+      {/* Magnifying Glass */}
       <path
-        d="M15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18Z"
+        d="M36 38C36 40 37.8 41.8 39.8 41.8C41.8 41.8 43.6 40 43.6 38C43.6 36 41.8 34.2 39.8 34.2C37.8 34.2 36 36 36 38Z"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+
       <path
-        d="M20.1992 20.2002L21.9992 22.0002"
+        d="M43.5 41.5L46 44"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
       <clipPath id="clip0_chat_search">
-        <rect width="24" height="24" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -1636,33 +2130,48 @@ export const ChatSearchIcon = (props) => (
 export const PricingIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0_pricing_new)">
-      {/* S-shape for Currency */}
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_pricing)">
+      {/* S-shape */}
       <path
-        d="M16.7 8C16.501 7.43524 16.1374 6.94297 15.6563 6.58654C15.1751 6.23011 14.5983 6.02583 14 6H10C9.20435 6 8.44129 6.31607 7.87868 6.87868C7.31607 7.44129 7 8.20435 7 9C7 9.79565 7.31607 10.5587 7.87868 11.1213C8.44129 11.6839 9.20435 12 10 12H14C14.7956 12 15.5587 12.3161 16.1213 12.8787C16.6839 13.4413 17 14.2044 17 15C17 15.7956 16.6839 16.5587 16.1213 17.1213C15.5587 17.6839 14.7956 18 14 18H10C9.40175 17.9742 8.82491 17.7699 8.34373 17.4135C7.86255 17.057 7.49905 16.5648 7.3 16"
+        d="M40 26C39.7 25.2 39.2 24.5 38.5 24C37.8 23.5 37 23.3 36.1 23.2H31C29.8 23.2 28.7 23.7 27.9 24.5C27.1 25.3 26.6 26.4 26.6 27.6C26.6 28.8 27.1 29.9 27.9 30.7C28.7 31.5 29.8 32 31 32H36.1C37.3 32 38.4 32.5 39.2 33.3C40 34.1 40.5 35.2 40.5 36.4C40.5 37.6 40 38.7 39.2 39.5C38.4 40.3 37.3 40.8 36.1 40.8H31C30.1 40.7 29.3 40.5 28.6 40C27.9 39.5 27.4 38.8 27.1 38"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* Vertical Line for Dollar Symbol */}
+
+      {/* Vertical line */}
       <path
-        d="M12 3V6M12 18V21"
+        d="M33.5 19V23.2M33.5 40.8V45"
         stroke="#56E000"
-        strokeWidth="2"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
+
     <defs>
-      <clipPath id="clip0_pricing_new">
-        <rect width="24" height="24" fill="white" />
+      <clipPath id="clip0_pricing">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -1809,7 +2318,7 @@ export const HomeIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_home)">
@@ -1876,7 +2385,7 @@ export const AddDocumentIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_home)">
@@ -1934,7 +2443,7 @@ export const TruckIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_home)">
@@ -2002,7 +2511,7 @@ export const BikeDeliveryIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_home)">
@@ -2127,7 +2636,7 @@ export const StoreIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_home)">
@@ -2185,7 +2694,7 @@ export const BoxIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_home)">
@@ -2245,20 +2754,20 @@ export const DocumentHeartIcon = (props) => (
   >
     <path
       d="M31.1178 48.5531H24.6941C23.7206 48.5531 22.7869 48.1663 22.0986 47.4779C21.4102 46.7896 21.0234 45.8559 21.0234 44.8824V19.1876C21.0234 18.2141 21.4102 17.2805 22.0986 16.5921C22.7869 15.9037 23.7206 15.517 24.6941 15.517H39.3768C40.3503 15.517 41.284 15.9037 41.9724 16.5921C42.6608 17.2805 43.0475 18.2141 43.0475 19.1876V30.1997"
-      stroke="currentColor"
+      stroke="#56E000"
       strokeWidth="2.00219"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M30.1992 17.3523H33.8699"
-      stroke="currentColor"
+      stroke="#56E000"
       strokeWidth="2.00219"
       strokeLinecap="round"
     />
     <path
       d="M43.0486 50.3884L49.197 44.3611C49.574 43.9953 49.8739 43.5576 50.079 43.0739C50.2841 42.5902 50.3902 42.0703 50.3911 41.5449C50.3919 41.0195 50.2875 40.4993 50.084 40.015C49.8805 39.5306 49.582 39.0919 49.2062 38.7248C48.4392 37.9748 47.4097 37.5539 46.337 37.5518C45.2643 37.5498 44.2332 37.9667 43.4634 38.7138L43.0523 39.1176L42.643 38.7138C41.8761 37.9643 40.847 37.5438 39.7748 37.5417C38.7025 37.5397 37.6718 37.9563 36.9021 38.7028C36.5249 39.0685 36.2248 39.5062 36.0196 39.9898C35.8143 40.4734 35.7081 40.9933 35.707 41.5186C35.706 42.044 35.8103 42.5643 36.0136 43.0487C36.217 43.5331 36.5153 43.9719 36.891 44.3391L43.0486 50.3884Z"
-      stroke="currentColor"
+      stroke="#56E000"
       strokeWidth="2.00219"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -2282,7 +2791,7 @@ export const StoreShopIcon = (props) => (
       width="64.07"
       height="64.07"
       rx="10.01"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     {/* Store */}
@@ -2379,60 +2888,33 @@ export const StoreShopIcon = (props) => (
 export const StaredIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     {/* Background */}
     <rect
-      width="64.07"
-      height="64.07"
-      rx="10.01"
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
       fill="#E4FFD4"
     />
+
     <g clipPath="url(#clip0_star)">
       <path
         d="
-          M14.877 1.24
-          C15.08 1.241 15.278 1.291 15.456 1.387
-          C15.634 1.483 15.786 1.621 15.898 1.789
-          L15.981 1.933
-          L19.517 9.101
-          L27.428 10.248
-          C28.347 10.382 28.767 11.414 28.3 12.14
-          L28.213 12.258
-          L28.116 12.365
-          L22.383 17.943
-          L23.734 25.823
-          C23.769 26.028 23.752 26.24 23.684 26.437
-          C23.616 26.634 23.5 26.811 23.346 26.951
-          C23.191 27.091 23.004 27.19 22.801 27.239
-          C22.599 27.288 22.387 27.285 22.186 27.23
-          L22.06 27.187
-          L21.935 27.13
-          L14.876 23.41
-          L7.801 27.13
-          C7.671 27.198 7.538 27.241 7.404 27.261
-          L7.273 27.274
-          C7.1 27.28 6.927 27.25 6.767 27.186
-          C6.606 27.122 6.46 27.025 6.339 26.901
-          C6.218 26.777 6.124 26.63 6.063 26.467
-          C6.002 26.305 5.976 26.132 5.986 25.959
-          L6.002 25.823
-          L7.353 17.943
-          L1.621 12.363
-          C1.473 12.219 1.363 12.04 1.302 11.842
-          C1.241 11.645 1.23 11.435 1.27 11.232
-          C1.31 11.029 1.401 10.839 1.533 10.68
-          C1.666 10.521 1.836 10.398 2.028 10.321
-          L2.168 10.277
-          L2.309 10.248
-          L10.219 9.101
-          L13.756 1.934
-          C13.855 1.722 14.014 1.543 14.213 1.419
-          C14.412 1.296 14.643 1.234 14.877 1.24
+          M31 18
+          L34.5 25
+          L42 26
+          L36.5 31
+          L38 38.5
+          L31 35
+          L24 38.5
+          L25.5 31
+          L20 26
+          L27.5 25
           Z
         "
         fill="#56E000"
@@ -2441,7 +2923,12 @@ export const StaredIcon = (props) => (
 
     <defs>
       <clipPath id="clip0_star">
-        <rect width="29.758" height="29.758" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -2450,30 +2937,38 @@ export const StaredIcon = (props) => (
 export const UserIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_user)">
       {/* Head */}
       <path
         d="
-          M11.778 3.72
-          H17.978
-          C18.471 3.72 18.944 3.916 19.293 4.264
-          C19.642 4.613 19.837 5.086 19.837 5.58
-          C19.837 6.731 19.38 7.834 18.566 8.648
-          C17.753 9.462 16.649 9.919 15.498 9.919
-          H14.258
-          C13.107 9.919 12.003 9.462 11.189 8.648
-          C10.375 7.834 9.918 6.731 9.918 5.58
-          C9.918 5.086 10.114 4.613 10.463 4.264
-          C10.812 3.916 11.285 3.72 11.778 3.72
+          M26 20
+          H36
+          C36.8 20 37.5 20.3 38.1 20.9
+          C38.7 21.5 39 22.2 39 23
+          C39 24.7 38.3 26.3 37.1 27.5
+          C35.9 28.7 34.3 29.4 32.6 29.4
+          H30.4
+          C28.7 29.4 27.1 28.7 25.9 27.5
+          C24.7 26.3 24 24.7 24 23
+          C24 22.2 24.3 21.5 24.9 20.9
+          C25.5 20.3 26.2 20 27 20
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2481,21 +2976,21 @@ export const UserIcon = (props) => (
       {/* Body */}
       <path
         d="
-          M4.961 21.079
-          V19.839
-          C4.961 17.208 6.006 14.685 7.866 12.825
-          C9.727 10.965 12.25 9.919 14.88 9.919
-          C17.511 9.919 20.034 10.965 21.895 12.825
-          C23.755 14.685 24.8 17.208 24.8 19.839
-          V21.079
-          C24.8 22.394 24.277 23.656 23.347 24.586
-          C22.417 25.516 21.156 26.039 19.84 26.039
-          H9.921
-          C8.605 26.039 7.344 25.516 6.414 24.586
-          C5.483 23.656 4.961 22.394 4.961 21.079
+          M20 38
+          V36
+          C20 32.8 21.3 29.8 23.5 27.6
+          C25.7 25.4 28.7 24.1 31.9 24.1
+          C35.1 24.1 38.1 25.4 40.3 27.6
+          C42.5 29.8 43.8 32.8 43.8 36
+          V38
+          C43.8 39.6 43.1 41.1 41.9 42.3
+          C40.7 43.5 39.2 44.2 37.6 44.2
+          H26.2
+          C24.6 44.2 23.1 43.5 21.9 42.3
+          C20.7 41.1 20 39.6 20 38
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2503,7 +2998,12 @@ export const UserIcon = (props) => (
 
     <defs>
       <clipPath id="clip0_user">
-        <rect width="29.758" height="29.758" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -2512,45 +3012,53 @@ export const UserIcon = (props) => (
 export const MapHeartIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_location)">
       {/* Map */}
       <path
         d="
-          M14.878 22.939
-          L11.158 21.079
-          L3.719 24.799
-          V8.68
-          L11.158 4.96
-          L18.598 8.68
-          L26.038 4.96
-          V14.259
+          M31 40
+          L26 38
+          L18 42
+          V25
+          L26 21
+          L34 25
+          L42 21
+          V31
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Left fold */}
       <path
-        d="M11.16 4.96V21.079"
+        d="M26 21V38"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Right fold */}
       <path
-        d="M18.598 8.679V15.499"
+        d="M34 25V32"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2558,29 +3066,29 @@ export const MapHeartIcon = (props) => (
       {/* Location pin */}
       <path
         d="
-          M26.19 24.949
-          C26.71 24.429 27.064 23.766 27.208 23.044
-          C27.352 22.323 27.278 21.575 26.996 20.895
-          C26.715 20.215 26.238 19.634 25.626 19.225
-          C25.015 18.816 24.295 18.598 23.56 18.598
-          C22.824 18.598 22.105 18.816 21.493 19.225
-          C20.881 19.634 20.404 20.215 20.123 20.895
-          C19.841 21.575 19.768 22.323 19.911 23.044
-          C20.055 23.766 20.409 24.429 20.93 24.949
-          C21.448 25.468 22.325 26.244 23.56 27.279
-          C24.863 26.175 25.741 25.399 26.19 24.949
+          M42 42
+          C42.6 41.4 43 40.6 43.2 39.8
+          C43.4 39 43.3 38.2 43 37.5
+          C42.7 36.8 42.2 36.2 41.5 35.8
+          C40.8 35.4 40 35.2 39.2 35.2
+          C38.4 35.2 37.6 35.4 36.9 35.8
+          C36.2 36.2 35.7 36.8 35.4 37.5
+          C35.1 38.2 35 39 35.2 39.8
+          C35.4 40.6 35.8 41.4 36.4 42
+          C37 42.6 38 43.5 39.2 44.7
+          C40.5 43.6 41.4 42.7 42 42
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Pin dot */}
       <path
-        d="M23.559 22.319V22.331"
+        d="M39.2 39V39.1"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2588,7 +3096,12 @@ export const MapHeartIcon = (props) => (
 
     <defs>
       <clipPath id="clip0_location">
-        <rect width="29.758" height="29.758" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -2596,32 +3109,40 @@ export const MapHeartIcon = (props) => (
 export const BookmarkIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_bookmark)">
       {/* Outer box */}
       <path
         d="
-          M4.961 7.44
-          C4.961 6.782 5.222 6.151 5.687 5.686
-          C6.152 5.221 6.783 4.96 7.441 4.96
-          H22.32
-          C22.978 4.96 23.609 5.221 24.074 5.686
-          C24.539 6.151 24.8 6.782 24.8 7.44
-          V22.319
-          C24.8 22.977 24.539 23.607 24.074 24.072
-          C23.609 24.537 22.978 24.799 22.32 24.799
-          H7.441
-          C6.783 24.799 6.152 24.537 5.687 24.072
-          C5.222 23.607 4.961 22.977 4.961 22.319
-          V7.44
+          M19 22
+          C19 21.2 19.3 20.4 19.9 19.8
+          C20.5 19.2 21.3 18.9 22.1 18.9
+          H39
+          C39.8 18.9 40.6 19.2 41.2 19.8
+          C41.8 20.4 42.1 21.2 42.1 22
+          V39
+          C42.1 39.8 41.8 40.6 41.2 41.2
+          C40.6 41.8 39.8 42.1 39 42.1
+          H22.1
+          C21.3 42.1 20.5 41.8 19.9 41.2
+          C19.3 40.6 19 39.8 19 39
+          V22
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2629,14 +3150,14 @@ export const BookmarkIcon = (props) => (
       {/* Bookmark */}
       <path
         d="
-          M14.879 4.96
-          V13.639
-          L17.359 11.159
-          L19.839 13.639
-          V4.96
+          M31 18.9
+          V29
+          L34 26
+          L37 29
+          V18.9
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2644,7 +3165,12 @@ export const BookmarkIcon = (props) => (
 
     <defs>
       <clipPath id="clip0_bookmark">
-        <rect width="29.758" height="29.758" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -2664,148 +3190,270 @@ export const BookmarkIcon = (props) => (
 export const CubeNetworkIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M3.7207 21.0789L13.6402 27.2786L22.3197 22.3188V12.3994L17.36 9.29954L22.3197 6.19971L27.2794 9.29954V14.2593L13.6402 22.3188L8.68044 19.219V9.91951L3.7207 6.81967V21.0789Z"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
     />
-    <path
-      d="M13.6387 22.3188V27.2786"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-    />
-    <path
-      d="M8.67969 19.219L17.3592 14.2593"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-    />
-    <path
-      d="M17.3594 9.29944V14.2592M17.3594 14.2593L22.3191 17.3591"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-    />
-    <path
-      d="M13.6402 16.1192V6.81968L8.68044 3.71985L3.7207 6.81968"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-    />
-    <path
-      d="M8.67969 9.91941L13.6394 6.81958M22.3184 12.3993L27.2781 9.29944"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-    />
+
+    <g clipPath="url(#clip0_cube)">
+      <path
+        d="M18 38L30 45L40 40V28L34 24L40 20L46 24V30L30 40L24 36V25L18 22V38Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M30 40V45"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M24 36L34 30"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M34 24V30M34 30L40 34"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M30 32V22L24 18L18 22"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M24 25L30 22M40 28L46 24"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_cube">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
 
 export const SearchSettingsIcon = (props) => (
   <svg
     {...props}
-    width="28"
-    height="28"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M3.7207 12.3994C3.7207 13.5392 3.94521 14.6678 4.38139 15.7209C4.81758 16.7739 5.45691 17.7308 6.26288 18.5367C7.06885 19.3427 8.02567 19.982 9.07872 20.4182C10.1318 20.8544 11.2604 21.0789 12.4002 21.0789C13.54 21.0789 14.6687 20.8544 15.7217 20.4182C16.7748 19.982 17.7316 19.3427 18.5376 18.5367C19.3436 17.7308 19.9829 16.7739 20.4191 15.7209C20.8553 14.6678 21.0798 13.5392 21.0798 12.3994C21.0798 11.2596 20.8553 10.1309 20.4191 9.07787C19.9829 8.02482 19.3436 7.06799 18.5376 6.26202C17.7316 5.45606 16.7748 4.81673 15.7217 4.38054C14.6687 3.94435 13.54 3.71985 12.4002 3.71985C11.2604 3.71985 10.1318 3.94435 9.07872 4.38054C8.02567 4.81673 7.06885 5.45606 6.26288 6.26202C5.45691 7.06799 4.81758 8.02482 4.38139 9.07787C3.94521 10.1309 3.7207 11.2596 3.7207 12.3994Z"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
     />
-    <path
-      d="M26.0392 26.0386L18.5996 18.599"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M14.8797 8.67957H11.7798C11.2865 8.67957 10.8135 8.87552 10.4647 9.22432C10.1159 9.57312 9.91992 10.0462 9.91992 10.5395C9.91992 11.0327 10.1159 11.5058 10.4647 11.8546C10.8135 12.2034 11.2865 12.3994 11.7798 12.3994H13.0198C13.513 12.3994 13.9861 12.5953 14.3349 12.9441C14.6837 13.2929 14.8797 13.766 14.8797 14.2593C14.8797 14.7525 14.6837 15.2256 14.3349 15.5744C13.9861 15.9232 13.513 16.1192 13.0198 16.1192H9.91992"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M12.3984 16.1191V17.359M12.3984 7.43958V8.67951"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+
+    <g clipPath="url(#clip0_search)">
+      <path
+        d="
+          M19 31
+          C19 32.4 19.3 33.7 19.8 35
+          C20.3 36.3 21.1 37.4 22.1 38.4
+          C23.1 39.4 24.2 40.2 25.5 40.7
+          C26.8 41.2 28.1 41.5 29.5 41.5
+          C30.9 41.5 32.2 41.2 33.5 40.7
+          C34.8 40.2 35.9 39.4 36.9 38.4
+          C37.9 37.4 38.7 36.3 39.2 35
+          C39.7 33.7 40 32.4 40 31
+          C40 29.6 39.7 28.3 39.2 27
+          C38.7 25.7 37.9 24.6 36.9 23.6
+          C35.9 22.6 34.8 21.8 33.5 21.3
+          C32.2 20.8 30.9 20.5 29.5 20.5
+          C28.1 20.5 26.8 20.8 25.5 21.3
+          C24.2 21.8 23.1 22.6 22.1 23.6
+          C21.1 24.6 20.3 25.7 19.8 27
+          C19.3 28.3 19 29.6 19 31
+        "
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M46 46L38 38"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="
+          M33 26H29
+          C28.4 26 27.9 26.2 27.5 26.6
+          C27.1 27 26.9 27.5 26.9 28.1
+          C26.9 28.7 27.1 29.2 27.5 29.6
+          C27.9 30 28.4 30.2 29 30.2
+          H30.5
+          C31.1 30.2 31.6 30.4 32 30.8
+          C32.4 31.2 32.6 31.7 32.6 32.3
+          C32.6 32.9 32.4 33.4 32 33.8
+          C31.6 34.2 31.1 34.4 30.5 34.4
+          H26.9
+        "
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M29.5 34.4V36M29.5 24V26"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_search">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
-
 
 export const ClockedIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M3.7207 14.8792C3.7207 16.3447 4.00935 17.7958 4.57016 19.1498C5.13097 20.5037 5.95297 21.7339 6.98921 22.7701C8.02546 23.8064 9.25566 24.6284 10.6096 25.1892C11.9635 25.75 13.4146 26.0386 14.8801 26.0386C16.3456 26.0386 17.7967 25.75 19.1506 25.1892C20.5045 24.6284 21.7347 23.8064 22.771 22.7701C23.8072 21.7339 24.6292 20.5037 25.19 19.1498C25.7509 17.7958 26.0395 16.3447 26.0395 14.8792C26.0395 11.9196 24.8638 9.08115 22.771 6.98836C20.6782 4.89557 17.8398 3.71985 14.8801 3.71985C11.9204 3.71985 9.08201 4.89557 6.98921 6.98836C4.89642 9.08115 3.7207 11.9196 3.7207 14.8792Z"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
     />
-    <path
-      d="M14.8789 8.67957V14.8792L18.5987 18.599"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+
+    <g clipPath="url(#clip0_clock)">
+      <path
+        d="
+          M19 31
+          C19 32.8 19.4 34.6 20.1 36.2
+          C20.8 37.9 21.8 39.3 23 40.5
+          C24.2 41.7 25.6 42.7 27.3 43.4
+          C28.9 44.1 30.7 44.5 32.5 44.5
+          C34.3 44.5 36.1 44.1 37.7 43.4
+          C39.4 42.7 40.8 41.7 42 40.5
+          C43.2 39.3 44.2 37.9 44.9 36.2
+          C45.6 34.6 46 32.8 46 31
+          C46 27.3 44.5 23.8 41.9 21.2
+          C39.3 18.6 35.8 17.1 32.1 17.1
+          C28.4 17.1 24.9 18.6 22.3 21.2
+          C19.7 23.8 19 27.3 19 31
+        "
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M32 23V31L37 36"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_clock">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
-
 export const BookmarkedIcon = (props) => (
   <svg
     {...props}
-    width="24"
-    height="24"
-    viewBox="0 0 30 30"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
     <g clipPath="url(#clip0_bookmark)">
       {/* Outer box */}
       <path
         d="
-          M4.961 7.44
-          C4.961 6.782 5.222 6.151 5.687 5.686
-          C6.152 5.221 6.783 4.96 7.441 4.96
-          H22.32
-          C22.978 4.96 23.609 5.221 24.074 5.686
-          C24.539 6.151 24.8 6.782 24.8 7.44
-          V22.319
-          C24.8 22.977 24.539 23.607 24.074 24.072
-          C23.609 24.537 22.978 24.799 22.32 24.799
-          H7.441
-          C6.783 24.799 6.152 24.537 5.687 24.072
-          C5.222 23.607 4.961 22.977 4.961 22.319
-          V7.44
+          M19 22
+          C19 21.2 19.3 20.4 19.9 19.8
+          C20.5 19.2 21.3 18.9 22.1 18.9
+          H39
+          C39.8 18.9 40.6 19.2 41.2 19.8
+          C41.8 20.4 42.1 21.2 42.1 22
+          V39
+          C42.1 39.8 41.8 40.6 41.2 41.2
+          C40.6 41.8 39.8 42.1 39 42.1
+          H22.1
+          C21.3 42.1 20.5 41.8 19.9 41.2
+          C19.3 40.6 19 39.8 19 39
+          V22
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2813,14 +3461,14 @@ export const BookmarkedIcon = (props) => (
       {/* Bookmark */}
       <path
         d="
-          M14.879 4.96
-          V13.639
-          L17.359 11.159
-          L19.839 13.639
-          V4.96
+          M31 18.9
+          V29
+          L34 26
+          L37 29
+          V18.9
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -2828,7 +3476,12 @@ export const BookmarkedIcon = (props) => (
 
     <defs>
       <clipPath id="clip0_bookmark">
-        <rect width="29.758" height="29.758" fill="white" />
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -2837,8 +3490,8 @@ export const BookmarkedIcon = (props) => (
 export const ClockingIcon = (props) => (
   <svg
     {...props}
-    width="30"
-    height="30"
+    width="20"
+    height="20"
     viewBox="0 0 30 30"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -2964,10 +3617,18 @@ export const WindowsIcon = (props) => (
   </svg>
 );
 
-/* MarketPlace Section Svg Icons  */
+/* MARKETPLACE SECTION SVG ICONS START */
 
 export const ApprovalIcon = (props) => (
-  <svg {...props} width="60" height="60" viewBox="0 0 60 60" fill="none">
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
     <rect
       width="61.8268"
       height="61.8268"
@@ -2975,63 +3636,78 @@ export const ApprovalIcon = (props) => (
       fill="#E4FFD4"
     />
 
-    <path
-      d="M23.5574 28.5184V38.4379C23.5574 39.0956 22.897 39.6778 22.3175 39.6778H19.8376C19.2581 39.6778 18.5977 39.0956 18.5977 38.4379V29.7583C18.5977 29.1006 19.2581 28.5184 19.8376 28.5184H23.5574Z"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <g clipPath="url(#clip0_approval)">
+      <path
+        d="M27 33V43C27 43.8 26.2 44.4 25.5 44.4H22.5C21.8 44.4 21 43.8 21 43V34.5C21 33.7 21.8 33 22.5 33H27Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
 
-    <path
-      d="M23.5574 28.5184C26.0373 28.5184 28.5171 26.0386 28.5171 23.5587V22.3187C28.5171 21.6609 29.1775 19.8389 30.997 19.8389C32.8165 19.8389 33.4769 21.6609 33.4769 22.3187V28.5184H37.1967C38.8566 28.5184 39.6765 30.3406 39.6765 30.9983L38.4366 37.1979C38.1762 38.5974 37.2366 39.6778 35.9567 39.6778H27.2772C25.4577 39.6778 23.5574 37.8573 23.5574 35.958"
-      stroke="#56E000"
-      strokeWidth="1.98"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+      <path
+        d="M27 33C30 33 33 30 33 27V25.5C33 24.7 33.8 22.5 36 22.5C38.2 22.5 39 24.7 39 25.5V33H43C45 33 46 35.2 46 36L44.5 43C44.2 44.6 43 45.8 41.4 45.8H31C29 45.8 27 43.8 27 41.8"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_approval">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
   </svg>
 );
 
 export const MarkStoredIcon = (props) => (
   <svg
     {...props}
-    width="60"
-    height="60"
-    viewBox="0 0 60 60"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-     <rect
+    {/* Background */}
+    <rect
       width="61.8268"
       height="61.8268"
       rx="10.3045"
       fill="#E4FFD4"
     />
-    <g clipPath="url(#clip0_balance)">
+
+    <g clipPath="url(#clip0_markstored)">
       {/* Base */}
       <path
-        d="M8.68 24.799H21.079"
+        d="M24 42H38"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Top bar */}
       <path
-        d="M7.441 7.44L14.881 6.2L22.321 7.44"
+        d="M22 24L31 22L40 24"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Center pole */}
       <path
-        d="M14.879 3.72V24.799"
+        d="M31 18V42"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -3039,16 +3715,16 @@ export const MarkStoredIcon = (props) => (
       {/* Left scale */}
       <path
         d="
-          M11.158 14.879
-          L7.439 7.44
-          L3.719 14.879
-          C3.719 15.866 4.111 16.812 4.808 17.51
-          C5.506 18.207 6.452 18.599 7.439 18.599
-          C8.425 18.599 9.371 18.207 10.069 17.51
-          C10.766 16.812 11.158 15.866 11.158 14.879
+          M27 33
+          L22 24
+          L17 33
+          C17 34.3 17.5 35.6 18.5 36.5
+          C19.5 37.5 20.8 38 22 38
+          C23.3 38 24.5 37.5 25.5 36.5
+          C26.5 35.6 27 34.3 27 33
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -3056,24 +3732,29 @@ export const MarkStoredIcon = (props) => (
       {/* Right scale */}
       <path
         d="
-          M26.037 14.879
-          L22.318 7.44
-          L18.598 14.879
-          C18.598 15.866 18.99 16.812 19.687 17.51
-          C20.385 18.207 21.331 18.599 22.318 18.599
-          C23.304 18.599 24.25 18.207 24.948 17.51
-          C25.645 16.812 26.037 15.866 26.037 14.879
+          M45 33
+          L40 24
+          L35 33
+          C35 34.3 35.5 35.6 36.5 36.5
+          C37.5 37.5 38.8 38 40 38
+          C41.3 38 42.5 37.5 43.5 36.5
+          C44.5 35.6 45 34.3 45 33
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </g>
 
     <defs>
-      <clipPath id="clip0_balance">
-        <rect width="29.758" height="29.758" fill="white" />
+      <clipPath id="clip0_markstored">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -3082,62 +3763,67 @@ export const MarkStoredIcon = (props) => (
 export const MarkLinkIcon = (props) => (
   <svg
     {...props}
-    width="60"
-    height="60"
-    viewBox="0 0 60 60"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-
-     <rect
+    {/* Background */}
+    <rect
       width="61.8268"
       height="61.8268"
       rx="10.3045"
       fill="#E4FFD4"
     />
 
-    <g clipPath="url(#clip0_window)">
+    <g clipPath="url(#clip0_marklink)">
       {/* Frame */}
       <path
         d="
-          M3.719 8.68
-          C3.719 8.022 3.98 7.391 4.445 6.926
-          C4.91 6.461 5.541 6.2 6.199 6.2
-          H23.558
-          C24.215 6.2 24.846 6.461 25.311 6.926
-          C25.776 7.391 26.038 8.022 26.038 8.68
-          V21.079
-          C26.038 21.737 25.776 22.367 25.311 22.832
-          C24.846 23.298 24.215 23.559 23.558 23.559
-          H6.199
-          C5.541 23.559 4.91 23.298 4.445 22.832
-          C3.98 22.367 3.719 21.737 3.719 21.079
-          V8.68
+          M18 24
+          C18 23.2 18.3 22.4 18.9 21.8
+          C19.5 21.2 20.3 20.9 21.1 20.9
+          H40
+          C40.8 20.9 41.6 21.2 42.2 21.8
+          C42.8 22.4 43.1 23.2 43.1 24
+          V38
+          C43.1 38.8 42.8 39.6 42.2 40.2
+          C41.6 40.8 40.8 41.1 40 41.1
+          H21.1
+          C20.3 41.1 19.5 40.8 18.9 40.2
+          C18.3 39.6 18 38.8 18 38
+          V24
         "
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Dots */}
       <path
-        d="M7.441 9.919H7.454"
+        d="M23 26H23.1"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
       <path
-        d="M11.16 9.919H11.173"
+        d="M27 26H27.1"
         stroke="#56E000"
-        strokeWidth="1.98"
+        strokeWidth="2.06089"
         strokeLinecap="round"
       />
     </g>
 
     <defs>
-      <clipPath id="clip0_window">
-        <rect width="29.758" height="29.758" fill="white" />
+      <clipPath id="clip0_marklink">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
       </clipPath>
     </defs>
   </svg>
@@ -3146,9 +3832,9 @@ export const MarkLinkIcon = (props) => (
 export const MarkStorefulIcon = (props) => (
   <svg
     {...props}
-     width="60"
-    height="60"
-    viewBox="0 0 60 60"
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -3179,7 +3865,7 @@ export const MarkStorefulIcon = (props) => (
         strokeLinejoin="round"
       />
 
-      {/* Home body */}
+      {/* Store body */}
       <path
         d="M21.8964 37.3537H19.3203V29.6254M19.3203 29.6254L21.8964 23.1851H33.489L38.6412 29.6254M19.3203 29.6254H38.6412M38.6412 29.6254H39.9293C40.6125 29.6254 41.2677 29.8968 41.7508 30.3799C42.234 30.863 42.5054 31.5182 42.5054 32.2015V37.3537H39.9293M34.777 37.3537H27.0487M30.9128 29.6254V23.1851"
         stroke="#56E000"
@@ -3195,12 +3881,15 @@ export const MarkStorefulIcon = (props) => (
           width="30.9134"
           height="30.9134"
           transform="translate(15.457 15.4568)"
-          fill=""
+          fill="white"
         />
       </clipPath>
     </defs>
   </svg>
 );
+
+
+/* MARKETPLACE SECTION SVG ICONS END*/
 
 
 export const DeliveryBoxIcon = (props) => (
@@ -3254,7 +3943,7 @@ export const HeartIcon = (props) => (
       width="54.014"
       height="54.014"
       rx="9"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     {/* Heart */}
@@ -3337,7 +4026,7 @@ export const ProfileIcon = (props) => (
       width="54.014"
       height="54.014"
       rx="9"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     {/* Profile */}
@@ -3430,7 +4119,7 @@ export const PackageIcon = (props) => (
       width="54.014"
       height="54.014"
       rx="9"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     {/* Box */}
@@ -3509,7 +4198,7 @@ export const CodeIcon = (props) => (
       width="54.014"
       height="54.014"
       rx="9"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     {/* Code */}
@@ -3596,7 +4285,7 @@ export const LogoutIcon = (props) => (
       width="54.014"
       height="54.014"
       rx="9"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     {/* Logout */}
@@ -3887,7 +4576,7 @@ export const HeartLayIcon = (props) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <rect width="61.8268" height="61.8268" rx="10.3045" fill="#E4FFD4" />
+    <rect width="61.8268" height="61.8268" rx="10.3045" fill="none" />
 
     <g clipPath="url(#clip0_heart)">
       <g transform="translate(16 16)" stroke="#56E000">
@@ -3974,7 +4663,7 @@ export const SearchDocumentIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_search)" transform="translate(15.457 15.457)">
@@ -4033,7 +4722,7 @@ export const NetworkIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_network)" transform="translate(15.457 15.457)">
@@ -4100,7 +4789,7 @@ export const ConnectionIcon = (props) => (
       width="61.8268"
       height="61.8268"
       rx="10.3045"
-      fill="#E4FFD4"
+      fill="none"
     />
 
     <g clipPath="url(#clip0_connection)" transform="translate(15.457 15.457)">
@@ -4151,3 +4840,375 @@ export const ConnectionIcon = (props) => (
 
 
 
+
+export const GlobalIcon = (props) => (
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_global)">
+      <g transform="translate(15.457 15.4568) scale(0.7)">
+
+        <path
+          d="M34.5337 24.9239C38.7403 28.8478 41.0418 32.2652 40.2086 33.917C38.8412 36.5966 29.5948 33.4417 19.5518 26.873C9.51252 20.3043 2.47584 12.807 3.84133 10.1292C4.69293 8.45905 9.21153 9.31432 14.4918 11.6067"
+          stroke="#56E000"
+          strokeWidth="2.06089"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+        <path
+          d="M9.17578 22.0241C9.17578 23.7112 9.50809 25.3818 10.1537 26.9405C10.7994 28.4993 11.7457 29.9155 12.9387 31.1085C14.1317 32.3015 15.548 33.2479 17.1067 33.8935C18.6654 34.5391 20.336 34.8714 22.0232 34.8714C23.7103 34.8714 25.3809 34.5391 26.9396 33.8935C28.4983 33.2479 29.9146 32.3015 31.1076 31.1085C32.3006 29.9155 33.2469 28.4993 33.8926 26.9405C34.5382 25.3818 34.8705 23.7112 34.8705 22.0241C34.8705 20.3369 34.5382 18.6663 33.8926 17.1076C33.2469 15.5489 32.3006 14.1326 31.1076 12.9396C29.9146 11.7466 28.4983 10.8003 26.9396 10.1546C25.3809 9.509 23.7103 9.1767 22.0232 9.1767C20.336 9.1767 18.6654 9.509 17.1067 10.1546C15.548 10.8003 14.1317 11.7466 12.9387 12.9396C11.7457 14.1326 10.7994 15.5489 10.1537 17.1076C9.50809 18.6663 9.17578 20.3369 9.17578 22.0241Z"
+          stroke="#56E000"
+          strokeWidth="2.06089"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+
+      </g>
+    </g>
+
+    <defs>
+      <clipPath id="clip0_global">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+
+export const BrightIcon = (props) => (
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_bright)">
+      {/* Sun center */}
+      <circle
+        cx="31"
+        cy="31"
+        r="6"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+      />
+
+      {/* Sun rays */}
+      <path
+        d="M31 20V23"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M31 39V42"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M20 31H23"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M39 31H42"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M23.5 23.5L25.5 25.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M36.5 36.5L38.5 38.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M23.5 38.5L25.5 36.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+      <path
+        d="M36.5 25.5L38.5 23.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_bright">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+
+export const CoderIcon = (props) => (
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_coder)">
+      <path
+        d="M24.5 27.5L18 34L24.5 40.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M37.5 27.5L44 34L37.5 40.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M34 20L28 48"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_coder">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+
+export const BillingIcon = (props) => (
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_billing)">
+      <path
+        d="M26 20H23C22.2 20 21.5 20.3 20.9 20.9C20.3 21.5 20 22.2 20 23V40C20 40.8 20.3 41.5 20.9 42.1C21.5 42.7 22.2 43 23 43H39C39.8 43 40.5 42.7 41.1 42.1C41.7 41.5 42 40.8 42 40V23C42 22.2 41.7 21.5 41.1 20.9C40.5 20.3 39.8 20 39 20H36"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M26 20C26 19.2 26.3 18.5 26.9 17.9C27.5 17.3 28.2 17 29 17H32C32.8 17 33.5 17.3 34.1 17.9C34.7 18.5 35 19.2 35 20C35 20.8 34.7 21.5 34.1 22.1C33.5 22.7 32.8 23 32 23H29C28.2 23 27.5 22.7 26.9 22.1C26.3 21.5 26 20.8 26 20Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M34 30H30C29.3 30 28.7 30.3 28.2 30.8C27.7 31.3 27.4 31.9 27.4 32.6C27.4 33.3 27.7 33.9 28.2 34.4C28.7 34.9 29.3 35.2 30 35.2H31.6C32.3 35.2 32.9 35.5 33.4 36C33.9 36.5 34.2 37.1 34.2 37.8C34.2 38.5 33.9 39.1 33.4 39.6C32.9 40.1 32.3 40.4 31.6 40.4H27.4"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M31 40.4V42M31 28V30"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_billing">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+
+export const EditerIcon = (props) => (
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect
+      width="61.8268"
+      height="61.8268"
+      rx="10.3045"
+      fill="none"
+    />
+
+    <g clipPath="url(#clip0_editer)">
+      <path
+        d="M31 36L44 23C44.6 22.4 45 21.6 45 20.8C45 20 44.6 19.2 44 18.6C43.4 18 42.6 17.6 41.8 17.6C41 17.6 40.2 18 39.6 18.6L26.5 31.6V36H31Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M37.5 21L42.5 26"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M26.5 23C23.8 23.4 21.3 24.8 19.6 27C17.9 29.2 17 32 17.2 34.8C17.4 37.6 18.7 40.2 20.7 42.1C22.7 44 25.4 45 28.2 45C30.9 45 33.5 44 35.6 42.2C37.7 40.4 39 37.9 39.4 35"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_editer">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const HeadsetIcon = (props) => (
+  <svg
+    {...props}
+    width="44"
+    height="44"
+    viewBox="0 0 62 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Background */}
+    <rect width="61.8268" height="61.8268" rx="10.3045" fill="none" />
+
+    <g clipPath="url(#clip0_headset)">
+      <path
+        d="M18.6 36.5C18.6 35.7 18.9 34.9 19.5 34.3C20.1 33.7 20.9 33.4 21.7 33.4H23.2C24 33.4 24.8 33.7 25.4 34.3C26 34.9 26.3 35.7 26.3 36.5V41.3C26.3 42.1 26 42.9 25.4 43.5C24.8 44.1 24 44.4 23.2 44.4H21.7C20.9 44.4 20.1 44.1 19.5 43.5C18.9 42.9 18.6 42.1 18.6 41.3V36.5Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M35.7 36.5C35.7 35.7 36 34.9 36.6 34.3C37.2 33.7 38 33.4 38.8 33.4H40.3C41.1 33.4 41.9 33.7 42.5 34.3C43.1 34.9 43.4 35.7 43.4 36.5V41.3C43.4 42.1 43.1 42.9 42.5 43.5C41.9 44.1 41.1 44.4 40.3 44.4H38.8C38 44.4 37.2 44.1 36.6 43.5C36 42.9 35.7 42.1 35.7 41.3V36.5Z"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M18.6 36.5V31.7C18.6 28.3 19.9 25 22.4 22.5C24.9 20 28.2 18.7 31.6 18.7C35 18.7 38.3 20 40.8 22.5C43.3 25 44.6 28.3 44.6 31.7V36.5"
+        stroke="#56E000"
+        strokeWidth="2.06089"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+
+    <defs>
+      <clipPath id="clip0_headset">
+        <rect
+          width="30.9134"
+          height="30.9134"
+          transform="translate(15.457 15.4568)"
+          fill="white"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);

@@ -3,9 +3,9 @@ import React from "react"
 const Core = () =>{
 <section className="w-full bg-white relative ">
 
-                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-4 ">
+                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
                   {/* Content */}
-                  <div className="relative mx-2 md:mx-6 lg:mx-4 xl:mx-6">
+                  <div className="relative mx-2 md:mx-6 lg:mx-4 xl:mx-8">
 
                     {/* Header */}
                     <div className="flex  mb-12 lg:mb-12">

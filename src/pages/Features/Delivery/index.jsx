@@ -13,9 +13,9 @@ import Section11 from '../components/Section11';
 import FAQSection from '../components/faqSection';
 
 // Assets
-import Selfcard from '../../../../public/assets/Selfcardimage.webp';
-import Sourcecard from '../../../../public/assets/Sourcecardimage.webp';
-import Scalablecard from '../../../../public/assets/Scalablecardimage.webp';
+import Selfcard from '../../../../public/assets/Selfimage.webp';
+import Sourcecard from '../../../../public/assets/Sourceimage.webp';
+import Scalablecard from '../../../../public/assets/Scalebleimage.webp';
 import Ordercardimage from '../../../../public/assets/Orderimage.webp';
 import Uptimecardimage from '../../../../public/assets/Uptimecardimage.webp';
 import Globalcardimage from '../../../../public/assets/Globalcardimage.webp';
@@ -95,27 +95,27 @@ const TaxiPage = () => {
           showcaseImage: '../../../../public/assets/Efficiencyimage.webp',
           features: [
             {
-              icon: <MenuIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <MenuIcon />,
               title: 'One-Time License',
               desc: 'Pay once, own forever.',
             },
             {
-              icon: <SectionLayoutIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <SectionLayoutIcon  />,
               title: 'Rider & Merchant Apps',
               desc: 'Smooth, responsive, and intuitive.',
             },
             {
-              icon: <ScalesIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <ScalesIcon  />,
               title: 'Smart Route Optimization',
               desc: 'Deliver faster with intelligent path planning.',
             },
             {
-              icon: <WindowCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <WindowCardIcon />,
               title: 'Real-Time Tracking Dashboard',
               desc: 'Manage deliveries live from one control panel.',
             },
             {
-              icon: <WindowCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <WindowCardIcon />,
               title: '100% White-Label',
               desc: 'Launch under your brand on web, iOS, and Android.',
             },
@@ -132,7 +132,7 @@ const TaxiPage = () => {
           categories: [
             {
               label: 'Customers',
-              image: '../../../../public/assets/Courierimage.webp',
+              image: '../../../../public/assets/EmpowerCustomerimage.webp',
               features: [
                 'Book parcel pickups in seconds',
                 'Track delivery in real time',
@@ -142,7 +142,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Drivers / Couriers',
-              image: '../../../../public/assets/Deliveryimage.webp',
+              image: '../../../../public/assets/EmpowerDriverimage.webp',
               features: [
                 'Accept or reject delivery tasks',
                 'Use in-app navigation and route optimization',
@@ -152,7 +152,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Vendors / Merchants',
-              image: '../../../../public/assets/Vendorimage.webp',
+              image: '../../../../public/assets/EmpowerVendorimage.webp',
               features: [
                 'Schedule bulk or recurring pickups',
                 'Manage multiple locations and accounts',
@@ -175,23 +175,23 @@ const TaxiPage = () => {
           ctaButton: 'View Dashboard Demo',
           adminFeatures: [
             {
-              icon: <ClockIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <ClockIcon  />,
               text: 'Manage drivers, merchants, and delivery zones',
             },
             {
-              icon: <CopyIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <CopyIcon  />,
               text: 'Assign parcels automatically or manually',
             },
             {
-              icon: <ShippingIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <ShippingIcon  />,
               text: 'Track every package from pickup to drop-off',
             },
             {
-              icon: <RectangleIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <RectangleIcon  />,
               text: 'Generate invoices and payout reports',
             },
             {
-              icon: <SuccessDocumentIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <SuccessDocumentIcon  />,
               text: 'Analyze performance with live analytics',
             },
           ],

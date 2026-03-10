@@ -7,53 +7,50 @@ import {
   BikeDeliveryIcon,
   StoreIcon,
   HomeIcon,
-} from '../../svg/svgIcons';
+} from "../../svg/svgIcons";
 
 const ServicePlatformSection = () => {
-   const services = [
-  
-        {
-             icon: <StoreIcon />,
-             title: "Taxi Booking",
-             description:
-               "Real-time tracking, auto dispatching, driver app, and admin dashboard.",
-           },
-           {
-             icon: <BikeDeliveryIcon />,
-             title: "Food Delivery",
-             description:
-               "Ordering, tracking, menu management, and seamless payments integration.",
-           },
-           {
-             icon: <BoxIcon />,
-             title: "Courier Delivery",
-             description:
-               "Package sending, route optimization, delivery proof, and tracking.",
-           },
-           {
-             icon: <TruckIcon />,
-             title: "Grocery Delivery",
-             description:
-               "Category grouping, inventory management, scheduling, and instant checkout.",
-           },
-           {
-             icon: <AddDocumentIcon />,
-             title: "Home Services",
-             description:
-               "Book handy services, repair plumbing, AC maintenance and more on demand.",
-           },
-           {
-             icon: <HomeIcon />,
-             title: "Pharmacy ",
-             description:
-               "Prescription uploads, medicine delivery, order history, and health tracking.",
-           },
-  
-     
-    ];
+  const services = [
+    {
+      icon: <StoreIcon />,
+      title: "Taxi Booking",
+      description:
+        "Real-time tracking, auto dispatching, driver app, and admin dashboard.",
+    },
+    {
+      icon: <BikeDeliveryIcon />,
+      title: "Food Delivery",
+      description:
+        "Ordering, tracking, menu management, and seamless payments integration.",
+    },
+    {
+      icon: <BoxIcon />,
+      title: "Courier Delivery",
+      description:
+        "Package sending, route optimization, delivery proof, and tracking.",
+    },
+    {
+      icon: <TruckIcon />,
+      title: "Grocery Delivery",
+      description:
+        "Category grouping, inventory management, scheduling, and instant checkout.",
+    },
+    {
+      icon: <AddDocumentIcon />,
+      title: "Home Services",
+      description:
+        "Book handy services, repair plumbing, AC maintenance and more on demand.",
+    },
+    {
+      icon: <HomeIcon />,
+      title: "Pharmacy",
+      description:
+        "Prescription uploads, medicine delivery, order history, and health tracking.",
+    },
+  ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden  font-poppins">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* MAIN CARD */}
@@ -61,7 +58,8 @@ const ServicePlatformSection = () => {
 
           {/* HEADER */}
           <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-10">
-           <h3
+
+            <h3
               className="
                 text-[26px]
                 sm:text-[32px]
@@ -73,81 +71,79 @@ const ServicePlatformSection = () => {
               "
             >
               All-in-
-              
 
-              <span
-                className="
-                  inline-block
-                  bg-[#E4FFD4]
-                  rounded-md               
-                  whitespace-nowrap
-                "
-              >
-              One Service  
-              </span> <br />
+              <span className="inline-block bg-[#E4FFD4] rounded-md whitespace-nowrap px-2">
+                One Service
+              </span>
 
-             <span
-                className="
-                  inline-block
-                  bg-[#E4FFD4]
-                  rounded-md               
-                  whitespace-nowrap
-                "
-              >Platform</span>
+              <br />
+
+              <span className="inline-block bg-[#E4FFD4] rounded-md whitespace-nowrap px-2">
+                Platform
+              </span>
             </h3>
 
-            <p className="text-sm sm:text-base max-w-md">
+            <p className="text-sm sm:text-base max-w-md text-[#5f5f5f]">
               Choose from multiple service categories and launch your customized
               super app.
             </p>
+
           </div>
 
           {/* SERVICES GRID */}
-                    <div
-                      className="
-                        grid
-                        grid-cols-1
-                        sm:grid-cols-2
-                        xl:grid-cols-3
-                        gap-6
-                        lg:gap-10
-                      "
-                    >
-                    {services.map((service, index) => (
-                      <div
-                        key={index}
-                        className="
-                          bg-[#F4F4F480]
-                          rounded-[20px]
-                          p-5
-                          sm:p-6
-                          lg:p-8
-                          flex
-                          flex-col
-                          gap-4
-                          hover:shadow-md
-                          transition
-                        "
-                      >
-                        <div className="flex items-center gap-4">
-                            <div className="flex-shrink-0  bg-[#E4FFD4] rounded-[10px] w-14 h-14 flex items-center justify-center ">
-                                <div className=" text-[#56E000] ">
-                                  {service.icon}
-                                </div>
-                            </div>
+          <div
+            className="
+              grid
+              grid-cols-1
+              sm:grid-cols-2
+              xl:grid-cols-3
+              gap-6
+              lg:gap-10
+            "
+          >
 
-                          <h4 className="text-base sm:text-lg font-semibold text-black">
-                            {service.title}
-                          </h4>
-                        </div>
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="
+                  bg-[#F4F4F480]
+                  rounded-[20px]
+                  p-5
+                  sm:p-6
+                  lg:p-8
+                  flex
+                  flex-col
+                  gap-4
+                  hover:shadow-md
+                  transition
+                  cursor-pointer
+                "
+              >
 
-                        <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
-                          {service.description}
-                        </p>
-                      </div>
-                    ))}
+                <div className="flex items-center gap-2">
+
+                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+
+                    <div className="bg-[#E4FFD4] rounded-[10px]  flex items-center justify-center">
+                      {service.icon}
+                    </div>
+
                   </div>
 
+                  <h4 className="text-base sm:text-[22px] font-semibold text-black">
+                    {service.title}
+                  </h4>
+
+                </div>
+
+                <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
+                  {service.description}
+                </p>
+
+              </div>
+            ))}
+
+          </div>
 
         </div>
       </div>

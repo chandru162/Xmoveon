@@ -3,12 +3,12 @@ import React from "react";
 import {
   StoreShopIcon,
   DocumentHeartIcon
-} from '../../svg/svgIcons';
+} from "../../svg/svgIcons";
 
 const EcosystemSection = () => {
   const apps = [
     {
-      icon: <DocumentHeartIcon/>,
+      icon: <DocumentHeartIcon />,
       title: "Customer App",
       description:
         "Smooth interface for customers to place orders and book services effortlessly.",
@@ -21,11 +21,11 @@ const EcosystemSection = () => {
         "Push Notifications",
         "Promo Codes & Offers",
         "In-App Chat Support",
-        "Multi-Language Support"
+        "Multi-Language Support",
       ],
     },
     {
-      icon: <StoreShopIcon/>,
+      icon: <StoreShopIcon />,
       title: "Vendor App",
       description:
         "Complete management system to receive, process, and manage customer requests.",
@@ -42,7 +42,7 @@ const EcosystemSection = () => {
       ],
     },
     {
-      icon: <DocumentHeartIcon/>,
+      icon: <DocumentHeartIcon />,
       title: "Driver App",
       description:
         "Optimized app for drivers and delivery partners with smart navigation and earnings tracking.",
@@ -55,56 +55,45 @@ const EcosystemSection = () => {
         "Job Acceptance & Rejection",
         "Online / Offline Availability",
         "Delivery History",
-        "In-App Communication"     
-       ],
+        "In-App Communication",
+      ],
     },
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-12 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-12 overflow-hidden  font-poppins">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* HEADER */}
-        <div className="mb-10 lg:mb-16 text-center lg:text-left">
-         <h3
-                  className="
-                    text-[26px]
-                    sm:text-[32px]
-                    md:text-[40px]
-                    lg:text-[48px]
-                    xl:text-[52px]
-                    font-semibold
-                    leading-[1.15]
-                    text-text-primary
-                  "
-                >
-                  <span
-                    className="
-                      inline-block
-                      rounded-md
-                      whitespace-nowrap
-                      bg-[#E4FFD4]
+        <div className="mb-10 lg:mb-16 flex flex-col lg:flex-row justify-between">
 
-                    "
-                  >
-                     Three Apps,
-                  </span>
-                  <br />
+          <h3
+            className="
+              text-[26px]
+              sm:text-[32px]
+              md:text-[40px]
+              lg:text-[48px]
+              xl:text-[52px]
+              font-semibold
+              leading-[1.15]
+              text-text-primary
+            "
+          >
+            <span className="inline-block rounded-md whitespace-nowrap bg-[#E4FFD4]">
+              Three Apps,
+            </span>
+            <br />
 
-                  <span
-                    className="
-                      inline-block
-                      rounded-md
-                      whitespace-nowrap
-                    "
-                  >
-                    One Ecosystem
-                  </span>
-</h3>
-          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl mx-auto lg:mx-0">
+            <span className="inline-block rounded-md whitespace-nowrap">
+              One Ecosystem
+            </span>
+          </h3>
+
+          <p className="mt-4 text-sm sm:text-base text-text-secondary max-w-xl mx-auto lg:mx-12 xl:mx-0">
             Complete solution with dedicated apps for every stakeholder in your
             business.
           </p>
+
         </div>
 
         {/* APPS GRID */}
@@ -131,17 +120,19 @@ const EcosystemSection = () => {
                 transition
                 flex
                 flex-col
+                cursor-pointer
               "
             >
+
               {/* ICON */}
-              <div className="bg-[#E4FFD4]  rounded-[20px] w-14 h-14 flex items-center justify-center mb-6">
-                <div className=" text-[#56E000] ">
-                                  {app.icon}
-                                </div>
+              <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center mb-2">
+                <div className="bg-[#E4FFD4] rounded-[10px]">
+                  {app.icon}
+                </div>
               </div>
 
               {/* TITLE */}
-              <h4 className="text-base sm:text-lg font-semibold  mb-2">
+              <h4 className="text-base sm:text-[22px] font-semibold ">
                 {app.title}
               </h4>
 
@@ -159,12 +150,13 @@ const EcosystemSection = () => {
                       alt=""
                       className="w-5 h-5 shrink-0"
                     />
-                    <span className="text-sm text-[14px] font-medium">
+                    <span className="text-[14px] font-medium">
                       {feature}
                     </span>
                   </div>
                 ))}
               </div>
+
             </div>
           ))}
         </div>

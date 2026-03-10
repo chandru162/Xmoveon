@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section6 = ({ data }) => {
   return (
-    <section className="w-full py-8 md:py-16 px-6 md:px-16 lg:px-24  overflow-hidden ">
+    <section className="w-full py-8 md:py-16 px-6 md:px-16 lg:px-20 xl:px-24 overflow-hidden ">
       <div className="max-w-[1440px] mx-auto">
         
         {/* Header Section */}
@@ -37,15 +37,21 @@ const Section6 = ({ data }) => {
                          min-h-[220px] md:h-[250px] w-full max-w-[450px] mx-auto  
                          hover:scale-[1.02] transition-transform duration-300 shadow-sm"
             >
-              <span className="text-[48px] md:text-[64px] text-[#8CFF5E] font-bold leading-none">
+              <span className="text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15] text-[#8CFF5E] font-semibold leading-none">
                 {step.number}
               </span>
 
               <div className="mt-4 md:mt-6">
-                <h4 className="text-[20px] md:text-[28px] text-black mb-2 font-semibold">
+                <h4 className="text-base sm:text-lg font-semibold text-black">
                   {step.title}
                 </h4>
-                <p className="text-gray-500 text-[15px] md:text-[18px] leading-snug">
+                <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -55,10 +61,15 @@ const Section6 = ({ data }) => {
 
         {/* End Result Banner */}
         <div className="w-full bg-gray-100 rounded-[25px] md:rounded-[30px] p-8 md:p-10 flex flex-col justify-center gap-4 md:gap-6 mt-6 md:mt-8 max-w-[950px] mx-auto hover:scale-[1.02] transition-transform duration-300 shadow-sm">
-          <h3 className="text-[36px] md:text-[64px] text-[#8CFF5E] font-bold leading-none">
+          <h3 className="sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15] text-[#8CFF5E] font-semibold">
             End result
           </h3>
-          <p className="text-black text-[18px] md:text-[28px] font-medium leading-tight">
+          <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
             {data.endResult}
           </p>
         </div>

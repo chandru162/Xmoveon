@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section10 = ({ data }) => {
   return (
-    <section className="w-full  py-16 md:py-16 px-6 md:px-16 lg:px-24 ">
+    <section className="w-full  py-16 md:py-16 px-6 md:px-16 lg:px-20 xl:px-24 ">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-24">
         
         {/* Left Side: Title and Intro */}
@@ -29,7 +29,7 @@ const Section10 = ({ data }) => {
                 className="bg-[#ecedf0] p-5 md:p-6 rounded-[22px] md:rounded-[25px] flex items-center gap-4 md:gap-6 hover:bg-[#f3f3f3] transition-all cursor-default group w-full lg:max-w-[500px] border border-transparent hover:border-gray-300"
               >
                 {/* Icon Placeholder */}
-                <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center text-xl md:text-2xl ">
+                <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center text-xl md:text-2xl w-9 h-9 bg-[#E4FFD4] rounded-[8px] ">
                   {service.icon}
                 </div>
 

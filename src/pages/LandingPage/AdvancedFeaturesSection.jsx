@@ -49,66 +49,46 @@ const AdvancedFeaturesSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden  font-poppins">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
-        {/* HEADER */}
         <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 mb-12">
-          <h3
-              className="
-                 text-[26px]
-                sm:text-[32px]
-                md:text-[40px]
-                lg:text-[48px]
-                xl:text-[52px]
-                font-semibold
-                leading-[1.15]
-              "
-            >
-             Advanced 
-              
 
-              <span
-                className="
-                  inline-block
-                  bg-[#E4FFD4]
-                  rounded-md
-                  whitespace-nowrap
-                  px-1
-                "
-              >
-              Features 
-              </span>
-              
-              <span
-                className="
-                  inline-block
-                  rounded-md
-                  whitespace-nowrap
-                  px-1
-                "
-              >
-               for
-              </span> <br />
-              
-              <span
-                className="
-                  inline-block
-                  bg-[#E4FFD4]
-                  rounded-md
-                  whitespace-nowrap
-                "
-              >
+          <h3
+            className="
+              text-[26px]
+              sm:text-[32px]
+              md:text-[40px]
+              lg:text-[48px]
+              xl:text-[52px]
+              font-semibold
+              leading-[1.15]
+            "
+          >
+            Advanced
+
+            <span className="inline-block bg-[#E4FFD4] rounded-md whitespace-nowrap px-1">
+              Features
+            </span>
+
+            <span className="inline-block rounded-md whitespace-nowrap px-1">
+              for
+            </span>
+
+            <br />
+
+            <span className="inline-block bg-[#E4FFD4] rounded-md whitespace-nowrap">
               Growth
-              </span>
-            </h3>
-          <p className="mt-2 sm:mt-4 text-sm sm:text-base  max-w-md">
+            </span>
+          </h3>
+
+          <p className="mt-2 sm:mt-4 text-sm sm:text-base max-w-md">
             Powerful tools to optimize operations, increase revenue, and delight
             your customers.
           </p>
+
         </div>
 
-        {/* FEATURES GRID */}
         <div
           className="
             grid
@@ -118,6 +98,7 @@ const AdvancedFeaturesSection = () => {
             lg:gap-10
           "
         >
+
           {features.map((feature, index) => (
             <div
               key={index}
@@ -133,24 +114,30 @@ const AdvancedFeaturesSection = () => {
                 cursor-pointer
               "
             >
-              {/* ICON */}
-              <div className="flex-shrink-0  bg-[#E4FFD4] rounded-[10px] w-14 h-14 flex items-center justify-center ">
-                <div className=" text-[#56E000] ">
+
+              <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+
+                <div className="bg-[#E4FFD4] rounded-[4px]">
                   {feature.icon}
                 </div>
+
               </div>
 
-              {/* CONTENT */}
               <div>
-                <h4 className="text-base sm:text-lg font-semibold  mb-1">
+
+                <h4 className="text-base sm:text-[22px] font-semibold mb-1">
                   {feature.title}
                 </h4>
+
                 <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                   {feature.description}
                 </p>
+
               </div>
+
             </div>
           ))}
+
         </div>
 
       </div>

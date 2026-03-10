@@ -8,7 +8,7 @@ const features = [
     heading: "Set commission rates per restaurant",
     description:
       "Configure custom commission structures for each restaurant, cuisine, or individual vendor. Changes take effect immediately across the platform.",
-    image: "/assets/Commisionimage.webp",
+    image: "/assets/Commissionimage.webp",
   },
   {
     title: "Restaurant onboarding",
@@ -53,11 +53,16 @@ const AdminControl = () => {
   const [showDemo, setShowDemo] = useState(false);
 
   return (
-    <section className="w-full py-12 md:py-20 px-6 lg:px-24">
+    <section className="w-full py-12 md:py-20 px-6 lg:px-24  font-poppins">
+
       <div className="max-w-[1440px] mx-auto flex flex-col items-center">
 
+        <span className="text-[22px] sm:text-[28px] lg:text-[40px] font-semibold text-primary-background text-center">
+          Control
+        </span>
+
         {/* TITLE */}
-        <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.15] mb-8 md:mb-12 text-center max-w-[900px]">
+        <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.15] mb-8 md:mb-12 text-center max-w-[900px] mt-2">
           The admin panel that <br />
           <span className="bg-[#E4FFD4] px-3 py-1 rounded-lg">
             runs everything
@@ -90,7 +95,11 @@ const AdminControl = () => {
 
           {/* LEFT */}
           <div className="flex-1 space-y-6 w-full order-2 lg:order-1">
-                <h3 className="text-[16px] sm:text-[32px] md:text-[30px] lg:text-[38px] xl:text-[42px] font-semibold text-[#56E000]">Manage</h3>
+
+            <h3 className="text-[16px] sm:text-[32px] md:text-[30px] lg:text-[38px] xl:text-[42px] font-semibold text-[#9CEE69]">
+              Manage
+            </h3>
+
             <ul className="space-y-4 md:space-y-6">
 
               <li className="flex items-start gap-3 text-[24px] md:text-[30px] lg:text-[42px] font-semibold">
@@ -98,13 +107,13 @@ const AdminControl = () => {
               </li>
 
               <li className="flex items-start gap-3 text-[16px] md:text-[18px] text-gray-600">
-                <span className="text-[#8CFF5E] text-xl"></span>
                 {activeFeature.description}
               </li>
 
             </ul>
 
             <div className="pt-6 flex justify-start">
+
               <Button
                 text="Access"
                 text_font_size="16px"
@@ -115,11 +124,13 @@ const AdminControl = () => {
                 padding="14px 28px"
                 onClick={() => setShowDemo(true)}
               />
-                                              <img
-                                  src="/images2/features/img_group_1000001743.svg"
-                                  alt="arrow"
-                                  className="w-[52px] sm:w-[68px] mx-4"
-                                />
+
+              <img
+                src="/images2/features/img_group_1000001743.svg"
+                alt="arrow"
+                className="w-[52px] sm:w-[68px] mx-4"
+              />
+
             </div>
 
           </div>
@@ -128,11 +139,13 @@ const AdminControl = () => {
           <div className="flex-1 w-full order-1 lg:order-2">
 
             <div className="rounded-[30px] md:rounded-[45px] overflow-hidden">
+
               <img
                 src={activeFeature.image}
                 alt="Admin Feature"
                 className="w-full h-full object-cover transition-opacity duration-500"
               />
+
             </div>
 
             {/* DOTS */}
@@ -158,6 +171,7 @@ const AdminControl = () => {
       </div>
 
       <DemoPopup showDemo={showDemo} setShowDemo={setShowDemo} />
+
     </section>
   );
 };

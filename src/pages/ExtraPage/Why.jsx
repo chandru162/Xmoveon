@@ -1,16 +1,8 @@
 import React, { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 
-import {
-  HeartIcon,
-  PackageIcon,
-  ProfileIcon,
-  CodeIcon,
-  HomeIcon,
-  LogoutIcon,
-} from "../../svg/svgIcons";
+import { HeartIcon , PackageIcon , ProfileIcon , CodeIcon ,HomeIcon , LogoutIcon  } from "../../svg/svgIcons";
 
-const WhySection = () => {
+const Why = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
@@ -18,68 +10,70 @@ const WhySection = () => {
     message: "",
   });
 
-  const [captchaValue, setCaptchaValue] = useState(null);
-
-  const handleCaptcha = (value) => {
-    setCaptchaValue(value);
-  };
-
   const handleInputChange = (field) => (e) => {
-    setFormData({
-      ...formData,
-      [field]: e.target.value,
-    });
+    setFormData((prev) => ({ ...prev, [field]: e.target.value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!captchaValue) {
-      alert("Please verify captcha");
-      return;
-    }
-
-    console.log("Form Data:", formData);
+    console.log("Form submitted:", formData);
   };
 
   const benefits = [
-    { icon: <HeartIcon />, title: "One-time purchase, lifetime ownership" },
-    { icon: <PackageIcon />, title: "White-label & customizable" },
-    { icon: <ProfileIcon />, title: "Self-hosted" },
-    { icon: <CodeIcon />, title: "Built for Enterprise Marketplaces" },
-    { icon: <HomeIcon />, title: "Scalable & flexible architecture" },
-    { icon: <LogoutIcon />, title: "No vendor lock-in" },
+    { 
+      icon: <HeartIcon/>, 
+      title: "One-time purchase, lifetime ownership" 
+    },
+    {
+       icon: <PackageIcon/>, 
+       title: "White-label & customizable"
+    },
+    { 
+      icon: <ProfileIcon/>, 
+      title: "Self-hosted" 
+    },
+    { 
+      icon: <CodeIcon/>,
+       title: "Built for Enterprise Marketplaces"
+    },
+    { 
+      icon: <HomeIcon/>,
+       title: "Scalable & flexible architecture"
+    },
+    { 
+      icon: <LogoutIcon/>,
+       title: "No vendor lock-in"
+   },
   ];
 
   return (
-    <section className="w-full bg-white py-14 sm:py-16 lg:py-24  font-poppins">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-12 lg:px-16 xl:px-16">
+    <section className="w-full bg-white py-14 sm:py-16 lg:py-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-12 lg:px-16 xl:px-20">
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-12 lg:gap-20 items-start">
 
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 md:text-left text-left lg:text-left">
-
             <h3
               className="
-                text-[26px]
-                sm:text-[32px]
-                md:text-[40px]
-                lg:text-[48px]
-                xl:text-[52px]
-                font-semibold
-                leading-[1.15]
+                      text-[26px]
+                      sm:text-[32px]
+                      md:text-[40px]
+                      lg:text-[48px]
+                      xl:text-[52px]
+                      font-semibold
+                      leading-[1.15]
               "
             >
-              <span className="inline-block bg-[#E4FFD4] rounded-md px-2 md:px-0 lg:px-0">
+              <span className="inline-block bg-[#E4FFD4] rounded-md px-2">
                 Why Choose
-              </span>{" "}
-              <span className="inline-block mt-1 lg:px-0">Xmoveon</span>
+              </span> {""}
+              
+              <span className="inline-block md:block md:px-2 mt-1 xl:px-2 lg:px-2">Xmoveon</span>
             </h3>
 
             {/* BENEFITS */}
             <div className="mt-8 space-y-4 sm:space-y-5">
-
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
@@ -91,43 +85,33 @@ const WhySection = () => {
                     lg:justify-start
                     text-left
                     max-w-[360px]
-                    mx-12
-                    md:mx-8
+                    mx-auto
+                    lg:mx-0
                     xl:mx-4
-                    lg:mx-4
                   "
                 >
-
-                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center mt-2">
-
-                    <div className="bg-[#E4FFD4] rounded-[10px] mt-2">
-                      {benefit.icon}
-                    </div>
-
+                  <div className="w-11 h-11 rounded-[10px] bg-[#E4FFD4] flex items-center justify-center flex-shrink-0 ">
+                    <div>
+                     {benefit.icon} 
+                     </div>
                   </div>
 
-                  <p className="text-sm sm:text-base font-semibold leading-snug mt-3">
+                  <p className="text-sm sm:text-base font-semibold leading-snug mt-2">
                     {benefit.title}
                   </p>
-
                 </div>
               ))}
-
             </div>
-
           </div>
 
           {/* RIGHT FORM */}
           <div className="w-full lg:w-1/2">
-
             <div className="bg-[#F8F8F8] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 lg:p-12">
-
               <h3 className="text-[22px] sm:text-[26px] lg:text-[32px] font-semibold text-center mb-8">
                 Ready to launch your platform
               </h3>
 
               <form onSubmit={handleSubmit} className="space-y-5">
-
                 {[
                   { type: "text", placeholder: "Full Name", field: "fullName" },
                   { type: "tel", placeholder: "Phone Number", field: "phoneNumber" },
@@ -151,7 +135,6 @@ const WhySection = () => {
                       focus:ring-2
                       focus:ring-[#9CEE69]/30
                     "
-                    required
                   />
                 ))}
 
@@ -173,21 +156,13 @@ const WhySection = () => {
                     focus:ring-2
                     focus:ring-[#9CEE69]/30
                   "
-                  required
                 />
-
-                {/* Google reCAPTCHA */}
-                <div className="flex justify-center">
-                  <div className="transform scale-[0.92] sm:scale-100 origin-center">
-                    <ReCAPTCHA
-                      sitekey="6LdnhIEsAAAAAIcO8fNeedq6ICqHZPU9ksvOHZjw"
-                      onChange={handleCaptcha}
-                    />
-                  </div>
-                </div>
+                <div className="flex items-center gap-2 bg-black px-3 py-3 rounded-[14px] w-60 cursor-pointer">
+                        <input type="checkbox" className=" cursor-pointer" required />
+                        <span className="text-xs  text-white">I'm not a robot</span>
+                      </div>
 
                 <div className="flex justify-center pt-4">
-
                   <button
                     type="submit"
                     className="
@@ -203,30 +178,23 @@ const WhySection = () => {
                       transition
                     "
                   >
-
+                     
                     Submit
-
                     <img
                       src="/images/img_iconoirarrowtr_black_900.svg"
                       alt=""
                       className="w-5 h-5"
                     />
-
                   </button>
-
                 </div>
-
               </form>
-
             </div>
-
           </div>
 
         </div>
-
       </div>
     </section>
   );
 };
 
-export default WhySection;
+export default Why;

@@ -14,6 +14,8 @@ import WhyChoose from '../ExtraPage/WhyChoose';
 import WhySection from '../ExtraPage/WhySection';
 import Testi from '../ExtraPage/Testi';
 import DemoPopup from '../LandingPage/DemoPopup';
+import Why from '../ExtraPage/Why';
+
 
 import {
   LayoutIcon,
@@ -23,6 +25,7 @@ import {
   ChatSearchIcon,
   PricingIcon,
 } from '../../svg/svgIcons';
+import Testo from '../ExtraPage/Testo';
 
 
 
@@ -311,32 +314,32 @@ const Service = () => {
 
   const features = [
     {
-      icon: <LayoutIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+      icon: <LayoutIcon />,
       title: "Service Listings",
       description: "Create detailed listings with images, pricing, and availability."
     },
     {
-      icon: <PayPalIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+      icon: <PayPalIcon />,
       title: "Payments",
       description: " Instant or scheduled bookings made simple."
     },
     {
-      icon: <ProfileCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+      icon: <ProfileCardIcon />,
       title: "Booking & Scheduling",
       description: "In-platform communication between customers and providers."
     },
     {
-      icon: <StarIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+      icon: <StarIcon />,
       title: "Reviews & Ratings",
       description: "Supports multiple payment options and commissions."
     },
     {
-      icon: <ChatSearchIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+      icon: <ChatSearchIcon />,
       title: "Marketing Messaging",
       description: "Build trust with verified feedback."
     },
     {
-      icon: <PricingIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+      icon: <PricingIcon />,
       title: " Flexible Pricing",
       description: " Offer fixed, hourly, or request-based pricing models."
     }
@@ -351,6 +354,34 @@ const Service = () => {
     
   ];
 
+  /* SVG INFO CARD COMPONENT */
+function GreenCard({ text, className = "" }) {
+  return (
+    <div className={`relative w-full ${className}`}>
+
+      <svg
+        viewBox="0 0 561 316"
+        preserveAspectRatio="xMidYMid meet"
+        className="w-full h-[115px] sm:h-[125px] md:h-[135px]"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 56.1486V17.8844C0 8.00711 8.00711 0 17.8844 0H201.233C216.738 0 229.308 12.5693 229.308 28.0743C229.308 43.5793 241.877 56.1486 257.382 56.1486H297.335H529.7C546.586 56.1486 560.275 69.8372 560.275 86.723V264.726C560.275 281.612 546.586 295.3 529.7 295.3H307.525C301.898 295.3 297.335 299.862 297.335 305.49C297.335 311.118 292.773 315.68 287.145 315.68H30.5744C13.6887 315.68 0 301.991 0 285.106V56.1486Z"
+          fill="#EFEFEF"
+        />
+      </svg>
+
+      <div className="absolute inset-0 flex items-center px-6 sm:px-8">
+        <p className="text-[12px] sm:text-[14px] md:text-[15px] text-[#4a4a4a] leading-relaxed">
+          {text}
+        </p>
+      </div>
+
+    </div>
+  );
+}
+
+
   return (
     <>
       <Helmet>
@@ -362,111 +393,104 @@ const Service = () => {
       <main className="w-full bg-secondary-background">
         {/* Header */}
         <header className="w-full bg-secondary-background">
-          <div className=" max-w-[1440px] md:max-w-[1200px] lg:max-w-[1450px] xl:max-w-[1600px]  px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col justify-center items-center w-full gap-[23px] sm:gap-[28px] md:gap-[35px] lg:gap-[40px] xl:gap-[46px]">
+           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+            <div className="flex flex-col items-center w-full gap-6 sm:gap-8 md:gap-10 lg:gap-12">
               {/* Navigation */}
+              <div className="w-full flex justify-between items-center">
+                <div className="flex flex-col justify-start items-center w-full px-4 sm:px-6 lg:px-8">                  
+        {/* Hero Section  */}
+                <section className="w-full bg-white overflow-hidden ">
+                    <div className="max-w-[1440px] mx-auto px-3 sm:px-0 lg:px-0 xl:px-0">
 
-              <div className="flex flex-col justify-start items-center w-full">
-                <div className="flex flex-col justify-start items-center w-full px-[10px] sm:px-[14px] md:px-[22px] lg:px-[26px] xl:px-[28px]">
-                  {/* Hero Section  */}
-                 <section className="w-full bg-white py-12 sm:py-16 lg:py-8">
-                  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                      <div className="py-10 sm:py-14 lg:py-12">
+                        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
 
-                      {/* LEFT CONTENT */}
-                      <div className="w-full lg:w-1/2 text-center lg:text-left">
-                        <h3 className="text-[26px]
-                                        sm:text-[32px]
-                                        md:text-[40px]
-                                        lg:text-[48px]
-                                        xl:text-[52px]
-                                        font-semibold
-                                        leading-[1.15]">    
-                          <span>Launch</span> {""}
-                          <span
-                                  className="
-                                    inline-block
-                                    bg-[#E4FFD4]                                  
-                                    rounded-md
-                                    whitespace-nowrap
-                                  "
-                                >Your Own Service </span> <br />
-                          <span className="bg-[#E4FFD4]  rounded-md">
-                            Marketplace platform
-                          </span>
-                        </h3>
-                        <p className='mt-6  text-sm sm:text-base max-w-md mx-auto lg:mx-0 '>
-                         Built for full ownership. One-time payment. No subscriptions.
-                        </p>
+                          {/* LEFT */}
+                          <div className="w-full lg:w-[48%] text-left">
 
-                        <p className="mt-4 lg:mt-6 text-sm sm:text-base max-w-md mx-auto lg:mx-0 ">
-                          Build your multi-vendor food delivery platform with our proven solution.
-                          Restaurants gain exposure, drivers earn commissions, and you control
-                          everything from one powerful admin panel.
-                        </p>
+                            <h3 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[52px] font-semibold leading-[1.15]">
 
-                        <div className="mt-8 flex items-center justify-center lg:justify-start gap-4">
-                                    <Button
-                                      text="Try Our Demo"
-                                      text_font_size="16px"
-                                      text_font_weight="600"
-                                      text_color="#0f0f0f"
-                                      fill_background_color="#9CEE69"
-                                      border_border_radius="32px"
-                                      padding="14px 28px"
-                                      onClick={() => {
-                                      console.log("Try Demo clicked"); 
-                                      setShowDemo(true);
-                                    }}
-                          />
+                              <span className="">Launch</span>
 
-                <img
-                src="/images2/features/img_group_1000001743.svg"
-                alt="arrow"
-                className="w-[52px] sm:w-[68px]"
-              />
-              </div>
-       
+                              <span className="block w-fit bg-[#E4FFD4] rounded-md  mt-2">
+                                Your Own Service
+                              </span>
 
-                        {/* RIGHT CONTENT */}
-                        <div className="w-full lg:w-1/2 flex flex-col items-center">
-                          <div
-                            className="
-                                    w-full
-                                    max-w-[460px]
-                                    sm:max-w-[420px]
-                                    md:max-w-[680px]
-                                    lg:max-w-[780px]
-                                
-                                  "
-                          >
+                              <span className="block w-fit bg-[#E4FFD4] rounded-md mt-1">
+                                Marketplace
+                              </span>
+
+                              <span className="block mt-1">
+                                Platform
+                              </span>
+
+                            </h3>
+
+                            <p className="mt-6 text-sm sm:text-base max-w-md">
+                              Built for full ownership. One-time payment. No subscriptions.
+                            </p>
+
+                            <p className="mt-2 text-sm sm:text-base max-w-md">
+                              Xmoveon is the all-in-one service marketplace software that lets
+                              you build and own your own platform — similar to Sharetribe,
+                              but with complete control, source code access, and zero
+                              recurring fees.
+                            </p>
+
+                            <div className="mt-6">
+                              <Button
+                                text="Try Our Demo"
+                                text_font_size="16px"
+                                text_font_weight="600"
+                                text_color="#0f0f0f"
+                                fill_background_color="#9cee69"
+                                border_border_radius="32px"
+                                padding="14px 28px"
+                                onClick={() => setShowDemo(true)}
+                              />
+                            </div>
+
                           </div>
-                        </div>
 
-                      </div>
 
-                      {/* RIGHT CONTENT */}
-                      <div className="w-full lg:w-1/2 flex flex-col items-center">
+                          {/* RIGHT */}
+                          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
 
-                        {/* IMAGE */}
-                        <div className="w-full max-w-[320px] sm:max-w-[480px] md:max-w-[520px]  lg:max-w-[640px] lg:max-h-[380px] ">
-                          <img
-                            src="/assets/Serviceimage.webp"
-                            alt="Platform Illustration"
-                            className="w-full h-full object-cover rounded-[20px] "
-                          />
-                        </div>
-                        {/* INFO CARD */}
-                        <div className="mt-16 w-full max-w-[360px] bg-[#EFEFEF] rounded-[22px] px-5 py-4 text-[13px] sm:text-[14px] text-center text-gray-700 ">
-                          Whether you’re a startup, agency, or developer, Xmoveon gives you the
-                          flexibility to create, customize, and scale your own marketplace —
-                          entirely under your brand.
+                            <div className="relative w-full max-w-[560px]">
+
+                              {/* PHONE IMAGE */}
+                              <img
+                                src="/assets/Serviceimage.webp"
+                                alt="App Preview"
+                                className="
+                                  w-full
+                                  max-w-[500px]
+                                  md:max-w-[540px]
+                                  lg:max-w-[500px]
+                                  xl:max-w-[560px]
+                                  h-auto
+                                  object-cover
+                                "
+                              />
+
+                              {/* FLOATING INFO CARD */}
+                           {/*    <div className="absolute -bottom-12 left-8 w-[75%]">
+
+                                <GreenCard
+                                  text="Whether you’re a startup, agency, or developer, Xmoveon gives you the flexibility to create, customize, and scale your own marketplace — entirely under your brand."
+                                />
+
+                              </div>
+ */}
+                            </div>
+
+                          </div>
+
                         </div>
                       </div>
 
                     </div>
-                  </div>
-                </section>
+                  </section>         
                 </div>
               </div>
               {/* Why Choose X-Moveon Section */}
@@ -486,53 +510,76 @@ const Service = () => {
               {/* MarketPlace Features Section */}
 
               <section className="w-full bg-white relative ">
+                      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-3 sm:px-4 lg:px-4 xl:px-4">
 
-                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-4 ">
-                  {/* Content */}
-                  <div className="relative mx-2 md:mx-6 lg:mx-4 xl:mx-6">
+                        <div className="relative">
 
-                    {/* Header */}
-                    <div className="flex  mb-12 lg:mb-12">
+                          {/* HEADER */}
+                          <div className="mb-10 lg:mb-14">
 
-                      <div className=" me-8 lg:me-16 xl:me-20">
-                        <h2 className="   text-[26px]
-                                          sm:text-[32px]
-                                          md:text-[40px]
-                                          lg:text-[48px]
-                                          xl:text-[52px]
-                                          font-semibold
-                                          leading-[1.15] ms-4 lg:ms-4 xl:ms-2  ">
-                          <span className='bg-[#E4FFD4]'>  Core Marketplace </span> <span> <br />Features</span>
-                        </h2>
-                      </div>
+                            <h2
+                              className="
+                              text-[26px]
+                              sm:text-[32px]
+                              md:text-[40px]
+                              lg:text-[48px]
+                              xl:text-[52px]
+                              font-semibold
+                              leading-[1.15]
+                              "
+                            >
+                              <span className="bg-[#E4FFD4] px-1 rounded-md">
+                                Core Marketplace
+                              </span>
 
-                      {/* <div className="lg:w-1/2">
-              <p className="text-sm sm:text-base text-text-secondary leading-relaxed  mt-4 lg:mt-8 ms-16 lg:ms-12 ">
-                Powerful tools to optimize operations,<br /> increase revenue, and delight your  <br />customers.
-              </p>
-            </div> */}
-                    </div>
+                              <br />
 
-                    {/* Features Grid - 2 columns */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mx-8 lg:mx-20 ">
-                      {features?.map((feature, index) => (
-                        <div key={index} className="space-y-4">
-                          <div className="flex items-start gap-3">
-                            {/* <img src={feature?.icon} alt="" className="w-6 h-6 flex-shrink-0" /> */}
-                            <div className=''>{feature?.icon}</div>
-                            <h3 className="text-lg sm:text-lg font-semibold ">
-                              {feature?.title}
-                            </h3>
+                              Features
+                            </h2>
+
                           </div>
-                          <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed pl-11 ">
-                            {feature?.description}
-                          </p>
+
+                          {/* FEATURES GRID */}
+                          <div
+                            className="
+                            grid
+                            grid-cols-1
+                            sm:grid-cols-2
+                            gap-6
+                            lg:gap-10
+                            "
+                          >
+
+                            {features?.map((feature, index) => (
+                              <div key={index} className="space-y-3">
+
+                                <div className="flex items-center gap-2">
+
+                                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+                                    <div className="bg-[#E4FFD4] rounded-[10px] ">
+                                      {feature.icon}
+                                    </div>
+                                  </div>
+
+                                  <h3 className="text-base sm:text-[22px] font-semibold">
+                                    {feature?.title}
+                                  </h3>
+
+                                </div>
+
+                                <p className="text-sm sm:text-[16px] leading-relaxed text-[#5f5f5f] pl-14">
+                                  {feature?.description}
+                                </p>
+
+                              </div>
+                            ))}
+
+                          </div>
+
                         </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </section>
+
+                      </div>
+                    </section>
 
 
               {/*Panels & Dashboards Section */}
@@ -551,7 +598,7 @@ const Service = () => {
 
         {/* Contact Form Section */}
 
-        <WhySection />
+        <Why />
 
         {/* FAQ Section */}
 
@@ -560,7 +607,7 @@ const Service = () => {
 
         {/* Testimonial Section */}
 
-        <Testi />
+        <Testo />
 
         {/* 
       <Hero/>

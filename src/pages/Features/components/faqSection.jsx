@@ -1,46 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const FAQSection = ({ data }) => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="w-full  py-12 md:py-20 px-6 md:px-16 lg:px-24 font-sans text-black overflow-hidden">
-      <div className="max-w-3xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-8 md:mb-10">
-          <h2 className="text-[36px] md:text-[54px] font-bold mb-3 tracking-tight leading-none">
+    <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
+      <div className="w-full max-w-[900px] mx-auto px-4 sm:px-6">
+
+        {/* HEADER */}
+        <div className="text-center mb-10">
+          <h2
+            className="
+              text-[26px]
+              sm:text-[32px]
+              md:text-[40px]
+              lg:text-[48px]
+              xl:text-[52px]
+              font-semibold
+              leading-[1.15]
+            "
+          >
             FAQ
           </h2>
-          <p className="text-gray-500 text-[15px] md:text-lg font-medium">
+
+          <p className="mt-2 text-sm sm:text-base">
             Everything you need to know about getting started.
           </p>
         </div>
 
-        {/* FAQ List */}
-        <div className="space-y-3">
-          {data.faqs.map((faq, idx) => {
-            const isOpen = openIndex === idx;
+        {/* FAQ LIST */}
+        <div className="space-y-4">
+          {data.faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+
             return (
               <div
-                key={idx}
-                className={`transition-all duration-300 rounded-[20px] md:rounded-[25px] border ${
-                  isOpen
-                    ? 'bg-[#E4FFD4] border-[#8CFF5E] shadow-sm'
-                    : 'bg-white border-transparent shadow-sm'
+                key={index}
+                className={`rounded-[22px] transition-all duration-300 ${
+                  isOpen ? "bg-[#E4FFD4]" : "bg-[#F5F5F5]"
                 }`}
               >
+                {/* QUESTION */}
                 <button
-                  onClick={() => setOpenIndex(isOpen ? -1 : idx)}
-                  className="w-full px-5 md:px-8 py-4 md:py-6 flex justify-between items-center text-left gap-4"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="w-full flex items-center justify-between px-6 py-5 text-left"
                 >
-                  <span className="text-[17px] md:text-[21px] font-semibold leading-tight">
+                  <span className="text-[18px] font-medium">
                     {faq.question}
                   </span>
 
-                  {/* Icon - Adjusted size */}
+                  {/* ARROW ICON */}
                   <div
-                    className={`flex-shrink-0 w-5 h-5 md:w-5 md:h-5 rounded-full flex items-center justify-center transition-all duration-300 ${
-                      isOpen ? 'bg-[#8CFF5E] rotate-180' : 'bg-[#8CFF5E]'
+                    className={`flex items-center justify-center w-7 h-7 rounded-full bg-[#9CEE69] transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
                     }`}
                   >
                     <svg
@@ -53,7 +65,7 @@ const FAQSection = ({ data }) => {
                       <path
                         d="M1 1L7 7L13 1"
                         stroke="black"
-                        strokeWidth="2.5"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
@@ -61,20 +73,17 @@ const FAQSection = ({ data }) => {
                   </div>
                 </button>
 
-                {/* Answer Area - Tightened Padding */}
-                <div
-                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                    isOpen ? 'max-h-[500px] opacity-100 pb-5 md:pb-7' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="px-5 md:px-8 text-[15px] md:text-[17px] text-gray-700 leading-snug">
+                {/* ANSWER */}
+                {isOpen && (
+                  <div className="px-6 pb-5 text-[16px] leading-relaxed">
                     {faq.answer}
                   </div>
-                </div>
+                )}
               </div>
             );
           })}
         </div>
+
       </div>
     </section>
   );

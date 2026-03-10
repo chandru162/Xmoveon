@@ -18,9 +18,9 @@ import image2 from '../../../../public/assets/Card2.png';
 import image3 from '../../../../public/assets/Card3.png';
 import TaxiImage from '../../../../public/assets/Illustration.png';
 import Illustrations from '../../../../public/assets/Scaleimage.webp';
-import Selfcard from '../../../../public/assets/Selfcardimage.webp';
-import Sourcecard from '../../../../public/assets/Sourcecardimage.webp';
-import Scalablecard from '../../../../public/assets/Scalablecardimage.webp';
+import Selfcard from '../../../../public/assets/Selfimage.webp';
+import Sourcecard from '../../../../public/assets/Sourceimage.webp';
+import Scalablecard from '../../../../public/assets/Scalebleimage.webp';
 import Activecardimage from '../../../../public/assets/Activecardimage.webp';
 import Uptimecardimage from '../../../../public/assets/Uptimecardimage.webp';
 import Globalcardimage from '../../../../public/assets/Globalcardimage.webp';
@@ -64,10 +64,10 @@ const TaxiPage = () => {
           title2: 'Launch Your',
           highlightText1: 'Branded Ride-',
           highlightText2: 'Hailing Platform',
-          subTitle: 'Connect drivers and passengers instantly.',
+          subTitle: 'Built for full ownership. One-time payment. No subscriptions.',
           description:
-            'Build your own taxi booking app like Uber or Bolt — fully white-label, one-time purchase, and no recurring fees.',
-          image: '../../../../public/assets/Taxiimage.webp',
+            'Xmoveon is the all-in-one service marketplace software that lets you build and own your own platform — similar to Sharetribe, but with complete control, source code access, and zero recurring fees.',
+          image: '../../../../public/assets/Taxipageimage.webp',
         }}
       />
       <Section2
@@ -88,7 +88,6 @@ const TaxiPage = () => {
 
        <Section3
         data={{
-          sideTitle: 'Why Choose Us?',
           mainTitleHighlight1: 'Built for Scale.',
           mainTitleHighlight2: 'Designed for Success.',
           mainTitlePlain: '',
@@ -97,27 +96,27 @@ const TaxiPage = () => {
           showcaseImage: Illustrations,
           features: [
             {
-              icon: <MenuIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm"/>,
+              icon: <MenuIcon/>,
               title: 'One-Time License',
               desc: 'No subscriptions. Pay once, own forever.',
             },
             {
-              icon: <SectionLayoutIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <SectionLayoutIcon  />,
               title: 'Native iOS & Android Apps',
               desc: 'Smooth, responsive, and intuitive.',
             },
             {
-              icon: <ScalesIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <ScalesIcon  />,
               title: 'Advanced Dispatch System',
               desc: 'Match riders and drivers in real time.',
             },
             {
-              icon: <WindowCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <WindowCardIcon />,
               title: 'Powerful Admin Dashboard',
               desc: 'Monitor trips, earnings, and performance metrics.',
             },
             {
-              icon: <WindowCardIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />,
+              icon: <WindowCardIcon />,
               title: 'Customizable & White-Label',
               desc: 'Your brand, your colors, your rules.',
             },
@@ -129,7 +128,7 @@ const TaxiPage = () => {
         data={{
           title: 'Built for Everyone in the Mobility Ecosystem',
           // Adjusted icon size for better mobile scaling
-          leftIcon: <ArrowButtonIcon className="w-12 h-12 md:w-20 md:h-20" />,
+          leftIcon: <ArrowButtonIcon className="w-12 h-12 md:w-20 md:h-20 text-[" />,
           categories: [
             {
               label: 'Riders',
@@ -153,7 +152,7 @@ const TaxiPage = () => {
             },
             {
               label: 'Fleet Owners',
-              image: '../../../../public/assets/Fleetimage.webp',
+              image: '../../../../public/assets/Feetimage.webp',
               features: [
                 'Manage multiple vehicles and drivers',
                 'Assign or reassign rides effortlessly',
@@ -174,11 +173,11 @@ const TaxiPage = () => {
           title4: 'Business',
           ctaButton: 'View Dashboard Demo',
           adminFeatures: [
-            { icon: <ClockIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, text: 'Real-time fleet visibility with interactive maps' },
-            { icon: <CopyIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, text: 'Dynamic pricing, surge rules, and coupon controls' },
-            { icon: <ShippingIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, text: 'Trip, driver, and user management in one interface' },
-            { icon: <RectangleIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, text: 'Analytics dashboards for business insights' },
-            { icon: <SuccessDocumentIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, text: 'Automated billing and payout management' },
+            { icon: <ClockIcon className="w-10 h-10  p-2 rounded-sm" />, text: 'Real-time fleet visibility with interactive maps' },
+            { icon: <CopyIcon className="w-10 h-10  p-2 rounded-sm" />, text: 'Dynamic pricing, surge rules, and coupon controls' },
+            { icon: <ShippingIcon className="w-10 h-10  p-2 rounded-sm" />, text: 'Trip, driver, and user management in one interface' },
+            { icon: <RectangleIcon className="w-10 h-10  p-2 rounded-sm" />, text: 'Analytics dashboards for business insights' },
+            { icon: <SuccessDocumentIcon className="w-10 h-10  p-2 rounded-sm" />, text: 'Automated billing and payout management' },
           ],
         }}
       />
@@ -231,10 +230,10 @@ const TaxiPage = () => {
           title2: 'Services & Support',
           description: "We don't just deliver software — we help you launch successfully.",
           services: [
-            { icon: <SetupIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, label: 'App Installation & Server Setup' },
-            { icon: <AnalysisIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, label: 'App Store & Play Store Deployment' },
-            { icon: <DurationIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, label: 'Documentation & Customization Support' },
-            { icon: <LocationIcon className="w-10 h-10 bg-[#E4FFD4] text-[#5C9B35] p-2 rounded-sm" />, label: 'Lifetime Code Ownership Guarantee' },
+            { icon: <SetupIcon className="w-10 h-10  p-2 rounded-sm" />, label: 'App Installation & Server Setup' },
+            { icon: <AnalysisIcon className="w-10 h-10 p-2 rounded-sm" />, label: 'App Store & Play Store Deployment' },
+            { icon: <DurationIcon className="w-10 h-10 p-2 rounded-sm" />, label: 'Documentation & Customization Support' },
+            { icon: <LocationIcon className="w-10 h-10 p-2 rounded-sm" />, label: 'Lifetime Code Ownership Guarantee' },
           ],
         }}
       />

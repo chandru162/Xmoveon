@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section5 = ({ data }) => {
   return (
-    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24 ">
+    <section className="w-full bg-white py-12 md:py-20 px-6 md:px-16 lg:px-20 xl:px-24">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-24">
         
         {/* Left Side: Title and Action Buttons */}
@@ -44,7 +44,7 @@ const Section5 = ({ data }) => {
               className="p-4 md:p-6 lg:px-20 rounded-[20px] md:rounded-[30px] flex items-center gap-4 cursor-default hover:bg-gray-50 transition-colors"
             >
               {/* Feature Icon Container */}
-              <div className="flex-shrink-0 flex items-center justify-center">
+              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#E4FFD4] rounded-[10px] font-semibold">
                 {feature.icon}
               </div>
 

@@ -16,7 +16,7 @@ const LaunchStepsSection = () => {
     },
     {
       number: "03",
-      title: " We Launch It for You",
+      title: "We Launch It for You",
       description:
         "Deployed to App Store and Play Store with backend, hosting, and setup handled.",
     },
@@ -29,7 +29,7 @@ const LaunchStepsSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-8 overflow-hidden">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-8 overflow-hidden  font-poppins">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-8">
 
         {/* MAIN CARD */}
@@ -37,7 +37,8 @@ const LaunchStepsSection = () => {
 
           {/* HEADER */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-12 mb-10 mx-0 md:mx-8 lg:mx-0">
-          <h3
+
+            <h3
               className="
                 text-[26px]
                 sm:text-[32px]
@@ -51,24 +52,25 @@ const LaunchStepsSection = () => {
                 md:px-0
               "
             >
-           Launch in 4   
+              Launch in 4 <br />
 
-            <span
-              className="
-                inline-block
-                bg-[#E4FFD4]
-                rounded-md
-                whitespace-nowrap
-                px-2
-                lg:px-0
-                md:px-0
-              "
-            >
-             Simple Steps
-            </span>
-          </h3>
+              <span
+                className="
+                  inline-block
+                  bg-[#E4FFD4]
+                  rounded-md
+                  whitespace-nowrap
+                  px-2
+                  lg:px-0
+                  md:px-0
+                "
+              >
+                Simple Steps
+              </span>
+            </h3>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
+
               <p className="text-sm sm:text-base max-w-md text-center sm:text-left">
                 From concept to launch in just 7 days. No technical expertise
                 required.
@@ -79,11 +81,13 @@ const LaunchStepsSection = () => {
                 alt=""
                 className="w-[90px] sm:w-[110px] h-auto"
               />
+
             </div>
           </div>
 
           {/* STEPS GRID */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10">
+
             {steps.map((step, index) => (
               <div
                 key={index}
@@ -95,21 +99,25 @@ const LaunchStepsSection = () => {
                   lg:p-10
                   hover:shadow-lg
                   transition
+                  cursor-pointer
                 "
               >
-                <div className="text-[34px] sm:text-[42px] lg:text-[52px] font-bold text-[#56E000] mb-4">
+
+                <div className="text-[34px] sm:text-[42px] lg:text-[52px] font-bold text-[#56E000] mb-2">
                   {step.number}
                 </div>
 
-                <h3 className="text-base sm:text-lg font-semibold  mb-2">
+                <h3 className="text-base sm:text-[22px] font-semibold ">
                   {step.title}
                 </h3>
 
                 <p className="text-sm sm:text-[16px] text-[#5f5f5f] leading-relaxed">
                   {step.description}
                 </p>
+
               </div>
             ))}
+
           </div>
 
         </div>
